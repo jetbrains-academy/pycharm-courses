@@ -17,5 +17,6 @@ def test_value():
         passed()
 
 if __name__ == '__main__':
-    test_value()
+    test_task_window()
     run_common_tests("You should redefine variable 'greetings'")
+    test_value()
