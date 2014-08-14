@@ -8,7 +8,6 @@
       "task_list": [
         {
           "name": "Our first program",
-          "test_num" : 6,
           "task_files": {
             "hello_world.py": {
               "task_windows": [
@@ -25,7 +24,6 @@
         },
         {
           "name": "Comments",
-          "test_num": 4,
           "task_files": {
             "comments.py": {
               "task_windows": [
