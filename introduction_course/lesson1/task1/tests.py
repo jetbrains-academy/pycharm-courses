@@ -12,7 +12,7 @@ def test_ASCII():
 
 def test_is_alpha():
     window = get_task_windows()[0]
-    if window.isaplpha():
+    if window.isalpha():
       passed()
     else:
       failed("Please, use only english characters for this time.")
