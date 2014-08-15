@@ -13,7 +13,7 @@
               "task_windows": [
                 {
                   "line": 0,
-                  "start": 33,
+                  "start": 32,
                   "length": 14,
                   "hint": "lesson1.task1.docs",
                   "possible_answer": "Liana"
@@ -66,7 +66,7 @@
               "task_windows": [
                 {
                   "line": 1,
-                  "start": 7,
+                  "start": 6,
                   "length": 14,
                   "hint": "lesson2.task2.docs",
                   "possible_answer": "other_variable"
