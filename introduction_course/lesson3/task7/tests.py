@@ -8,6 +8,17 @@ def test_value():
     else:
         failed("Remember about string slicing.")
 
+def test_value_python3():
+    import sys
+    if sys.version[0] != "3":
+        passed()
+        return
+    try:
+        import_task_file()
+        passed()
+    except TypeError:
+        failed("Division operator returns float in Python 3. Use int() function to convert float to integer.")
+
 def test_window():
     window = get_task_windows()[0]
     if "phrase" in window and "len" in window:
@@ -17,6 +28,7 @@ def test_window():
 
 
 if __name__ == '__main__':
+    test_value_python3()
     run_common_tests()
 
     test_value()
