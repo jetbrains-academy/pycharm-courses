@@ -25,7 +25,7 @@ def test_file_importable():
     if not path.endswith(".py"):
         import os
         parent = os.path.abspath(os.path.join(path, os.pardir))
-        python_files = [f for f in os.listdir(parent) if os.path.isfile(os.path.join(parent, f) and f.endswith(".py"))]
+        python_files = [f for f in os.listdir(parent) if os.path.isfile(os.path.join(parent, f)) and f.endswith(".py")]
         for python_file in python_files:
             if python_file == "tests.py": continue
             check_importable_path(os.path.join(parent, python_file))
@@ -116,9 +116,14 @@ def failed(message="Please, reload the task and try again."):
 def passed():
     print("#study_plugin test OK")
 
-def get_task_windows():
+def get_task_windows(file_name=None):
     prefix = "#study_plugin_window = "
-    path = sys.argv[-1]
+    import os
+    parent = os.path.abspath(os.path.join(sys.argv[-1], os.pardir))
+    if not file_name:
+        path = sys.argv[-1]
+    else:
+        path = os.path.join(parent, file_name)
     import os
     windows_path = os.path.splitext(path)[0] + "_windows"
     windows = []

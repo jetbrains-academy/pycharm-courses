@@ -2,7 +2,7 @@ from test_helper import run_common_tests, failed, passed, get_task_windows
 
 
 def test_window():
-    window = get_task_windows()[0]
+    window = get_task_windows("from_import.py")[0]
     if "from " in window:
         passed()
     else:

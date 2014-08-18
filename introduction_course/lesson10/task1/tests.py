@@ -2,7 +2,7 @@ from test_helper import run_common_tests, failed, passed, get_task_windows
 
 
 def test_window():
-    window = get_task_windows()[0]
+    window = get_task_windows("read_file.py")[0]
     if "print" in window and "line" in window:
         passed()
     else:
@@ -10,7 +10,7 @@ def test_window():
 
 
 def test_window2():
-    window = get_task_windows()[1]
+    window = get_task_windows("read_file.py")[1]
     if "f1" in window and "readline" in window:
         passed()
     else:
@@ -18,7 +18,7 @@ def test_window2():
 
 
 def test_window3():
-    window = get_task_windows()[2]
+    window = get_task_windows("read_file.py")[2]
     if "f1" in window and "close" in window and "(" in window:
         passed()
     else:
