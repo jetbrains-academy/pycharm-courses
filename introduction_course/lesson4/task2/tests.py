@@ -3,7 +3,7 @@ from test_helper import run_common_tests, import_task_file, passed, failed, get_
 
 def test_value():
     file = import_task_file()
-    if "dinosaur" in file.animals:
+    if "dinosaur" in file.animals and not "dino" in file.animals:
         passed()
     else:
         failed("Replace 'dino' with 'dinosaur'")

@@ -16,8 +16,25 @@ def test_window():
     else:
         failed("Use while loop to iterate")
 
+def test_window1():
+    window = get_task_windows()[0]
+    if "number" in window:
+        passed()
+    else:
+        failed("Use 'number' variable in while condition")
+
+
+def test_window2():
+    window = get_task_windows()[0]
+    if "<" in window and "10" in window:
+        passed()
+    else:
+        failed("Check that 'number' is strictly less than 10 in condition")
+
 
 if __name__ == '__main__':
     run_common_tests()
     test_window()
+    test_window1()
+    test_window2()
     test_column()

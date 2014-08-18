@@ -36,13 +36,7 @@ def test_file_importable():
 def check_importable_path(path):
     try:
         import_file(path)
-    except ImportError:
-        failed("File contains syntax errors")
-        return
-    except SyntaxError:
-        failed("File contains syntax errors")
-        return
-    except NameError:
+    except:
         failed("File contains syntax errors")
         return
     passed()

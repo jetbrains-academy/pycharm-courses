@@ -17,7 +17,7 @@ def test_window2():
         failed("Update b with a + b")
 
 def test_window3():
-    window = get_task_windows()[1]
+    window = get_task_windows()[2]
     if "tmp_var" in window:
         passed()
     else:
