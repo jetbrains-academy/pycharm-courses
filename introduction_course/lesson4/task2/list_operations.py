@@ -1,4 +1,4 @@
-animals = ['elephant', 'lion', 'tiger', "giraffe"] # create new list
+animals = ['elephant', 'lion', 'tiger', "giraffe"]  # create new list
 print(animals)
 
 animals += ["monkey", 'dog']    # add two items to the list
