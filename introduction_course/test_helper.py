@@ -7,9 +7,17 @@ def get_file_text(path):
     file_io.close()
     return text
 
-def get_file_output(path):
-    # TODO: get file output by path
-    return ""
+def get_file_output():
+    saved_stdout = sys.stdout
+    try:
+        from StringIO import StringIO
+        out = StringIO()
+        sys.stdout = out
+        import_task_file()
+        output = out.getvalue().strip()
+        return output
+    finally:
+        sys.stdout = saved_stdout
 
 def test_file_importable():
     """ tests there is no obvious syntax errors"""
