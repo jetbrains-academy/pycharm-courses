@@ -11,7 +11,7 @@ def test_value():
 
 def test_window():
     window = get_task_windows()[0]
-    if ">" in window:
+    if ">" in window and not ">=" in window:
         passed()
     else:
         failed("Use > operator")
