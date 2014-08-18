@@ -14,6 +14,18 @@ def get_file_output(path):
 def test_file_importable():
     """ tests there is no obvious syntax errors"""
     path = sys.argv[-1]
+    if not path.endswith(".py"):
+        import os
+        parent = os.path.abspath(os.path.join(path, os.pardir))
+        python_files = [f for f in os.listdir(parent) if os.path.isfile(os.path.join(parent, f) and f.endswith(".py"))]
+        for python_file in python_files:
+            if python_file == "tests.py": continue
+            check_importable_path(os.path.join(parent, python_file))
+        return
+
+    check_importable_path(path)
+
+def check_importable_path(path):
     try:
         import_file(path)
     except ImportError:
@@ -25,7 +37,6 @@ def test_file_importable():
     except NameError:
         failed("File contains syntax errors")
         return
-
     passed()
 
 def import_file(path):
@@ -35,7 +46,9 @@ def import_file(path):
     return tmp
 
 def import_task_file():
-    """ returns imported file """
+    """ returns imported file
+        imports file from which check action was run
+    """
     path = sys.argv[-1]
     return import_file(path)
 
