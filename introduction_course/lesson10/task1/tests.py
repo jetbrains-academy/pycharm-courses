@@ -6,7 +6,7 @@ def test_window():
     if "print" in window and "line" in window:
         passed()
     else:
-        failed("Use datetime module")
+        failed("Use print function")
 
 
 def test_window2():
@@ -14,7 +14,7 @@ def test_window2():
     if "f1" in window and "readline" in window:
         passed()
     else:
-        failed("Use 'readline' method'")
+        failed("Use 'readline' method")
 
 
 def test_window3():
