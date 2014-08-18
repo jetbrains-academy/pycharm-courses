@@ -1,8 +1,9 @@
 zoo = ['lion', "elephant", 'monkey']
 
-f = open("output.txt", add modifier)
+if __name__ == "main":
+    f = open("output.txt", add modifier)
 
-for i in zoo:
-    add the whole zoo to the output.txt
+    for i in zoo:
+        add the whole zoo to the output.txt
 
-close the file
+    close the file

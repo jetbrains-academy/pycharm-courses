@@ -895,22 +895,22 @@
             "write_to_file.py": {
               "task_windows": [
                 {
-                  "line": 2,
-                  "start": 23,
+                  "line": 3,
+                  "start": 27,
                   "length": 12,
                   "hint": "lesson10.task2.1.docs",
                   "possible_answer": "'a'"
                 },
                 {
-                  "line": 5,
-                  "start": 4,
+                  "line": 6,
+                  "start": 8,
                   "length": 35,
                   "hint": "lesson10.task2.2.docs",
                   "possible_answer": "f.write(i)"
                 },
                 {
-                  "line": 7,
-                  "start": 0,
+                  "line": 8,
+                  "start": 4,
                   "length": 14,
                   "hint": "lesson10.task2.3.docs",
                   "possible_answer": "f.close()"
