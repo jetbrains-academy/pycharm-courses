@@ -765,7 +765,7 @@
                   "line": 9,
                   "start": 8,
                   "length": 21,
-                  "hint": "lesson8.task4.1.docs",
+                  "hint": "lesson8.task4.docs",
                   "possible_answer": "self.current += amount"
                 }
               ]
