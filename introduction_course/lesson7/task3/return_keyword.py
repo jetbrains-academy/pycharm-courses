@@ -5,7 +5,7 @@ c = sum_two_numbers(3, 12)  # assign result of function execution to variable 'c
 
 
 def fib(n):
-    """This is documentation string for function. It'll be availabe by fib.__doc__()
+    """This is documentation string for function. It'll be available by fib.__doc__()
     Return a list containing the Fibonacci series up to n."""
     result = []
     a = 0
