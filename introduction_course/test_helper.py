@@ -119,7 +119,11 @@ def get_task_windows(file_name=None):
     else:
         path = os.path.join(parent, file_name)
     import os
-    windows_path = os.path.splitext(path)[0] + "_windows"
+    file_name_without_extension = os.path.splitext(path)[0]
+    windows_path = file_name_without_extension + "_windows"
+    smart_test_files = [f for f in os.listdir(parent) if os.path.join(parent, f) == file_name_without_extension + "_answers_window_windows"]
+    if len(smart_test_files) == 1:
+        windows_path = os.path.join(parent, smart_test_files[0])
     windows = []
     f = open(windows_path, "r")
     window_text = ""
