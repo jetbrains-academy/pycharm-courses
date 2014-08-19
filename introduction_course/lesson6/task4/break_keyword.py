@@ -9,7 +9,7 @@ while True:  # this condition cannot possibly be false
 
 zoo = ["lion", 'tiger', 'elephant']
 while True:                         # this condition cannot possibly be false
-    animal = zoo.pop()       # extract one element from the list
+    animal = zoo.pop()       # extract one element from the list end
     print(animal)
     if exit loop if animal is 'elephant':
         break           # exit loop

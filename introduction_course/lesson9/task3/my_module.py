@@ -3,5 +3,5 @@ This module contains hello_world function
 """
 
 
-def hello_world(name):
-    print("Hello, World! My name is %s" % name)
+def hello_world():
+    print("Hello, World!")
