@@ -4,4 +4,4 @@ This module contains hello_world function
 
 
 def hello_world():
-    print("Hello, World!")
+    return "Hello, World!"
