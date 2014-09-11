@@ -16,3 +16,5 @@ def fib(n):
         update variable b
         update variable a
     return result
+
+print(fib(10))
