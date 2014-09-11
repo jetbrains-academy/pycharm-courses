@@ -1,5 +1,5 @@
 phrase = """
-it's a really long string
+It is a really long string
 triple-quoted strings are used
 to define multi-line strings
 """

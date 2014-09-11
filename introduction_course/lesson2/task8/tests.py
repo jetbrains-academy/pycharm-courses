@@ -3,19 +3,18 @@ from test_helper import run_common_tests, passed, failed, import_task_file, get_
 
 def test_value():
     file = import_task_file()
-    if file.number == 12.0:
+    if file.is_greater:
         passed()
     else:
-        failed("Use += operator")
+        failed("Use > operator")
 
 
 def test_window():
     window = get_task_windows()[0]
-    if "+=" in window:
+    if ">" in window and ">=" not in window:
         passed()
     else:
-        failed("Use += operator")
-
+        failed("Use > operator")
 
 if __name__ == '__main__':
     run_common_tests("You should modify the file")

@@ -9,5 +9,5 @@ def test_type_used():
         failed("Use type() function")
 
 if __name__ == '__main__':
-    run_common_tests("You should redefine variable 'greetings'")
+    run_common_tests()
     test_type_used()

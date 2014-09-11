@@ -92,7 +92,23 @@
           }
         },
         {
-          "name": "Arithmetic Operators",
+          "name": "Type conversion",
+          "task_files": {
+            "type_cast.py": {
+              "task_windows": [
+                {
+                  "line": 5,
+                  "start": 6,
+                  "length": 31,
+                  "hint": "lesson2.task4.docs",
+                  "possible_answer": "int(float_number)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Arithmetic operators",
           "task_files": {
             "arithmetic_operators.py": {
               "task_windows": [
@@ -100,14 +116,14 @@
                   "line": 2,
                   "start": 9,
                   "length": 22,
-                  "hint": "lesson2.task4.1.docs",
+                  "hint": "lesson2.task5.1.docs",
                   "possible_answer": "number/2"
                 },
                 {
                   "line": 4,
                   "start": 12,
                   "length": 23,
-                  "hint": "lesson2.task4.2.docs",
+                  "hint": "lesson2.task5.2.docs",
                   "possible_answer": "number%2"
                 }
               ]
@@ -123,7 +139,7 @@
                   "line": 6,
                   "start": 7,
                   "length": 8,
-                  "hint": "lesson2.task5.docs",
+                  "hint": "lesson2.task6.docs",
                   "possible_answer": "+="
                 }
               ]
@@ -139,7 +155,7 @@
                   "line": 3,
                   "start": 15,
                   "length": 8,
-                  "hint": "lesson2.task6.docs",
+                  "hint": "lesson2.task7.docs",
                   "possible_answer": "=="
                 }
               ]
@@ -155,7 +171,7 @@
                   "line": 6,
                   "start": 19,
                   "length": 8,
-                  "hint": "lesson2.task7.docs",
+                  "hint": "lesson2.task8.docs",
                   "possible_answer": ">="
                 }
               ]
@@ -619,7 +635,7 @@
       "name": "Functions",
       "task_list": [
         {
-          "name": "Function definition",
+          "name": "Definition",
           "task_files": {
             "functions.py": {
               "task_windows": [
@@ -635,7 +651,7 @@
           }
         },
         {
-          "name": "Function parameters and call arguments",
+          "name": "Parameters and call arguments",
           "task_files": {
             "param_args.py": {
               "task_windows": [
@@ -651,7 +667,7 @@
           }
         },
         {
-          "name": "Function return value",
+          "name": "Return value",
           "task_files": {
             "return_keyword.py": {
               "task_windows": [
@@ -681,7 +697,7 @@
           }
         },
         {
-          "name": "Function default parameters",
+          "name": "Default parameters",
           "task_files": {
             "default_parameter.py": {
               "task_windows": [
@@ -702,7 +718,7 @@
       "name": "Classes and objects",
       "task_list": [
         {
-          "name": "Class definition",
+          "name": "Definition",
           "task_files": {
             "class_definition.py": {
               "task_windows": [
