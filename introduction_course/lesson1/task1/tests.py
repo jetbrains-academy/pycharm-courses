@@ -12,10 +12,13 @@ def test_ASCII():
 
 def test_is_alpha():
     window = get_task_windows()[0]
-    if window.isalpha():
-      passed()
-    else:
-      failed("Please, use only english characters for this time.")
+    splitted = window.split()
+    for s in splitted:
+        if not s.isalpha():
+            failed("Please, use only english characters for this time.")
+            return
+
+    passed()
 
 
 if __name__ == '__main__':
