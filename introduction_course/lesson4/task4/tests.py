@@ -11,3 +11,4 @@ def test_window():
 
 if __name__ == '__main__':
     run_common_tests("Use len() function")
+    test_window()
