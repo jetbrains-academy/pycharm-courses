@@ -1,4 +1,4 @@
-from test_helper import run_common_tests, get_task_windows, passed, failed, get_file_output
+from test_helper import run_common_tests, get_task_windows, passed, failed, get_file_output, test_file_importable
 
 
 def test_value():
@@ -16,6 +16,7 @@ def test_window():
         failed("Use list slicing lst[index1:index2]")
 
 if __name__ == '__main__':
+    test_file_importable()
     test_value()
     test_window()
     run_common_tests("Use list slicing lst[index1:index2]")
