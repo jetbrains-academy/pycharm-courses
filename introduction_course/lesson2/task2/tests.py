@@ -1,4 +1,4 @@
-from test_helper import test_is_not_empty, test_is_initial_text, test_window_text_deleted, passed, failed, import_task_file
+from test_helper import test_is_not_empty, test_is_initial_text, test_answer_placeholders_text_deleted, passed, failed, import_task_file
 
 
 def test_is_identifier():
@@ -18,5 +18,5 @@ if __name__ == '__main__':
 
     test_is_not_empty()
     test_is_initial_text()
-    test_window_text_deleted(error_text)
+    test_answer_placeholders_text_deleted(error_text)
     test_is_identifier()

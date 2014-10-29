@@ -1,4 +1,4 @@
-from test_helper import run_common_tests, passed, failed, import_task_file, get_task_windows
+from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders
 
 
 def test_division():
@@ -16,7 +16,7 @@ def test_remainder():
         failed("Use % operator")
 
 def test_windows():
-    windows = get_task_windows()
+    windows = get_answer_placeholders()
 
     if "number" in windows[0] and "number" in windows[1]:
         passed()

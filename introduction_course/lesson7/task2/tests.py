@@ -1,8 +1,8 @@
-from test_helper import run_common_tests, failed, get_task_windows, passed
+from test_helper import run_common_tests, failed, get_answer_placeholders, passed
 
 
 def test_window():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     if "square" in window and "def " in window:
         passed()
     else:
@@ -10,7 +10,7 @@ def test_window():
 
 
 def test_column():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     if ":" in window:
         passed()
     else:

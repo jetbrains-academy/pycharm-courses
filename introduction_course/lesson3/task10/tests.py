@@ -1,8 +1,8 @@
-from test_helper import run_common_tests, passed, failed, get_task_windows
+from test_helper import run_common_tests, passed, failed, get_answer_placeholders
 
 
 def test_window1():
-    windows = get_task_windows()
+    windows = get_answer_placeholders()
 
     if windows[1].isdigit():
         passed()
@@ -10,7 +10,7 @@ def test_window1():
         failed("Print digit")
 
 def test_window():
-    windows = get_task_windows()
+    windows = get_answer_placeholders()
 
     if windows[0] == "%d":
         passed()

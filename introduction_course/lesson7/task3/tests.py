@@ -1,7 +1,7 @@
-from test_helper import run_common_tests, get_task_windows, passed, failed, import_task_file
+from test_helper import run_common_tests, get_answer_placeholders, passed, failed, import_task_file
 
 def test_window1():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     if "1" in window:
         passed()
     else:
@@ -9,14 +9,14 @@ def test_window1():
 
 
 def test_window2():
-    window = get_task_windows()[1]
+    window = get_answer_placeholders()[1]
     if "b" in window and "a" in window:
         passed()
     else:
         failed("Update b with a + b")
 
 def test_window3():
-    window = get_task_windows()[2]
+    window = get_answer_placeholders()[2]
     if "tmp_var" in window:
         passed()
     else:

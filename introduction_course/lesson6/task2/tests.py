@@ -1,4 +1,4 @@
-from test_helper import run_common_tests, failed, passed, get_task_windows, import_task_file
+from test_helper import run_common_tests, failed, passed, get_answer_placeholders, import_task_file
 
 
 def test_value():
@@ -9,7 +9,7 @@ def test_value():
         failed("Count again")
 
 def test_window():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     if "for " in window:
         passed()
     else:

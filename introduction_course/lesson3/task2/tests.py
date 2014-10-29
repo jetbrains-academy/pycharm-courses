@@ -1,4 +1,4 @@
-from test_helper import run_common_tests, passed, failed, import_task_file, get_task_windows
+from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders
 
 
 def test_value():
@@ -8,7 +8,7 @@ def test_value():
     failed("Use multiplication")
 
 def test_window():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     if "*" in window:
         passed()
     else:

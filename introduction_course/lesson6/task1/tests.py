@@ -1,8 +1,8 @@
-from test_helper import run_common_tests, failed, passed, get_task_windows
+from test_helper import run_common_tests, failed, passed, get_answer_placeholders
 
 
 def test_window():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     if "prime" in window and "for " in window and "primes" in window and " in " in window:
         passed()
     else:

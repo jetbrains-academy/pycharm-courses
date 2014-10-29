@@ -1,8 +1,8 @@
-from test_helper import run_common_tests, get_task_windows, passed, failed
+from test_helper import run_common_tests, get_answer_placeholders, passed, failed
 
 
 def test_window1():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     if "John" in window and "==" in window and "if " in window:
         passed()
     else:
@@ -10,7 +10,7 @@ def test_window1():
 
 
 def test_window2():
-    window = get_task_windows()[1]
+    window = get_answer_placeholders()[1]
     if "else" in window:
         passed()
     else:
@@ -18,7 +18,7 @@ def test_window2():
 
 
 def test_columns():
-    windows = get_task_windows()
+    windows = get_answer_placeholders()
     if ":" in windows[0] and ":" in windows[1]:
         passed()
     else:

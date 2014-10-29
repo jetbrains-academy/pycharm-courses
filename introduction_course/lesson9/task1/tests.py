@@ -1,8 +1,8 @@
-from test_helper import run_common_tests, get_task_windows, passed, failed
+from test_helper import run_common_tests, get_answer_placeholders, passed, failed
 
 
 def test_window():
-    window = get_task_windows("imports.py")[0]
+    window = get_answer_placeholders("imports.py")[0]
     if "import " in window:
         passed()
     else:
@@ -10,7 +10,7 @@ def test_window():
 
 
 def test_window1():
-    window = get_task_windows("imports.py")[0]
+    window = get_answer_placeholders("imports.py")[0]
     if "my_module" in window:
         passed()
     else:
@@ -18,7 +18,7 @@ def test_window1():
 
 
 def test_window2():
-    window = get_task_windows("imports.py")[0]
+    window = get_answer_placeholders("imports.py")[0]
     if "my_module.py" in window:
         failed("Don't use file extension here")
     else:
@@ -26,7 +26,7 @@ def test_window2():
 
 
 def test_window3():
-    window = get_task_windows()[1]
+    window = get_answer_placeholders()[1]
     if "my_module" in window and "hello_world" in window:
         passed()
     else:

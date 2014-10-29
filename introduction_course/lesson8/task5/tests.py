@@ -1,8 +1,8 @@
-from test_helper import run_common_tests, get_task_windows, passed, failed
+from test_helper import run_common_tests, get_answer_placeholders, passed, failed
 
 
 def test_window():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     if "color" in window:
         passed()
     else:
@@ -10,7 +10,7 @@ def test_window():
 
 
 def test_window1():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     if "self" in window:
         passed()
     else:

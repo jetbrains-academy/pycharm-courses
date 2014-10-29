@@ -1,4 +1,4 @@
-from test_helper import run_common_tests, import_task_file, passed, failed, get_task_windows
+from test_helper import run_common_tests, import_task_file, passed, failed, get_answer_placeholders
 
 
 def test_value():
@@ -9,7 +9,7 @@ def test_value():
         failed("Replace 'dino' with 'dinosaur'")
 
 def test_window():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     if "animals" in window and "[" in window:
         passed()
     else:

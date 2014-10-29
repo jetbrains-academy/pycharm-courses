@@ -1,8 +1,8 @@
-from test_helper import run_common_tests, failed, passed, get_task_windows
+from test_helper import run_common_tests, failed, passed, get_answer_placeholders
 
 
 def test_ASCII():
-    windows = get_task_windows()
+    windows = get_answer_placeholders()
     for window in windows:
         all_ascii = all(ord(c) < 128 for c in window)
         if not all_ascii:
@@ -11,7 +11,7 @@ def test_ASCII():
     passed()
 
 def test_is_alpha():
-    window = get_task_windows()[0]
+    window = get_answer_placeholders()[0]
     splitted = window.split()
     for s in splitted:
         if not s.isalpha():
