@@ -6,7 +6,7 @@ def test_window():
     if "int" in window and "float_number" in window:
         passed()
     else:
-        failed("Use int() function")
+        failed("Use the int() function")
 
 if __name__ == '__main__':
     run_common_tests()
