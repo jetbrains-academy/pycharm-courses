@@ -6,7 +6,7 @@ def test_type_used():
     if "type" in window and "float_number" in window:
         passed()
     else:
-        failed("Use type() function")
+        failed("Use the type() function")
 
 if __name__ == '__main__':
     run_common_tests()
