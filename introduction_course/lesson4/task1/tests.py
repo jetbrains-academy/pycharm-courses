@@ -2,7 +2,7 @@ from test_helper import run_common_tests, get_answer_placeholders, passed, faile
 
 
 def test_value():
-    output = get_file_output()
+    output = get_file_output()[1]
     if "[4, 9, 16]" in output:
         passed()
     else:
@@ -20,3 +20,4 @@ if __name__ == '__main__':
     test_value()
     test_window()
     run_common_tests("Use list slicing lst[index1:index2]")
+

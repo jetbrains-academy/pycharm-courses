@@ -1,4 +1,4 @@
-from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+from test_helper import run_common_tests, failed, passed, get_answer_placeholders, get_file_output
 
 
 def test_window():
@@ -10,11 +10,16 @@ def test_window():
 
 
 def test_window2():
+    default_error = "Use 'readline' method"
     window = get_answer_placeholders("read_file.py")[1]
-    if "f1" in window and "readline" in window:
+    output = get_file_output()
+    if len(output) > 2 and output[1] == "My first line":
         passed()
-    else:
-        failed("Use 'readline' method")
+        return
+    if "print" not in window:
+        failed("Don't forget to print the line")
+        return
+    failed(default_error)
 
 
 def test_window3():
