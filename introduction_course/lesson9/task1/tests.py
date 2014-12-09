@@ -27,7 +27,7 @@ def test_window2():
 
 def test_window3():
     window = get_answer_placeholders()[1]
-    if "my_module" in window and "hello_world" in window:
+    if "my_module" in window and "hello_world(" in window:
         passed()
     else:
         failed("Call hello_world function using my_module.hello_world")
