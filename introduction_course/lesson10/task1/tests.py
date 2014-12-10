@@ -24,10 +24,13 @@ def test_window2():
 
 def test_window3():
     window = get_answer_placeholders("read_file.py")[2]
-    if "f1" in window and "close" in window and "(" in window:
-        passed()
-    else:
+    if "close(" not in window:
         failed("Call 'close' method")
+        return
+    if "f1" not in window:
+        failed("Close file f1")
+        return
+    passed()
 
 if __name__ == '__main__':
     run_common_tests()
