@@ -3,10 +3,11 @@ from test_helper import run_common_tests, passed, failed, import_task_file, get_
 
 def test_division():
     file = import_task_file()
-    if file.division == 4.5:
+    if file.result == 4.5:
         passed()
     else:
         failed("Use / operator")
+
 
 def test_remainder():
     file = import_task_file()
@@ -14,6 +15,7 @@ def test_remainder():
         passed()
     else:
         failed("Use % operator")
+
 
 def test_windows():
     windows = get_answer_placeholders()
