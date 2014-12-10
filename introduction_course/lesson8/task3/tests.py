@@ -1,4 +1,4 @@
-from test_helper import run_common_tests, get_answer_placeholders, passed, failed
+from test_helper import run_common_tests, get_answer_placeholders, passed, failed, get_file_output
 
 
 def test_window():
@@ -11,7 +11,8 @@ def test_window():
 
 def test_window2():
     window = get_answer_placeholders()[1]
-    if "car2" in window and "color" in window:
+    output = get_file_output()
+    if len(output) > 1 and output[1] == "This is a red car.":
         passed()
     else:
         failed("Change color using car2.color = ")
