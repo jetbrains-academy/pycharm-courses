@@ -6,7 +6,7 @@ def test_window():
     if "name" in window and "John" in window and "and" in window and "23" in window:
         passed()
     else:
-        failed("Use and keyword and != operator")
+        failed("Use 'and' keyword and != operator")
 
 
 if __name__ == '__main__':

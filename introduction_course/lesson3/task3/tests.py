@@ -13,7 +13,7 @@ def test_value():
     if file.p_letter == "P":
         passed()
     else:
-        failed("String index starts with 0.")
+        failed("String index starts at 0.")
 
 
 if __name__ == '__main__':
