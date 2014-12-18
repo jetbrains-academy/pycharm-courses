@@ -6,7 +6,7 @@ def test_window():
     if "color" in window:
         passed()
     else:
-        failed("Add color parameter")
+        failed("Add a color parameter")
 
 
 def test_window1():
@@ -14,7 +14,7 @@ def test_window1():
     if "self" in window:
         passed()
     else:
-        failed("Don't forget about self parameter")
+        failed("Don't forget about the self parameter")
 
 if __name__ == '__main__':
     run_common_tests()

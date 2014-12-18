@@ -20,7 +20,7 @@ def test_window1():
 def test_window2():
     window = get_answer_placeholders("imports.py")[0]
     if "my_module.py" in window:
-        failed("Don't use file extension here")
+        failed("Don't use the file extension here")
     else:
         passed()
 

@@ -13,7 +13,7 @@ def test_window():
     if "for " in window:
         passed()
     else:
-        failed("Use for loop to iterate over 'hello_world' string")
+        failed("Use a for loop to iterate over the hello_world string")
 
 
 if __name__ == '__main__':

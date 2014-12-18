@@ -6,14 +6,14 @@ def test_window():
     if "=" in window:
         passed()
     else:
-        failed("Add default value to the parameter")
+        failed("Add a default value to the parameter")
 
 def test_window_names():
     window = get_answer_placeholders()[0]
     if "subject" in window and "name" in window:
         passed()
     else:
-        failed("Add default value to the parameter")
+        failed("Add a default value to the parameter")
 
 if __name__ == '__main__':
     run_common_tests()

@@ -6,7 +6,7 @@ def test_window():
     if ":" in window:
         passed()
     else:
-        failed("Don't forget about column at the end")
+        failed("Don't forget a column at the end")
 
 
 def test_len():

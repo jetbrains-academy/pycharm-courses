@@ -44,7 +44,7 @@ def check_importable_path(path):
     try:
         import_file(path)
     except:
-        failed("File contains syntax errors", test_file_importable.__name__)
+        failed("The file contains syntax errors", test_file_importable.__name__)
         return
     passed(test_file_importable.__name__)
 

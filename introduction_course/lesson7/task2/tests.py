@@ -14,7 +14,7 @@ def test_column():
     if ":" in window:
         passed()
     else:
-        failed("Don't forget about column at the end of statement")
+        failed("Don't forget a colon at the end of the statement")
 
 if __name__ == '__main__':
     run_common_tests()

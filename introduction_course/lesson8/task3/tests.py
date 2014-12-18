@@ -6,7 +6,7 @@ def test_window():
     if "Car" in window and "(" in window and ")" in window:
         passed()
     else:
-        failed("Create new car using Car()")
+        failed("Create a new car using Car()")
 
 
 def test_window2():

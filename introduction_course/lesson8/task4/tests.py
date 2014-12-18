@@ -6,14 +6,14 @@ def test_window():
     if "self" in window and "amount" in window:
         passed()
     else:
-        failed("Access current variable of the class using self.current")
+        failed("Access the current variable of the class using self.current")
 
 def test_window2():
     window = get_answer_placeholders()[0]
     if "amount" in window:
         passed()
     else:
-        failed("Add amount value to self.current")
+        failed("Add the value of 'amount' to self.current")
 
 def test_window3():
     window = get_answer_placeholders()[0]

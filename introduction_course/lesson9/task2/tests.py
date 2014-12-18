@@ -9,7 +9,7 @@ def test_window():
     elif len(output) > 0 and "<" not in output[0]:
         passed()
     else:
-        failed("Print current date")
+        failed("Print the current date")
 
 if __name__ == '__main__':
     run_common_tests()

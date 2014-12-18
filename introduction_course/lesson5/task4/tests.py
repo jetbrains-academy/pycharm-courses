@@ -22,7 +22,7 @@ def test_columns():
     if ":" in windows[0] and ":" in windows[1]:
         passed()
     else:
-        failed("Don't forget about column at the end")
+        failed("Don't forget a colon at the end")
 
 if __name__ == '__main__':
     run_common_tests("Use if/else keywords")

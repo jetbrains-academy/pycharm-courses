@@ -6,7 +6,7 @@ def test_column():
     if ":" in window:
         passed()
     else:
-        failed("Don't forget about column at the end")
+        failed("Don't forget a colon at the end")
 
 
 def test_window():
@@ -14,7 +14,7 @@ def test_window():
     if "while " in window:
         passed()
     else:
-        failed("Use while loop to iterate")
+        failed("Use a while loop to iterate")
 
 
 def test_window1():
@@ -22,7 +22,7 @@ def test_window1():
     if "number" in window:
         passed()
     else:
-        failed("Use 'number' variable in while condition")
+        failed("Use 'number' variable in the while condition")
 
 
 def test_window2():
@@ -30,7 +30,7 @@ def test_window2():
     if "<" in window and "10" in window:
         passed()
     else:
-        failed("Check that 'number' is strictly less than 10 in condition")
+        failed("Check that 'number' is strictly less than 10 in the condition")
 
 
 def test_output():
@@ -43,7 +43,7 @@ def test_output():
     if correct_answer == user_squares:
         passed()
     else:
-        failed("Wrong answer")
+        failed("Sorry, this answer is wrong")
 
 if __name__ == '__main__':
     run_common_tests()

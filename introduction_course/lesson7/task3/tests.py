@@ -28,9 +28,9 @@ def test_function():
         if my_file.fib(10) == [0, 1, 1, 2, 3, 5, 8]:
             passed()
         else:
-            failed("Check your function on n = 10")
+            failed("Check your function for n = 10")
     except:
-        failed("File contains syntax errors")
+        failed("The file contains syntax errors")
 
 
 

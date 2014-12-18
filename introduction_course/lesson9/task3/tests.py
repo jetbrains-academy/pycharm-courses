@@ -6,7 +6,7 @@ def test_window():
     if "from " in window:
         passed()
     else:
-        failed("Use from my_module import hello_world")
+        failed("Use hello_world imported from my_module")
 
 if __name__ == '__main__':
     run_common_tests()
