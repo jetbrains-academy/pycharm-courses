@@ -15,7 +15,7 @@ def test_window2():
     if len(output) > 1 and output[1] == "This is a red car.":
         passed()
     else:
-        failed("Change color using car2.color = ")
+        failed("Change color using assignment to the car2.color")
 
 
 if __name__ == '__main__':
