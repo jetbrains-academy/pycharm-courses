@@ -27,8 +27,9 @@ def test_window1():
 
 def test_window2():
     window = get_answer_placeholders()[0]
-    if "<" in window and "10" in window:
-        passed()
+    if "10" in window:
+        if "<" in window or "10 >" in window:
+            passed()
     else:
         failed("Check that 'number' is strictly less than 10 in the condition")
 
