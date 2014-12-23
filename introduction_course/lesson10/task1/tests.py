@@ -2,7 +2,7 @@ from test_helper import run_common_tests, failed, passed, get_answer_placeholder
 
 
 def test_window():
-    window = get_answer_placeholders("read_file.py")[0]
+    window = get_answer_placeholders()[0]
     if "print" in window and "line" in window:
         passed()
     else:
@@ -11,7 +11,7 @@ def test_window():
 
 def test_window2():
     default_error = "Use 'readline' method"
-    window = get_answer_placeholders("read_file.py")[1]
+    window = get_answer_placeholders()[1]
     output = list(filter(lambda x: x != "", get_file_output()))
     if len(output) == 2 and output[1] == "My first line":
         passed()
@@ -23,7 +23,7 @@ def test_window2():
 
 
 def test_window3():
-    window = get_answer_placeholders("read_file.py")[2]
+    window = get_answer_placeholders()[2]
     if "close(" not in window:
         failed("Call 'close' method")
         return

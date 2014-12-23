@@ -2,7 +2,7 @@ from test_helper import run_common_tests, get_answer_placeholders, passed, faile
 
 
 def test_window():
-    window = get_answer_placeholders("imports.py")[0]
+    window = get_answer_placeholders()[0]
     if "import " in window:
         passed()
     else:
@@ -10,7 +10,7 @@ def test_window():
 
 
 def test_window1():
-    window = get_answer_placeholders("imports.py")[0]
+    window = get_answer_placeholders()[0]
     if "my_module" in window:
         passed()
     else:
@@ -18,7 +18,7 @@ def test_window1():
 
 
 def test_window2():
-    window = get_answer_placeholders("imports.py")[0]
+    window = get_answer_placeholders()[0]
     if "my_module.py" in window:
         failed("Don't use the file extension here")
     else:

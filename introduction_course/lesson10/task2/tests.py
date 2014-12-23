@@ -2,7 +2,7 @@ from test_helper import run_common_tests, get_answer_placeholders, passed, faile
 
 
 def test_window():
-    window = get_answer_placeholders("write_to_file.py")[0]
+    window = get_answer_placeholders()[0]
     if "a" in window:
         passed()
     else:
@@ -10,7 +10,7 @@ def test_window():
 
 
 def test_window1():
-    window = get_answer_placeholders("write_to_file.py")[1]
+    window = get_answer_placeholders()[1]
     if "write" in window:
         passed()
     else:
@@ -18,7 +18,7 @@ def test_window1():
 
 
 def test_window3():
-    window = get_answer_placeholders("write_to_file.py")[2]
+    window = get_answer_placeholders()[2]
     if "f" in window and "close" in window and "(" in window:
         passed()
     else:

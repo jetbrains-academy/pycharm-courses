@@ -2,7 +2,7 @@ from test_helper import run_common_tests, failed, passed, get_answer_placeholder
 
 
 def test_window():
-    window = get_answer_placeholders("from_import.py")[0]
+    window = get_answer_placeholders()[0]
     if "from " in window:
         passed()
     else:
