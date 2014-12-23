@@ -157,7 +157,6 @@ def get_answer_placeholders(file_name=None):
     """
     prefix = "#educational_plugin_window = "
     import os
-    placeholder_index = os.environ.get("PYCHARM_WINDOW_INDEX")
     parent = os.path.abspath(os.path.join(sys.argv[-1], os.pardir))
     if not file_name:
         path = sys.argv[-1]
@@ -166,12 +165,7 @@ def get_answer_placeholders(file_name=None):
     import os
 
     file_name_without_extension = os.path.splitext(path)[0]
-    if placeholder_index == "-1":
-        windows_path = file_name_without_extension + "_windows"
-    else:
-        smart_test_files = [f for f in os.listdir(parent) if
-                        os.path.join(parent, f) == file_name_without_extension + "_answers" + placeholder_index + "_window_windows"]
-        windows_path = os.path.join(parent, smart_test_files[0])
+    windows_path = file_name_without_extension + "_windows"
     windows = []
     f = open(windows_path, "r")
     window_text = ""
