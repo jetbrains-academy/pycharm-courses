@@ -10,7 +10,7 @@ def test_value():
     if first in window or second in window:
         passed()
     else:
-        failed("Use backslash (\\) to escape quotes")
+        failed("Sorry, the wrong string is printed")
 
 
 if __name__ == '__main__':

@@ -3,8 +3,11 @@ from test_helper import run_common_tests, get_answer_placeholders, passed, faile
 
 def test_window1():
     window = get_answer_placeholders()[0]
-    if "John" in window and "==" in window and "if " in window:
-        passed()
+    if "John" in window and "if " in window:
+        if "==" in window or "is" in window:
+            passed()
+        else:
+            failed("Check equality")
     else:
         failed("Use if keyword")
 

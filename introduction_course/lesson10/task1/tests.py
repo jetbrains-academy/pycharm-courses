@@ -12,8 +12,8 @@ def test_window():
 def test_window2():
     default_error = "Use 'readline' method"
     window = get_answer_placeholders("read_file.py")[1]
-    output = get_file_output()
-    if len(output) > 2 and output[1] == "My first line":
+    output = list(filter(lambda x: x != "", get_file_output()))
+    if len(output) == 2 and output[1] == "My first line":
         passed()
         return
     if "print" not in window:
