@@ -1,0 +1,22 @@
+<html>
+The Filter object allows fine grained control over what is included in the log output.
+<br/>
+<br/>
+You add Filter objects to Loggers or Handlers using the addFilter() method. You can also have more than one filter attached to each object.
+<br/>
+<br/>
+The LogRecord object for every log message is passed to the entire list of attached Filter objects. If a Filter
+returns a 0 value, the LogRecord is dropped and no further processing is done.
+<br/>
+<br/>
+The base Filter object filters based on a name in the module hierarchy. This usually is not very useful, therefore
+you will more often see new Filters inheriting from the base Filter object and implement more unique behavior. There
+are several examples of custom Filter objects in this course.
+<br/>
+<br/>
+Filters when applied to Logger objects are only checked when you call a log method on that object in the hierarchy.
+This is in contrast to Filters applied to Handler objects which are caller whenever a log record gets to the handler.
+<br/>
+<br/>
+In this task, you can see how we have to add the Filter to each instance of our logger.
+</html>

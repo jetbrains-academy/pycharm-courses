@@ -1,0 +1,29 @@
+<html>
+Logger names can form a named hierarchy. This allows you to selectively enable log messages at
+any point in this hierarchy. You can create a new branch in the namespace by separating the logger instance name with periods.
+<br/>
+<pre>
+
+Example hierarchy with the corresponding getLogger() call:
+
+ROOT                                        logging.getLogger()
+   |
+   +-- "a"                                  logging.getLogger("a")
+   |    |
+   |    +-- "a1"                            logging.getLogger("a.a1")
+   |    |    |
+   |    |    +-- "aaa"                      logging.getLogger("a.a1.aaa")
+   |    |    |
+   |    |    +-- "bbb"                      logging.getLogger("a.a1.bbb")
+   |    |
+   |    +--- "b1"                           logging.getLogger("a.b1")
+   |
+   +-- "b"                                  logging.getLogger("b")
+
+</pre>
+<br/>
+In this task, create and use a "mortgage.rate" logger instance inside the "get_current_rate()" function.
+<br/>
+<br/>
+After you execute the task, you should notice this logger name is included with the log message.
+</html>

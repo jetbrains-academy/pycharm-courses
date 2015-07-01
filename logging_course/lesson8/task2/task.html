@@ -1,0 +1,18 @@
+<html>
+Most of our Logger instances have been defined at module scope. This is certainly the most convenient way to use
+logging, but in some cases you want to have more control over loggers. You can defer creating a logger instance
+until it's actually needed.
+<br/>
+<br/>
+In this example, we show how to create a private logger instance in the class constructor. We use the name of the
+current module and append the class name. This will allow us to enable selective logging on just the output from
+the class.
+<br/>
+<br/>
+1) Complete the name of the FirstClass logger instance
+<br/>
+2) Set the instance logger level to DEBUG
+<br/>
+<br/>
+You should not see any DEBUG output, except the log messages coming from the FirstClass object.
+</html>

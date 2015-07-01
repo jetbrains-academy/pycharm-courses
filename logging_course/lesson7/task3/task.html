@@ -1,0 +1,20 @@
+<html>
+The standard library does not include a database handler for storing log messages in a database. The Python logging
+system is easy to extend with our own database logging. Having log data in a database is useful for writing queries
+and reports against your log data.
+<br/>
+<br/>
+In this example, we have created a SQLite database handler. Since, the SQLite
+database module is included in the standard library, you don't have to
+install any databases.
+<br/>
+<br/>
+This custom handler will attempt to create the database table named 'logger' with
+the necessary schema to store most of the LogRecord attributes.
+<br/>
+<br/>
+In the Handler's emit() method we will insert the LogRecord data into the table.
+<br/>
+<br/>
+At the end of the task we write several queries to the database.
+</html>

@@ -1,0 +1,1 @@
+setFormatter(fmt) sets or replaces the existing formatter attached to the FileHandler object.

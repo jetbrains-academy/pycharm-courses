@@ -1,0 +1,13 @@
+<html>
+You should typically not configure any logging handlers if you are writing a library. It is quite obnoxious for
+a library developer to do this, since it should be under the control of the developer using your library.
+<br/>
+<br/>
+If you are the developer of the library, then configure your logging handlers in a test application instead.
+<br/>
+<br/>
+Let's assume in this task, this is a library module. It explicitly creates a FileHandler and adds it to the module's
+logger at file scope. This is "NOT" a good practice.  Let's at least replace this using the NullHandler, which
+will not write the logs anywhere.  If the library user wants to log somewhere, he can do that himself at the
+application level.
+</html>

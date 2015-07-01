@@ -1,0 +1,22 @@
+<html>
+In a previous lesson we demonstrated the MemoryHandler class. This handler buffers log records and sends them
+to another handler after a specified number of records or a specified severity level is received.
+<br/>
+<br/>
+With one small change we can make a smarter version of this handler that only writes to another handler when an ERROR or
+higher message is logged. We could run our root logger at the DEBUG level, but instead of writing these to a file
+after a specified capacity is reached, we discard the oldest records until an ERROR or higher level log message.
+<br/>
+<br/>
+You can see how we implemented this in the shouldFlush() method of our SmartMemoryHandler.
+<br/>
+<br/>
+For this task, create a new instance of our SmartMemoryHandler using the same options as we used for our MemoryHandler.
+You can see this commented out above the answer placeholder.
+<br/>
+<br/>
+After you execute this code, you can load the file "smart_memory_handler.log" located under the Sandbox folder. Collapse
+and Expand this folder to ensure the file listing is refreshed. In this file you can see that there are only 2 log
+messages (as we specified). Only the most recent DEBUG message was included in the output. You can see how in this
+example this has given us enough information to help troubleshoot the exception.
+</html>

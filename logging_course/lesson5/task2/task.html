@@ -1,0 +1,23 @@
+<html>
+Filter objects can also perform in-place modification of LogRecord attributes. This can include changing values or
+adding new attributes.
+<br/>
+<br/>
+If you are developing a system that contains private user information, such as social security numbers, you should
+take extra precautions to protect that data. That should include any log messages that might reference that private
+data.
+<br/>
+<br/>
+In this task, we have created a Filter which sanitizes (hides) U.S. social security numbers. This
+is done by using a regular expression that searches for a given pattern. If it finds a match, that text is replaced with
+a generic placeholder value (XXX-XX-XXXX).
+<br/>
+<br/>
+1) A Filter should return a non-zero value if the log record should be passed to the handler or a 0 value if the filter
+should exclude the record. Update the return value for the SanitizeSSNFilter object we have created.
+<br/>
+<br/>
+2) Update the logging configuration to add this filter object to the root logger.
+<br/>
+<br/>
+</html>

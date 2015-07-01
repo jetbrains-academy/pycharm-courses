@@ -1,0 +1,1 @@
+logging.shutdown() can be used to gracefully shutdown the logging system.

@@ -1,0 +1,19 @@
+<html>
+When logging you should be aware of the type and size of data you might be logging.
+<br/>
+<br/>
+If you have a value that could be very large, such as long string, you might want to limit the output, so you
+don't make it difficult to look at your log output.
+<br/>
+<br/>
+One simple way to do this with string values is to use the format specification ".NNs", where NN is the number of
+characters to limit the string output. See the task for an example of this.
+<br/>
+<br/>
+In some cases, you might want to truncate an object, but indicate that the object was truncated. The common
+convention is to append the ellipses "..." to the end of the string to indicate there was more data. The following
+example shows how you could create a helper function that uses string slicing to do this.
+<br/>
+<br/>
+In this task, wrap the "big_list" object in a call to our "truncate()" helper function.
+</html>

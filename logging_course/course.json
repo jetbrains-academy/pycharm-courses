@@ -1,0 +1,1183 @@
+{
+  "lessons": [
+    {
+      "title": "Basics",
+      "task_list": [
+        {
+          "name": "Replacing print",
+          "task_files": {
+            "replacing_print.py": {
+              "placeholders": [
+                {
+                  "line": 5,
+                  "start": 4,
+                  "hint": "Replace function print with logging.debug",
+                  "possible_answer": " __future__ i",
+                  "length": 5
+                },
+                {
+                  "line": 7,
+                  "start": 4,
+                  "hint": "Replace function print with logging.debug",
+                  "possible_answer": " __future__ i",
+                  "length": 5
+                },
+                {
+                  "line": 11,
+                  "start": 4,
+                  "hint": "Replace function print with logging.debug",
+                  "possible_answer": " __future__ i",
+                  "length": 5
+                },
+                {
+                  "line": 15,
+                  "start": 4,
+                  "hint": "Replace function print with logging.debug",
+                  "possible_answer": " __future__ i",
+                  "length": 5
+                },
+                {
+                  "line": 18,
+                  "start": 4,
+                  "hint": "Replace function print with logging.debug",
+                  "possible_answer": " __future__ i",
+                  "length": 5
+                },
+                {
+                  "line": 19,
+                  "start": 4,
+                  "hint": "Replace function print with logging.debug",
+                  "possible_answer": " __future__ i",
+                  "length": 5
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Log output",
+          "task_files": {
+            "log_output.py": {
+              "placeholders": [
+                {
+                  "line": 23,
+                  "start": 24,
+                  "hint": "Pass a keyword argument of \"level\" and value of \"logging.DEBUG\"",
+                  "possible_answer": "rint_function\nimpor",
+                  "length": 25
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Levels",
+          "task_files": {
+            "levels.py": {
+              "placeholders": [
+                {
+                  "line": 11,
+                  "start": 12,
+                  "hint": "Log an info level message using the info() method.\n",
+                  "possible_answer": "e__ ",
+                  "length": 5
+                },
+                {
+                  "line": 14,
+                  "start": 8,
+                  "hint": "Use the logging.warning method. Remember to pass a string argument.\n",
+                  "possible_answer": "uture__ import print_function\nimport math\nimp",
+                  "length": 34
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Loggers",
+          "task_files": {
+            "loggers.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 4,
+                  "hint": "Replace with a call using the logger instance.",
+                  "possible_answer": " __fut",
+                  "length": 7
+                },
+                {
+                  "line": 9,
+                  "start": 4,
+                  "hint": "Replace with a call using the logger instance.",
+                  "possible_answer": " __fut",
+                  "length": 7
+                },
+                {
+                  "line": 13,
+                  "start": 4,
+                  "hint": "Replace with a call using the logger instance.",
+                  "possible_answer": " __fut",
+                  "length": 7
+                },
+                {
+                  "line": 16,
+                  "start": 8,
+                  "hint": "Replace with a call using the logger instance.",
+                  "possible_answer": "uture_",
+                  "length": 7
+                },
+                {
+                  "line": 20,
+                  "start": 4,
+                  "hint": "Replace with a call using the logger instance.",
+                  "possible_answer": " __fut",
+                  "length": 7
+                },
+                {
+                  "line": 23,
+                  "start": 4,
+                  "hint": "Replace with a call using the logger instance.",
+                  "possible_answer": " __fut",
+                  "length": 7
+                },
+                {
+                  "line": 24,
+                  "start": 4,
+                  "hint": "Replace with a call using the logger instance.",
+                  "possible_answer": " __fut",
+                  "length": 7
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Multiple Loggers",
+          "task_files": {
+            "multiple_loggers.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 4,
+                  "hint": "Look at the module level \"logger\" instance as an example, but shadow the logger variable with a new Logger instance with the name \u0027mortgage.rate\u0027.\n",
+                  "possible_answer": " __future__ import print_function\nimport ma",
+                  "length": 28
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "log method",
+          "task_files": {
+            "log_method.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 4,
+                  "hint": "logger.log(logging.DEBUG,\n",
+                  "possible_answer": " __future__ import print_",
+                  "length": 13
+                },
+                {
+                  "line": 9,
+                  "start": 4,
+                  "hint": "logger.log(logging.DEBUG,\n",
+                  "possible_answer": " __future__ import print_",
+                  "length": 13
+                },
+                {
+                  "line": 13,
+                  "start": 4,
+                  "hint": "logger.log(logging.INFO,\n",
+                  "possible_answer": " __future__ import print",
+                  "length": 12
+                },
+                {
+                  "line": 16,
+                  "start": 8,
+                  "hint": "logger.log(logging.WARNING,\n",
+                  "possible_answer": "uture__ import print_functi",
+                  "length": 12
+                },
+                {
+                  "line": 20,
+                  "start": 4,
+                  "hint": "logger.log(logging.DEBUG,\n",
+                  "possible_answer": " __future__ import print_",
+                  "length": 13
+                },
+                {
+                  "line": 23,
+                  "start": 4,
+                  "hint": "logger.log(logging.DEBUG,\n",
+                  "possible_answer": " __future__ import print_",
+                  "length": 13
+                },
+                {
+                  "line": 24,
+                  "start": 4,
+                  "hint": "logger.log(logging.DEBUG,\n",
+                  "possible_answer": " __future__ import print_",
+                  "length": 13
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Special log levels",
+          "task_files": {
+            "special_levels.py": {
+              "placeholders": [
+                {
+                  "line": 28,
+                  "start": 30,
+                  "hint": "Use logging.NOTSET which is the lowest possible severity level.\n",
+                  "possible_answer": "unction\nimport",
+                  "length": 13
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Selective logging",
+          "task_files": {
+            "selective_logging.py": {
+              "placeholders": [
+                {
+                  "line": 31,
+                  "start": 36,
+                  "hint": "The logger name is \"mortgage.rate\"\n",
+                  "possible_answer": "n\nimport math\ni",
+                  "length": 22
+                },
+                {
+                  "line": 32,
+                  "start": 25,
+                  "hint": "a level of logging.DEBUG will show all messages DEBUG level or higher",
+                  "possible_answer": "int_function\n",
+                  "length": 35
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Formatting",
+      "task_list": [
+        {
+          "name": "Custom format string",
+          "task_files": {
+            "custom_format_string.py": {
+              "placeholders": [
+                {
+                  "line": 29,
+                  "start": 31,
+                  "hint": "\u0027%(asctime)s %(levelname)s %(message)s\u0027",
+                  "possible_answer": "nction\nimport math\nimport logging\n\nlogg",
+                  "length": 27
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Custom datetime format",
+          "task_files": {
+            "custom_datetime.py": {
+              "placeholders": [
+                {
+                  "line": 30,
+                  "start": 33,
+                  "hint": "Use the string \u0027%a %b %d %Y %I:%M:%S%p\u0027\n",
+                  "possible_answer": "tion\nimport math\nimpor",
+                  "length": 31
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "LogRecord attributes",
+          "task_files": {
+            "log_attributes.py": {
+              "placeholders": [
+                {
+                  "line": 29,
+                  "start": 32,
+                  "hint": "%(asctime)s %(levelname)s %(module)s %(funcName)s %(message)s\n",
+                  "possible_answer": "ction\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(",
+                  "length": 25
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Exceptions",
+          "task_files": {
+            "log_exception.py": {
+              "placeholders": [
+                {
+                  "line": 26,
+                  "start": 8,
+                  "hint": "Replace with call to logger.exception(). Don\u0027t forget to pass a message string.\n",
+                  "possible_answer": "uture__ import print_function\nimport ",
+                  "length": 4
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Logging objects",
+          "task_files": {
+            "log_objects.py": {
+              "placeholders": [
+                {
+                  "line": 25,
+                  "start": 39,
+                  "hint": "the repr() function is used to call the __repr__ method of your class. Pass the object instance to repr()",
+                  "possible_answer": "\nimport l",
+                  "length": 3
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Limiting output",
+          "task_files": {
+            "limit_output.py": {
+              "placeholders": [
+                {
+                  "line": 25,
+                  "start": 57,
+                  "hint": "Call truncate(), for example: truncate(big_list, 30)",
+                  "possible_answer": "\u0027obj\u0027 to string and tr",
+                  "length": 8
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "String formatting",
+          "task_files": {
+            "string_formatting.py": {
+              "placeholders": [
+                {
+                  "line": 10,
+                  "start": 59,
+                  "hint": "See previous logging statement for the answer.\n",
+                  "possible_answer": "r \u003d loggi",
+                  "length": 14
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Basic Handlers",
+      "task_list": [
+        {
+          "name": "Basic file handler",
+          "task_files": {
+            "basic_file_handler.py": {
+              "placeholders": [
+                {
+                  "line": 31,
+                  "start": 24,
+                  "hint": "filename\u003dlog_filename\n",
+                  "possible_answer": "rint_function\nimport ",
+                  "length": 23
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Basic truncate log file",
+          "task_files": {
+            "new_log_files.py": {
+              "placeholders": [
+                {
+                  "line": 31,
+                  "start": 34,
+                  "hint": "This is similar to the open() function. \"w\" can be used to create a new file, overwriting any existing file.",
+                  "possible_answer": "i",
+                  "length": 27
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create file handler",
+          "task_files": {
+            "file_handler.py": {
+              "placeholders": [
+                {
+                  "line": 33,
+                  "start": 19,
+                  "hint": "logging.FileHandler(log_filename)",
+                  "possible_answer": "ort print_function\nimport math\nim",
+                  "length": 25
+                },
+                {
+                  "line": 36,
+                  "start": 16,
+                  "hint": "addHandler() takes a handler and adds it to the list of handlers for a Logger.",
+                  "possible_answer": "import pri",
+                  "length": 21
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Set formatter",
+          "task_files": {
+            "set_formatter.py": {
+              "placeholders": [
+                {
+                  "line": 35,
+                  "start": 29,
+                  "hint": "%(asctime)s %(levelname)s %(message)s",
+                  "possible_answer": "%(asctime)s %(levelname)s %(message)s",
+                  "length": 57
+                },
+                {
+                  "line": 36,
+                  "start": 17,
+                  "hint": "setFormatter(fmt) sets or replaces the existing formatter attached to the FileHandler object.",
+                  "possible_answer": "setFormatter(fmt)",
+                  "length": 43
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Multiple handlers",
+          "task_files": {
+            "multiple_handlers.py": {
+              "placeholders": [
+                {
+                  "line": 38,
+                  "start": 21,
+                  "hint": "logging.StreamHandler",
+                  "possible_answer": "logging.StreamHandler",
+                  "length": 32
+                },
+                {
+                  "line": 39,
+                  "start": 4,
+                  "hint": "stdout_handler.setFormatter(fmt)",
+                  "possible_answer": "stdout_handler.setFormatter(fmt)",
+                  "length": 50
+                },
+                {
+                  "line": 40,
+                  "start": 27,
+                  "hint": "stdout_handler",
+                  "possible_answer": "stdout_handler",
+                  "length": 23
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Separate handler log levels",
+          "task_files": {
+            "separate_levels.py": {
+              "placeholders": [
+                {
+                  "line": 40,
+                  "start": 19,
+                  "hint": "setLevel(logging.WARNING)",
+                  "possible_answer": "setLevel(logging.WARNING)",
+                  "length": 17
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Advanced Handlers",
+      "task_list": [
+        {
+          "name": "Rotating files",
+          "task_files": {
+            "rotating_log_files.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 7,
+                  "hint": "logging.handlers",
+                  "possible_answer": "logging.handlers",
+                  "length": 52
+                },
+                {
+                  "line": 32,
+                  "start": 19,
+                  "hint": "logging.handlers.RotatingFileHandler",
+                  "possible_answer": "logging.handlers.RotatingFileHandler",
+                  "length": 45
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Rotating files by time",
+          "task_files": {
+            "timed_rotation.py": {
+              "placeholders": [
+                {
+                  "line": 41,
+                  "start": 66,
+                  "hint": "For seconds you should specify \u0027S\u0027",
+                  "possible_answer": "\u0027S\u0027",
+                  "length": 16
+                },
+                {
+                  "line": 42,
+                  "start": 70,
+                  "hint": "For this task, use 2",
+                  "possible_answer": "2",
+                  "length": 21
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Memory handler",
+          "task_files": {
+            "memory_handler.py": {
+              "placeholders": [
+                {
+                  "line": 41,
+                  "start": 71,
+                  "hint": "The instance is in the \u0027file_handler\u0027 variable.",
+                  "possible_answer": "file_handler",
+                  "length": 26
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "HTTP handler",
+          "task_files": {
+            "http_handler.py": {
+              "placeholders": [
+                {
+                  "line": 40,
+                  "start": 36,
+                  "hint": "HTTPHandler",
+                  "possible_answer": "HTTPHandler",
+                  "length": 20
+                },
+                {
+                  "line": 40,
+                  "start": 63,
+                  "hint": "127.0.0.1:8080",
+                  "possible_answer": "127.0.0.1:8080",
+                  "length": 19
+                },
+                {
+                  "line": 41,
+                  "start": 53,
+                  "hint": "Use \"/\" for this simple example. Typically you would specify a URL endpoint that can process your log data.",
+                  "possible_answer": "/",
+                  "length": 13
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "shutdown",
+          "task_files": {
+            "logging_shutdown.py": {
+              "placeholders": [
+                {
+                  "line": 55,
+                  "start": 4,
+                  "hint": "logging.shutdown() can be used to gracefully shutdown the logging system.",
+                  "possible_answer": "logging.shutdown()",
+                  "length": 49
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Removing handlers",
+          "task_files": {
+            "remove_handler.py": {
+              "placeholders": [
+                {
+                  "line": 21,
+                  "start": 30,
+                  "hint": "\u0027A.B\u0027",
+                  "possible_answer": "\u0027A.B\u0027",
+                  "length": 21
+                },
+                {
+                  "line": 26,
+                  "start": 8,
+                  "hint": "b_log.removeHandler(handler)",
+                  "possible_answer": "b_log.removeHandler(handler)",
+                  "length": 45
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Filtering",
+      "task_list": [
+        {
+          "name": "Filter object",
+          "task_files": {
+            "filter.py": {
+              "placeholders": [
+                {
+                  "line": 8,
+                  "start": 12,
+                  "hint": "addFilter(log_filter)",
+                  "possible_answer": "addFilter(log_filter)",
+                  "length": 36
+                },
+                {
+                  "line": 12,
+                  "start": 12,
+                  "hint": "addFilter(log_filter)",
+                  "possible_answer": "addFilter(log_filter)",
+                  "length": 36
+                },
+                {
+                  "line": 16,
+                  "start": 12,
+                  "hint": "addFilter(log_filter)",
+                  "possible_answer": "addFilter(log_filter)",
+                  "length": 36
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sanitize filter",
+          "task_files": {
+            "sanitize_filter.py": {
+              "placeholders": [
+                {
+                  "line": 14,
+                  "start": 15,
+                  "hint": "The value should be non-zero, since we are only updating the data and excluding any log records.\n",
+                  "possible_answer": "i",
+                  "length": 35
+                },
+                {
+                  "line": 21,
+                  "start": 4,
+                  "hint": "call the method \u0027addHandler\u0027 on the root logger instance and pass in the sanitize_filter object.",
+                  "possible_answer": "rt logging\nimport re\n\nclass San",
+                  "length": 40
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Logger propagate",
+          "task_files": {
+            "propagate1.py": {
+              "placeholders": [
+                {
+                  "line": 14,
+                  "start": 24,
+                  "hint": "Setting a False value will disable propagation to parent handlers.",
+                  "possible_answer": "0",
+                  "length": 42
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "NullHandler",
+          "task_files": {
+            "null_handler.py": {
+              "placeholders": [
+                {
+                  "line": 14,
+                  "start": 4,
+                  "hint": "logger3.addHandler(logging.NullHandler())",
+                  "possible_answer": "logger3.addHandler(logging.NullHandler())",
+                  "length": 29
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Filtering on handler",
+          "task_files": {
+            "filtering_handler.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 11,
+                  "hint": "logging.getLogger()",
+                  "possible_answer": "logging.getLogger()",
+                  "length": 19
+                },
+                {
+                  "line": 9,
+                  "start": 8,
+                  "hint": "handler.addFilter(log_filter)",
+                  "possible_answer": "handler.addFilter(log_filter)",
+                  "length": 30
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Configuration",
+      "task_list": [
+        {
+          "name": "fileConfig formatters",
+          "task_files": {
+            "file_config_formatters.py": {
+              "placeholders": [
+                {
+                  "line": 5,
+                  "start": 5,
+                  "hint": "formatter1\n",
+                  "possible_answer": "formatter1",
+                  "length": 39
+                },
+                {
+                  "line": 13,
+                  "start": 11,
+                  "hint": "formatter1\n",
+                  "possible_answer": "formatter1",
+                  "length": 27
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "fileConfig handlers",
+          "task_files": {
+            "file_config_handlers.py": {
+              "placeholders": [
+                {
+                  "line": 8,
+                  "start": 5,
+                  "hint": "handler1",
+                  "possible_answer": "handler1",
+                  "length": 40
+                },
+                {
+                  "line": 16,
+                  "start": 9,
+                  "hint": "handler1",
+                  "possible_answer": "handler1",
+                  "length": 40
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "fileConfig loggers",
+          "task_files": {
+            "file_config_loggers.py": {
+              "placeholders": [
+                {
+                  "line": 11,
+                  "start": 5,
+                  "hint": "root",
+                  "possible_answer": "root",
+                  "length": 31
+                },
+                {
+                  "line": 21,
+                  "start": 8,
+                  "hint": "root",
+                  "possible_answer": "root",
+                  "length": 34
+                },
+                {
+                  "line": 22,
+                  "start": 9,
+                  "hint": "handler1",
+                  "possible_answer": "handler1",
+                  "length": 30
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "fileConfig multiple handlers",
+          "task_files": {
+            "file_config_multiple_handlers.py": {
+              "placeholders": [
+                {
+                  "line": 11,
+                  "start": 15,
+                  "hint": "file",
+                  "possible_answer": "file",
+                  "length": 32
+                },
+                {
+                  "line": 21,
+                  "start": 9,
+                  "hint": "",
+                  "possible_answer": "file",
+                  "length": 32
+                },
+                {
+                  "line": 27,
+                  "start": 19,
+                  "hint": "file",
+                  "possible_answer": "file",
+                  "length": 32
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "dictConfig",
+          "task_files": {
+            "dict_config.py": {
+              "placeholders": [
+                {
+                  "line": 24,
+                  "start": 30,
+                  "hint": "The \u0027handlers\u0027 section contains a key called \u0027console\u0027, that is the name of the stream handler.",
+                  "possible_answer": "console",
+                  "length": 40
+                },
+                {
+                  "line": 29,
+                  "start": 30,
+                  "hint": "The variable named \"log_config\" contains our logging configuration.",
+                  "possible_answer": "log_config",
+                  "length": 49
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "dictConfig existing loggers",
+          "task_files": {
+            "dict_config_existing_loggers.py": {
+              "placeholders": [
+                {
+                  "line": 27,
+                  "start": 9,
+                  "hint": "The option \u0027disable_existing_loggers\u0027 can be used to override what happens to existing loggers. The default value is \"True\".",
+                  "possible_answer": "disable_existing_loggers",
+                  "length": 21
+                },
+                {
+                  "line": 27,
+                  "start": 33,
+                  "hint": "Since we do not want to disable existing loggers, the value should be \"False\".",
+                  "possible_answer": "False",
+                  "length": 19
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "dictConfig root shortcut",
+          "task_files": {
+            "dict_config_root.py": {
+              "placeholders": [
+                {
+                  "line": 22,
+                  "start": 9,
+                  "hint": "\u0027root\u0027 identifies the root logger.",
+                  "possible_answer": "root",
+                  "length": 25
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Customization",
+      "task_list": [
+        {
+          "name": "JSON Formatter",
+          "task_files": {
+            "json_formatter.py": {
+              "placeholders": [
+                {
+                  "line": 27,
+                  "start": 4,
+                  "hint": "Call handler.setFormatter() passing the formatter object.",
+                  "possible_answer": "rt logging\nimport json\nim",
+                  "length": 32
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Smart memory handler",
+          "task_files": {
+            "smart_memory_handler.py": {
+              "placeholders": [
+                {
+                  "line": 53,
+                  "start": 21,
+                  "hint": "SmartMemoryHandler(capacity\u003d2, target\u003dfile_handler)",
+                  "possible_answer": "t print_function\nimport math\nimport logging\nimport ",
+                  "length": 49
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Database Handler",
+          "task_files": {
+            "db_handler.py": {
+              "placeholders": [
+                {
+                  "line": 24,
+                  "start": 8,
+                  "hint": "emit",
+                  "possible_answer": "emit",
+                  "length": 62
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Injecting data",
+          "task_files": {
+            "inject_filter.py": {
+              "placeholders": [
+                {
+                  "line": 9,
+                  "start": 8,
+                  "hint": "filter",
+                  "possible_answer": "filter",
+                  "length": 51
+                },
+                {
+                  "line": 11,
+                  "start": 15,
+                  "hint": "A non-zero value (1 or True) can be used to allow filter records to be handled.\n",
+                  "possible_answer": "True",
+                  "length": 60
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Best Practices",
+      "task_list": [
+        {
+          "name": "Logger naming",
+          "task_files": {
+            "logger_naming.py": {
+              "placeholders": [
+                {
+                  "line": 4,
+                  "start": 27,
+                  "hint": "In Python, __name__ contains the current module name.",
+                  "possible_answer": "t_functi",
+                  "length": 38
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Private loggers",
+          "task_files": {
+            "private_logger.py": {
+              "placeholders": [
+                {
+                  "line": 30,
+                  "start": 49,
+                  "hint": "the FirstClass logger name was created with __name__ + \u0027.first_class\u0027\n",
+                  "possible_answer": "__)\n\nclass F",
+                  "length": 32
+                },
+                {
+                  "line": 31,
+                  "start": 4,
+                  "hint": "first_logger.setLevel(logging.DEBUG)",
+                  "possible_answer": "rt logging\n\nlogger \u003d logging.getLogg",
+                  "length": 30
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Conditional logging",
+          "task_files": {
+            "conditional_logging.py": {
+              "placeholders": [
+                {
+                  "line": 13,
+                  "start": 4,
+                  "hint": "Add an \"if\" conditional call to isEnabledFor() on the logger object passing in the log level you are about to use.\n",
+                  "possible_answer": "rt logging\nimport time\n\nlogger \u003d loggi",
+                  "length": 54
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Logging in Libraries",
+          "task_files": {
+            "library_logging.py": {
+              "placeholders": [
+                {
+                  "line": 5,
+                  "start": 0,
+                  "hint": "Replace the FileHandler with a NullHandler. NullHandler takes no constructor arguments.",
+                  "possible_answer": "# mortgage library\n#\nimport logging\n\nlog",
+                  "length": 53
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Using the right levels",
+          "task_files": {
+            "right_levels.py": {
+              "placeholders": [
+                {
+                  "line": 11,
+                  "start": 24,
+                  "hint": "Could depend on the application, but first choice would be INFO. Followed by DEBUG if it happens often. Or even WARN if it\u0027s an exception but recoverable case.",
+                  "possible_answer": "e__ ",
+                  "length": 16
+                },
+                {
+                  "line": 13,
+                  "start": 24,
+                  "hint": "If your application can still function without this, or if you can recover, I would mark this as ERROR. But if it\u0027s more serious CRITICAL or FATAL.",
+                  "possible_answer": "e__ \u003d",
+                  "length": 16
+                },
+                {
+                  "line": 15,
+                  "start": 24,
+                  "hint": "Looks like general INFO, since you might want to know this for more than DEBUG purposes. But, DEBUG could be fine too.",
+                  "possible_answer": "e__ ",
+                  "length": 16
+                },
+                {
+                  "line": 17,
+                  "start": 24,
+                  "hint": "Whenever the user enters invalid information, I consider this a WARN, since you might need to investigate why the user might have done this, perhaps due to a usability issue. ",
+                  "possible_answer": "e__ ",
+                  "length": 16
+                },
+                {
+                  "line": 19,
+                  "start": 24,
+                  "hint": "In most application this is so serious you can not continue to function, so this would be CRITICAL or FATAL.",
+                  "possible_answer": "e__ \u003d\u003d \u0027",
+                  "length": 16
+                },
+                {
+                  "line": 21,
+                  "start": 24,
+                  "hint": "This is a low-level operation, so I would consider it DEBUG.",
+                  "possible_answer": "e__ \u003d",
+                  "length": 16
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Using a decorator",
+          "task_files": {
+            "logging_decorator.py": {
+              "placeholders": [
+                {
+                  "line": 15,
+                  "start": 0,
+                  "hint": "A decorator can be added by specifying the @ character before the decorator function name.",
+                  "possible_answer": "import logging\nimp",
+                  "length": 42
+                },
+                {
+                  "line": 22,
+                  "start": 24,
+                  "hint": "the decorator using the DEBUG level, so we must configure the root handler to include that level.",
+                  "possible_answer": "me\nimport functools",
+                  "length": 61
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Just enough context",
+          "task_files": {
+            "context.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 26,
+                  "hint": "It would be useful to know from which service address the connection was refused from.",
+                  "possible_answer": "vice_lookup(ser",
+                  "length": 37
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "description": "This course provides an introduction to the standard Python logging module. \nIt includes basic and advanced examples that can help you debug your Python software. Best practices are demonstrated to help you get the most out of Python logging. \nThis course was tested using Python 2.7 and Python 3.4.\n",
+  "name": "Logging in Python",
+  "authors": [{"name": "John Zurawski"}]
+}

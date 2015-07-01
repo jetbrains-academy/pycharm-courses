@@ -1,0 +1,20 @@
+<html>
+A handler can be removed from a logger using the Logger's removeHandler().
+<br/>
+<br/>
+At some point in your life with the logging module, you will encounter a problem
+with duplicate log messages. The likely cause is an extra handler was inserted
+somewhere in your logger hierarchy. Since log messages are sent up the
+hierarchy to each handler, you can get the same output duplicated. One extremely
+useful module to use in debugging problems like this is the "logging_tree"
+module by Brandon Rhodes. I encourage you to try this module after this course.
+<br/>
+<br/>
+In this code, we are simulating two stream handlers that have been added to
+our logging hierarchy.
+<br/>
+<br/>
+Add the necessary code to leave the root handler, but remove all the handlers
+from the "A.B" logger. Since, removeHandler() takes a handler object, we
+have to get the handler from the handlers attribute on the Logger.
+</html>

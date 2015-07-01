@@ -1,0 +1,15 @@
+<html>
+One thing you should be aware of when working with more advanced handlers, is how the logging system gracefully
+closes and cleans up any resources it is using. For example, if a handler is buffering log messages such as
+the MemoryHandler, then how does the logging system ensure those messages are handled.
+<br/>
+<br/>
+This is done through the "logging.shutdown()" function. The logging module will automatically register this function
+to be called when the interpreter is shutting down. So, normally you shouldn't have to worry about it. However, there
+are some cases where you might want to explicitly shutdown your handlers. For example, if you are debugging your
+handlers "close()" method or the handler is using some resources that may be uninitialized by the time
+the close() method is called.
+<br/>
+<br/>
+In this task, insert the call to explicitly shutdown the logging system.
+</html>

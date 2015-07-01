@@ -1,0 +1,15 @@
+<html>
+If you are calling an expensive function and passing the result to a logging statement, you may want to prevent
+that function from being called unless the current logging level is going to output the log message.
+<br/>
+<br/>
+This can be done by checking the return value from "isEnabledFor()" on the Logger object. This function takes
+the logging level, and if the logger is going to output the message, the return value is True.
+<br/>
+<br/>
+In this example, the root logger level is set to WARNING. We output a debug level log message, passing in the
+result of calculate_expensive_result().  This code executes, even though the debug level message is being filtered out.
+ <br/>
+<br/>
+Add a conditional statement to not log this message if the log level will not apply to the handler.
+</html>

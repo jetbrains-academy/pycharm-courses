@@ -1,0 +1,1 @@
+Add an "if" conditional call to isEnabledFor() on the logger object passing in the log level you are about to use.

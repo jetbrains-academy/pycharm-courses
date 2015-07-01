@@ -1,0 +1,18 @@
+<html>
+The previous tasks have been logging messages through helper functions provided in the logging library and using
+the root Logger.
+<br/>
+<br/>
+Typically you will get local Logger objects for each module and call logging functions on that object. This
+is done by calling "logging.getLogger()" which returns a Logger object for a given name. You should never directly
+create instances of a Logger object.
+<br/>
+<br/>
+Calling "logging.getLogger()" with no arguments, will return the root Logger.
+<br/>
+<br/>
+In this task, we have created a module scoped "logger" instance with the name "mortgage". Replace the logging calls with references to this instance.
+<br/>
+<br/>
+After you execute this code, you should notice the name "mortgage" is now included in the output.
+</html>

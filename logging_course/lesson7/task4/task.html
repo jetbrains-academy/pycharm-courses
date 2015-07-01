@@ -1,0 +1,18 @@
+<html>
+This task demonstrates how you can use a Filter to inject attributes into a LogRecord,
+and then format those attributes using a Formatter. This can be done in the Filter's "filter()" method, which
+is passed the "record" object containing the log attributes.
+<br/>
+<br/>
+This task also demonstrates how a Filter() can be configured using dictConfig(),
+something that is not possible using fileConfig().  In this example,
+the class name is specified directly in Python code.
+<br/>
+<br/>
+In this task, we have defined a "LogUserInjector" filter class. It exposes a public method "set_userid()" that can be
+called to set the current user ID. It stores this value in thread local storage, so each thread of execution can
+maintain a unique value while the thread is running, or until the next call to set the user ID. As log messages in the thread
+are logged, they are passed to our filter. The filter reads the user ID from thread local storage and injects
+this value into the LogRecord. We also added "%(user_id)s" to our formatting string, so every log message will
+contain this attribute.
+</html>

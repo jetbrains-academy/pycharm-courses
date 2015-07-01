@@ -1,0 +1,30 @@
+<html>
+In previous tasks we have manually configured logging objects and we have used basicConfig().
+<br/>
+<br/>
+You can also load logging configuration from a file using "logging.fileConfig()". This function takes the
+filename of a ConfigParser based file.
+<br/>
+<br/>
+For the purpose of this course, we are going to write this file from the task code. In normal circumstances, you
+would maintain this configuration data in a separate file.
+<br/>
+<br/>
+Every logging config file needs to have the following sections: [loggers], [formatters] and [handlers]
+<br/>
+<br/>
+Each section needs a name specified "keys". The value could be one or more additional configuration sections
+you have to create. And each of those is going to contain name/value pairs based on the type of section.
+<br/>
+<br/>
+In the next few tasks we are going to explain this one small step at a time
+<br/>
+<br/>
+In this first task, we need to identify an instance name for a Formatter type object. Use the name "formatter1"
+in this task, although the name is an arbitrary identifier. You just have to use the same whenever you reference
+the same object.
+<br/>
+<br/>
+Notice under the "[formatter_formatter1]" section there is another key/value pair for "format". This is the
+format string we have encountered in previous tasks. This is used to initialize the "formatter1" instance.
+</html>

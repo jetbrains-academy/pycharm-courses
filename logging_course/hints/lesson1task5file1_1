@@ -1,0 +1,1 @@
+Look at the module level "logger" instance as an example, but shadow the logger variable with a new Logger instance with the name 'mortgage.rate'.

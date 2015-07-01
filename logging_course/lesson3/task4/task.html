@@ -1,0 +1,19 @@
+<html>
+In the previous task, you may have noticed the only thing output in our log file was the log message.
+<br/>
+<br/>
+This is because we have no Formatter object set on our handler. In previous examples, we have relied
+on "basicConfig()" to build a formatter for us.
+<br/>
+<br/>
+The Formatter is responsible for taking a LogRecord object and creating a string result that can be used
+by the Handler to output a log message. Each Handler has one Formatter.
+<br/>
+<br/>
+In this task we need to construct a "Formatter" object, passing it our format string. Then we need
+to call "setHandler" on our new file handler instance.
+<br/>
+<br/>
+Note: To see the file "file_handler_with_formatter.log" in your Sandbox, you may have to collapse/expand the "Sandbox" folder in your Project view to
+see the new file created.
+</html>

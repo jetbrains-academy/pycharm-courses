@@ -1,0 +1,25 @@
+<html>
+Up to this point we have been outputting our logging information to stderr (console) output. This is useful for
+small programs, but as the amount of log output increases, it is useful to log the output to a file, so that you
+can go back and search the output for specific information.
+<br/>
+<br/>
+The logging module allows us to setup Handler objects to write the output to different destinations. The FileHandler
+is a built-in Handler object that writes log output to a file.
+<br/>
+<br/>
+In this task we can use the "basicConfig()" function to setup a FileHandler for us automatically. This is done by
+passing the "filename" keyword argument. Use the value of log_filename. The FileHandler created
+is automatically added to the root logger.
+<br/>
+<br/>
+After you successfully run this program, you should see a "basic_file.log" appear under the "Sandbox" folder
+in the Project view.  The Sandbox should appear at the end of your project tree. You can double-click this
+file to see the contents. If the file does not appear, you can try collapsing and expanding the Sandbox folder.
+You should also note that nothing was logged
+to the console, because we replaced the default "stderr" stream handler with a FileHandler.
+<br/>
+<br/>
+If you run this task several times, you will notice the log messages are appended to the existing file every
+time we run the program. This is because the default file mode is to append to the log file.
+</html>

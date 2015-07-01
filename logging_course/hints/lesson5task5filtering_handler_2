@@ -1,0 +1,1 @@
+handler.addFilter(log_filter)

@@ -1,0 +1,1 @@
+call the method 'addHandler' on the root logger instance and pass in the sanitize_filter object.
