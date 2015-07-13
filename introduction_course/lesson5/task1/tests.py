@@ -3,7 +3,7 @@ from test_helper import run_common_tests, passed, failed, get_answer_placeholder
 
 def test_window():
     window = get_answer_placeholders()[0]
-    if "name" in window and "John" in window and "and" in window and "23" in window:
+    if "name" in window and "John" in window and "and" in window and "23" in window and "age" in window:
         passed()
     else:
         failed("Use 'and' keyword and != operator")
