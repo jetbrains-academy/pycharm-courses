@@ -1,0 +1,5 @@
+ENCRYPTED_MESSAGE = 'THEO NERU ALUM PLORK MODUS'
+
+PLAINTEXT_MESSAGE = replace with the decrypted message
+
+print PLAINTEXT_MESSAGE

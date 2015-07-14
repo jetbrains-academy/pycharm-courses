@@ -1,0 +1,5 @@
+ENCRYPTED_MESSAGE = 'XF CVJMU IBM'
+
+PLAINTEXT_MESSAGE = replace with the decrypted value
+
+print PLAINTEXT_MESSAGE

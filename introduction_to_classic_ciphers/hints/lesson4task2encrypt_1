@@ -1,0 +1,3 @@
+use this pattern:
+
+shifted_index = ((index of letter) + key ) % max index of ALPHABET

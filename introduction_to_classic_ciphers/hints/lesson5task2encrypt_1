@@ -1,0 +1,5 @@
+use this pattern:
+shifted_index = x - y
+
+where x is a constant, the max index in ALPHABET; 
+and y is the index of the letter that is to be replaced

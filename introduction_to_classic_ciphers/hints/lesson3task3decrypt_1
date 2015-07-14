@@ -1,0 +1,6 @@
+use the modulo operator in case the key exceeds the index
+
+If the key is 1, then the index will be 1. 
+If the key is 6, then the index to use would be 1.
+
+The divisor is the pre-defined length of each 'word' in the encrypted text.

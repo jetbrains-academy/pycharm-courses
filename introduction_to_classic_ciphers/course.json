@@ -1,0 +1,441 @@
+{
+  "lessons": [
+    {
+      "name": "Introduction",
+      "task_list": [
+        {
+          "name": "Intro",
+          "task_files": {
+            "intro_and_warmup.py": {
+              "task_windows": [
+                {
+                  "line": 2,
+                  "start": 20,
+                  "hint": "lesson1task1intro_and_warmup_1",
+                  "possible_answer": "\u0027HELLO\u0027",
+                  "length": 34
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Code conventions in this course",
+          "task_files": {
+            "conventions.py": {
+              "task_windows": [
+                {
+                  "line": 7,
+                  "start": 22,
+                  "hint": "lesson1task2file1_1",
+                  "possible_answer": "treated_message.replace(\u0027,\u0027, \u0027\u0027)",
+                  "length": 54
+                },
+                {
+                  "line": 13,
+                  "start": 22,
+                  "hint": "lesson1task2file1_2",
+                  "possible_answer": "treated_message.upper()",
+                  "length": 68
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Python Building Blocks for Ciphers",
+      "task_list": [
+        {
+          "name": "Overview \u0026 the for loop",
+          "task_files": {
+            "overview_and_for_loop.py": {
+              "task_windows": [
+                {
+                  "line": 7,
+                  "start": 4,
+                  "hint": "lesson2task1file1_1",
+                  "possible_answer": "c",
+                  "length": 28
+                },
+                {
+                  "line": 7,
+                  "start": 36,
+                  "hint": "lesson2task1file1_2",
+                  "possible_answer": "SECOND_MESSAGE",
+                  "length": 34
+                },
+                {
+                  "line": 8,
+                  "start": 10,
+                  "hint": "lesson2task1file1_3",
+                  "possible_answer": "c",
+                  "length": 23
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Check whether a string contains another",
+          "task_files": {
+            "find_in_string.py": {
+              "task_windows": [
+                {
+                  "line": 10,
+                  "start": 6,
+                  "hint": "lesson2task2find_in_string_1",
+                  "possible_answer": "\u0027World\u0027",
+                  "length": 31
+                },
+                {
+                  "line": 10,
+                  "start": 41,
+                  "hint": "lesson2task2find_in_string_2",
+                  "possible_answer": "MESSAGE",
+                  "length": 38
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Find a substring",
+          "task_files": {
+            "find_in_string_part_2.py": {
+              "task_windows": [
+                {
+                  "line": 20,
+                  "start": 6,
+                  "hint": "lesson2task3find_in_string_part_2_1",
+                  "possible_answer": "MESSAGE",
+                  "length": 33
+                },
+                {
+                  "line": 20,
+                  "start": 45,
+                  "hint": "lesson2task3find_in_string_part_2_2",
+                  "possible_answer": "\u0027World\u0027",
+                  "length": 29
+                },
+                {
+                  "line": 22,
+                  "start": 6,
+                  "hint": "lesson2task3find_in_string_part_2_4",
+                  "possible_answer": "MESSAGE",
+                  "length": 33
+                },
+                {
+                  "line": 22,
+                  "start": 46,
+                  "hint": "lesson2task3find_in_string_part_2_3",
+                  "possible_answer": "\u0027Hello\u0027",
+                  "length": 29
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Extract a substring",
+          "task_files": {
+            "string_slice.py": {
+              "task_windows": [
+                {
+                  "line": 20,
+                  "start": 14,
+                  "hint": "lesson2task4file1_1",
+                  "possible_answer": "7",
+                  "length": 28
+                },
+                {
+                  "line": 20,
+                  "start": 43,
+                  "hint": "lesson2task4file1_2",
+                  "possible_answer": "-1",
+                  "length": 27
+                },
+                {
+                  "line": 23,
+                  "start": 14,
+                  "hint": "lesson2task4file1_3",
+                  "possible_answer": "5",
+                  "length": 28
+                },
+                {
+                  "line": 23,
+                  "start": 43,
+                  "hint": "lesson2task4file1_4",
+                  "possible_answer": "6",
+                  "length": 27
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Find the remainder from dividing 2 numbers",
+          "task_files": {
+            "modulo_operator.py": {
+              "task_windows": [
+                {
+                  "line": 5,
+                  "start": 15,
+                  "hint": "lesson2task5file1_1",
+                  "possible_answer": "%",
+                  "length": 32
+                },
+                {
+                  "line": 9,
+                  "start": 16,
+                  "hint": "lesson2task5file1_2",
+                  "possible_answer": "10",
+                  "length": 24
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Generate randomly-chosen letters",
+          "task_files": {
+            "random_letters.py": {
+              "task_windows": [
+                {
+                  "line": 24,
+                  "start": 46,
+                  "hint": "lesson2task6file1_1",
+                  "possible_answer": "25",
+                  "length": 9
+                },
+                {
+                  "line": 25,
+                  "start": 41,
+                  "hint": "lesson2task6file1_2",
+                  "possible_answer": "random_alphabet_index",
+                  "length": 38
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Null Cipher",
+      "task_list": [
+        {
+          "name": "About",
+          "task_files": {
+            "about.py": {
+              "task_windows": [
+                {
+                  "line": 2,
+                  "start": 20,
+                  "hint": "lesson3task1about_1",
+                  "possible_answer": "\u0027HELLO\u0027",
+                  "length": 34
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "encrypt()",
+          "task_files": {
+            "encrypt.py": {
+              "task_windows": [
+                {
+                  "line": 36,
+                  "start": 16,
+                  "hint": "lesson3task2encrypt_1",
+                  "possible_answer": "random_integer_between_zero_and_twenty_five \u003d random.randint(0,25)\n                word_substitute +\u003d ALPHABET[random_integer_between_zero_and_twenty_five]",
+                  "length": 80
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "decrypt()",
+          "task_files": {
+            "decrypt.py": {
+              "task_windows": [
+                {
+                  "line": 16,
+                  "start": 34,
+                  "hint": "lesson3task3decrypt_1",
+                  "possible_answer": "key % 5",
+                  "length": 66
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Caesar Cipher",
+      "task_list": [
+        {
+          "name": "About",
+          "task_files": {
+            "about.py": {
+              "task_windows": [
+                {
+                  "line": 2,
+                  "start": 20,
+                  "hint": "lesson4task1file1_1",
+                  "possible_answer": "\u0027WE BUILT HAL\u0027",
+                  "length": 32
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "encrypt",
+          "task_files": {
+            "encrypt.py": {
+              "task_windows": [
+                {
+                  "line": 18,
+                  "start": 24,
+                  "hint": "lesson4task2encrypt_1",
+                  "possible_answer": "((index_in_alphabet + key) % len(ALPHABET))",
+                  "length": 63
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "decrypt",
+          "task_files": {
+            "decrypt.py": {
+              "task_windows": [
+                {
+                  "line": 18,
+                  "start": 8,
+                  "hint": "lesson4task3decrypt_1",
+                  "possible_answer": "index_in_alphabet \u003d ALPHABET.find(c)\n        shifted_index \u003d ((index_in_alphabet - key) % len(ALPHABET))\n        decrypted_message +\u003d ALPHABET[shifted_index]",
+                  "length": 48
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atbash Cipher",
+      "task_list": [
+        {
+          "name": "About",
+          "task_files": {
+            "about.py": {
+              "task_windows": [
+                {
+                  "line": 2,
+                  "start": 20,
+                  "hint": "lesson5task1about_1",
+                  "possible_answer": "\u0027COME AT NOON\u0027",
+                  "length": 34
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "encrypt()",
+          "task_files": {
+            "encrypt.py": {
+              "task_windows": [
+                {
+                  "line": 19,
+                  "start": 24,
+                  "hint": "lesson5task2encrypt_1",
+                  "possible_answer": "25 - index_in_alphabet",
+                  "length": 63
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "decrypt()",
+          "task_files": {
+            "decrypt.py": {
+              "task_windows": [
+                {
+                  "line": 18,
+                  "start": 8,
+                  "hint": "lesson5task3decrypt_1",
+                  "possible_answer": "index_in_alphabet \u003d ALPHABET.find(c)\n        shifted_index \u003d 25 - index_in_alphabet  \n        decrypted_message +\u003d ALPHABET[shifted_index]",
+                  "length": 48
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Review: Name the cipher!",
+      "task_list": [
+        {
+          "name": "Question 1",
+          "task_files": {
+            "question_01.py": {
+              "task_windows": [
+                {
+                  "line": 5,
+                  "start": 45,
+                  "hint": "lesson6task1question_01_1",
+                  "possible_answer": "0",
+                  "length": 2
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Question 2",
+          "task_files": {
+            "question_02.py": {
+              "task_windows": [
+                {
+                  "line": 5,
+                  "start": 45,
+                  "hint": "lesson6task2question_02_1",
+                  "possible_answer": "0",
+                  "length": 2
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Question 3",
+          "task_files": {
+            "question_03.py": {
+              "task_windows": [
+                {
+                  "line": 5,
+                  "start": 45,
+                  "hint": "lesson6task3question_03_1",
+                  "possible_answer": "2",
+                  "length": 2
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "description": "Python implementations of classic text ciphers.\n\nAppropriate for python beginners who have had some practice with manipulating strings and lists, writing \u0027for\u0027 loops, and organizing code into functions.",
+  "name": "Introduction to Classic Ciphers",
+  "author": "LisaC"
+}

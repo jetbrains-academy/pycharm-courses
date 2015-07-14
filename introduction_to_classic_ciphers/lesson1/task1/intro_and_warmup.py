@@ -1,0 +1,5 @@
+ENCRYPTED_MESSAGE = 'HIDE ELVES LAST LEFT OPEN'
+
+PLAINTEXT_MESSAGE = replace with the decrypted message
+
+print PLAINTEXT_MESSAGE

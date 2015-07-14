@@ -1,0 +1,41 @@
+<html>
+    The modulo operator (%) finds the remainder from dividing two numbers.
+    <br/>
+    <br/>
+
+    examples:
+    <ul>
+    <li>2 % 2 = 0 (why? there is no remainder when you divide a number by itself)</li>
+    <li>3 % 2 = 1 (why? 2 does not divide evenly into 3. the remainder is 1)</li>
+    <li>12 % 3 = 0 (why? 12 is a multiple of 3)</li>
+    <li>12 % 7 = 5 (why? 12 is not a multiple of 7. the remainder of 12 divided by 7 is 5)</li>
+    </ul>
+    <br/>
+    One application: consider case where you want the 4th element of this list:
+    <br/>
+    &nbsp; &nbsp; my_list = ['a', 'b', 'c']  #  my_list is a list of 3 elements
+
+    <br/><br/>
+    These are true:
+    <ul>
+        <li>the element at index 0 is 'a'</li>
+        <li>the element at index 1 is 'b'</li>
+        <li>the element at index 2 is 'c'</li>
+    </ul>
+    But that's the extent of our list. But if someone didn't know the size of our list and asked for the 4th element, ie the value at index 3, we might use the modulo operator to accommodate his request.
+    That is, we could loop to the beginning of the list and continue our count.
+    <br/>
+    <br/>
+    In that manner, the element at index 3 would be 'a', which is actually at index 0. This can be expressed with the modulo operator:
+    <br/>
+    <br/>
+    &nbsp; &nbsp; [index_within_list] = [desired_index] % [max_index_in_list]
+    <br/>
+    <br/>
+    This will come in handy when we explore the Caesar Cipher.
+<br>
+<br/>
+<hr/>
+<br/>
+Your task: use the modulo operator in these sample cases.
+</html>
