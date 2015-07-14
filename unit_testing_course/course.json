@@ -1,0 +1,241 @@
+{
+  "lessons": [
+    {
+      "name": "Introduction",
+      "task_list": [
+        {
+          "name": "Hello, World!",
+          "task_files": {
+            "hello_world.py": {
+              "task_windows": [
+                {
+                  "line": 2,
+                  "start": 4,
+                  "hint": "lesson1task1hello_world_1",
+                  "possible_answer": "return \"Hello, World!\"",
+                  "length": 24
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Your first unit test",
+          "task_files": {
+            "test_hello_someone.py": {
+              "task_windows": [
+                {
+                  "line": 7,
+                  "start": 8,
+                  "hint": "lesson1task2hello_someone_1",
+                  "possible_answer": "self.assertEqual(hello_someone(\"World\"), \"Hello, World!\")",
+                  "length": 94
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "The possible test results",
+          "task_files": {
+            "possible_test_results.py": {
+              "task_windows": [
+                {
+                  "line": 5,
+                  "start": 8,
+                  "hint": "lesson1task3possible_test_results_1",
+                  "possible_answer": "pass",
+                  "length": 31
+                },
+                {
+                  "line": 8,
+                  "start": 8,
+                  "hint": "lesson1task3possible_test_results_2",
+                  "possible_answer": "self.assertEqual(True, False)",
+                  "length": 28
+                },
+                {
+                  "line": 11,
+                  "start": 8,
+                  "hint": "lesson1task3possible_test_results_3",
+                  "possible_answer": "raise Exception()",
+                  "length": 38
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Assertion Types",
+      "task_list": [
+        {
+          "name": "Assertion Types",
+          "task_files": {
+            "truthiness.py": {
+              "task_windows": [
+                {
+                  "line": 6,
+                  "start": 8,
+                  "hint": "lesson2task1truthiness_1",
+                  "possible_answer": "self.assertFalse(0)",
+                  "length": 16
+                },
+                {
+                  "line": 10,
+                  "start": 8,
+                  "possible_answer": "self.assertTrue(1)",
+                  "length": 16
+                },
+                {
+                  "line": 14,
+                  "start": 8,
+                  "possible_answer": "self.assertTrue(3)",
+                  "length": 16
+                },
+                {
+                  "line": 20,
+                  "start": 19,
+                  "hint": "lesson2task1truthiness_4",
+                  "possible_answer": "False",
+                  "length": 10
+                },
+                {
+                  "line": 30,
+                  "start": 19,
+                  "possible_answer": "False",
+                  "length": 33
+                },
+                {
+                  "line": 31,
+                  "start": 19,
+                  "possible_answer": "True",
+                  "length": 33
+                },
+                {
+                  "line": 34,
+                  "start": 8,
+                  "possible_answer": "self._test_container_class([], [False])",
+                  "length": 49
+                },
+                {
+                  "line": 37,
+                  "start": 8,
+                  "possible_answer": "self._test_container_class((), (False,))",
+                  "length": 49
+                },
+                {
+                  "line": 40,
+                  "start": 8,
+                  "possible_answer": "self._test_container_class(set(), {False})",
+                  "length": 49
+                },
+                {
+                  "line": 43,
+                  "start": 8,
+                  "possible_answer": "self._test_container_class({}, {False: False})",
+                  "length": 49
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Comparison Assertions",
+          "task_files": {
+            "comparison_assertions.py": {
+              "task_windows": [
+                {
+                  "line": 10,
+                  "start": 8,
+                  "possible_answer": "for n_attempt in range(100):\n            value \u003d random_not_42()\n            self.assertNotEqual(value, 42)",
+                  "length": 16
+                },
+                {
+                  "line": 53,
+                  "start": 8,
+                  "hint": "lesson2task2comparison_assertions_5",
+                  "possible_answer": "self.assertIsNotNone(find_foo(\u0027foo\u0027))",
+                  "length": 16
+                },
+                {
+                  "line": 57,
+                  "start": 8,
+                  "hint": "lesson2task2comparison_assertions_6",
+                  "possible_answer": "for s in self.strings_with_foo:\n            self.assertIsNotNone(find_foo(s))",
+                  "length": 16
+                },
+                {
+                  "line": 61,
+                  "start": 8,
+                  "hint": "lesson2task2comparison_assertions_7",
+                  "possible_answer": "for s in self.strings_without_foo:\n            self.assertIsNone(find_foo(s))",
+                  "length": 16
+                },
+                {
+                  "line": 73,
+                  "start": 12,
+                  "possible_answer": "self.assertGreaterEqual(value, start)\n            self.assertLessEqual(value, end)",
+                  "length": 24
+                },
+                {
+                  "line": 85,
+                  "start": 12,
+                  "possible_answer": "self.assertGreater(value, start)\n            self.assertLess(value, end)",
+                  "length": 24
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Container Assertions",
+          "task_files": {
+            "container_assertions.py": {
+              "task_windows": [
+                {
+                  "line": 70,
+                  "start": 8,
+                  "possible_answer": "self.assertCountEqual(random_shuffle([]), [])",
+                  "length": 20
+                },
+                {
+                  "line": 74,
+                  "start": 8,
+                  "hint": "lesson2task3container_assertions_4",
+                  "possible_answer": "for i in range(10):\n            self.assertEqual(len(random_shuffle(list(range(i)))), i)",
+                  "length": 20
+                },
+                {
+                  "line": 79,
+                  "start": 8,
+                  "hint": "lesson2task3container_assertions_3",
+                  "possible_answer": "self.assertCountEqual(random_shuffle(values), values)",
+                  "length": 20
+                },
+                {
+                  "line": 83,
+                  "start": 8,
+                  "hint": "lesson2task3container_assertions_2",
+                  "possible_answer": "values \u003d list(range(100))\n        self.assertNotEqual(random_shuffle(values), values)",
+                  "length": 20
+                },
+                {
+                  "line": 87,
+                  "start": 8,
+                  "hint": "lesson2task3container_assertions_5",
+                  "possible_answer": "values \u003d list(range(100))\n        random_shuffle(values)\n        self.assertEqual(values, list(range(100)))",
+                  "length": 20
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "description": "An introductory interactive course about unit testing in Python.",
+  "name": "Python Unit-Testing Course",
+  "author": "taleinat"
+}

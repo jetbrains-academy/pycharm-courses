@@ -1,0 +1,1 @@
+A test is erroneous if it raises an exception (without catching it)

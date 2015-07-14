@@ -1,0 +1,32 @@
+<html>
+<p>
+    Several assertion methods are especially useful for working with containers.
+</p>
+<p>
+    <strong><code>assertIn(x, container)</code></strong> and
+    <strong><code>assertNotIn(x, container)</code></strong>
+    check whether x is (or isn't) in the container.
+    If the assertion fails, you will get a much more informative message then if
+    you had just used <code>self.assertTrue(x in container)</code>.
+</p>
+<p>
+    Even more useful is <strong><code>assertCountEqual(a, b)</code></strong>.
+    Often, when the result of some code is a container, we want to check that its
+    contents are identical to a known collection of values, <em>regardless of order</em>.
+    <code>assertCountEqual</code> takes care of the details, and makes sure that the
+    items in both containers are the same. Specifically, <code>assertCountEqual</code>
+    makes sure that values which appear more than once in the containers appear the
+    same number of times; hence its name.
+</p>
+<p>
+    In most cases, when checking the values in a container, we <em>should</em> ignore
+    the order in which they are returned. Except, of course, if their order matters;
+    in this case, just use <code>assertEqual</code> instead.
+</p>
+<h2>Your objective:</h2>
+<p>
+    Implement the following test methods, so that the tests all pass for the
+    <code>random_shuffle()</code> function, but at least one test fails for
+    each of the broken implementations.
+</p>
+</html>

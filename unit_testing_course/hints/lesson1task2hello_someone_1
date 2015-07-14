@@ -1,0 +1,1 @@
+use self.assertEqual() to compare the function output to the expected value

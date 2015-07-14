@@ -1,0 +1,56 @@
+<html>
+<p>
+    So far we've been using self.assertEqual() in our tests to check expected results.
+    There are many other such assertion methods available.
+    Let's explore them!
+</p>
+<p>
+    The most basic assertion method is assertTrue().
+    It is called with a single argument and simply checks whether it is true.
+    (It actually checks whether a value is "truthy", i.e. considered true in a boolean context. See details below.)
+</p>
+<p>
+    It is possible to write tests using only assertTrue().
+    For example, instead of using assertEqual(a, b), we could use assertTrue(a == b).
+    However, using more specific assertions brings many benefits:
+    <ul>
+        <li>More detailed information upon test failure</li>
+        <li>Improved test code readability</li>
+        <li>Non-trivial assertions save time and effort</li>
+    </ul>
+</p>
+<p>
+    In this lesson, we'll explore many of the different assertions available.
+    Note that you can always look through
+    <a href="https://docs.python.org/3/library/unittest.html#assert-methods">
+        the full list of available assertion methods
+    </a>.
+</p>
+<h3>What does "truthy" mean?</h3>
+<p>
+    In Python, many values are considered either true or false when in a boolean context,
+    e.g. when used as the condition of an "if" statement.
+    For example, the integer zero is considered false, while all other integers are considered true.
+    Most containers are considered false when empty and true when non-empty.
+    You can check whether a value is "truthy" by passing it to the bool() function.
+    For example, bool([1,2,3]) == True, and bool([]) == False.
+</p>
+<h3>Re-using test code</h3>
+<p>
+    The principles for writing test code are slightly different than when writing "normal" code.
+    For example, tests should be written in the most straight-forward manner possible,
+    so that what they test and how is as easy to understand as possible. This is so that when
+    a test fails, it is easy to figure out what is causing the failure.
+</p>
+<p>
+    To achieve this, it is often better to duplicate some code rather than create abstractions for
+    everything. But, of course, it is a bad idea to duplicate large and complex code many times.
+    In such cases, the simplest and most useful thing to do is to create helper methods in the
+    TestCase class. In the following exercise, you will work with an example of this.
+</p>
+<h2>Your objective:</h2>
+<p>
+    Implement the following tests which check the "truthiness" of various values.
+    Use only assertTrue and assertFalse.
+</p>
+</html>
