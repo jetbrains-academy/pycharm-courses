@@ -11,17 +11,6 @@ def test_window():
     else:
         failed("Print the current date")
 
-
-def test_current_date():
-    output = get_file_output()
-    import datetime
-    now = str(datetime.datetime.today())[:10]
-    if output[0].startswith(now):
-        passed()
-    else:
-        failed("Print the current date")
-
 if __name__ == '__main__':
     run_common_tests()
     test_window()
-    test_current_date()

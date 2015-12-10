@@ -12,17 +12,7 @@ def test_value():
     else:
         failed("Sorry, the wrong string is printed")
 
-def test_escaping():
-    window = get_answer_placeholders()[0]
-
-    value = "The name of this ice-cream is \\\"Sweeet\\\'n\\\'Tasty\\\""
-
-    if value in window:
-        failed("There is no need to escape double quote in single quoted string")
-    else:
-        passed()
 
 if __name__ == '__main__':
     run_common_tests()
-    test_escaping()
     test_value()

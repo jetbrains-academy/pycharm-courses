@@ -8,7 +8,6 @@ def get_file_text(path):
     file_io.close()
     return text
 
-
 def get_file_output(encoding="utf-8", path=sys.argv[-1]):
     """
     Returns answer file output
@@ -187,3 +186,5 @@ def run_common_tests(error_text="Please, reload file and try again"):
     test_is_not_empty()
     test_answer_placeholders_text_deleted()
     test_file_importable()
+
+
