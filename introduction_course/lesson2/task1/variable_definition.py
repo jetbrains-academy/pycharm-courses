@@ -4,5 +4,5 @@ print("b = " + str(b))
 
 greetings = "greetings"
 print("greetings = " + str(greetings))
-greetings = another value
+greetings = 5
 print("greetings = " + str(greetings))

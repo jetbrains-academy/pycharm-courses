@@ -1,1 +1,0 @@
-Use logging.NOTSET which is the lowest possible severity level.

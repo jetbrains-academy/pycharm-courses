@@ -22,7 +22,7 @@ class DatabaseHandler(logging.Handler):
             logging.info('database filename=%s already exists', filename)
 
 
-    def insert the method name used by a handler to output log records(self, record):
+    def emit(self, record):
         if self.db:
             timestring = datetime.datetime.utcfromtimestamp(record.created).isoformat() + 'Z'
             message = record.msg % record.args

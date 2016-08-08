@@ -19,11 +19,11 @@ if __name__ == '__main__':
     c_log = logging.getLogger('A.B.C')
     c_log.warn('This message should be output once to console (but is output twice instead)')
 
-    b_log = logging.getLogger(enter the logger name)
+    b_log = logging.getLogger('A.B')
 
     # Remove all handlers attached to logger
     while len(b_log.handlers):
         handler = b_log.handlers[0]
-        insert code to remove handler from A.B logger
+        b_log.removeHandler(handler)
 
     c_log.warn('This message should be output once to console')

@@ -25,7 +25,7 @@ def test_window3():
 def test_function():
     try:
         my_file = import_task_file()
-        if my_file.fib(10) == [0, 1, 1, 2, 3, 5, 8]:
+        if hasattr(my_file, "fib") and my_file.fib(10) == [1, 1, 2, 3, 5, 8]:
             passed()
         else:
             failed("Check your function for n = 10")

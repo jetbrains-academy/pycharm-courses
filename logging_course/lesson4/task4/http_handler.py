@@ -38,7 +38,7 @@ if __name__ == '__main__':
     fmt = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
     file_handler.setFormatter(fmt)
 
-    http_handler = logging.handlers.name of http handler(host='127.0.0.1enter host and port                                          url='enter the url',
+    http_handler = logging.handlers.HTTPHandler(host='127.0.0.1127.0.0.1:8080                                          url='/',
                                                 method='GET')
 
     root_logger = logging.getLogger()

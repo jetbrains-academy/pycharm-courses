@@ -6,7 +6,7 @@ config = """
 keys=formatter1
 
 [handlers]
-keys=enter instance name for a handler object
+keys=handler1
 
 [loggers]
 keys=root
@@ -14,7 +14,7 @@ keys=root
 [formatter_formatter1]
 format=%(asctime)s %(levelname)s %(message)s
 
-[handler_enter instance name for a handler object]
+[handler_handler1]
 class=StreamHandler
 args=()
 formatter=formatter1

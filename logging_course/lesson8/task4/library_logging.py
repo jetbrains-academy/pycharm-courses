@@ -3,7 +3,7 @@
 import logging
 
 logger = logging.getLogger(__name__)
-logger.addHandler(logging.FileHandler('library.log'))
+logger.addHandler(logging.NullHandler())
 
 def get_current_rate(years):
     logger.debug('Fetching current interest rate for %d years', years)

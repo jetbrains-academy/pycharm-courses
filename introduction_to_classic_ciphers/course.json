@@ -1,18 +1,22 @@
 {
   "lessons": [
     {
-      "name": "Introduction",
+      "id": 12328,
+      "title": "Introduction",
       "task_list": [
         {
           "name": "Intro",
+          "stepic_id": 35194,
           "task_files": {
             "intro_and_warmup.py": {
-              "task_windows": [
+              "name": "intro_and_warmup.py",
+              "text": "ENCRYPTED_MESSAGE \u003d \u0027HIDE ELVES LAST LEFT OPEN\u0027\n\nPLAINTEXT_MESSAGE \u003d replace with the decrypted message\n\nprint PLAINTEXT_MESSAGE",
+              "placeholders": [
                 {
-                  "line": 2,
-                  "start": 20,
-                  "hint": "lesson1task1intro_and_warmup_1",
+                  "hint": "Take the first letter from each word of ENCRYPTED_MESSAGE.",
+                  "additional_hints": [],
                   "possible_answer": "\u0027HELLO\u0027",
+                  "offset": 69,
                   "length": 34
                 }
               ]
@@ -21,21 +25,24 @@
         },
         {
           "name": "Code conventions in this course",
+          "stepic_id": 35195,
           "task_files": {
             "conventions.py": {
-              "task_windows": [
+              "name": "conventions.py",
+              "text": "def pre_treat_message(message):\n    \"\"\" removes punctuation (:;,.?!) and converts message to upper case \"\"\"\n    treated_message \u003d message\n\n    # remove punctuation, one symbol at a time\n    treated_message \u003d treated_message.replace(\u0027:\u0027, \u0027\u0027)  # remove colons\n    treated_message \u003d treated_message.replace(\u0027;\u0027, \u0027\u0027)  # remove semicolons\n    treated_message \u003d insert code that removes the commas in treated_message  # remove commas\n    treated_message \u003d treated_message.replace(\u0027.\u0027, \u0027\u0027)  # remove periods\n    treated_message \u003d treated_message.replace(\u0027?\u0027, \u0027\u0027)  # remove question marks\n    treated_message \u003d treated_message.replace(\u0027!\u0027, \u0027\u0027)  # remove exclamation points\n\n    # convert to uppercase\n    treated_message \u003d add the code will return an all-uppercase version of treated_message\n\n    return treated_message\n\n\nMESSAGE_ONE \u003d \u0027Hello, World!\u0027\nMESSAGE_TWO \u003d \u0027He purchased three items: bread, eggs, and milk.\u0027\nMESSAGE_THREE \u003d \u0027Does he have the tickets?\u0027\n\n# do not modify this file beyond this point\nprint pre_treat_message(MESSAGE_ONE)\nprint pre_treat_message(MESSAGE_TWO)\nprint pre_treat_message(MESSAGE_THREE)",
+              "placeholders": [
                 {
-                  "line": 7,
-                  "start": 22,
-                  "hint": "lesson1task2file1_1",
+                  "hint": "use replace() to replace all commas with an empty string \n",
+                  "additional_hints": [],
                   "possible_answer": "treated_message.replace(\u0027,\u0027, \u0027\u0027)",
+                  "offset": 356,
                   "length": 54
                 },
                 {
-                  "line": 13,
-                  "start": 22,
-                  "hint": "lesson1task2file1_2",
+                  "hint": "invoke upper() on treated_message\n",
+                  "additional_hints": [],
                   "possible_answer": "treated_message.upper()",
+                  "offset": 715,
                   "length": 68
                 }
               ]
@@ -45,32 +52,36 @@
       ]
     },
     {
-      "name": "Python Building Blocks for Ciphers",
+      "id": 12329,
+      "title": "Python Building Blocks for Ciphers",
       "task_list": [
         {
           "name": "Overview \u0026 the for loop",
+          "stepic_id": 35196,
           "task_files": {
             "overview_and_for_loop.py": {
-              "task_windows": [
+              "name": "overview_and_for_loop.py",
+              "text": "# this loop allows us to look at a message, one character at a time\nFIRST_MESSAGE \u003d \u0027It is raining.\u0027\nfor i in FIRST_MESSAGE:\n    print i\n\n# your task: fill in the missing pieces so that the for loop prints the value of SECOND_MESSAGE, one character at a time\nSECOND_MESSAGE \u003d \u0027It is snowing.\u0027\nfor replace this with a variable in replace with the string to process:\n    print replace with a variable",
+              "placeholders": [
                 {
-                  "line": 7,
-                  "start": 4,
-                  "hint": "lesson2task1file1_1",
+                  "hint": "follow the pattern used for FIRST_MESSAGE\n",
+                  "additional_hints": [],
                   "possible_answer": "c",
+                  "offset": 297,
                   "length": 28
                 },
                 {
-                  "line": 7,
-                  "start": 36,
-                  "hint": "lesson2task1file1_2",
+                  "hint": "follow the pattern used for FIRST_MESSAGE\n",
+                  "additional_hints": [],
                   "possible_answer": "SECOND_MESSAGE",
+                  "offset": 329,
                   "length": 34
                 },
                 {
-                  "line": 8,
-                  "start": 10,
-                  "hint": "lesson2task1file1_3",
+                  "hint": "follow the pattern used for FIRST_MESSAGE\n",
+                  "additional_hints": [],
                   "possible_answer": "c",
+                  "offset": 375,
                   "length": 23
                 }
               ]
@@ -79,21 +90,24 @@
         },
         {
           "name": "Check whether a string contains another",
+          "stepic_id": 35197,
           "task_files": {
             "find_in_string.py": {
-              "task_windows": [
+              "name": "find_in_string.py",
+              "text": "MESSAGE \u003d \u0027Hello, World\u0027\n\n# use this pattern:   [substring] in [string_to_search]\nprint \u0027Hello\u0027 in MESSAGE  # True\nprint \u0027HELLO\u0027 in MESSAGE  # False (note: case-sensitive)\nprint \u0027o\u0027 in MESSAGE  # True\nprint \u0027Zebra\u0027 in MESSAGE  # False\n\n\n# fill in the code so that it prints whether \u0027World\u0027 is a substring in MESSAGE\nprint replace with the string to find in replace with the string being searched\n",
+              "placeholders": [
                 {
-                  "line": 10,
-                  "start": 6,
-                  "hint": "lesson2task2find_in_string_1",
+                  "hint": "replace with \u0027World\u0027. Please note, it\u0027s case-sensitive.\n",
+                  "additional_hints": [],
                   "possible_answer": "\u0027World\u0027",
+                  "offset": 322,
                   "length": 31
                 },
                 {
-                  "line": 10,
-                  "start": 41,
-                  "hint": "lesson2task2find_in_string_2",
+                  "hint": "replace with MESSAGE\n",
+                  "additional_hints": [],
                   "possible_answer": "MESSAGE",
+                  "offset": 357,
                   "length": 38
                 }
               ]
@@ -102,35 +116,38 @@
         },
         {
           "name": "Find a substring",
+          "stepic_id": 35198,
           "task_files": {
             "find_in_string_part_2.py": {
-              "task_windows": [
+              "name": "find_in_string_part_2.py",
+              "text": "# use find() to get the index in the string at which the substring starts.\nMESSAGE \u003d \u0027Hello, World! Hello!\u0027\n\n# for substring \u0027Hello\u0027, it\u0027s at index 0 that we see the match.\n# for substring \u0027ello\u0027, it\u0027s at index 1 that we see the  match.\nprint \u0027-- general cases --\u0027\nprint MESSAGE.find(\u0027Hello\u0027)\nprint MESSAGE.find(\u0027ello\u0027)\nprint MESSAGE.find(\u0027Zebra\u0027)  # returns -1, because the substring was not found\n\n\n# note, find() starts its search from left and moves to the right, returning the first match it sees;\n# to return the last match in the string, you could rfind() to run the search from right to left\nprint \u0027-- find() vs rfind() --\u0027\nprint MESSAGE.find(\u0027o\u0027)  # the first instance, when you move left to right\nprint MESSAGE.rfind(\u0027o\u0027)  # the first instance, when you move from right to left\n\n\nprint \u0027-- review --\u0027\n# print the index at which \u0027World\u0027 starts in MESSAGE\nprint replace with the string to search.find(replace with the word to find)\n# print the index of the last (ie right-most) match of \u0027Hello\u0027 in MESSAGE\nprint replace with the string to search.rfind(replace with the word to find)\n",
+              "placeholders": [
                 {
-                  "line": 20,
-                  "start": 6,
-                  "hint": "lesson2task3find_in_string_part_2_1",
+                  "hint": "use variable MESSAGE\n",
+                  "additional_hints": [],
                   "possible_answer": "MESSAGE",
+                  "offset": 870,
                   "length": 33
                 },
                 {
-                  "line": 20,
-                  "start": 45,
-                  "hint": "lesson2task3find_in_string_part_2_2",
+                  "hint": "use string \u0027World\u0027\n",
+                  "additional_hints": [],
                   "possible_answer": "\u0027World\u0027",
+                  "offset": 909,
                   "length": 29
                 },
                 {
-                  "line": 22,
-                  "start": 6,
-                  "hint": "lesson2task3find_in_string_part_2_4",
+                  "hint": "use variable MESSAGE\n",
+                  "additional_hints": [],
                   "possible_answer": "MESSAGE",
+                  "offset": 1020,
                   "length": 33
                 },
                 {
-                  "line": 22,
-                  "start": 46,
-                  "hint": "lesson2task3find_in_string_part_2_3",
+                  "hint": "use string \u0027World\u0027\n",
+                  "additional_hints": [],
                   "possible_answer": "\u0027Hello\u0027",
+                  "offset": 1060,
                   "length": 29
                 }
               ]
@@ -139,35 +156,38 @@
         },
         {
           "name": "Extract a substring",
+          "stepic_id": 35199,
           "task_files": {
             "string_slice.py": {
-              "task_windows": [
+              "name": "string_slice.py",
+              "text": "MESSAGE \u003d \u0027Hello, World!\u0027\n\nprint \u0027-- slicing with the start index --\u0027\nprint MESSAGE[1:]  # extract the substring that starts with the character at index 1\nprint MESSAGE[3:]  # extract the substring that starts with the character at index 3\n\n\nprint \u0027-- slicing with the stop index --\u0027\nprint MESSAGE[:2]  # extract the substring that stops at (does not include) the character at index 2\nprint MESSAGE[:11]  # extract the substring that stops at (does not include) the character at index 11\nprint MESSAGE[: len(MESSAGE)-2]  # note: len(MESSAGE) returns the number of characters in MESSAGE\nprint MESSAGE[:-2]  # extract the substring that goes up to, but does not include, the final 2 characters\n\nprint \u0027-- slicing with a start and stop index ---\u0027\nprint MESSAGE[1:-1]\nprint MESSAGE[4:9]\nprint MESSAGE[4:-4]\n\nprint \u0027-- review ---\u0027\n# fill in the index values so that only the \u0027World\u0027 part of MESSAGE gets printed\nprint MESSAGE[replace with the start index:replace with the stop index]\n\n# fill in the index values so that only the \u0027,\u0027 part of MESSAGE gets printed\nprint MESSAGE[replace with the start index:replace with the stop index]\n\n\n\n",
+              "placeholders": [
                 {
-                  "line": 20,
-                  "start": 14,
-                  "hint": "lesson2task4file1_1",
+                  "hint": "replace with the index of \u0027W\u0027 in MESSAGE\n",
+                  "additional_hints": [],
                   "possible_answer": "7",
+                  "offset": 921,
                   "length": 28
                 },
                 {
-                  "line": 20,
-                  "start": 43,
-                  "hint": "lesson2task4file1_2",
+                  "hint": "replace with the index of \u0027!\u0027, which is the first character that follows \u0027World\u0027 in MESSAGE\n",
+                  "additional_hints": [],
                   "possible_answer": "-1",
+                  "offset": 950,
                   "length": 27
                 },
                 {
-                  "line": 23,
-                  "start": 14,
-                  "hint": "lesson2task4file1_3",
+                  "hint": "replace with the index of \u0027,\u0027 in MESSAGE\n",
+                  "additional_hints": [],
                   "possible_answer": "5",
+                  "offset": 1071,
                   "length": 28
                 },
                 {
-                  "line": 23,
-                  "start": 43,
-                  "hint": "lesson2task4file1_4",
+                  "hint": "replace with a value that is the start index + 1 (as we wish to capture just 1 character)\n",
+                  "additional_hints": [],
                   "possible_answer": "6",
+                  "offset": 1100,
                   "length": 27
                 }
               ]
@@ -176,21 +196,24 @@
         },
         {
           "name": "Find the remainder from dividing 2 numbers",
+          "stepic_id": 35200,
           "task_files": {
             "modulo_operator.py": {
-              "task_windows": [
+              "name": "modulo_operator.py",
+              "text": "print \u0027-- the remainder after dividing 7 by 2 ---\u0027\nremainder \u003d 7 % 2\nprint remainder\n\nprint \u0027-- the remainder after dividing 10 by 3 ---\u0027\nremainder \u003d 10 replace with the modulo operator 3\nprint remainder\n\nprint \u0027-- the remainder after dividing 3 by 10 ---\u0027\nremainder \u003d 3 % replace with the divisor\nprint remainder\n\n\n\n\n\n",
+              "placeholders": [
                 {
-                  "line": 5,
-                  "start": 15,
-                  "hint": "lesson2task5file1_1",
+                  "hint": "use \u0027%\u0027",
+                  "additional_hints": [],
                   "possible_answer": "%",
+                  "offset": 153,
                   "length": 32
                 },
                 {
-                  "line": 9,
-                  "start": 16,
-                  "hint": "lesson2task5file1_2",
+                  "hint": "use value 10",
+                  "additional_hints": [],
                   "possible_answer": "10",
+                  "offset": 273,
                   "length": 24
                 }
               ]
@@ -199,21 +222,24 @@
         },
         {
           "name": "Generate randomly-chosen letters",
+          "stepic_id": 35201,
           "task_files": {
             "random_letters.py": {
-              "task_windows": [
+              "name": "random_letters.py",
+              "text": "import random\n\n# print a random value between 0 and 2 (includes 0 and 2).\n# we\u0027ll repeat it a few times. Observe the variation in the values printed to the console.\nprint \u0027-- picking a random integer between 0 and 2 (inclusive) ---\u0027\nprint random.randint(0, 2)\nprint random.randint(0, 2)\nprint random.randint(0, 2)\nprint random.randint(0, 2)\nprint random.randint(0, 2)\n\n\n# if we\u0027re careful about the bounds, we can treat that random integer as index in a string...\n# here, we get a randomly-chosen integer between 0 and 25, and print the letter at the corresponding index in ALPHABET\nprint \u0027-- picking a random letter ---\u0027\nALPHABET \u003d \u0027ABCDEFGHIJKLMNOPQRSTUVWXYZ\u0027\nrandom_integer \u003d random.randint(0, 25)  # 25 is the highest index value in ALPHABET\nprint ALPHABET[random_integer]\n\n# and a step further, we could create a string of random letters...\n# review exercise: print a string of 10 randomly-chosen letters\nprint \u0027-- picking a string of 10 random letters ---\u0027\nstring_of_random_letters \u003d \u0027\u0027\nfor i in range(0, 10):\n    random_alphabet_index \u003d random.randint(0, max value)\n    string_of_random_letters +\u003d ALPHABET[replace with the randomly-chosen index]\n\nprint string_of_random_letters",
+              "placeholders": [
                 {
-                  "line": 24,
-                  "start": 46,
-                  "hint": "lesson2task6file1_1",
+                  "hint": "replace with the highest possible index value in ALPHABET\n",
+                  "additional_hints": [],
                   "possible_answer": "25",
+                  "offset": 1062,
                   "length": 9
                 },
                 {
-                  "line": 25,
-                  "start": 41,
-                  "hint": "lesson2task6file1_2",
+                  "hint": "use variable random_alphabet_index\n",
+                  "additional_hints": [],
                   "possible_answer": "random_alphabet_index",
+                  "offset": 1114,
                   "length": 38
                 }
               ]
@@ -223,18 +249,22 @@
       ]
     },
     {
-      "name": "Null Cipher",
+      "id": 12330,
+      "title": "Null Cipher",
       "task_list": [
         {
           "name": "About",
+          "stepic_id": 35202,
           "task_files": {
             "about.py": {
-              "task_windows": [
+              "name": "about.py",
+              "text": "ENCRYPTED_MESSAGE \u003d \u0027THEO NERU ALUM PLORK MODUS\u0027\n\nPLAINTEXT_MESSAGE \u003d replace with the decrypted message\n\nprint PLAINTEXT_MESSAGE",
+              "placeholders": [
                 {
-                  "line": 2,
-                  "start": 20,
-                  "hint": "lesson3task1about_1",
+                  "hint": "For key\u003d1, take the letter at index 1 in each word. Remember that we count starting with zero.\n",
+                  "additional_hints": [],
                   "possible_answer": "\u0027HELLO\u0027",
+                  "offset": 70,
                   "length": 34
                 }
               ]
@@ -243,14 +273,17 @@
         },
         {
           "name": "encrypt()",
+          "stepic_id": 35203,
           "task_files": {
             "encrypt.py": {
-              "task_windows": [
+              "name": "encrypt.py",
+              "text": "from pre_treat_message import pre_treat_message\nimport random\n\nALPHABET \u003d \u0027ABCDEFGHIJKLMNOPQRSTUVWXYZ\u0027\n\n\ndef encrypt(message, key):\n    \"\"\" apply the null cipher, where the key tells at what index the letters of the plaintext should be hidden in each\n    word* of the encrypted text. the \u0027words\u0027 generated by this function will be 5-letter long strings of randomly-chosen letters\n\n    for instance here, are valid encryptions:\n        - for key\u003d0, HIGH could be encrypted as HITOW IPSLO GOPES HYTER\n        - for key\u003d2, NOON could be encrypted as TUNDE ODOWT ROOWT PUNDT\n    \"\"\"\n\n    message \u003d pre_treat_message(message) # convert to uppercase and remove punctuation\n\n    word_substitutes \u003d []  # store the words here\n\n    # assemble the disguised message by going through each letter of the plaintext\n    # and replacing it with a random 5-letter string that has that character in the key position\n\n    for c in message:\n        if c not in ALPHABET:  # for our implementation, we won\u0027t bother trying to encrypt values not in ALPHABET\n            continue\n\n        # which index of the 5-letter string should match the plaintext?\n        index_of_plaintext \u003d key % 5  # use the modulo operator so that we can \"wrap\" large keys into an index that exists in the 5-letter string\n\n        # generate a 5-letter string that has random values for all positions except for index_of_plaintext\n        word_substitute \u003d \u0027\u0027\n        for i in range(0,5):\n            if i \u003d\u003d index_of_plaintext:\n                word_substitute +\u003d c\n            else:\n                # add a randomly-picked letter to word_substitute\n                replace with code that randomly picks a letter and appends it to word_substitute\n\n        word_substitutes.append(word_substitute)\n\n    return \u0027 \u0027.join(word_substitutes)  # return the words as a single string, with words separated by a space\n\n# do not modify this file beyond this point\nMESSAGE \u003d \u0027Strike at dawn.\u0027\n\nprint encrypt(MESSAGE, 1)  # encrypt the message with a key of 1\nprint encrypt(MESSAGE, 3)  # encrypt the message with a key of 3\n\n",
+              "placeholders": [
                 {
-                  "line": 36,
-                  "start": 16,
-                  "hint": "lesson3task2encrypt_1",
+                  "hint": "use random.randint(0,25) to select an integer that can be used as an index in ALPHABET\n",
+                  "additional_hints": [],
                   "possible_answer": "random_integer_between_zero_and_twenty_five \u003d random.randint(0,25)\n                word_substitute +\u003d ALPHABET[random_integer_between_zero_and_twenty_five]",
+                  "offset": 1621,
                   "length": 80
                 }
               ]
@@ -259,14 +292,17 @@
         },
         {
           "name": "decrypt()",
+          "stepic_id": 35204,
           "task_files": {
             "decrypt.py": {
-              "task_windows": [
+              "name": "decrypt.py",
+              "text": "from pre_treat_message import pre_treat_message\n\nALPHABET \u003d \u0027ABCDEFGHIJKLMNOPQRSTUVWXYZ\u0027\n\n\ndef decrypt(message, key):\n    \"\"\" apply the null cipher, where the key tells at what index the letters of the plaintext are hidden in each\n    5-letter \u0027word\u0027 of the encrypted text\n    \"\"\"\n    message \u003d pre_treat_message(message)  # convert to uppercase and remove punctuation\n\n    words_in_message \u003d message.split()\n\n    decrypted_message \u003d \u0027\u0027\n\n    for word in words_in_message:\n        decrypted_message +\u003d word[replace with logic that computes the index of the plaintext letter]  # find the letter whose index is equal to the key\n\n    return decrypted_message\n\n# do not modify this file beyond this point\nENCRYPTED_MESSAGE_ONE \u003d \u0027KPDJT XLFEI UEVUP NATCZ JSNOF QEPLK NOATG SRUVS RDMBU DEOCA ORSIY JAMLB RPNZN CIJIG HZIZJ RZJML SAFMZ\u0027\nENCRYPTED_MESSAGE_TWO \u003d \u0027QWICU HYTWX VMIAE FMSEL SKEVT NVXMP RNPJI KJEME JKNKW IMSDM BTIWG PWVNZ OCEMT\u0027\n\nprint decrypt(ENCRYPTED_MESSAGE_ONE, 1)  # decrypt the message using a key of 1\nprint decrypt(ENCRYPTED_MESSAGE_TWO, 7)  # decrypt the message using a key of 7\n",
+              "placeholders": [
                 {
-                  "line": 16,
-                  "start": 34,
-                  "hint": "lesson3task3decrypt_1",
+                  "hint": "use the modulo operator in case the key exceeds the index\n\nIf the key is 1, then the index will be 1. \nIf the key is 6, then the index to use would be 1.\n\nThe divisor is the pre-defined length of each \u0027word\u0027 in the encrypted text.\n",
+                  "additional_hints": [],
                   "possible_answer": "key % 5",
+                  "offset": 506,
                   "length": 66
                 }
               ]
@@ -276,18 +312,22 @@
       ]
     },
     {
-      "name": "Caesar Cipher",
+      "id": 12331,
+      "title": "Caesar Cipher",
       "task_list": [
         {
           "name": "About",
+          "stepic_id": 35205,
           "task_files": {
             "about.py": {
-              "task_windows": [
+              "name": "about.py",
+              "text": "ENCRYPTED_MESSAGE \u003d \u0027XF CVJMU IBM\u0027\n\nPLAINTEXT_MESSAGE \u003d replace with the decrypted value\n\nprint PLAINTEXT_MESSAGE",
+              "placeholders": [
                 {
-                  "line": 2,
-                  "start": 20,
-                  "hint": "lesson4task1file1_1",
+                  "hint": "replace each letter in the encrypted message with the letter 1 position to the left of that letter in the alphabet \n(ie the letter immediately preceding it in the alphabet).\n\nAs a starting point, \u0027XF\u0027 --\u003e \u0027WE\u0027",
+                  "additional_hints": [],
                   "possible_answer": "\u0027WE BUILT HAL\u0027",
+                  "offset": 56,
                   "length": 32
                 }
               ]
@@ -296,14 +336,17 @@
         },
         {
           "name": "encrypt",
+          "stepic_id": 35206,
           "task_files": {
             "encrypt.py": {
-              "task_windows": [
+              "name": "encrypt.py",
+              "text": "from pre_treat_message import pre_treat_message\n\nALPHABET \u003d \u0027ABCDEFGHIJKLMNOPQRSTUVWXYZ\u0027\n\n\ndef encrypt(message, key):\n\n    message \u003d pre_treat_message(message)\n\n    encrypted_message \u003d \u0027\u0027\n\n    # assemble the encrypted message by replacing the letters one at a time\n    for c in message:\n        if c not in ALPHABET:\n            encrypted_message +\u003d c\n            continue\n\n        index_in_alphabet \u003d ALPHABET.find(c)\n        shifted_index \u003d replace with the code that finds the index of the letter to use  # calculate the index of the substitute letter\n        encrypted_message +\u003d ALPHABET[shifted_index]\n\n    return encrypted_message\n\n\n# do not modify this file beyond this point\nMESSAGE_ONE \u003d \u0027I ordered eight pizzas.\u0027\nMESSAGE_TWO \u003d \u0027We are expecting guests.\u0027\nMESSAGE_THREE \u003d \u0027They love pizza.\u0027\n\nprint encrypt(MESSAGE_ONE, 1)  # encrypt the message with a key of 1\nprint encrypt(MESSAGE_TWO, 2)  # encrypt the message with a key of 2\nprint encrypt(MESSAGE_THREE, -1)  # encrypt the message with a key of -1\n\n",
+              "placeholders": [
                 {
-                  "line": 18,
-                  "start": 24,
-                  "hint": "lesson4task2encrypt_1",
+                  "hint": "use this pattern:\n\nshifted_index \u003d ((index of letter) + key ) % max index of ALPHABET\n",
+                  "additional_hints": [],
                   "possible_answer": "((index_in_alphabet + key) % len(ALPHABET))",
+                  "offset": 443,
                   "length": 63
                 }
               ]
@@ -312,14 +355,17 @@
         },
         {
           "name": "decrypt",
+          "stepic_id": 35207,
           "task_files": {
             "decrypt.py": {
-              "task_windows": [
+              "name": "decrypt.py",
+              "text": "from pre_treat_message import pre_treat_message\n\nALPHABET \u003d \u0027ABCDEFGHIJKLMNOPQRSTUVWXYZ\u0027\n\n\ndef decrypt(message, key):\n\n    message \u003d pre_treat_message(message)\n\n    decrypted_message \u003d \u0027\u0027\n\n    # assemble the plaintext message by decrypting the message one letter at a time\n    for c in message:\n        if c not in ALPHABET:\n            decrypted_message +\u003d c\n            continue\n\n        # find the corresponding decrypted letter and append it to decrypted_message\n        replace with the logic for decrypting the letter\n\n    return decrypted_message\n\n\n# do not modify this file beyond this point\nMESSAGE_ONE \u003d \u0027NY NX XYNQQ XSTBNSL\u0027\nMESSAGE_TWO \u003d \u0027WLSYPH AI KS WPIHHMRK\u0027\nMESSAGE_THREE \u003d \u0027G AYLLMR DGLB KW ZMMRQ\u0027\n\nprint decrypt(MESSAGE_ONE, 5)  # decrypt the message with a key of 5\nprint decrypt(MESSAGE_TWO, 4)  # decrypt the message with a key of 4\nprint decrypt(MESSAGE_THREE, -2)  # decrypt the message with a key of -2",
+              "placeholders": [
                 {
-                  "line": 18,
-                  "start": 8,
-                  "hint": "lesson4task3decrypt_1",
+                  "hint": "the steps are nearly identical to the encrypt process; consult the previous task",
+                  "additional_hints": [],
                   "possible_answer": "index_in_alphabet \u003d ALPHABET.find(c)\n        shifted_index \u003d ((index_in_alphabet - key) % len(ALPHABET))\n        decrypted_message +\u003d ALPHABET[shifted_index]",
+                  "offset": 475,
                   "length": 48
                 }
               ]
@@ -329,18 +375,22 @@
       ]
     },
     {
-      "name": "Atbash Cipher",
+      "id": 12332,
+      "title": "Atbash Cipher",
       "task_list": [
         {
           "name": "About",
+          "stepic_id": 35208,
           "task_files": {
             "about.py": {
-              "task_windows": [
+              "name": "about.py",
+              "text": "ENCRYPTED_MESSAGE \u003d \u0027XLNV ZG MLLM\u0027\n\nPLAINTEXT_MESSAGE \u003d replace with the decrypted message\n\nprint PLAINTEXT_MESSAGE",
+              "placeholders": [
                 {
-                  "line": 2,
-                  "start": 20,
-                  "hint": "lesson5task1about_1",
+                  "hint": "use this as a lookup table:\n\nencrypted: ABCDEFGHIJKLMNOPQRSTUVWXYZ\ndecrypted: ZYXWVUTSRQPONMLKJIHGFEDCBA",
+                  "additional_hints": [],
                   "possible_answer": "\u0027COME AT NOON\u0027",
+                  "offset": 56,
                   "length": 34
                 }
               ]
@@ -349,14 +399,17 @@
         },
         {
           "name": "encrypt()",
+          "stepic_id": 35209,
           "task_files": {
             "encrypt.py": {
-              "task_windows": [
+              "name": "encrypt.py",
+              "text": "from pre_treat_message import pre_treat_message\n\nALPHABET \u003d \u0027ABCDEFGHIJKLMNOPQRSTUVWXYZ\u0027\n\n\ndef encrypt(message):\n\n    message \u003d pre_treat_message(message)\n\n    encrypted_message \u003d \u0027\u0027\n\n    # assemble the encrypted message by replacing the letters one at a time\n    for c in message:\n        if c not in ALPHABET:\n            encrypted_message +\u003d c\n            continue\n\n        index_in_alphabet \u003d ALPHABET.find(c)\n\n        shifted_index \u003d replace with the code that finds the index of the letter to use  # calculate the index of the substitute letter\n        encrypted_message +\u003d ALPHABET[shifted_index]\n\n    return encrypted_message\n\n\n# do not modify this file beyond this point\nMESSAGE_ONE \u003d \u0027I ordered eight pizzas.\u0027\nMESSAGE_TWO \u003d \u0027We are expecting guests.\u0027\nMESSAGE_THREE \u003d \u0027They love pizza.\u0027\n\nprint encrypt(MESSAGE_ONE)\nprint encrypt(MESSAGE_TWO)\nprint encrypt(MESSAGE_THREE)\n\n\n",
+              "placeholders": [
                 {
-                  "line": 19,
-                  "start": 24,
-                  "hint": "lesson5task2encrypt_1",
+                  "hint": "use this pattern:\nshifted_index \u003d x - y\n\nwhere x is a constant, the max index in ALPHABET; \nand y is the index of the letter that is to be replaced\n",
+                  "additional_hints": [],
                   "possible_answer": "25 - index_in_alphabet",
+                  "offset": 439,
                   "length": 63
                 }
               ]
@@ -365,14 +418,17 @@
         },
         {
           "name": "decrypt()",
+          "stepic_id": 35210,
           "task_files": {
             "decrypt.py": {
-              "task_windows": [
+              "name": "decrypt.py",
+              "text": "from pre_treat_message import pre_treat_message\n\nALPHABET \u003d \u0027ABCDEFGHIJKLMNOPQRSTUVWXYZ\u0027\n\n\ndef decrypt(message):\n\n    message \u003d pre_treat_message(message)\n\n    decrypted_message \u003d \u0027\u0027\n\n    # assemble the plaintext message by decrypting the message one letter at a time\n    for c in message:\n        if c not in ALPHABET:\n            decrypted_message +\u003d c\n            continue\n\n        # find the corresponding decrypted letter and append it to decrypted_message\n        replace with the logic for decrypting the letter    return decrypted_message\n\n\n# do not modify this file beyond this point\nMESSAGE_ONE \u003d \u0027RG RH HGROO HMLDRMT\u0027\nMESSAGE_TWO \u003d \u0027HSLFOW DV TL HOVWWRMT\u0027\nMESSAGE_THREE \u003d \u0027R XZMMLG URMW NB YLLGH\u0027\n\nprint decrypt(MESSAGE_ONE)\nprint decrypt(MESSAGE_TWO)\nprint decrypt(MESSAGE_THREE)",
+              "placeholders": [
                 {
-                  "line": 18,
-                  "start": 8,
-                  "hint": "lesson5task3decrypt_1",
+                  "hint": "the steps are identical to the encrypt process; \nconsult the previous task \n",
+                  "additional_hints": [],
                   "possible_answer": "index_in_alphabet \u003d ALPHABET.find(c)\n        shifted_index \u003d 25 - index_in_alphabet  \n        decrypted_message +\u003d ALPHABET[shifted_index]",
+                  "offset": 470,
                   "length": 48
                 }
               ]
@@ -382,18 +438,22 @@
       ]
     },
     {
-      "name": "Review: Name the cipher!",
+      "id": 12334,
+      "title": "Review: Name the cipher!",
       "task_list": [
         {
           "name": "Question 1",
+          "stepic_id": 35212,
           "task_files": {
             "question_01.py": {
-              "task_windows": [
+              "name": "question_01.py",
+              "text": "ENCRYPTED_MESSAGE \u003d \u0027MORA EVOCU ECCLESIA TUTIS AUT TIBI NISI OLIM OCIUS NOVEM\u0027\nDECRYPTED_MESSAGE \u003d \u0027MEETATNOON\u0027\n\nCIPHER_OPTIONS \u003d [\u0027null\u0027,\u0027caesar\u0027,\u0027atbash\u0027]\n\ncipher_used_in_this_example \u003d CIPHER_OPTIONS[-1]  # replace with the index of the cipher used in this encryption\n",
+              "placeholders": [
                 {
-                  "line": 5,
-                  "start": 45,
-                  "hint": "lesson6task1question_01_1",
+                  "hint": "your options: 0, 1, 2\n",
+                  "additional_hints": [],
                   "possible_answer": "0",
+                  "offset": 203,
                   "length": 2
                 }
               ]
@@ -402,14 +462,17 @@
         },
         {
           "name": "Question 2",
+          "stepic_id": 35213,
           "task_files": {
             "question_02.py": {
-              "task_windows": [
+              "name": "question_02.py",
+              "text": "ENCRYPTED_MESSAGE \u003d \u0027IQ PQTVJ CV PQQP\u0027\nDECRYPTED_MESSAGE \u003d \u0027GO NORTH AT NOON\u0027\n\nCIPHER_OPTIONS \u003d [\u0027null\u0027,\u0027caesar\u0027,\u0027atbash\u0027]\n\ncipher_used_in_this_example \u003d CIPHER_OPTIONS[-1]  # replace with the index of the cipher used in this encryption\n",
+              "placeholders": [
                 {
-                  "line": 5,
-                  "start": 45,
-                  "hint": "lesson6task2question_02_1",
+                  "hint": "your options: 0, 1, 2\n",
+                  "additional_hints": [],
                   "possible_answer": "0",
+                  "offset": 169,
                   "length": 2
                 }
               ]
@@ -418,14 +481,17 @@
         },
         {
           "name": "Question 3",
+          "stepic_id": 35214,
           "task_files": {
             "question_03.py": {
-              "task_windows": [
+              "name": "question_03.py",
+              "text": "ENCRYPTED_MESSAGE \u003d \u0027OVZIM GSV ERTVMVIV XRKSVI\u0027\nDECRYPTED_MESSAGE \u003d \u0027LEARN THE VIGENERE CIPHER\u0027\n\nCIPHER_OPTIONS \u003d [\u0027null\u0027,\u0027caesar\u0027,\u0027atbash\u0027]\n\ncipher_used_in_this_example \u003d CIPHER_OPTIONS[-1]  # replace with the index of the cipher used in this encryption\n",
+              "placeholders": [
                 {
-                  "line": 5,
-                  "start": 45,
-                  "hint": "lesson6task3question_03_1",
+                  "hint": "your options: 0, 1, 2\n",
+                  "additional_hints": [],
                   "possible_answer": "2",
+                  "offset": 187,
                   "length": 2
                 }
               ]
@@ -435,7 +501,12 @@
       ]
     }
   ],
-  "description": "Python implementations of classic text ciphers.\n\nAppropriate for python beginners who have had some practice with manipulating strings and lists, writing \u0027for\u0027 loops, and organizing code into functions.",
+  "authors": [
+    {}
+  ],
+  "description": "Python implementations of classic text ciphers.Appropriate for python beginners who have had some practice with manipulating strings and lists, writing \"for\" loops, and organizing code into functions.",
   "name": "Introduction to Classic Ciphers",
-  "author": "LisaC"
+  "id": 163,
+  "isAdaptive": false,
+  "language": "Python 2.x"
 }

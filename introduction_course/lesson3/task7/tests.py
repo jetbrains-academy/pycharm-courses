@@ -3,7 +3,7 @@ from test_helper import run_common_tests, passed, failed, import_task_file, get_
 
 def test_value():
     file = import_task_file()
-    if file.first_half == '''\nIt is a really long string\ntriple-quoted st''':
+    if hasattr(file, "first_half") and file.first_half == '''\nIt is a really long string\ntriple-quoted st''':
         passed()
     else:
         failed("Remember about string slicing.")

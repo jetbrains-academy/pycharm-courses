@@ -21,6 +21,6 @@ def get_monthly_payment(principal, years):
     return result
 
 if __name__ == '__main__':
-    logging.basicConfig(set default logging level)
+    logging.basicConfig(level=logging.DEBUG)
     payment = get_monthly_payment(100000, 30)
     print('Monthly payment is %f' % payment)

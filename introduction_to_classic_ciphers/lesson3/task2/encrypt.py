@@ -34,7 +34,8 @@ def encrypt(message, key):
                 word_substitute += c
             else:
                 # add a randomly-picked letter to word_substitute
-                replace with code that randomly picks a letter and appends it to word_substitute
+                random_integer_between_zero_and_twenty_five = random.randint(0,25)
+                word_substitute += ALPHABET[random_integer_between_zero_and_twenty_five]
 
         word_substitutes.append(word_substitute)
 

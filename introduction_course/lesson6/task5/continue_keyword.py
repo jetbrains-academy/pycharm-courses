@@ -4,6 +4,6 @@ for i in range(5):
     print(i)
 
 for x in range(10):
-    if Check if x is even:
+    if x % 2 == 0:
         continue   # skip print(x) for this loop
     print(x)

@@ -17,7 +17,7 @@ def encrypt(message):
 
         index_in_alphabet = ALPHABET.find(c)
 
-        shifted_index = replace with the code that finds the index of the letter to use  # calculate the index of the substitute letter
+        shifted_index = 25 - index_in_alphabet  # calculate the index of the substitute letter
         encrypted_message += ALPHABET[shifted_index]
 
     return encrypted_message

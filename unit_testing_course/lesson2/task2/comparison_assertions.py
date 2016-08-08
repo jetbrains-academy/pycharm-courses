@@ -8,7 +8,9 @@ from tested_code import random_not_42, find_foo, \
 class TestRandomNot42(unittest.TestCase):
     def test_many_values(self):
         """call the function 100 times and make sure the result isn't 42"""
-        write this test!
+        for n_attempt in range(100):
+            value = random_not_42()
+            self.assertNotEqual(value, 42)
 
 
 class TestFindFoo(unittest.TestCase):
@@ -51,15 +53,17 @@ class TestFindFoo(unittest.TestCase):
 
     def test_identical(self):
         """check that find_foo finds 'foo' in 'foo'"""
-        write this test!
+        self.assertIsNotNone(find_foo('foo'))
 
     def test_strings_with_foo(self):
         """check that find_foo finds 'foo' in all of the strings with 'foo'"""
-        write this test!
+        for s in self.strings_with_foo:
+            self.assertIsNotNone(find_foo(s))
 
     def test_strings_without_foo(self):
         """check that find_foo finds 'foo' in all of the strings with 'foo'"""
-        write this test!
+        for s in self.strings_without_foo:
+            self.assertIsNone(find_foo(s))
 
 
 class TestRandomFloatBetweenInclusive(unittest.TestCase):
@@ -71,7 +75,8 @@ class TestRandomFloatBetweenInclusive(unittest.TestCase):
                 start, end = end, start
             value = random_float_between_inclusive(start, end)
 
-            check the returned value
+            self.assertGreaterEqual(value, start)
+            self.assertLessEqual(value, end)
 
 
 class TestRandomFloatBetweenNoninclusive(unittest.TestCase):
@@ -83,4 +88,5 @@ class TestRandomFloatBetweenNoninclusive(unittest.TestCase):
                 start, end = end, start
             value = random_float_between_noninclusive(start, end)
 
-            check the returned value
+            self.assertGreater(value, start)
+            self.assertLess(value, end)

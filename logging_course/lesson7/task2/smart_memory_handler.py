@@ -51,8 +51,7 @@ if __name__ == '__main__':
 
     # memory_handler = logging.handlers.MemoryHandler(capacity=2, target=file_handler)
 
-    memory_handler = use our SmartMemoryHandler with same options here
-
+    memory_handler = SmartMemoryHandler(capacity=2, target=file_handler)
     root_logger = logging.getLogger()
     root_logger.addHandler(memory_handler)
     root_logger.setLevel(logging.DEBUG)

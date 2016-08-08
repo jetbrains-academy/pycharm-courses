@@ -24,8 +24,7 @@ def get_monthly_payment(principal, years):
 
         logger.debug('Calculated result is %f' % result)
     except:
-        pass
-
+        logger.exception('Exception occured')
     logging.debug('Leaving mortgage calculator')
     return result
 

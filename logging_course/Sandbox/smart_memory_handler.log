@@ -1,0 +1,6 @@
+2016-08-03 19:28:51,483 DEBUG Number of monthly payments 0
+2016-08-03 19:28:51,483 ERROR caught exception
+Traceback (most recent call last):
+  File "/home/ktisha/PycharmProjects/courses/LoggingCC/lesson7/task2/smart_memory_handler.py", line 35, in get_monthly_payment
+    result = principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))
+ZeroDivisionError: float division by zero

@@ -1,8 +1,8 @@
 number = 9.0        # float number
 
-result = divide 'number' by two
+result = number / 2
 
-remainder = calculate the remainder
+remainder = number % 2
 
 print("result = " + str(result))
 print("remainder = " + str(remainder))

@@ -10,8 +10,12 @@ def test_ASCII():
             return
     passed()
 
+
 def test_is_alpha():
     window = get_answer_placeholders()[0]
+    is_multiline = window.find("\n")
+    if is_multiline != -1:
+        window = window[:is_multiline-1]
     splitted = window.split()
     for s in splitted:
         if not s.isalpha():

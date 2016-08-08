@@ -5,7 +5,7 @@ def do_service_lookup(service_address):
         raise Exception('Connection refused.')
 
     except:
-        logging.exception(enter a message with relevent context)
+        logging.exception(service_address)
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)

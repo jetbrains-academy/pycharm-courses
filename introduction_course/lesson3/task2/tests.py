@@ -3,7 +3,7 @@ from test_helper import run_common_tests, passed, failed, import_task_file, get_
 
 def test_value():
     file = import_task_file()
-    if file.tenofhellos == "hellohellohellohellohellohellohellohellohellohello":
+    if hasattr(file, "ten_of_hellos") and file.ten_of_hellos == "hellohellohellohellohellohellohellohellohellohello":
         passed()
     failed("Use multiplication")
 

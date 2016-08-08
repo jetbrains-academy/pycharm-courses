@@ -1,1 +1,0 @@
-logging.FileHandler(log_filename)

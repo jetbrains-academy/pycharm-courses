@@ -23,4 +23,4 @@ if __name__ == '__main__':
     logging.debug('something happened with the list=%s', big_list)
 
     # Truncate result (with ellipses)
-    logging.debug('something happened with the list=%s', big_list)
+    logging.debug('something happened with the list=%s', truncate(big_list, 30))

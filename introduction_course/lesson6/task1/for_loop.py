@@ -4,5 +4,5 @@ for i in range(5):    # for each number i in range 0-4. range(5) function return
 
 primes = [2, 3, 5, 7]   # create new list
 
-iterate over primes using for loop
+for prime in primes:
     print(prime)

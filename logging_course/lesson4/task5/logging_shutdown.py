@@ -53,4 +53,4 @@ if __name__ == '__main__':
     # to the FileHandler.
     memory_handler.setTarget(None)
 
-    insert call to gracefully shutdown logging system
+    logging.shutdown()

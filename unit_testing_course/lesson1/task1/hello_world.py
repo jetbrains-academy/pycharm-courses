@@ -1,6 +1,6 @@
 # this is the function that we will be testing
 def hello_world():
-    implement this function!
+    return "Hello, World!"
 
 
 # import the unittest module, which we will use to write our tests

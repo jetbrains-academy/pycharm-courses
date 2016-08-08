@@ -8,6 +8,6 @@ if __name__ == '__main__':
 
     logging.debug('this message is not formatted; value=%s', 'value')
 
-    logging.debug('this message is not formatted; value=%s' % ('value', ))
+    logging.debug('this message is not formatted; value=%s', 'value')
 
 

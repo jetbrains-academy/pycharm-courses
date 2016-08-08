@@ -1,7 +1,7 @@
 from __future__ import print_function
 import math
 import logging
-import specify the module that contains RotatingFileHandler
+import logging.handlers
 
 logger = logging.getLogger('mortgage')
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     log_filename = '../../Sandbox/rotating.log'
     max_files=2
     max_file_size=100
-    file_handler = fully qualified name of rotating file handler(log_filename,
+    file_handler = logging.handlers.RotatingFileHandler(log_filename,
                                                         mode='a',
                                                         maxBytes=max_file_size,
                                                         backupCount=max_files)

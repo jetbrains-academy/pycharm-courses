@@ -16,7 +16,9 @@ def decrypt(message, key):
             continue
 
         # find the corresponding decrypted letter and append it to decrypted_message
-        replace with the logic for decrypting the letter
+        index_in_alphabet = ALPHABET.find(c)
+        shifted_index = ((index_in_alphabet - key) % len(ALPHABET))
+        decrypted_message += ALPHABET[shifted_index]
 
     return decrypted_message
 

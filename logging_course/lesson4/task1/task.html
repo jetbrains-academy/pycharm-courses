@@ -1,33 +1,32 @@
-<html>
+
 When you are logging a lot of data to a file, it can be difficult to use your log files if they become too large.
 The standard library offers a few special file handler implementations that can manage this problem for you.
-<br/>
-<br/>
+<br>
+<br>
 The RotatingFileHandler supports a maximum file length parameter. If a new log message is going to exceed that maximum
 length, the file is closed and a new file is created. This ensures your files are all a manageable size. The file length
 is specified in the maxBytes argument passed to the RotatingFileHandler constructor.
-<br/>
-<br/>
+<br>
+<br>
 Before the RotatingFileHandler starts a new file, it will rename the old log files with a number appended to each name.
 For example ".1", ".2".  The most recent log data is always written to the log file without this extension. The second
 most recent data has the ".1" extension, and so forth.
-<br/>
-<br/>
+<br>
+<br>
 The RotatingFileHandler does one last thing, it keeps only the specific number of files.  This is done in the
 backupCount argument. The oldest log files are removed. This allows us to keep a fixed limit on the space and
 number of files used by our logging. This is important
 for running systems over a long period of time.
-<br/>
-<br/>
+<br>
+<br>
 1) Complete the import statement for the "logging.handlers" module.
-<br/>
+<br>
 2) Create a new instance of the RotatingFileHandler object
-<br/>
-<br/>
+<br>
+<br>
 After you run this task, you should see the files: "rotating.log", "rotating.log.1", and "rotating.log.2" under
 your Sandbox folder. The sandbox is located in your Project tree, near the bottom. If you do not see the files,
 try collapsing and expanding the Sandbox folder.
-<br/>
-<br/>
+<br>
+<br>
 Note: When you look at these log files, you will only see the most recent log messages.
-</html>

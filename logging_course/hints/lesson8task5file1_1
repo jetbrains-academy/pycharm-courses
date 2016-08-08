@@ -1,1 +1,0 @@
-Could depend on the application, but first choice would be INFO. Followed by DEBUG if it happens often. Or even WARN if it's an exception but recoverable case.

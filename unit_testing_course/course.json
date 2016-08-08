@@ -1,18 +1,22 @@
 {
   "lessons": [
     {
-      "name": "Introduction",
+      "id": 12972,
+      "title": "Introduction",
       "task_list": [
         {
           "name": "Hello, World!",
+          "stepic_id": 37637,
           "task_files": {
             "hello_world.py": {
-              "task_windows": [
+              "name": "hello_world.py",
+              "text": "# this is the function that we will be testing\ndef hello_world():\n    implement this function!\n\n\n# import the unittest module, which we will use to write our tests\nimport unittest\n\n\n# With unittest, tests are grouped as methods of classes.\n# Each such class must be a sub-class of \u0027unittest.TestCase\u0027.\n# And that\u0027s about all you need to know about these classes!\nclass TestHelloWorld(unittest.TestCase):\n    \"\"\"Tests for the hello_world() function\"\"\"\n\n    # Each test is written as a method with a name beginning with \"test_\"\n    def test_return_value(self):\n        # Writing a doc-string for each test, explaining what it tests,\n        # is a good idea.\n        \"\"\"test that hello_world() returns \u0027Hello, World!\u0027\"\"\"\n\n        # self.assertEqual() will make the test fail if the arguments are not equal.\n        self.assertEqual(hello_world(), \"Hello, World!\")\n\n        # If no assertions fail, the test passes successfully. Note that this\n        # happens automatically; we don\u0027t have to return a value or anything\n        # of the sort.\n",
+              "placeholders": [
                 {
-                  "line": 2,
-                  "start": 4,
-                  "hint": "lesson1task1hello_world_1",
+                  "hint": "Don\u0027t print the required text; return it.",
+                  "additional_hints": [],
                   "possible_answer": "return \"Hello, World!\"",
+                  "offset": 70,
                   "length": 24
                 }
               ]
@@ -21,14 +25,17 @@
         },
         {
           "name": "Your first unit test",
+          "stepic_id": 37638,
           "task_files": {
             "test_hello_someone.py": {
-              "task_windows": [
+              "name": "test_hello_someone.py",
+              "text": "import unittest\n\nfrom hello_someone import hello_someone\n\n\nclass TestHelloWorld(unittest.TestCase):\n    def test_hello_world(self):\n        test that the function returns \"Hello, World!\" when called with the appropriate input argument\n",
+              "placeholders": [
                 {
-                  "line": 7,
-                  "start": 8,
-                  "hint": "lesson1task2hello_someone_1",
+                  "hint": "use self.assertEqual() to compare the function output to the expected value",
+                  "additional_hints": [],
                   "possible_answer": "self.assertEqual(hello_someone(\"World\"), \"Hello, World!\")",
+                  "offset": 140,
                   "length": 94
                 }
               ]
@@ -37,28 +44,31 @@
         },
         {
           "name": "The possible test results",
+          "stepic_id": 37639,
           "task_files": {
             "possible_test_results.py": {
-              "task_windows": [
+              "name": "possible_test_results.py",
+              "text": "import unittest\n\n\nclass TestPossibleResults(unittest.TestCase):\n    def test_success(self):\n        write a test which will succeed\n\n    def test_failure(self):\n        write a test which will fail\n\n    def test_error(self):\n        write a test which will cause an error\n",
+              "placeholders": [
                 {
-                  "line": 5,
-                  "start": 8,
-                  "hint": "lesson1task3possible_test_results_1",
+                  "hint": "to succeed, a test just needs not to fail or raise an error",
+                  "additional_hints": [],
                   "possible_answer": "pass",
+                  "offset": 100,
                   "length": 31
                 },
                 {
-                  "line": 8,
-                  "start": 8,
                   "hint": "lesson1task3possible_test_results_2",
+                  "additional_hints": [],
                   "possible_answer": "self.assertEqual(True, False)",
+                  "offset": 169,
                   "length": 28
                 },
                 {
-                  "line": 11,
-                  "start": 8,
-                  "hint": "lesson1task3possible_test_results_3",
+                  "hint": "A test is erroneous if it raises an exception (without catching it)\n",
+                  "additional_hints": [],
                   "possible_answer": "raise Exception()",
+                  "offset": 233,
                   "length": 38
                 }
               ]
@@ -68,73 +78,85 @@
       ]
     },
     {
-      "name": "Assertion Types",
+      "id": 12973,
+      "title": "Assertion Types",
       "task_list": [
         {
           "name": "Assertion Types",
+          "stepic_id": 37640,
           "task_files": {
             "truthiness.py": {
-              "task_windows": [
+              "name": "truthiness.py",
+              "text": "import unittest\n\n\nclass TestIntegerTruthiness(unittest.TestCase):\n    def test_zero(self):\n        \"\"\"check that the thruthiness of the integer zero is False\"\"\"\n        write this test!\n\n    def test_one(self):\n        \"\"\"check that the thruthiness of the integer one is True\"\"\"\n        write this test!\n\n    def test_other_value(self):\n        \"\"\"check the thruthiness of an integer other than zero\"\"\"\n        write this test!\n\n\nclass TestNoneTruthiness(unittest.TestCase):\n    def test_none(self):\n        \"\"\"check the thruthiness of None\"\"\"\n        self.assertMethodName(None)\n\n\nclass TestContainerTruthiness(unittest.TestCase):\n    # Note:\n    # -----\n    # Methods whose name starts with \"_test\" are not considered test methods,\n    # just like all methods whose name doesn\u0027t begin with \"test\".\n\n    def _test_container_class(self, empty_container, non_empty_container):\n        self.assertchoose the proper assetion method(empty_container)\n        self.assertchoose the proper assetion method(non_empty_container)\n\n    def test_list(self):\n        implement this test using _test_container_class()\n\n    def test_tuple(self):\n        implement this test using _test_container_class()\n\n    def test_set(self):\n        implement this test using _test_container_class()\n\n    def test_dict(self):\n        implement this test using _test_container_class()\n",
+              "placeholders": [
                 {
-                  "line": 6,
-                  "start": 8,
-                  "hint": "lesson2task1truthiness_1",
+                  "hint": "use self.assertFalse",
+                  "additional_hints": [],
                   "possible_answer": "self.assertFalse(0)",
+                  "offset": 169,
                   "length": 16
                 },
                 {
-                  "line": 10,
-                  "start": 8,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "self.assertTrue(1)",
+                  "offset": 287,
                   "length": 16
                 },
                 {
-                  "line": 14,
-                  "start": 8,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "self.assertTrue(3)",
+                  "offset": 411,
                   "length": 16
                 },
                 {
-                  "line": 20,
-                  "start": 19,
-                  "hint": "lesson2task1truthiness_4",
+                  "hint": "None\u0027s truthiness is False\n",
+                  "additional_hints": [],
                   "possible_answer": "False",
+                  "offset": 563,
                   "length": 10
                 },
                 {
-                  "line": 30,
-                  "start": 19,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "False",
+                  "offset": 895,
                   "length": 33
                 },
                 {
-                  "line": 31,
-                  "start": 19,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "True",
+                  "offset": 965,
                   "length": 33
                 },
                 {
-                  "line": 34,
-                  "start": 8,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "self._test_container_class([], [False])",
+                  "offset": 1054,
                   "length": 49
                 },
                 {
-                  "line": 37,
-                  "start": 8,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "self._test_container_class((), (False,))",
+                  "offset": 1139,
                   "length": 49
                 },
                 {
-                  "line": 40,
-                  "start": 8,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "self._test_container_class(set(), {False})",
+                  "offset": 1222,
                   "length": 49
                 },
                 {
-                  "line": 43,
-                  "start": 8,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "self._test_container_class({}, {False: False})",
+                  "offset": 1306,
                   "length": 49
                 }
               ]
@@ -143,46 +165,52 @@
         },
         {
           "name": "Comparison Assertions",
+          "stepic_id": 37641,
           "task_files": {
             "comparison_assertions.py": {
-              "task_windows": [
+              "name": "comparison_assertions.py",
+              "text": "import random\nimport unittest\n\nfrom tested_code import random_not_42, find_foo, \\\n    random_float_between_inclusive, random_float_between_noninclusive\n\n\nclass TestRandomNot42(unittest.TestCase):\n    def test_many_values(self):\n        \"\"\"call the function 100 times and make sure the result isn\u0027t 42\"\"\"\n        write this test!\n\n\nclass TestFindFoo(unittest.TestCase):\n    \"\"\"tests for the find_foo() function\n\n    find_foo(s) returns an object if \"foo\" is a sub-string of s,\n    and None otherwise.\n    \"\"\"\n    # valid_names \u003d [\n    #     \u0027foo\u0027,\n    #     \u0027Bar\u0027,\n    #     \u0027foorBar\u0027,\n    #     \u0027foo_bar\u0027,\n    #     \u0027_fooBar\u0027,\n    #     \u0027foo1\u0027,\n    #     \u0027foo_\u0027,\n    # ]\n    #\n    # invalid_names \u003d [\n    #     \u00271foo\u0027,\n    #     \u0027foo-bar\u0027,\n    #     \u0027$foo\u0027,\n    #     \u0027foo bar\u0027,\n    #     \u0027foo+bar4ever\u0027,\n    # ]\n\n    strings_with_foo \u003d [\n        \u0027foo\u0027,\n        \u0027aaa foo bbb\u0027,\n        \u0027aaa foo\u0027,\n        \u0027foo bbb\u0027,\n        \u0027no foo for you, come back oen year!\u0027\n    ]\n\n    strings_without_foo \u003d [\n        \u0027boo\u0027,\n        \u0027aaa bbb\u0027,\n        \u0027four\u0027,\n    ]\n\n    def test_identical(self):\n        \"\"\"check that find_foo finds \u0027foo\u0027 in \u0027foo\u0027\"\"\"\n        write this test!\n\n    def test_strings_with_foo(self):\n        \"\"\"check that find_foo finds \u0027foo\u0027 in all of the strings with \u0027foo\u0027\"\"\"\n        write this test!\n\n    def test_strings_without_foo(self):\n        \"\"\"check that find_foo finds \u0027foo\u0027 in all of the strings with \u0027foo\u0027\"\"\"\n        write this test!\n\n\nclass TestRandomFloatBetweenInclusive(unittest.TestCase):\n    def test_random_values(self):\n        for i in range(100):\n            start \u003d random.random()\n            end \u003d random.random()\n            if start \u003e end:\n                start, end \u003d end, start\n            value \u003d random_float_between_inclusive(start, end)\n\n            check the returned value\n\n\nclass TestRandomFloatBetweenNoninclusive(unittest.TestCase):\n    def test_random_values(self):\n        for i in range(100):\n            start \u003d random.random()\n            end \u003d random.random()\n            if start \u003e end:\n                start, end \u003d end, start\n            value \u003d random_float_between_noninclusive(start, end)\n\n            check the returned value\n",
+              "placeholders": [
                 {
-                  "line": 10,
-                  "start": 8,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "for n_attempt in range(100):\n            value \u003d random_not_42()\n            self.assertNotEqual(value, 42)",
+                  "offset": 312,
                   "length": 16
                 },
                 {
-                  "line": 53,
-                  "start": 8,
-                  "hint": "lesson2task2comparison_assertions_5",
+                  "hint": "use only assertIsNone and assertIsNotNone",
+                  "additional_hints": [],
                   "possible_answer": "self.assertIsNotNone(find_foo(\u0027foo\u0027))",
+                  "offset": 1146,
                   "length": 16
                 },
                 {
-                  "line": 57,
-                  "start": 8,
-                  "hint": "lesson2task2comparison_assertions_6",
+                  "hint": "use only assertIsNone and assertIsNotNone",
+                  "additional_hints": [],
                   "possible_answer": "for s in self.strings_with_foo:\n            self.assertIsNotNone(find_foo(s))",
+                  "offset": 1288,
                   "length": 16
                 },
                 {
-                  "line": 61,
-                  "start": 8,
-                  "hint": "lesson2task2comparison_assertions_7",
+                  "hint": "use only assertIsNone and assertIsNotNone",
+                  "additional_hints": [],
                   "possible_answer": "for s in self.strings_without_foo:\n            self.assertIsNone(find_foo(s))",
+                  "offset": 1433,
                   "length": 16
                 },
                 {
-                  "line": 73,
-                  "start": 12,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "self.assertGreaterEqual(value, start)\n            self.assertLessEqual(value, end)",
+                  "offset": 1787,
                   "length": 24
                 },
                 {
-                  "line": 85,
-                  "start": 12,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "self.assertGreater(value, start)\n            self.assertLess(value, end)",
+                  "offset": 2155,
                   "length": 24
                 }
               ]
@@ -191,41 +219,45 @@
         },
         {
           "name": "Container Assertions",
+          "stepic_id": 37642,
           "task_files": {
             "container_assertions.py": {
-              "task_windows": [
+              "name": "container_assertions.py",
+              "text": "import unittest\nimport random\n\n\ndef random_shuffle(values):\n    \"\"\"return a new list of the given values in random order\"\"\"\n    new_values \u003d list(values)\n    random.shuffle(new_values)\n    return new_values\n\n\ndef broken_shuffle_1(values):\n    \"\"\"this doesn\u0027t actually shuffle anything!\"\"\"\n    return list(values)\n\n\ndef broken_shuffle_2(values):\n    \"\"\"this returns a single instance of each value, shuffled\"\"\"\n    new_values \u003d list(set(values))\n    random.shuffle(new_values)\n    return new_values\n\n\ndef broken_shuffle_3(values):\n    \"\"\"this always returns the values sorted\"\"\"\n    return list(sorted(values))\n\n\ndef broken_shuffle_4(values):\n    \"\"\"this shuffles the values and returns a new list, but also changes the given list\"\"\"\n    random.shuffle(values)\n    return list(values)\n\n\ndef broken_shuffle_5(values):\n    \"\"\"this shuffles the given list of values and returns it\"\"\"\n    random.shuffle(values)\n    return values\n\n\ndef broken_shuffle_6(values):\n    \"\"\"this returns a list of the same length but with unrelated values\"\"\"\n    new_values \u003d list(range(len(values)))\n    random.shuffle(new_values)\n    return new_values\n\n\ndef broken_shuffle_7(values):\n    \"\"\"this is broken in a hard to find way...\"\"\"\n    new_values \u003d []\n    while True:\n        value_index \u003d random.randrange(0, len(values))\n        new_values.append(values.pop(value_index))\n        if len(values) \u003d\u003d 0:\n            break\n    return new_values\n\n\nclass TestRandomShuffle(unittest.TestCase):\n    \"\"\"unit tests for the random_shuffle() function\"\"\"\n\n    # IMPORTANT NOTE !!!\n    # In these tests, just call the random_shuffle() function\n    # when you want to call the tested function. Never call any\n    # of the \"broken_...\" functions; those are just here for you\n    # to look at. Don\u0027t worry, the tests will be run with them as\n    # well, using some deep magic ;)\n\n    def test_empty(self):\n        \"\"\"check that giving an empty list results in an empty list\"\"\"\n        implement this test!\n\n    def test_same_length(self):\n        \"\"\"check that the returned list is of the same length as the one givne\"\"\"\n        implement this test!\n\n    def test_same_values(self):\n        \"\"\"check that the values in the return list are the same\"\"\"\n        implement this test!\n\n    def test_values_are_shuffled(self):\n        \"\"\"check that the function does actually return the values in a different order\"\"\"\n        implement this test!\n\n    def test_input_not_mutated(self):\n        \"\"\"check that the input list of values is not mutated\"\"\"\n        implement this test!\n",
+              "placeholders": [
                 {
-                  "line": 70,
-                  "start": 8,
+                  "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "self.assertCountEqual(random_shuffle([]), [])",
+                  "offset": 1947,
                   "length": 20
                 },
                 {
-                  "line": 74,
-                  "start": 8,
-                  "hint": "lesson2task3container_assertions_4",
+                  "hint": "make sure to test with lists of various length",
+                  "additional_hints": [],
                   "possible_answer": "for i in range(10):\n            self.assertEqual(len(random_shuffle(list(range(i)))), i)",
+                  "offset": 2091,
                   "length": 20
                 },
                 {
-                  "line": 79,
-                  "start": 8,
-                  "hint": "lesson2task3container_assertions_3",
-                  "possible_answer": "self.assertCountEqual(random_shuffle(values), values)",
+                  "hint": "make sure to check with a list of values where some value appear more than once",
+                  "additional_hints": [],
+                  "possible_answer": "values \u003d list(range(10)) + list(range(5)) + list(range(1))\n        self.assertCountEqual(random_shuffle(values), values)",
+                  "offset": 2221,
                   "length": 20
                 },
                 {
-                  "line": 83,
-                  "start": 8,
-                  "hint": "lesson2task3container_assertions_2",
+                  "hint": "one way to do this is to create a large list of values, shuffle it, and compare the result to the original ",
+                  "additional_hints": [],
                   "possible_answer": "values \u003d list(range(100))\n        self.assertNotEqual(random_shuffle(values), values)",
+                  "offset": 2382,
                   "length": 20
                 },
                 {
-                  "line": 87,
-                  "start": 8,
-                  "hint": "lesson2task3container_assertions_5",
+                  "hint": "create a (long) list of values, pass it to the function, and check that doing so did not change original list",
+                  "additional_hints": [],
                   "possible_answer": "values \u003d list(range(100))\n        random_shuffle(values)\n        self.assertEqual(values, list(range(100)))",
+                  "offset": 2515,
                   "length": 20
                 }
               ]
@@ -233,9 +265,25 @@
           }
         }
       ]
+    },
+    {
+      "id": 12974,
+      "title": "PyCharm additional materials",
+      "task_list": [
+        {
+          "name": "PyCharm additional materials",
+          "stepic_id": 37643,
+          "task_files": {}
+        }
+      ]
     }
   ],
+  "authors": [
+    {}
+  ],
   "description": "An introductory interactive course about unit testing in Python.",
-  "name": "Python Unit-Testing Course",
-  "author": "taleinat"
+  "name": "Python UnitTesting Course",
+  "id": 212,
+  "isAdaptive": false,
+  "language": "Python"
 }

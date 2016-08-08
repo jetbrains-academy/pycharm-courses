@@ -7,5 +7,5 @@ if name == "John" or age == 17:   # check that name is "John" or age is 17. If s
 
 tasks = ['task1', 'task2']    # create new list
 
-check if 'tasks' is empty
+if len(tasks) == 0:
     print("empty")

@@ -7,7 +7,7 @@ class Calculator:
     current = 0
 
     def add(self, amount):
-        add number to current
+        self.current += amount
 
     def get_current(self):
         return self.current

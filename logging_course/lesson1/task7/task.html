@@ -1,20 +1,19 @@
-<html>
+
 We mentioned in a previous task, there are 5 severity levels : CRITICAL, ERROR, INFO, WARNING, DEBUG.
-<br/>
-<br/>
+<br>
+<br>
 There are a few exceptions.  First, a few of the levels have several constants defined.
 
 FATAL can be used instead of CRITICAL.  There is also a fatal() helper method for this level. Both CRITICAL and
 FATAL share the same numeric log level of 50. They can be used interchangeably.
-<br/>
-<br/>
+<br>
+<br>
 WARN can also be used as a shortcut for WARNING. They mean the same thing.
-<br/>
-<br/>
+<br>
+<br>
 NOTSET is a special constant that represents the lowest possible log severity level. It has a value of 0. You should
 not log messages with this severity level. It is used when configuring loggers in the logging hierarchy.
-<br/>
-<br/>
+<br>
+<br>
 In this task, replace the logging level passed to basicConfig() with NOTSET.  You will notice the output is
 similar to DEBUG, since NOTSET is a lower level (0) it includes every level.
-</html>

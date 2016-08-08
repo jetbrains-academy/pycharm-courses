@@ -9,5 +9,4 @@ print(phone_book)
 # Remove key-value pair from phone_book
 del phone_book['John']
 
-print(Jane's phone)
-
+print(phone_book['Jane'])

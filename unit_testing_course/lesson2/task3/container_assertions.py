@@ -68,21 +68,31 @@ class TestRandomShuffle(unittest.TestCase):
 
     def test_empty(self):
         """check that giving an empty list results in an empty list"""
-        implement this test!
+        print("empty")
+        self.assertCountEqual(random_shuffle([]), [])
 
     def test_same_length(self):
         """check that the returned list is of the same length as the one givne"""
-        implement this test!
+        print("same")
+        values = [1, 1, 1, 1]
+        self.assertEqual(len(random_shuffle(values)), 4)
 
     def test_same_values(self):
         """check that the values in the return list are the same"""
-        values = list(range(10)) + list(range(5)) + list(range(1))
-        implement this test!
+        print("same value")
+        values = [1, 1, 1, 1]
+        self.assertCountEqual(random_shuffle(values), values)
 
     def test_values_are_shuffled(self):
         """check that the function does actually return the values in a different order"""
-        implement this test!
+        print("shuffled")
+        values = list(range(100))
+        values_copy = values.copy()
+        self.assertNotEqual(random_shuffle(values), values_copy)
 
     def test_input_not_mutated(self):
         """check that the input list of values is not mutated"""
-        implement this test!
+        print("mutated")
+        values = list(range(100))
+        random_shuffle(values)
+        self.assertEqual(values, list(range(100)))

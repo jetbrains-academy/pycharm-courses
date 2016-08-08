@@ -11,5 +11,5 @@ def calculate_expensive_result(timeout):
 if __name__ == '__main__':
     logging.basicConfig(level=logging.WARNING)
 
-    insert conditional code to test for this logging level
+    if logger.isEnabledFor(logging.DEBUG):
         logger.debug('expensive_result=%d', calculate_expensive_result(5))

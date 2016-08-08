@@ -3,10 +3,10 @@ import unittest
 
 class TestPossibleResults(unittest.TestCase):
     def test_success(self):
-        write a test which will succeed
+        pass
 
     def test_failure(self):
-        write a test which will fail
+        self.assertEqual(True, False)
 
     def test_error(self):
-        write a test which will cause an error
+        raise Exception()

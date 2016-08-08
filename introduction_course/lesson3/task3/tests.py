@@ -10,7 +10,7 @@ def test_window():
 
 def test_value():
     file = import_task_file()
-    if file.p_letter == "P":
+    if hasattr(file, "p_letter") and file.p_letter == "P":
         passed()
     else:
         failed("String index starts at 0.")

@@ -12,6 +12,6 @@ if __name__ == '__main__':
     logger2.debug('This is written to log output')
 
     logger3 = logging.getLogger('B')
-    logger3.propagate = disable log propagation to parent handlers
+    logger3.propagate = 0
     logger3.debug('This is NOT written to log output, because only names start with "B" are allowed by filter')
 

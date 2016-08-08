@@ -3,7 +3,7 @@ from test_helper import run_common_tests, failed, passed, import_task_file, get_
 
 def test_value():
     file = import_task_file()
-    if not file.animals:
+    if hasattr(file, "animals") and not file.animals:
         passed()
     else:
         failed("Clear animals list")

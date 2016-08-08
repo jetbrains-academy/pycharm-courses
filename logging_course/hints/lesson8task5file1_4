@@ -1,1 +1,0 @@
-Whenever the user enters invalid information, I consider this a WARN, since you might need to investigate why the user might have done this, perhaps due to a usability issue. 

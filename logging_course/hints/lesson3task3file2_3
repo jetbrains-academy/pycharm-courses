@@ -1,1 +1,0 @@
-addHandler() takes a handler and adds it to the list of handlers for a Logger.

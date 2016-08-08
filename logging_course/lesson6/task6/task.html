@@ -1,16 +1,15 @@
-<html>
+
 In the previous task, only the root logger message was included in the output.
-<br/>
-<br/>
+<br>
+<br>
 This is because we created our "logger" instance at module scope, before we called dictConfig().
 When dictConfig() was called it disabled any existing loggers. This is the default setting, but you
 can override this with the "disable_existing_loggers" key set to the value of "False", within the
 configuration dictionary.
-<br/>
-<br/>
+<br>
+<br>
 Update the configuration to prevent existing loggers from being disabled.
-<br/>
-<br/>
+<br>
+<br>
 After you execute this task, you should see all the log output.
 <br>
-</html>

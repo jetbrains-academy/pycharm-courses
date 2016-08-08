@@ -25,7 +25,7 @@ if __name__ == '__main__':
     handler = logging.StreamHandler()
 
     fmt = JsonFormatter()
-    add the formatter to the handler
+    handler.setFormatter(fmt)
 
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.DEBUG)

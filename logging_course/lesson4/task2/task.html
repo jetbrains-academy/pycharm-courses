@@ -1,14 +1,13 @@
-<html>
+
 In the previous task, we started new log files based on the file size. In some cases, it's useful to start a new
 log file after a specified time interval. When you are given a problem to diagnose at a specific time, it is easier
 to determine which log file contains the log information based on the filename.
-<br/>
-<br/>
+<br>
+<br>
 TimedRotatingFileHandler is similar to RotatingFileHandler() except you specify two interval parameters. The first
 argument "when" specifies the type of interval. Here are possible values (case insensitive):
-<br/>
-<pre>
-VALUE          TYPE OF INTERVAL
+<br>
+<pre>VALUE          TYPE OF INTERVAL
 =============+======================'
 'S'          | Seconds
 'M'          | Minutes
@@ -19,16 +18,16 @@ VALUE          TYPE OF INTERVAL
 </pre>
 The second argument is "interval" which is going to depend on the type of interval. Using a "when" value of "H" and
 an "interval" of "1" is going to roll over the log file every one hour.
-<br/>
-<br/>
+<br>
+<br>
 In this task, we have created a special filter that causes a delay between log records. This is to help demonstrate
 the rolling over behavior using time.
-<br/>
-<br/>
+<br>
+<br>
 Update the arguments to TimedRotatingFileHandler to rotate the log file every two seconds.
-<br/>
-<br/>
+<br>
+<br>
 After you execute this task, wait about 20 seconds, then look at the Sandbox folder for the "timed_rotation.log" files. You should note how
 the filename also has a date/time appended to it.
-</html>
+
 

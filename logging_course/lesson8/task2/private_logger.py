@@ -28,8 +28,8 @@ if __name__ == '__main__':
     second = SecondClass()
     second.do_something()
 
-    first_logger = logging.getLogger(__name__ + 'first class logger specific name')
-    set the logging level to DEBUG
+    first_logger = logging.getLogger(__name__ + '.first_class')
+    first_logger.setLevel(logging.DEBUG)
     first.do_something()
     second.do_something()
 

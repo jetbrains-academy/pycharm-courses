@@ -29,7 +29,7 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG,
                         format='%(asctime)s %(levelname)s %(message)s',
                         filename='../../Sandbox/basic_file.log',
-                        filemode='insert create new file mode')
+                        filemode='w')
 
     payment = get_monthly_payment(100000, 80)
     print('Monthly payment is %f' % payment)

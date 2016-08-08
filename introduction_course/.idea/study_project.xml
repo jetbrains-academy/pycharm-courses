@@ -1,0 +1,2873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="StudySettings">
+    <StudyTaskManager>
+      <option name="course">
+        <Course>
+          <option name="adaptive" value="false" />
+          <option name="authors">
+            <list>
+              <StepicUser>
+                <option name="email" value="" />
+                <option name="firstName" value="" />
+                <option name="id" value="-1" />
+                <option name="lastName" value="" />
+              </StepicUser>
+            </list>
+          </option>
+          <option name="courseDirectory" value="$APPLICATION_CONFIG_DIR$/courses/Introduction to Python-untitled5" />
+          <option name="courseMode" value="Course Creator" />
+          <option name="courseType" value="PyCharm" />
+          <option name="description" value="Introduction course to Python" />
+          <option name="id" value="0" />
+          <option name="language" value="Python" />
+          <option name="lessons">
+            <list>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="1" />
+                <option name="name" value="Introduction" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Our first program" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98626" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="hello_world.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Type your name here." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="14" />
+                                          <option name="offset" value="32" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="14" />
+                                      <option name="offset" value="32" />
+                                      <option name="possibleAnswer" value="Liana" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="type your name" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="hello_world.py" />
+                                <option name="text" value="print(&quot;Hello, world! My name is type your name&quot;)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Comments" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98627" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="comments.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Type your new comment here." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="20" />
+                                          <option name="offset" value="138" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="20" />
+                                      <option name="offset" value="138" />
+                                      <option name="possibleAnswer" value="new comment" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="add new comment here" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="comments.py" />
+                                <option name="text" value="# This is the comment for the comments.py file&#10;print(&quot;Hello!&quot;)  # this comment is for the second line&#10;&#10;print(&quot;# this is not a comment&quot;)&#10;# add new comment here&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="2" />
+                <option name="name" value="Variables" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Variable definition" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98628" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="variable_definition.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Type value here." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="13" />
+                                          <option name="offset" value="345" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="13" />
+                                      <option name="offset" value="345" />
+                                      <option name="possibleAnswer" value="5" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="another value" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="variable_definition.py" />
+                                <option name="text" value="a = b = 2  # This is called a &quot;chained assignment&quot;. It assigns the value 2 to variables &quot;a&quot; and &quot;b&quot;.&#10;print(&quot;a = &quot; + str(a))   # We'll explain the expression str(a) later in the course. For now it is used to convert the  variable &quot;a&quot; to a string.&#10;print(&quot;b = &quot; + str(b))&#10;&#10;greetings = &quot;greetings&quot;&#10;print(&quot;greetings = &quot; + str(greetings))&#10;greetings = another value&#10;print(&quot;greetings = &quot; + str(greetings))&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Undefined variable" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98629" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="undefined_variable.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Type the name of an undefined variable here. Note that variable names must start with a letter and may contain letters, '_' and/or numbers." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="14" />
+                                          <option name="offset" value="19" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="14" />
+                                      <option name="offset" value="19" />
+                                      <option name="possibleAnswer" value="other_variable" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="other variable" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="undefined_variable.py" />
+                                <option name="text" value="variable = 1&#10;print(other variable)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="Variable types" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98630" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="variable_type.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Look how we found the &quot;number&quot; type on line 2 and do the same to float_number." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="17" />
+                                          <option name="offset" value="93" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="17" />
+                                      <option name="offset" value="93" />
+                                      <option name="possibleAnswer" value="type(float_number)" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="float_number type" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="variable_type.py" />
+                                <option name="text" value="number = 9&#10;print(type(number))   # print type of variable &quot;number&quot;&#10;&#10;float_number = 9.0&#10;print(float_number type)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="4" />
+                      <option name="name" value="Type conversion" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98631" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="type_cast.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use int() function." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="31" />
+                                          <option name="offset" value="113" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="31" />
+                                      <option name="offset" value="113" />
+                                      <option name="possibleAnswer" value="int(float_number)" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="Convert float_number to integer" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="type_cast.py" />
+                                <option name="text" value="number = 9&#10;print(type(number))   # print type of variable &quot;number&quot;&#10;&#10;float_number = 9.0&#10;print(float_number)&#10;print(Convert float_number to integer)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="5" />
+                      <option name="name" value="Arithmetic operators" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98632" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="arithmetic_operators.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use / operator." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="22" />
+                                          <option name="offset" value="45" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="22" />
+                                      <option name="offset" value="45" />
+                                      <option name="possibleAnswer" value="number / 2" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="divide 'number' by two" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use % operator." />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="23" />
+                                          <option name="offset" value="81" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="23" />
+                                      <option name="offset" value="69" />
+                                      <option name="possibleAnswer" value="number % 2" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="calculate the remainder" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="arithmetic_operators.py" />
+                                <option name="text" value="number = 9.0        # float number&#10;&#10;result = divide 'number' by two&#10;&#10;remainder = calculate the remainder&#10;&#10;print(&quot;result = &quot; + str(result))&#10;print(&quot;remainder = &quot; + str(remainder))&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="6" />
+                      <option name="name" value="Assignments" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98633" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="assignments.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use += operator." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="8" />
+                                          <option name="offset" value="100" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="8" />
+                                      <option name="offset" value="100" />
+                                      <option name="possibleAnswer" value="+=" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="operator" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="assignments.py" />
+                                <option name="text" value="number = 9.0&#10;print(&quot;number = &quot; + str(number))&#10;&#10;number -= 2&#10;print(&quot;number = &quot; + str(number))&#10;&#10;number operator 5&#10;&#10;print(&quot;number = &quot; + str(number))&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="7" />
+                      <option name="name" value="Boolean operators" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98634" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="boolean_operators.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use == operator." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="8" />
+                                          <option name="offset" value="34" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="8" />
+                                      <option name="offset" value="34" />
+                                      <option name="possibleAnswer" value="==" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="operator" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="boolean_operators.py" />
+                                <option name="text" value="two = 2&#10;three = 3&#10;&#10;is_equal = two operator three&#10;&#10;print(is_equal)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="8" />
+                      <option name="name" value="Comparison operators" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98635" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="comparison_operators.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use &gt; operator." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="8" />
+                                          <option name="offset" value="188" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="8" />
+                                      <option name="offset" value="188" />
+                                      <option name="possibleAnswer" value="&gt;" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="operator" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="comparison_operators.py" />
+                                <option name="text" value="one = 1&#10;two = 2&#10;three = 3&#10;&#10;print(one &lt; two &lt; three)  # This chained comparison means that the (one &lt; two) and (two &lt; three) comparisons are performed at the same time.&#10;&#10;is_greater = three operator two&#10;print(is_greater)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="3" />
+                <option name="name" value="Strings" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Concatenation" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98660" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="concatenation.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use chained concatenation and one-space string \&quot; \&quot;." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="9" />
+                                          <option name="offset" value="47" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="9" />
+                                      <option name="offset" value="47" />
+                                      <option name="possibleAnswer" value="hello + ' ' + world" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="type here" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="concatenation.py" />
+                                <option name="text" value="hello = &quot;Hello&quot;&#10;world = 'World'&#10;&#10;hello_world = type here&#10;print(hello_world)      # Note: you should print &quot;Hello World&quot;&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="String multiplication" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98661" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="string_multiplication.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use multiplication." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="8" />
+                                          <option name="offset" value="38" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="8" />
+                                      <option name="offset" value="38" />
+                                      <option name="possibleAnswer" value="*" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="operator" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="string_multiplication.py" />
+                                <option name="text" value="hello = &quot;hello&quot;&#10;ten_of_hellos = hello operator 10&#10;print(ten_of_hellos)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="String indexing" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98662" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="string_indexing.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Note that index starts with 0." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="9" />
+                                          <option name="offset" value="96" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="9" />
+                                      <option name="offset" value="96" />
+                                      <option name="possibleAnswer" value="python[0]" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="type here" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="string_indexing.py" />
+                                <option name="text" value="python = &quot;Python&quot;&#10;print(&quot;h &quot; + python[3])     # Note: string indexing starts with 0&#10;&#10;p_letter = type here&#10;print(p_letter)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="4" />
+                      <option name="name" value="String negative indexing" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98663" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="negative_indexing.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use negative index." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="9" />
+                                          <option name="offset" value="58" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="9" />
+                                      <option name="offset" value="58" />
+                                      <option name="possibleAnswer" value="long_string[-1]" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="type here" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="negative_indexing.py" />
+                                <option name="text" value="long_string = &quot;This is a very long string!&quot;&#10;exclamation = type here&#10;print(exclamation)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="5" />
+                      <option name="name" value="String slicing" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98664" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="slicing.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="You can leave one or both indices empty." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="9" />
+                                          <option name="offset" value="167" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="9" />
+                                      <option name="offset" value="167" />
+                                      <option name="possibleAnswer" value="monty_python[6:]" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="type here" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="slicing.py" />
+                                <option name="text" value="monty_python = &quot;Monty Python&quot;&#10;monty = monty_python[:5]      # one or both index could be dropped. monty_python[:5] is equal to monty_python[0:5]&#10;print(monty)&#10;python = type here&#10;print(python)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="6" />
+                      <option name="name" value="In operator" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98665" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="in_operator.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use 'in' operator." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="9" />
+                                          <option name="offset" value="99" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="9" />
+                                      <option name="offset" value="99" />
+                                      <option name="possibleAnswer" value="'ice' in ice_cream" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="type here" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="in_operator.py" />
+                                <option name="text" value="ice_cream = &quot;ice cream&quot;&#10;print(&quot;cream&quot; in ice_cream)    # print boolean result directly&#10;&#10;contains = type here&#10;print(contains)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="7" />
+                      <option name="name" value="String length" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98666" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="len_function.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Remember about string slicing." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="9" />
+                                          <option name="offset" value="117" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="9" />
+                                      <option name="offset" value="117" />
+                                      <option name="possibleAnswer" value="phrase[:int(len(phrase)/2)]" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="type here" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="len_function.py" />
+                                <option name="text" value="phrase = &quot;&quot;&quot;&#10;It is a really long string&#10;triple-quoted strings are used&#10;to define multi-line strings&#10;&quot;&quot;&quot;&#10;first_half = type here&#10;print(first_half)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="8" />
+                      <option name="name" value="Character escaping" />
+                      <option name="status" value="Solved" />
+                      <option name="stepicId" value="98667" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="character_escaping.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use backslash \\ to escape quotes." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState" />
+                                      <option name="length" value="4" />
+                                      <option name="offset" value="105" />
+                                      <option name="possibleAnswer" value="The name of this ice-cream is &quot;Sweet\'n\'Tasty&quot;" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Solved" />
+                                      <option name="taskText" value="text" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="character_escaping.py" />
+                                <option name="text" value="dont_worry = &quot;Don't worry about apostrophes&quot;&#10;print(dont_worry)&#10;print(&quot;\&quot;Sweeet\&quot; is an ice-cream&quot;)&#10;print('text')&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="9" />
+                      <option name="name" value="Basic string methods" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98668" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="string_methods.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Look at the lower() method usage." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="24" />
+                                          <option name="offset" value="131" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="24" />
+                                      <option name="offset" value="131" />
+                                      <option name="possibleAnswer" value="monty_python.upper()" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="upper cased monty_python" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="string_methods.py" />
+                                <option name="text" value="monty_python = &quot;Monty Python&quot;&#10;print(monty_python)&#10;&#10;print(monty_python.lower())    # print lower-cased version of the string&#10;&#10;print(upper cased monty_python)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="10" />
+                      <option name="name" value="String formatting" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98669" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="string_formatting.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use %d special symbol." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="14" />
+                                          <option name="offset" value="132" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="14" />
+                                      <option name="offset" value="132" />
+                                      <option name="possibleAnswer" value="%d" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="special symbol" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="How old are you?" />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="5" />
+                                          <option name="offset" value="160" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="5" />
+                                      <option name="offset" value="148" />
+                                      <option name="possibleAnswer" value="17" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="years" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="string_formatting.py" />
+                                <option name="text" value="name = &quot;John&quot;&#10;print(&quot;Hello, PyCharm! My name is %s!&quot; % name)     # Note: %s is inside the string, % is after the string&#10;&#10;print(&quot;I'm special symbol years old&quot; % years)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="4" />
+                <option name="name" value="Data structures" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Lists introduction" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98678" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="lists.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use list slicing lst[index1:index2]" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="5" />
+                                          <option name="offset" value="70" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="5" />
+                                      <option name="offset" value="70" />
+                                      <option name="possibleAnswer" value="squares[1:4]" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="slice" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="lists.py" />
+                                <option name="text" value="squares = [1, 4, 9, 16, 25]   # create new list&#10;print(squares)&#10;&#10;print(slice)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Lists operations" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98679" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="list_operations.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use indexing operation and assignment." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="30" />
+                                          <option name="offset" value="257" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="30" />
+                                      <option name="offset" value="257" />
+                                      <option name="possibleAnswer" value="animals[-1] = 'dinosaur'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace 'dino' with 'dinosaur'" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="list_operations.py" />
+                                <option name="text" value="animals = ['elephant', 'lion', 'tiger', &quot;giraffe&quot;]  # create new list&#10;print(animals)&#10;&#10;animals += [&quot;monkey&quot;, 'dog']    # add two items to the list&#10;print(animals)&#10;&#10;animals.append(&quot;dino&quot;)   # add one more item to the list using append() method&#10;print(animals)&#10;&#10;replace 'dino' with 'dinosaur'&#10;print(animals)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="List items" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98680" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="list_items.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use assignment to an empty list []." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="10" />
+                                          <option name="offset" value="301" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="10" />
+                                      <option name="offset" value="301" />
+                                      <option name="possibleAnswer" value="animals[:] = []" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="clear list" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="list_items.py" />
+                                <option name="text" value="animals = ['elephant', 'lion', 'tiger', &quot;giraffe&quot;, &quot;monkey&quot;, 'dog']   # create new list&#10;print(animals)&#10;&#10;animals[1:3] = ['cat']    # replace 2 items -- 'lion' and 'tiger' with one item -- 'cat'&#10;print(animals)&#10;&#10;animals[1:3] = []     # remove 2 items -- 'cat' and 'giraffe' from the list&#10;print(animals)&#10;&#10;clear list&#10;print(animals)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="4" />
+                      <option name="name" value="Tuples" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98681" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="tuples.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use len() function." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="15" />
+                                          <option name="offset" value="161" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="15" />
+                                      <option name="offset" value="161" />
+                                      <option name="possibleAnswer" value="len(alphabet)" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="alphabet length" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="tuples.py" />
+                                <option name="text" value="alphabet = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',&#10;            'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')&#10;&#10;print(alphabet length)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="5" />
+                      <option name="name" value="Dictionaries" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98682" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="dicts.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use dict indexing e.g. dct[key]" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="12" />
+                                          <option name="offset" value="311" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="12" />
+                                      <option name="offset" value="311" />
+                                      <option name="possibleAnswer" value="phone_book['Jane']" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="Jane's phone" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="dicts.py" />
+                                <option name="text" value="# create new dictionary.&#10;phone_book = {&quot;John&quot;: 123, &quot;Jane&quot;: 234, &quot;Jerard&quot;: 345}    # &quot;John&quot;, &quot;Jane&quot; and &quot;Jerard&quot; are keys and numbers are values&#10;print(phone_book)&#10;&#10;# Add new item to the dictionary&#10;phone_book[&quot;Jill&quot;] = 345&#10;print(phone_book)&#10;&#10;# Remove key-value pair from phone_book&#10;del phone_book['John']&#10;&#10;print(Jane's phone)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="6" />
+                      <option name="name" value="Dictionary keys() and values()" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98683" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="dict_key_value.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use values() method." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="17" />
+                                          <option name="offset" value="208" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="17" />
+                                      <option name="offset" value="208" />
+                                      <option name="possibleAnswer" value="phone_book.values()" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="phone_book values" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="dict_key_value.py" />
+                                <option name="text" value="phone_book = {&quot;John&quot;: 123, &quot;Jane&quot;: 234, &quot;Jerard&quot;: 345}  # create new dictionary&#10;print(phone_book)&#10;&#10;# Add new item to the dictionary&#10;phone_book[&quot;Jill&quot;] = 456&#10;print(phone_book)&#10;&#10;print(phone_book.keys())&#10;&#10;print(phone_book values)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="7" />
+                      <option name="name" value="In keyword" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98684" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="in_keyword.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use in keyword." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="30" />
+                                          <option name="offset" value="236" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="30" />
+                                      <option name="offset" value="236" />
+                                      <option name="possibleAnswer" value="'fish' in grocery_dict.keys()" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="is 'fish' in grocery_dict keys" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="in_keyword.py" />
+                                <option name="text" value="grocery_list = [&quot;fish&quot;, &quot;tomato&quot;, 'apples']   # create new list&#10;&#10;print(&quot;tomato&quot; in grocery_list)    # check that grocery_list contains &quot;tomato&quot; item&#10;&#10;grocery_dict = {&quot;fish&quot;: 1, &quot;tomato&quot;: 6, 'apples': 3}   # create new dictionary&#10;&#10;print(is 'fish' in grocery_dict keys)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="5" />
+                <option name="name" value="Condition expressions" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Boolean operators" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98685" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="boolean_operators.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use and keyword and != operator." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="24" />
+                                          <option name="offset" value="132" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="24" />
+                                      <option name="offset" value="132" />
+                                      <option name="possibleAnswer" value="name == 'John' and age != 23" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="John is not 23 years old" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="boolean_operators.py" />
+                                <option name="text" value="name = &quot;John&quot;&#10;age = 17&#10;&#10;print(name == &quot;John&quot; or age == 17)    # checks that either name equals to &quot;John&quot; OR age equals to 17&#10;&#10;print(John is not 23 years old)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Boolean operators order" />
+                      <option name="status" value="Solved" />
+                      <option name="stepicId" value="98686" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="boolean_order.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Combine 'and', 'or' and 'not' keywords." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="69" />
+                                          <option name="offset" value="108" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="69" />
+                                      <option name="offset" value="108" />
+                                      <option name="possibleAnswer" value="name is &quot;Ellis&quot; or not (name is &quot;John&quot; and age == 17)" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Solved" />
+                                      <option name="taskText" value="&quot;name&quot; is &quot;Ellis&quot; or not (&quot;name&quot; equal &quot;John&quot; and he is 17 years old)" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="boolean_order.py" />
+                                <option name="text" value="name = &quot;John&quot;&#10;age = 17&#10;&#10;print(name == &quot;John&quot; or not age &gt; 17)&#10;&#10;print(name == &quot;John&quot; or not age &gt; 17)&#10;&#10;print(&quot;name&quot; is &quot;Ellis&quot; or not (&quot;name&quot; equal &quot;John&quot; and he is 17 years old))&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="If statement" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98687" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="if_statement.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use len function to check if tasks is empty." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="25" />
+                                          <option name="offset" value="236" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="25" />
+                                      <option name="offset" value="236" />
+                                      <option name="possibleAnswer" value="if len(tasks) == 0:" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="check if 'tasks' is empty" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="if_statement.py" />
+                                <option name="text" value="name = &quot;John&quot;&#10;age = 17&#10;&#10;if name == &quot;John&quot; or age == 17:   # check that name is &quot;John&quot; or age is 17. If so print next 2 lines.&#10;    print(&quot;name is John&quot;)&#10;    print(&quot;John is 17 years old&quot;)&#10;&#10;tasks = ['task1', 'task2']    # create new list&#10;&#10;check if 'tasks' is empty&#10;    print(&quot;empty&quot;)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="4" />
+                      <option name="name" value="Else, elif part in if statement" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98688" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="else_elif.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use if keyword and == operator." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="29" />
+                                          <option name="offset" value="352" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="29" />
+                                      <option name="offset" value="352" />
+                                      <option name="possibleAnswer" value="if name == 'John':" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="check if name equal to &quot;John&quot;" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use else keyword." />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="9" />
+                                          <option name="offset" value="398" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="9" />
+                                      <option name="offset" value="387" />
+                                      <option name="possibleAnswer" value="else:" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="otherwise" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="else_elif.py" />
+                                <option name="text" value="x = 28&#10;&#10;if x &lt; 0:&#10;    print('x &lt; 0')                      # executes only if x &lt; 0&#10;elif x == 0:&#10;    print('x is zero')                 # if it's not true that x &lt; 0, check if x == 0&#10;elif x == 1:&#10;    print('x == 1')                    # if it's not true that x &lt; 0 and x != 0, check if x == 1&#10;else:&#10;    print('non of the above is true')&#10;&#10;name = &quot;John&quot;&#10;&#10;check if name equal to &quot;John&quot;&#10;    print(True)&#10;otherwise&#10;    print(False)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="6" />
+                <option name="name" value="Loops" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="For loop" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98707" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="for_loop.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use for loop to iterate over 'primes'." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="34" />
+                                          <option name="offset" value="238" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="34" />
+                                      <option name="offset" value="238" />
+                                      <option name="possibleAnswer" value="for prime in primes:" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="iterate over primes using for loop" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="for_loop.py" />
+                                <option name="text" value="for i in range(5):    # for each number i in range 0-4. range(5) function returns list [0, 1, 2, 3, 4]&#10;    print(i)          # this line is executed 5 times. First time i equals 0, then 1, ...&#10;&#10;&#10;primes = [2, 3, 5, 7]   # create new list&#10;&#10;iterate over primes using for loop&#10;    print(prime)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="For loop using string" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98708" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="for_string.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use for loop to iterate over 'hello_world' string." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="59" />
+                                          <option name="offset" value="158" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="59" />
+                                      <option name="offset" value="158" />
+                                      <option name="possibleAnswer" value="for ch in hello_world:" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="count how many characters are in the hello_world using loop" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="for_string.py" />
+                                <option name="text" value="hello_world = &quot;Hello, World!&quot;&#10;&#10;for ch in hello_world:    # print each character from hello_world&#10;    print(ch)&#10;&#10;length = 0      # initialize length variable&#10;&#10;count how many characters are in the hello_world using loop&#10;    length += 1     # add 1 to the length on each iteration&#10;&#10;print(len(hello_world) == length)" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="While loop" />
+                      <option name="status" value="Solved" />
+                      <option name="stepicId" value="98709" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="while_loop.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Check if 'number' is strictly less than 10 in condition." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="30" />
+                                          <option name="offset" value="213" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="30" />
+                                      <option name="offset" value="213" />
+                                      <option name="possibleAnswer" value="while square &lt; 81:" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Solved" />
+                                      <option name="taskText" value="print all squares from 0 to 99" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="while_loop.py" />
+                                <option name="text" value="square = 1&#10;&#10;while square &lt;= 10:&#10;    print(square)    # This code is executed 10 times&#10;    square += 1      # This code is executed 10 times&#10;&#10;print(&quot;Finished&quot;)  # This code is executed once&#10;&#10;square = 0&#10;number = 1&#10;&#10;print all squares from 0 to 99&#10;    square = number ** 2&#10;    print(square)&#10;    number += 1&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="4" />
+                      <option name="name" value="Break keyword" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98710" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="break_keyword.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use == to check if animal is equal to 'elephant'." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="33" />
+                                          <option name="offset" value="377" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="33" />
+                                      <option name="offset" value="377" />
+                                      <option name="possibleAnswer" value="animal == 'elephant'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="exit loop if animal is 'elephant'" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="break_keyword.py" />
+                                <option name="text" value="count = 0&#10;&#10;while True:  # this condition cannot possibly be false&#10;    print(count)&#10;    count += 1&#10;    if count &gt;= 5:&#10;        break           # exit loop if count &gt;= 5&#10;&#10;&#10;zoo = [&quot;lion&quot;, 'tiger', 'elephant']&#10;while True:                         # this condition cannot possibly be false&#10;    animal = zoo.pop()       # extract one element from the list end&#10;    print(animal)&#10;    if exit loop if animal is 'elephant':&#10;        break           # exit loop&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="5" />
+                      <option name="name" value="Continue keyword" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98711" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="continue_keyword.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use % operator to check if x is even." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="18" />
+                                          <option name="offset" value="154" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="18" />
+                                      <option name="offset" value="154" />
+                                      <option name="possibleAnswer" value="x % 2 == 0" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="Check if x is even" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="continue_keyword.py" />
+                                <option name="text" value="for i in range(5):&#10;    if i == 3:&#10;        continue   # skip the rest of the code inside loop for current i value&#10;    print(i)&#10;&#10;for x in range(10):&#10;    if Check if x is even:&#10;        continue   # skip print(x) for this loop&#10;    print(x)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="7" />
+                <option name="name" value="Functions" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Definition" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98712" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="functions.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use 'def' keyword to define 'fun' function." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="58" />
+                                          <option name="offset" value="256" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="58" />
+                                      <option name="offset" value="256" />
+                                      <option name="possibleAnswer" value="def fun():" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="define a function named 'fun' to replace three lines above" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="functions.py" />
+                                <option name="text" value="def hello_world():  # function named my_function&#10;    print(&quot;Hello, World!&quot;)&#10;&#10;for i in range(5):&#10;    hello_world()   # call function defined above 5 times&#10;&#10;print('I want to be a function')&#10;print('I want to be a function')&#10;print('I want to be a function')&#10;&#10;&#10;define a function named 'fun' to replace three lines above&#10;    print('I want to be a function')&#10;&#10;for i in range(3):&#10;    fun()&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Parameters and call arguments" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98713" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="param_args.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Put parameter 'x' inside parentheses in function definition." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="71" />
+                                          <option name="offset" value="159" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="71" />
+                                      <option name="offset" value="159" />
+                                      <option name="possibleAnswer" value="def square(x):" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="define a function named 'square' that prints square of passed parameter" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="param_args.py" />
+                                <option name="text" value="def foo(x):                 # x is a function parameter&#10;    print(&quot;x = &quot; + str(x))&#10;&#10;foo(5)   # pass 5 to foo(). Here 5 is an argument passed to function foo.&#10;&#10;define a function named 'square' that prints square of passed parameter&#10;    print(x ** 2)&#10;&#10;square(4)&#10;square(8)&#10;square(15)&#10;square(23)&#10;square(42)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="Return value" />
+                      <option name="status" value="Solved" />
+                      <option name="stepicId" value="98714" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="return_keyword.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Initialize 'b' with 1." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="21" />
+                                          <option name="offset" value="373" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="21" />
+                                      <option name="offset" value="373" />
+                                      <option name="possibleAnswer" value="1" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Solved" />
+                                      <option name="taskText" value="initialize variable b" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Update 'b' with 'a + b'." />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="17" />
+                                          <option name="offset" value="465" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="17" />
+                                      <option name="offset" value="445" />
+                                      <option name="possibleAnswer" value="b = a + b" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Solved" />
+                                      <option name="taskText" value="update variable b" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Update 'a' with 'tmp_var'." />
+                                      <option name="index" value="2" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="17" />
+                                          <option name="offset" value="491" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="17" />
+                                      <option name="offset" value="463" />
+                                      <option name="possibleAnswer" value="a = tmp_var" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Solved" />
+                                      <option name="taskText" value="update variable a" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="return_keyword.py" />
+                                <option name="text" value="def sum_two_numbers(a, b):&#10;    return a + b            # return result to the function caller&#10;&#10;c = sum_two_numbers(3, 12)  # assign result of function execution to variable 'c'&#10;&#10;&#10;def fib(n):&#10;    &quot;&quot;&quot;This is documentation string for function. It'll be available by fib.__doc__()&#10;    Return a list containing the Fibonacci series up to n.&quot;&quot;&quot;&#10;    result = []&#10;    a = 1&#10;    b = initialize variable b&#10;    while a &lt; n:&#10;        result.append(a)&#10;        tmp_var = b&#10;        update variable b&#10;        update variable a&#10;    return result&#10;&#10;print(fib(10))&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="4" />
+                      <option name="name" value="Default parameters" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98715" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="default_parameter.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Set default value for parameter 'name'." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="55" />
+                                          <option name="offset" value="158" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="55" />
+                                      <option name="offset" value="158" />
+                                      <option name="possibleAnswer" value="subject, name='John'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="add parameters for function, set default value for name" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="default_parameter.py" />
+                                <option name="text" value="def multiply_by(a, b=2):&#10;    return a * b&#10;&#10;print(multiply_by(3, 47))&#10;print(multiply_by(3))    # call function using default value for b parameter&#10;&#10;&#10;def hello(add parameters for function, set default value for name):&#10;    print(&quot;Hello %s! My name is %s&quot; % (subject, name))&#10;&#10;hello(&quot;PyCharm&quot;, &quot;Jane&quot;)    # call 'hello' function with &quot;PyCharm as a subject parameter and &quot;Jane&quot; as a name&#10;hello(&quot;PyCharm&quot;)            # call 'hello' function with &quot;PyCharm as a subject parameter and default value for the name&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="8" />
+                <option name="name" value="Classes and objects" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Definition" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98725" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="class_definition.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Assign any value to variable." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="28" />
+                                          <option name="offset" value="30" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="28" />
+                                      <option name="offset" value="30" />
+                                      <option name="possibleAnswer" value="4" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="assign any value to variable" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="class_definition.py" />
+                                <option name="text" value="class MyClass:&#10;    variable = assign any value to variable&#10;&#10;    def foo(self):   # we'll explain self parameter later in task 4&#10;        print(&quot;Hello from function foo&quot;)&#10;&#10;my_object = MyClass()  # variable &quot;my_object&quot; holds an object of the class &quot;MyClass&quot; that contains the variable and the &quot;foo&quot; function&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Variable access" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98726" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="access_variable.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Access 'variable1' using my_object.variable1" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="33" />
+                                          <option name="offset" value="408" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="33" />
+                                      <option name="offset" value="408" />
+                                      <option name="possibleAnswer" value="my_object.variable1" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="value of variable1 from my_object" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="access_variable.py" />
+                                <option name="text" value="class MyClass:&#10;    variable1 = 1&#10;    variable2 = 2&#10;&#10;    def foo(self):     # we'll explain self parameter later in task 4&#10;        print(&quot;Hello from function foo&quot;)&#10;&#10;my_object = MyClass()&#10;my_object1 = MyClass()&#10;&#10;my_object.variable2 = 3     # change value stored in variable2 in my_object&#10;&#10;print(my_object.variable2)&#10;print(my_object1.variable2)&#10;&#10;my_object.foo()   # call method foo() of object my_object&#10;&#10;print(value of variable1 from my_object)&#10;&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="Variable access" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98727" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="access_variable.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Create new car using Car()" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="20" />
+                                          <option name="offset" value="220" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="20" />
+                                      <option name="offset" value="220" />
+                                      <option name="possibleAnswer" value="Car()" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="create object of Car" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Change color using car2.color = &quot;new color&quot;." />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="14" />
+                                          <option name="offset" value="262" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="14" />
+                                      <option name="offset" value="247" />
+                                      <option name="possibleAnswer" value="car2.color = &quot;red&quot;" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="set car2 color" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="access_variable.py" />
+                                <option name="text" value="class Car:&#10;    color = &quot;&quot;&#10;    def description(self):&#10;        description_string = &quot;This is a %s car.&quot; % self.color    # we'll explain self parameter later in task 4&#10;        return description_string&#10;&#10;car1 = Car()&#10;car2 = create object of Car&#10;&#10;car1.color = &quot;blue&quot;&#10;set car2 color&#10;&#10;print(car1.description())&#10;print(car2.description())&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="4" />
+                      <option name="name" value="Self explanation" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98728" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="self_parameter.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Add amount to the self.current variable." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="21" />
+                                          <option name="offset" value="184" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="21" />
+                                      <option name="offset" value="184" />
+                                      <option name="possibleAnswer" value="self.current += amount" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="add number to current" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="self_parameter.py" />
+                                <option name="text" value="class Complex:&#10;    def create(self, real_part, imag_part):&#10;        self.r = real_part&#10;        self.i = imag_part&#10;&#10;class Calculator:&#10;    current = 0&#10;&#10;    def add(self, amount):&#10;        add number to current&#10;&#10;    def get_current(self):&#10;        return self.current&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="5" />
+                      <option name="name" value="Special __init__ method" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98729" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="init_method.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Add two parameters -- self and color." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="19" />
+                                          <option name="offset" value="159" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="19" />
+                                      <option name="offset" value="159" />
+                                      <option name="possibleAnswer" value="self, color" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="add parameters here" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="init_method.py" />
+                                <option name="text" value="class Square:&#10;&#10;    def __init__(self):    # special method __init__&#10;        self.sides = 4&#10;&#10;square = Square()&#10;print(square.sides)&#10;&#10;class Car:&#10;    def __init__(add parameters here):&#10;        self.color = color&#10;&#10;car = Car(&quot;blue&quot;)    # Note: you should not pass self parameter explicitly, only color parameter&#10;&#10;print(car.color)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="9" />
+                <option name="name" value="Modules and packages" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Import module" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98730" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="calculator.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="calculator.py" />
+                                <option name="text" value="&quot;&quot;&quot;&#10;This module contains Calculator class&#10;&quot;&quot;&quot;&#10;&#10;&#10;class Calculator:&#10;    def __init__(self):&#10;        self.current = 0&#10;&#10;    def add(self, amount):&#10;        self.current += amount&#10;&#10;    def get_current(self):&#10;        return self.current" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="imports.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use 'import' keyword and my_module reference." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="21" />
+                                          <option name="offset" value="164" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="21" />
+                                      <option name="offset" value="164" />
+                                      <option name="possibleAnswer" value="import my_module" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="here import my_module" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Access 'hello_world' function from module 'my_module' as my_module.hello_world()" />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="40" />
+                                          <option name="offset" value="187" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="40" />
+                                      <option name="offset" value="182" />
+                                      <option name="possibleAnswer" value="my_module.hello_world('John')" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="call function hello_world from my_module" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="imports.py" />
+                                <option name="text" value="&#10;import calculator&#10;&#10;calc = calculator.Calculator()    # create new instance of Calculator class defined in calculator module&#10;calc.add(2)&#10;print(calc.get_current())&#10;&#10;here import my_module&#10;&#10;call function hello_world from my_module&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="my_module.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="my_module.py" />
+                                <option name="text" value="&quot;&quot;&quot; documentation string for module my_module&#10;This module contains hello_world function&#10;&quot;&quot;&quot;&#10;&#10;&#10;def hello_world(name):&#10;    print(&quot;Hello, World! My name is %s&quot; % name)" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Builtin modules" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98731" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="builtin_modules.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use datetime.datetime.today() function." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="12" />
+                                          <option name="offset" value="23" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="12" />
+                                      <option name="offset" value="23" />
+                                      <option name="possibleAnswer" value="datetime.datetime.today()" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="current date" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="builtin_modules.py" />
+                                <option name="text" value="import datetime&#10;&#10;print(current date)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="From import" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98732" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="calculator.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="calculator.py" />
+                                <option name="text" value="&quot;&quot;&quot;&#10;This module contains Calculator class&#10;&quot;&quot;&quot;&#10;&#10;&#10;class Calculator:&#10;    def __init__(self):&#10;        self.current = 0&#10;&#10;    def add(self, amount):&#10;        self.current += amount&#10;&#10;    def get_current(self):&#10;        return self.current" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="from_import.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use 'from my_module import hello_world'" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="33" />
+                                          <option name="offset" value="169" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="33" />
+                                      <option name="offset" value="169" />
+                                      <option name="possibleAnswer" value="from my_module import hello_world" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="import hello_world from my_module" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="from_import.py" />
+                                <option name="text" value="&#10;from calculator import Calculator&#10;&#10;calc = Calculator()    # here we can use Calculator class directly without prefix calculator.&#10;calc.add(2)&#10;print(calc.get_current())&#10;&#10;import hello_world from my_module&#10;&#10;print(hello_world())    # Note: hello_world function used without prefix&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="my_module.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="my_module.py" />
+                                <option name="text" value="&quot;&quot;&quot; documentation string for module my_module&#10;This module contains hello_world function&#10;&quot;&quot;&quot;&#10;&#10;&#10;def hello_world():&#10;    return &quot;Hello, World!&quot;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="10" />
+                <option name="name" value="File input/output" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Read file" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98733" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="input.txt">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="input.txt" />
+                                <option name="text" value="I am a temporary file. Maybe someday, I'll become a real file." />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="input1.txt">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="input1.txt" />
+                                <option name="text" value="My first line&#10;My second line&#10;My third line" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="read_file.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use print function." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="15" />
+                                          <option name="offset" value="266" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="15" />
+                                      <option name="offset" value="266" />
+                                      <option name="possibleAnswer" value="print(line)" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="print each line" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use 'readline' method." />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="27" />
+                                          <option name="offset" value="410" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="27" />
+                                      <option name="offset" value="406" />
+                                      <option name="possibleAnswer" value="print(f1.readline())" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="print only first line of f1" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use f1.close() method." />
+                                      <option name="index" value="2" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="27" />
+                                          <option name="offset" value="439" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="27" />
+                                      <option name="offset" value="428" />
+                                      <option name="possibleAnswer" value="f1.close()" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="do not forget to close file" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="read_file.py" />
+                                <option name="text" value="&#10;f = open(&quot;input.txt&quot;, &quot;r&quot;)   # here we open file &quot;input.txt&quot;. Second argument used to identify that we want to read file&#10;                             # Note: if you want to write to the file use &quot;w&quot; as second argument&#10;&#10;for line in f.readlines():   # read lines&#10;    print each line&#10;&#10;f.close()                   # It's important to close the file to free up any system resources.&#10;&#10;f1 = open(&quot;input1.txt&quot;, &quot;r&quot;)&#10;&#10;print only first line of f1&#10;&#10;do not forget to close file&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Write to file" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="98734" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="output.txt">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="output.txt" />
+                                <option name="text" value="This is output file.&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="write_to_file.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use 'a' modifier to append lines to the end of file." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="12" />
+                                          <option name="offset" value="92" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="12" />
+                                      <option name="offset" value="92" />
+                                      <option name="possibleAnswer" value="'a'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="add modifier" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Use 'write' method." />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="35" />
+                                          <option name="offset" value="133" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="35" />
+                                      <option name="offset" value="124" />
+                                      <option name="possibleAnswer" value="f.write(i)" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="add the whole zoo to the output.txt" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Call f.close method." />
+                                      <option name="index" value="2" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="14" />
+                                          <option name="offset" value="174" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="14" />
+                                      <option name="offset" value="140" />
+                                      <option name="possibleAnswer" value="f.close()" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="close the file" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="write_to_file.py" />
+                                <option name="text" value="zoo = ['lion', &quot;elephant&quot;, 'monkey']&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    f = open(&quot;output.txt&quot;, add modifier)&#10;&#10;    for i in zoo:&#10;        add the whole zoo to the output.txt&#10;&#10;    close the file&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+            </list>
+          </option>
+          <option name="name" value="Introduction to Python" />
+          <option name="updateDate" />
+        </Course>
+      </option>
+      <option name="enableTestingFromSamples" value="true" />
+      <option name="toolWindowMode" value="TEXT" />
+      <option name="turnEditingMode" value="false" />
+      <option name="user">
+        <StepicUser>
+          <option name="email" value="" />
+          <option name="firstName" value="" />
+          <option name="id" value="0" />
+          <option name="lastName" value="" />
+        </StepicUser>
+      </option>
+      <option name="VERSION" value="3" />
+      <option name="myUserTests">
+        <map />
+      </option>
+      <option name="myInvisibleFiles">
+        <list />
+      </option>
+      <option name="myShouldUseJavaFx" value="true" />
+    </StudyTaskManager>
+  </component>
+</project>

@@ -22,7 +22,7 @@ print ALPHABET[random_integer]
 print '-- picking a string of 10 random letters ---'
 string_of_random_letters = ''
 for i in range(0, 10):
-    random_alphabet_index = random.randint(0, max value)
-    string_of_random_letters += ALPHABET[replace with the randomly-chosen index]
+    random_alphabet_index = random.randint(0, 25)
+    string_of_random_letters += ALPHABET[random_alphabet_index]
 
 print string_of_random_letters

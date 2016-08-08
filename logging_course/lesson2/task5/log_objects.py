@@ -23,4 +23,4 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
 
     obj = Mortgage(100000, 4.1, 15)
-    logger.debug('Created object: %s', obj)
+    logger.debug('Created object: %s',repr(obj))

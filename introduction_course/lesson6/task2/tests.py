@@ -3,7 +3,7 @@ from test_helper import run_common_tests, failed, passed, get_answer_placeholder
 
 def test_value():
     file = import_task_file()
-    if file.length == 13:
+    if hasattr(file, "length") and file.length == 13:
         passed()
     else:
         failed("Count again")

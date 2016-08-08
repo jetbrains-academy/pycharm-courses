@@ -1,4 +1,4 @@
-<html>
+
 <p>
 The <strong>null cipher</strong> adds noise to the plaintext, with the goal of making the plaintext hard to isolate.
 </p>
@@ -10,13 +10,13 @@ In that case, we decrypted the message by taking the first letter of every word 
 There are several variations. For example, it could have been that the second letter of every word in the encrypted text was part of the plaintext (key=1).
 Another variation could be that the final letter of every word in the encrypted text was part of the plaintext (key=-1). An example of the latter:
 </p>
-<br/>
-&nbsp; &nbsp; encrypted: BOOM BLUE SNAKE AT IOWA MART TIN RODEO HALO MOON
-<br/>
-&nbsp; &nbsp; decrypted: MEETATNOON (which we can interpret as MEET AT NOON)
+<br>
+    encrypted: BOOM BLUE SNAKE AT IOWA MART TIN RODEO HALO MOON
+<br>
+    decrypted: MEETATNOON (which we can interpret as MEET AT NOON)
 
-<br/>
-<br/>
+<br>
+<br>
 
 What does this look like in code?
 <ul>
@@ -24,10 +24,9 @@ What does this look like in code?
     <li>decrypt() - given key k, take the k-th letter of every word in the encrypted text</li>
 </ul>
 
-<br/>
-<hr/>
-<br/>
+<br>
+
+<br>
 Task: decrypt ENCRYPTED_TEXT using the null cipher with key=1.
-<br/>
-<br/>
-</html>
+<br>
+<br>

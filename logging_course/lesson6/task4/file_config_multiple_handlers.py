@@ -9,7 +9,7 @@ keys=root
 keys=formatter1
 
 [handlers]
-keys=handler1, enter file handler instance name
+keys=handler1, file
 
 [formatter_formatter1]
 format=%(asctime)s %(levelname)s %(message)s
@@ -19,13 +19,13 @@ class=StreamHandler
 args=()
 formatter=formatter1
 
-[handler_enter file handler instance name]
+[handler_file]
 class=FileHandler
 args=("../../Sandbox/file_config_example.log", )
 formatter=formatter1
 
 [logger_root]
-handlers=handler1, enter file handler instance name
+handlers=handler1, file
 level=DEBUG
 """
 

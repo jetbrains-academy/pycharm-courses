@@ -1,1 +1,0 @@
-use random.randint(0,25) to select an integer that can be used as an index in ALPHABET

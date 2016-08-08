@@ -25,7 +25,7 @@ if __name__ == '__main__':
                 'handlers': ['console', ]
             }
         },
-        'insert name of optioninsert option valuelse
+        'disable_existing_loggers': False
     }
 
     logging.config.dictConfig(log_config)

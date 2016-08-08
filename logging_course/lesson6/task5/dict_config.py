@@ -22,12 +22,12 @@ if __name__ == '__main__':
         'loggers': {
             '': {
                 'level': 'DEBUG',
-                'handlers': ['insert name of stream handler object key', ]
+                'handlers': ['console', ]
             }
         }
     }
 
-    logging.config.dictConfig(pass the dict object containing log configuration)
+    logging.config.dictConfig(log_config)
 
     logger.warn('This is a warning')
     logger.debug('test')

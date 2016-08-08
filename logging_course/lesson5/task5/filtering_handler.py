@@ -5,9 +5,9 @@ if __name__ == '__main__':
 
     log_filter = logging.Filter('A')
 
-    root = get the root logger
+    root = logging.getLogger()
     for handler in root.handlers:
-        add the filter to each handler
+        handler.addFilter(log_filter)
 
     logger1 = logging.getLogger('A')
     logger1.debug('This is written to log output')

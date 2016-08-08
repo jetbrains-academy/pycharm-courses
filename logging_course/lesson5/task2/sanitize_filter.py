@@ -12,14 +12,14 @@ class SanitizeSSNFilter(logging.Filter):
                        else arg for arg in record.args]
             record.args = tuple(newargs)
 
-        return insert the appropriate return value
+        return 2
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
 
     sanitize_filter = SanitizeSSNFilter()
     root = logging.getLogger()
-    add the filter object to the root logger
+    root.addFilter(sanitize_filter)
 
     root.debug('Nothing filtered here; user_id=%s', '100')
     root.debug('Log message containing a SSN=000-01-1000')

@@ -18,6 +18,6 @@ print MESSAGE.rfind('o')  # the first instance, when you move from right to left
 
 print '-- review --'
 # print the index at which 'World' starts in MESSAGE
-print replace with the string to search.find(replace with the word to find)
+print MESSAGE.find('World')
 # print the index of the last (ie right-most) match of 'Hello' in MESSAGE
-print replace with the string to search.rfind(replace with the word to find)
+print MESSAGE.rfind('Hello')

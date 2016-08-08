@@ -4,21 +4,21 @@ import unittest
 class TestIntegerTruthiness(unittest.TestCase):
     def test_zero(self):
         """check that the thruthiness of the integer zero is False"""
-        write this test!
+        self.assertFalse(0)
 
     def test_one(self):
         """check that the thruthiness of the integer one is True"""
-        write this test!
+        self.assertTrue(1)
 
     def test_other_value(self):
         """check the thruthiness of an integer other than zero"""
-        write this test!
+        self.assertTrue(3)
 
 
 class TestNoneTruthiness(unittest.TestCase):
     def test_none(self):
         """check the thruthiness of None"""
-        self.assertMethodName(None)
+        self.assertFalse(None)
 
 
 class TestContainerTruthiness(unittest.TestCase):
@@ -28,17 +28,17 @@ class TestContainerTruthiness(unittest.TestCase):
     # just like all methods whose name doesn't begin with "test".
 
     def _test_container_class(self, empty_container, non_empty_container):
-        self.assertchoose the proper assetion method(empty_container)
-        self.assertchoose the proper assetion method(non_empty_container)
+        self.assertFalse(empty_container)
+        self.assertTrue(non_empty_container)
 
     def test_list(self):
-        implement this test using _test_container_class()
+        self._test_container_class([], [False])
 
     def test_tuple(self):
-        implement this test using _test_container_class()
+        self._test_container_class((), (False,))
 
     def test_set(self):
-        implement this test using _test_container_class()
+        self._test_container_class(set(), {False})
 
     def test_dict(self):
-        implement this test using _test_container_class()
+        self._test_container_class({}, {False: False})

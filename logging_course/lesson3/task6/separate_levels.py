@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     stdout_handler = logging.StreamHandler(sys.stdout)
     stdout_handler.setFormatter(fmt)
-    stdout_handler.set handler level
+    stdout_handler.setLevel(logging.WARNING)
     root_logger.addHandler(stdout_handler)
 
     root_logger.setLevel(logging.DEBUG)

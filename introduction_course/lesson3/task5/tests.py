@@ -3,7 +3,7 @@ from test_helper import run_common_tests, failed, passed, import_task_file, get_
 
 def test_value():
     file = import_task_file()
-    if file.python == "Python":
+    if hasattr(file, "python") and file.python == "Python":
         passed()
     else:
         failed("Check indices used in slicing")

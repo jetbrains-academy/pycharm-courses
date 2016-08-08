@@ -28,6 +28,6 @@ def get_monthly_payment(principal, years):
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG,
                         format='%(asctime)s %(levelname)s %(message)s',
-                        datefmt='insert format string codes here')
+                        datefmt='%a %b %d %Y %I:%M:%S%p')
     payment = get_monthly_payment(100000, 80)
     print('Monthly payment is %f' % payment)

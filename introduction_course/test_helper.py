@@ -8,7 +8,8 @@ def get_file_text(path):
     file_io.close()
     return text
 
-def get_file_output(encoding="utf-8", path=sys.argv[-1]):
+
+def get_file_output(encoding="utf-8", path=sys.argv[-1], arg_string=""):
     """
     Returns answer file output
     :param encoding: to decode output in python3
@@ -17,7 +18,13 @@ def get_file_output(encoding="utf-8", path=sys.argv[-1]):
     """
     import subprocess
 
-    proc = subprocess.Popen([sys.executable, path], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    proc = subprocess.Popen([sys.executable, path], stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                            stderr=subprocess.STDOUT)
+    if arg_string:
+        for arg in arg_string.split("\n"):
+            proc.stdin.write(bytearray(str(arg) + "\n", encoding))
+            proc.stdin.flush()
+
     return list(map(lambda x: str(x.decode(encoding)), proc.communicate()[0].splitlines()))
 
 
@@ -30,7 +37,8 @@ def test_file_importable():
         parent = os.path.abspath(os.path.join(path, os.pardir))
         python_files = [f for f in os.listdir(parent) if os.path.isfile(os.path.join(parent, f)) and f.endswith(".py")]
         for python_file in python_files:
-            if python_file == "tests.py": continue
+            if python_file == "tests.py":
+                continue
             check_importable_path(os.path.join(parent, python_file))
         return
     check_importable_path(path)
@@ -89,7 +97,7 @@ def test_is_initial_text(error_text="You should modify the file"):
     text = get_initial_text(path)
     file_text = get_file_text(path)
 
-    if file_text.strip() == text:
+    if file_text.strip() == text.strip():
         failed(error_text)
     else:
         passed()
@@ -134,6 +142,11 @@ def test_answer_placeholders_text_deleted(error_text="Don't just delete task tex
             failed(error_text)
             return
     passed()
+
+
+def set_congratulation_message(message):
+    """ Overrides default 'Congratulations!' message """
+    print("#educational_plugin CONGRATS_MESSAGE " + message)
 
 
 def failed(message="Please, reload the task and try again.", name=None):
@@ -181,10 +194,30 @@ def get_answer_placeholders():
     return windows
 
 
+def check_samples(samples=()):
+    """
+      Check script output for all samples. Sample is a two element list, where the first is input and
+      the second is output.
+    """
+    for sample in samples:
+        if len(sample) == 2:
+            output = get_file_output(arg_string=str(sample[0]))
+            if "\n".join(output) != sample[1]:
+                failed(
+                    "Test from samples failed: \n \n"
+                    "Input:\n{}"
+                    "\n \n"
+                    "Expected:\n{}"
+                    "\n \n"
+                    "Your result:\n{}".format(str.strip(sample[0]), str.strip(sample[1]), "\n".join(output)))
+                return
+        set_congratulation_message("All test from samples passed. Now we are checking your solution on Stepic server.")
+
+    passed()
+
+
 def run_common_tests(error_text="Please, reload file and try again"):
     test_is_initial_text()
     test_is_not_empty()
     test_answer_placeholders_text_deleted()
     test_file_importable()
-
-

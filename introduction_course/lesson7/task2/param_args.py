@@ -3,7 +3,7 @@ def foo(x):                 # x is a function parameter
 
 foo(5)   # pass 5 to foo(). Here 5 is an argument passed to function foo.
 
-define a function named 'square' that prints square of passed parameter
+def square(x):
     print(x ** 2)
 
 square(4)

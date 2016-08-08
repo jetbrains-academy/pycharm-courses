@@ -36,9 +36,9 @@ if __name__ == '__main__':
     root_logger = logging.getLogger()
     root_logger.addHandler(file_handler)
 
-    stdout_handler = specify the stream handler class(sys.stdout)
-    use the existing formatter with the stdout_handler
-    root_logger.addHandler(pass the handler object)
+    stdout_handler = logging.StreamHandler(sys.stdout)
+    stdout_handler.setFormatter(fmt)
+    root_logger.addHandler(stdout_handler)
 
     root_logger.setLevel(logging.DEBUG)
 

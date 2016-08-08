@@ -3,7 +3,7 @@ import logging.config
 
 config = """
 [formatters]
-keys=enter a name for a new formatter object
+keys=formatter1
 
 [handlers]
 keys=handler1
@@ -11,7 +11,7 @@ keys=handler1
 [loggers]
 keys=root
 
-[formatter_add the formatter name here]
+[formatter_formatter1]
 format=%(asctime)s %(levelname)s %(message)s
 
 [handler_handler1]

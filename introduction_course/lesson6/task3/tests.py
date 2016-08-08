@@ -21,6 +21,8 @@ def test_window1():
     window = get_answer_placeholders()[0]
     if "number" in window:
         passed()
+    elif 'square' in window:
+        passed()
     else:
         failed("Use 'number' variable in the while condition")
 
@@ -30,6 +32,9 @@ def test_window2():
     if "10" in window:
         if "<" in window or "10 >" in window:
             passed()
+    elif 'square' in window:
+        if "<" and "81" in window:
+            passed()
     else:
         failed("Check that 'number' is strictly less than 10 in the condition")
 
@@ -37,9 +42,11 @@ def test_window2():
 def test_output():
     output = get_file_output()
     if "Finished" not in output:
-        failed()
+        failed("Sorry, this answer is wrong")
+        return
     border = output.index("Finished")
     user_squares = output[border + 1:]
+    user_squares = [x for x in user_squares if x]
     correct_answer = list(map(str, [x * x for x in range(1, 10)]))
     if correct_answer == user_squares:
         passed()

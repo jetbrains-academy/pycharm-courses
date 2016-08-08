@@ -1,1 +1,0 @@
-logger3.addHandler(logging.NullHandler())

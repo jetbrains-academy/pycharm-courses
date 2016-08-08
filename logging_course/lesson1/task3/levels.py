@@ -9,10 +9,10 @@ def get_current_rate(years):
     return rate
 
 def get_monthly_payment(principal, years):
-    logging.debug('Calling mortgage calculator')
+    logging.info('Calling mortgage calculator')
 
     if years > 50:
-        write_a_warning_message_to_logging
+        logging.warning("Term greater than 50 years")
 
     mon_rate = get_current_rate(years)/1200
     payments = years * 12

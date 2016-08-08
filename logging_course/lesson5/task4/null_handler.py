@@ -12,6 +12,6 @@ if __name__ == '__main__':
     logger2.debug('This is written to log output')
 
     logger3 = logging.getLogger('B')
-    add a null handler to logger3
+    logger3.addHandler(logging.NullHandler())
     logger3.propagate = False
     logger3.debug('This is NOT written to log output, because only names start with "B" are allowed by filter')

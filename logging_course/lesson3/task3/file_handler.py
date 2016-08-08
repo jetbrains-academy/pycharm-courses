@@ -31,10 +31,10 @@ if __name__ == '__main__':
     #                     filename='../../Sandbox/basic_file.log')
 
     log_filename = '../../Sandbox/create_file_handler.log'
-    file_handler = create FileHandler object
+    file_handler = logging.FileHandler(log_filename)
 
     root_logger = logging.getLogger()
-    root_logger.add handler to logger(file_handler)
+    root_logger.addHandler(file_handler)
     root_logger.setLevel(logging.DEBUG)
 
     payment = get_monthly_payment(100000, 80)

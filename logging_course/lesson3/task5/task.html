@@ -1,16 +1,15 @@
-<html>
+
 We have replaced the console (stderr) handler with the file handler. Sometimes, it's useful to log to both
 places at the same time.
-<br/>
-<br/>
+<br>
+<br>
 You can call "addHandler()" on a Logger multiple times. All of the Handler objects will receive the log messages.
-<br/>
-<br/>
+<br>
+<br>
 In this task, we have created a new StreamHandler instance. Instead of using "stderr" stream, you should
 pass "sys.stdout" to see how you could use another output stream.  Then pass this StreamHandler instance to
 "addHandler()".
-<br/>
-<br/>
+<br>
+<br>
 You should also not forget to add the Formatter to the StreamHandler object. In this task, re-use the same Formatter
 you used with the FileHandler. You should also note you can specify different formatters for each handler.
-</html>

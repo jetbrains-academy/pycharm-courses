@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="StudySettings">
+    <StudyTaskManager>
+      <option name="course">
+        <Course>
+          <option name="adaptive" value="false" />
+          <option name="authors">
+            <list>
+              <StepicUser>
+                <option name="email" value="" />
+                <option name="firstName" value="" />
+                <option name="id" value="-1" />
+                <option name="lastName" value="" />
+              </StepicUser>
+            </list>
+          </option>
+          <option name="courseDirectory" value="$APPLICATION_CONFIG_DIR$/courses/Introduction to Classic Ciphers-ClassicCypherCC" />
+          <option name="courseMode" value="Course Creator" />
+          <option name="courseType" value="PyCharm" />
+          <option name="description" value="Python implementations of classic text ciphers.Appropriate for python beginners who have had some practice with manipulating strings and lists, writing &quot;for&quot; loops, and organizing code into functions." />
+          <option name="id" value="0" />
+          <option name="language" value="Python" />
+          <option name="lessons">
+            <list>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="1" />
+                <option name="name" value="Introduction" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Intro" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35194" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="intro_and_warmup.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="Take the first letter from each word of ENCRYPTED_MESSAGE." />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="34" />
+                                          <option name="offset" value="69" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="34" />
+                                      <option name="offset" value="69" />
+                                      <option name="possibleAnswer" value="'HELLO'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the decrypted message" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="intro_and_warmup.py" />
+                                <option name="text" value="ENCRYPTED_MESSAGE = 'HIDE ELVES LAST LEFT OPEN'&#10;&#10;PLAINTEXT_MESSAGE = replace with the decrypted message&#10;&#10;print PLAINTEXT_MESSAGE" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Code conventions in this course" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35195" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="conventions.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use replace() to replace all commas with an empty string &#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="54" />
+                                          <option name="offset" value="356" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="54" />
+                                      <option name="offset" value="356" />
+                                      <option name="possibleAnswer" value="treated_message.replace(',', '')" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="insert code that removes the commas in treated_message" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="invoke upper() on treated_message&#10;" />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="68" />
+                                          <option name="offset" value="715" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="68" />
+                                      <option name="offset" value="693" />
+                                      <option name="possibleAnswer" value="treated_message.upper()" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="add the code will return an all-uppercase version of treated_message" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="conventions.py" />
+                                <option name="text" value="def pre_treat_message(message):&#10;    &quot;&quot;&quot; removes punctuation (:;,.?!) and converts message to upper case &quot;&quot;&quot;&#10;    treated_message = message&#10;&#10;    # remove punctuation, one symbol at a time&#10;    treated_message = treated_message.replace(':', '')  # remove colons&#10;    treated_message = treated_message.replace(';', '')  # remove semicolons&#10;    treated_message = insert code that removes the commas in treated_message  # remove commas&#10;    treated_message = treated_message.replace('.', '')  # remove periods&#10;    treated_message = treated_message.replace('?', '')  # remove question marks&#10;    treated_message = treated_message.replace('!', '')  # remove exclamation points&#10;&#10;    # convert to uppercase&#10;    treated_message = add the code will return an all-uppercase version of treated_message&#10;&#10;    return treated_message&#10;&#10;&#10;MESSAGE_ONE = 'Hello, World!'&#10;MESSAGE_TWO = 'He purchased three items: bread, eggs, and milk.'&#10;MESSAGE_THREE = 'Does he have the tickets?'&#10;&#10;# do not modify this file beyond this point&#10;print pre_treat_message(MESSAGE_ONE)&#10;print pre_treat_message(MESSAGE_TWO)&#10;print pre_treat_message(MESSAGE_THREE)" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="2" />
+                <option name="name" value="Python Building Blocks for Ciphers" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Overview &amp; the for loop" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35196" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="overview_and_for_loop.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="follow the pattern used for FIRST_MESSAGE&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="28" />
+                                          <option name="offset" value="297" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="28" />
+                                      <option name="offset" value="297" />
+                                      <option name="possibleAnswer" value="c" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace this with a variable" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="follow the pattern used for FIRST_MESSAGE&#10;" />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="34" />
+                                          <option name="offset" value="329" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="34" />
+                                      <option name="offset" value="302" />
+                                      <option name="possibleAnswer" value="SECOND_MESSAGE" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the string to process" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="follow the pattern used for FIRST_MESSAGE&#10;" />
+                                      <option name="index" value="2" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="23" />
+                                          <option name="offset" value="375" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="23" />
+                                      <option name="offset" value="328" />
+                                      <option name="possibleAnswer" value="c" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with a variable" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="overview_and_for_loop.py" />
+                                <option name="text" value="# this loop allows us to look at a message, one character at a time&#10;FIRST_MESSAGE = 'It is raining.'&#10;for i in FIRST_MESSAGE:&#10;    print i&#10;&#10;# your task: fill in the missing pieces so that the for loop prints the value of SECOND_MESSAGE, one character at a time&#10;SECOND_MESSAGE = 'It is snowing.'&#10;for replace this with a variable in replace with the string to process:&#10;    print replace with a variable" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Check whether a string contains another" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35197" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="find_in_string.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="replace with 'World'. Please note, it's case-sensitive.&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="31" />
+                                          <option name="offset" value="322" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="31" />
+                                      <option name="offset" value="322" />
+                                      <option name="possibleAnswer" value="'World'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the string to find" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="replace with MESSAGE&#10;" />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="38" />
+                                          <option name="offset" value="357" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="38" />
+                                      <option name="offset" value="333" />
+                                      <option name="possibleAnswer" value="MESSAGE" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the string being searched" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="find_in_string.py" />
+                                <option name="text" value="MESSAGE = 'Hello, World'&#10;&#10;# use this pattern:   [substring] in [string_to_search]&#10;print 'Hello' in MESSAGE  # True&#10;print 'HELLO' in MESSAGE  # False (note: case-sensitive)&#10;print 'o' in MESSAGE  # True&#10;print 'Zebra' in MESSAGE  # False&#10;&#10;&#10;# fill in the code so that it prints whether 'World' is a substring in MESSAGE&#10;print replace with the string to find in replace with the string being searched&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="Find a substring" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35198" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="find_in_string_part_2.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use variable MESSAGE&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="33" />
+                                          <option name="offset" value="870" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="33" />
+                                      <option name="offset" value="870" />
+                                      <option name="possibleAnswer" value="MESSAGE" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the string to search" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use string 'World'&#10;" />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="29" />
+                                          <option name="offset" value="909" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="29" />
+                                      <option name="offset" value="883" />
+                                      <option name="possibleAnswer" value="'World'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the word to find" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use variable MESSAGE&#10;" />
+                                      <option name="index" value="2" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="33" />
+                                          <option name="offset" value="1020" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="33" />
+                                      <option name="offset" value="972" />
+                                      <option name="possibleAnswer" value="MESSAGE" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the string to search" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use string 'World'&#10;" />
+                                      <option name="index" value="3" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="29" />
+                                          <option name="offset" value="1060" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="29" />
+                                      <option name="offset" value="986" />
+                                      <option name="possibleAnswer" value="'Hello'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the word to find" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="find_in_string_part_2.py" />
+                                <option name="text" value="# use find() to get the index in the string at which the substring starts.&#10;MESSAGE = 'Hello, World! Hello!'&#10;&#10;# for substring 'Hello', it's at index 0 that we see the match.&#10;# for substring 'ello', it's at index 1 that we see the  match.&#10;print '-- general cases --'&#10;print MESSAGE.find('Hello')&#10;print MESSAGE.find('ello')&#10;print MESSAGE.find('Zebra')  # returns -1, because the substring was not found&#10;&#10;&#10;# note, find() starts its search from left and moves to the right, returning the first match it sees;&#10;# to return the last match in the string, you could rfind() to run the search from right to left&#10;print '-- find() vs rfind() --'&#10;print MESSAGE.find('o')  # the first instance, when you move left to right&#10;print MESSAGE.rfind('o')  # the first instance, when you move from right to left&#10;&#10;&#10;print '-- review --'&#10;# print the index at which 'World' starts in MESSAGE&#10;print replace with the string to search.find(replace with the word to find)&#10;# print the index of the last (ie right-most) match of 'Hello' in MESSAGE&#10;print replace with the string to search.rfind(replace with the word to find)&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="4" />
+                      <option name="name" value="Extract a substring" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35199" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="string_slice.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="replace with the index of 'W' in MESSAGE&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="28" />
+                                          <option name="offset" value="921" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="28" />
+                                      <option name="offset" value="921" />
+                                      <option name="possibleAnswer" value="7" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the start index" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="replace with the index of '!', which is the first character that follows 'World' in MESSAGE&#10;" />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="27" />
+                                          <option name="offset" value="950" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="27" />
+                                      <option name="offset" value="923" />
+                                      <option name="possibleAnswer" value="-1" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the stop index" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="replace with the index of ',' in MESSAGE&#10;" />
+                                      <option name="index" value="2" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="28" />
+                                          <option name="offset" value="1071" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="28" />
+                                      <option name="offset" value="1019" />
+                                      <option name="possibleAnswer" value="5" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the start index" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="replace with a value that is the start index + 1 (as we wish to capture just 1 character)&#10;" />
+                                      <option name="index" value="3" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="27" />
+                                          <option name="offset" value="1100" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="27" />
+                                      <option name="offset" value="1021" />
+                                      <option name="possibleAnswer" value="6" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the stop index" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="string_slice.py" />
+                                <option name="text" value="MESSAGE = 'Hello, World!'&#10;&#10;print '-- slicing with the start index --'&#10;print MESSAGE[1:]  # extract the substring that starts with the character at index 1&#10;print MESSAGE[3:]  # extract the substring that starts with the character at index 3&#10;&#10;&#10;print '-- slicing with the stop index --'&#10;print MESSAGE[:2]  # extract the substring that stops at (does not include) the character at index 2&#10;print MESSAGE[:11]  # extract the substring that stops at (does not include) the character at index 11&#10;print MESSAGE[: len(MESSAGE)-2]  # note: len(MESSAGE) returns the number of characters in MESSAGE&#10;print MESSAGE[:-2]  # extract the substring that goes up to, but does not include, the final 2 characters&#10;&#10;print '-- slicing with a start and stop index ---'&#10;print MESSAGE[1:-1]&#10;print MESSAGE[4:9]&#10;print MESSAGE[4:-4]&#10;&#10;print '-- review ---'&#10;# fill in the index values so that only the 'World' part of MESSAGE gets printed&#10;print MESSAGE[replace with the start index:replace with the stop index]&#10;&#10;# fill in the index values so that only the ',' part of MESSAGE gets printed&#10;print MESSAGE[replace with the start index:replace with the stop index]&#10;&#10;&#10;&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="5" />
+                      <option name="name" value="Find the remainder from dividing 2 numbers" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35200" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="modulo_operator.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use '%'" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="32" />
+                                          <option name="offset" value="153" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="32" />
+                                      <option name="offset" value="153" />
+                                      <option name="possibleAnswer" value="%" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the modulo operator" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use value 10" />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="24" />
+                                          <option name="offset" value="273" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="24" />
+                                      <option name="offset" value="242" />
+                                      <option name="possibleAnswer" value="10" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the divisor" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="modulo_operator.py" />
+                                <option name="text" value="print '-- the remainder after dividing 7 by 2 ---'&#10;remainder = 7 % 2&#10;print remainder&#10;&#10;print '-- the remainder after dividing 10 by 3 ---'&#10;remainder = 10 replace with the modulo operator 3&#10;print remainder&#10;&#10;print '-- the remainder after dividing 3 by 10 ---'&#10;remainder = 3 % replace with the divisor&#10;print remainder&#10;&#10;&#10;&#10;&#10;&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="6" />
+                      <option name="name" value="Generate randomly-chosen letters" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35201" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="random_letters.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="replace with the highest possible index value in ALPHABET&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="9" />
+                                          <option name="offset" value="1062" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="9" />
+                                      <option name="offset" value="1062" />
+                                      <option name="possibleAnswer" value="25" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="max value" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use variable random_alphabet_index&#10;" />
+                                      <option name="index" value="1" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="38" />
+                                          <option name="offset" value="1114" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="38" />
+                                      <option name="offset" value="1107" />
+                                      <option name="possibleAnswer" value="random_alphabet_index" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the randomly-chosen index" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="random_letters.py" />
+                                <option name="text" value="import random&#10;&#10;# print a random value between 0 and 2 (includes 0 and 2).&#10;# we'll repeat it a few times. Observe the variation in the values printed to the console.&#10;print '-- picking a random integer between 0 and 2 (inclusive) ---'&#10;print random.randint(0, 2)&#10;print random.randint(0, 2)&#10;print random.randint(0, 2)&#10;print random.randint(0, 2)&#10;print random.randint(0, 2)&#10;&#10;&#10;# if we're careful about the bounds, we can treat that random integer as index in a string...&#10;# here, we get a randomly-chosen integer between 0 and 25, and print the letter at the corresponding index in ALPHABET&#10;print '-- picking a random letter ---'&#10;ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'&#10;random_integer = random.randint(0, 25)  # 25 is the highest index value in ALPHABET&#10;print ALPHABET[random_integer]&#10;&#10;# and a step further, we could create a string of random letters...&#10;# review exercise: print a string of 10 randomly-chosen letters&#10;print '-- picking a string of 10 random letters ---'&#10;string_of_random_letters = ''&#10;for i in range(0, 10):&#10;    random_alphabet_index = random.randint(0, max value)&#10;    string_of_random_letters += ALPHABET[replace with the randomly-chosen index]&#10;&#10;print string_of_random_letters" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="3" />
+                <option name="name" value="Null Cipher" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="About" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35202" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="about.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="For key=1, take the letter at index 1 in each word. Remember that we count starting with zero.&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="34" />
+                                          <option name="offset" value="70" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="34" />
+                                      <option name="offset" value="70" />
+                                      <option name="possibleAnswer" value="'HELLO'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the decrypted message" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="about.py" />
+                                <option name="text" value="ENCRYPTED_MESSAGE = 'THEO NERU ALUM PLORK MODUS'&#10;&#10;PLAINTEXT_MESSAGE = replace with the decrypted message&#10;&#10;print PLAINTEXT_MESSAGE" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="encrypt()" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35203" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="encrypt.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use random.randint(0,25) to select an integer that can be used as an index in ALPHABET&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="80" />
+                                          <option name="offset" value="1621" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="80" />
+                                      <option name="offset" value="1621" />
+                                      <option name="possibleAnswer" value="random_integer_between_zero_and_twenty_five = random.randint(0,25)&#10;                word_substitute += ALPHABET[random_integer_between_zero_and_twenty_five]" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with code that randomly picks a letter and appends it to word_substitute" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="encrypt.py" />
+                                <option name="text" value="from pre_treat_message import pre_treat_message&#10;import random&#10;&#10;ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'&#10;&#10;&#10;def encrypt(message, key):&#10;    &quot;&quot;&quot; apply the null cipher, where the key tells at what index the letters of the plaintext should be hidden in each&#10;    word* of the encrypted text. the 'words' generated by this function will be 5-letter long strings of randomly-chosen letters&#10;&#10;    for instance here, are valid encryptions:&#10;        - for key=0, HIGH could be encrypted as HITOW IPSLO GOPES HYTER&#10;        - for key=2, NOON could be encrypted as TUNDE ODOWT ROOWT PUNDT&#10;    &quot;&quot;&quot;&#10;&#10;    message = pre_treat_message(message) # convert to uppercase and remove punctuation&#10;&#10;    word_substitutes = []  # store the words here&#10;&#10;    # assemble the disguised message by going through each letter of the plaintext&#10;    # and replacing it with a random 5-letter string that has that character in the key position&#10;&#10;    for c in message:&#10;        if c not in ALPHABET:  # for our implementation, we won't bother trying to encrypt values not in ALPHABET&#10;            continue&#10;&#10;        # which index of the 5-letter string should match the plaintext?&#10;        index_of_plaintext = key % 5  # use the modulo operator so that we can &quot;wrap&quot; large keys into an index that exists in the 5-letter string&#10;&#10;        # generate a 5-letter string that has random values for all positions except for index_of_plaintext&#10;        word_substitute = ''&#10;        for i in range(0,5):&#10;            if i == index_of_plaintext:&#10;                word_substitute += c&#10;            else:&#10;                # add a randomly-picked letter to word_substitute&#10;                replace with code that randomly picks a letter and appends it to word_substitute&#10;&#10;        word_substitutes.append(word_substitute)&#10;&#10;    return ' '.join(word_substitutes)  # return the words as a single string, with words separated by a space&#10;&#10;# do not modify this file beyond this point&#10;MESSAGE = 'Strike at dawn.'&#10;&#10;print encrypt(MESSAGE, 1)  # encrypt the message with a key of 1&#10;print encrypt(MESSAGE, 3)  # encrypt the message with a key of 3&#10;&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="pre_treat_message.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="pre_treat_message.py" />
+                                <option name="text" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="decrypt()" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35204" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="decrypt.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use the modulo operator in case the key exceeds the index&#10;&#10;If the key is 1, then the index will be 1. &#10;If the key is 6, then the index to use would be 1.&#10;&#10;The divisor is the pre-defined length of each 'word' in the encrypted text.&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="66" />
+                                          <option name="offset" value="506" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="66" />
+                                      <option name="offset" value="506" />
+                                      <option name="possibleAnswer" value="key % 5" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with logic that computes the index of the plaintext letter" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="decrypt.py" />
+                                <option name="text" value="from pre_treat_message import pre_treat_message&#10;&#10;ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'&#10;&#10;&#10;def decrypt(message, key):&#10;    &quot;&quot;&quot; apply the null cipher, where the key tells at what index the letters of the plaintext are hidden in each&#10;    5-letter 'word' of the encrypted text&#10;    &quot;&quot;&quot;&#10;    message = pre_treat_message(message)  # convert to uppercase and remove punctuation&#10;&#10;    words_in_message = message.split()&#10;&#10;    decrypted_message = ''&#10;&#10;    for word in words_in_message:&#10;        decrypted_message += word[replace with logic that computes the index of the plaintext letter]  # find the letter whose index is equal to the key&#10;&#10;    return decrypted_message&#10;&#10;# do not modify this file beyond this point&#10;ENCRYPTED_MESSAGE_ONE = 'KPDJT XLFEI UEVUP NATCZ JSNOF QEPLK NOATG SRUVS RDMBU DEOCA ORSIY JAMLB RPNZN CIJIG HZIZJ RZJML SAFMZ'&#10;ENCRYPTED_MESSAGE_TWO = 'QWICU HYTWX VMIAE FMSEL SKEVT NVXMP RNPJI KJEME JKNKW IMSDM BTIWG PWVNZ OCEMT'&#10;&#10;print decrypt(ENCRYPTED_MESSAGE_ONE, 1)  # decrypt the message using a key of 1&#10;print decrypt(ENCRYPTED_MESSAGE_TWO, 7)  # decrypt the message using a key of 7&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="pre_treat_message.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="pre_treat_message.py" />
+                                <option name="text" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="4" />
+                <option name="name" value="Caesar Cipher" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="About" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35205" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="about.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="replace each letter in the encrypted message with the letter 1 position to the left of that letter in the alphabet &#10;(ie the letter immediately preceding it in the alphabet).&#10;&#10;As a starting point, 'XF' --&gt; 'WE'" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="32" />
+                                          <option name="offset" value="56" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="32" />
+                                      <option name="offset" value="56" />
+                                      <option name="possibleAnswer" value="'WE BUILT HAL'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the decrypted value" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="about.py" />
+                                <option name="text" value="ENCRYPTED_MESSAGE = 'XF CVJMU IBM'&#10;&#10;PLAINTEXT_MESSAGE = replace with the decrypted value&#10;&#10;print PLAINTEXT_MESSAGE" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="encrypt" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35206" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="encrypt.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use this pattern:&#10;&#10;shifted_index = ((index of letter) + key ) % max index of ALPHABET&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="63" />
+                                          <option name="offset" value="443" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="63" />
+                                      <option name="offset" value="443" />
+                                      <option name="possibleAnswer" value="((index_in_alphabet + key) % len(ALPHABET))" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the code that finds the index of the letter to use" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="encrypt.py" />
+                                <option name="text" value="from pre_treat_message import pre_treat_message&#10;&#10;ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'&#10;&#10;&#10;def encrypt(message, key):&#10;&#10;    message = pre_treat_message(message)&#10;&#10;    encrypted_message = ''&#10;&#10;    # assemble the encrypted message by replacing the letters one at a time&#10;    for c in message:&#10;        if c not in ALPHABET:&#10;            encrypted_message += c&#10;            continue&#10;&#10;        index_in_alphabet = ALPHABET.find(c)&#10;        shifted_index = replace with the code that finds the index of the letter to use  # calculate the index of the substitute letter&#10;        encrypted_message += ALPHABET[shifted_index]&#10;&#10;    return encrypted_message&#10;&#10;&#10;# do not modify this file beyond this point&#10;MESSAGE_ONE = 'I ordered eight pizzas.'&#10;MESSAGE_TWO = 'We are expecting guests.'&#10;MESSAGE_THREE = 'They love pizza.'&#10;&#10;print encrypt(MESSAGE_ONE, 1)  # encrypt the message with a key of 1&#10;print encrypt(MESSAGE_TWO, 2)  # encrypt the message with a key of 2&#10;print encrypt(MESSAGE_THREE, -1)  # encrypt the message with a key of -1&#10;&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="pre_treat_message.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="pre_treat_message.py" />
+                                <option name="text" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="decrypt" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35207" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="decrypt.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="the steps are nearly identical to the encrypt process; consult the previous task" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="48" />
+                                          <option name="offset" value="475" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="48" />
+                                      <option name="offset" value="475" />
+                                      <option name="possibleAnswer" value="index_in_alphabet = ALPHABET.find(c)&#10;        shifted_index = ((index_in_alphabet - key) % len(ALPHABET))&#10;        decrypted_message += ALPHABET[shifted_index]" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the logic for decrypting the letter" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="decrypt.py" />
+                                <option name="text" value="from pre_treat_message import pre_treat_message&#10;&#10;ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'&#10;&#10;&#10;def decrypt(message, key):&#10;&#10;    message = pre_treat_message(message)&#10;&#10;    decrypted_message = ''&#10;&#10;    # assemble the plaintext message by decrypting the message one letter at a time&#10;    for c in message:&#10;        if c not in ALPHABET:&#10;            decrypted_message += c&#10;            continue&#10;&#10;        # find the corresponding decrypted letter and append it to decrypted_message&#10;        replace with the logic for decrypting the letter&#10;&#10;    return decrypted_message&#10;&#10;&#10;# do not modify this file beyond this point&#10;MESSAGE_ONE = 'NY NX XYNQQ XSTBNSL'&#10;MESSAGE_TWO = 'WLSYPH AI KS WPIHHMRK'&#10;MESSAGE_THREE = 'G AYLLMR DGLB KW ZMMRQ'&#10;&#10;print decrypt(MESSAGE_ONE, 5)  # decrypt the message with a key of 5&#10;print decrypt(MESSAGE_TWO, 4)  # decrypt the message with a key of 4&#10;print decrypt(MESSAGE_THREE, -2)  # decrypt the message with a key of -2" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="pre_treat_message.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="pre_treat_message.py" />
+                                <option name="text" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="5" />
+                <option name="name" value="Atbash Cipher" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="About" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35208" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="about.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use this as a lookup table:&#10;&#10;encrypted: ABCDEFGHIJKLMNOPQRSTUVWXYZ&#10;decrypted: ZYXWVUTSRQPONMLKJIHGFEDCBA" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="34" />
+                                          <option name="offset" value="56" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="34" />
+                                      <option name="offset" value="56" />
+                                      <option name="possibleAnswer" value="'COME AT NOON'" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the decrypted message" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="about.py" />
+                                <option name="text" value="ENCRYPTED_MESSAGE = 'XLNV ZG MLLM'&#10;&#10;PLAINTEXT_MESSAGE = replace with the decrypted message&#10;&#10;print PLAINTEXT_MESSAGE" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="encrypt()" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35209" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="encrypt.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="use this pattern:&#10;shifted_index = x - y&#10;&#10;where x is a constant, the max index in ALPHABET; &#10;and y is the index of the letter that is to be replaced&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="63" />
+                                          <option name="offset" value="439" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="63" />
+                                      <option name="offset" value="439" />
+                                      <option name="possibleAnswer" value="25 - index_in_alphabet" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="replace with the code that finds the index of the letter to use" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="encrypt.py" />
+                                <option name="text" value="from pre_treat_message import pre_treat_message&#10;&#10;ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'&#10;&#10;&#10;def encrypt(message):&#10;&#10;    message = pre_treat_message(message)&#10;&#10;    encrypted_message = ''&#10;&#10;    # assemble the encrypted message by replacing the letters one at a time&#10;    for c in message:&#10;        if c not in ALPHABET:&#10;            encrypted_message += c&#10;            continue&#10;&#10;        index_in_alphabet = ALPHABET.find(c)&#10;&#10;        shifted_index = replace with the code that finds the index of the letter to use  # calculate the index of the substitute letter&#10;        encrypted_message += ALPHABET[shifted_index]&#10;&#10;    return encrypted_message&#10;&#10;&#10;# do not modify this file beyond this point&#10;MESSAGE_ONE = 'I ordered eight pizzas.'&#10;MESSAGE_TWO = 'We are expecting guests.'&#10;MESSAGE_THREE = 'They love pizza.'&#10;&#10;print encrypt(MESSAGE_ONE)&#10;print encrypt(MESSAGE_TWO)&#10;print encrypt(MESSAGE_THREE)&#10;&#10;&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="pre_treat_message.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="pre_treat_message.py" />
+                                <option name="text" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="decrypt()" />
+                      <option name="status" value="Solved" />
+                      <option name="stepicId" value="35210" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="decrypt.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="the steps are identical to the encrypt process; &#10;consult the previous task" />
+                                      <option name="index" value="1" />
+                                      <option name="initialState" />
+                                      <option name="length" value="48" />
+                                      <option name="offset" value="470" />
+                                      <option name="possibleAnswer" value="index_in_alphabet = ALPHABET.find(c)&#10;        shifted_index = 25 - index_in_alphabet&#10;        decrypted_message += ALPHABET[shifted_index]" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Solved" />
+                                      <option name="taskText" value="replace with the logic for decrypting the letter" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="decrypt.py" />
+                                <option name="text" value="from pre_treat_message import pre_treat_message&#10;&#10;ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'&#10;&#10;&#10;def decrypt(message):&#10;&#10;    message = pre_treat_message(message)&#10;&#10;    decrypted_message = ''&#10;&#10;    # assemble the plaintext message by decrypting the message one letter at a time&#10;    for c in message:&#10;        if c not in ALPHABET:&#10;            decrypted_message += c&#10;            continue&#10;&#10;        # find the corresponding decrypted letter and append it to decrypted_message&#10;        replace with the logic for decrypting the letter    return decrypted_message&#10;&#10;&#10;# do not modify this file beyond this point&#10;MESSAGE_ONE = 'RG RH HGROO HMLDRMT'&#10;MESSAGE_TWO = 'HSLFOW DV TL HOVWWRMT'&#10;MESSAGE_THREE = 'R XZMMLG URMW NB YLLGH'&#10;&#10;print decrypt(MESSAGE_ONE)&#10;print decrypt(MESSAGE_TWO)&#10;print decrypt(MESSAGE_THREE)" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                          <entry key="pre_treat_message.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="pre_treat_message.py" />
+                                <option name="text" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="6" />
+                <option name="name" value="Review: Name the cipher!" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <Task>
+                      <option name="index" value="1" />
+                      <option name="name" value="Question 1" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35212" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="question_01.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="your options: 0, 1, 2&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="2" />
+                                          <option name="offset" value="203" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="2" />
+                                      <option name="offset" value="203" />
+                                      <option name="possibleAnswer" value="0" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="-1" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="question_01.py" />
+                                <option name="text" value="ENCRYPTED_MESSAGE = 'MORA EVOCU ECCLESIA TUTIS AUT TIBI NISI OLIM OCIUS NOVEM'&#10;DECRYPTED_MESSAGE = 'MEETATNOON'&#10;&#10;CIPHER_OPTIONS = ['null','caesar','atbash']&#10;&#10;cipher_used_in_this_example = CIPHER_OPTIONS[-1]  # replace with the index of the cipher used in this encryption&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="2" />
+                      <option name="name" value="Question 2" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35213" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="question_02.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="your options: 0, 1, 2&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="2" />
+                                          <option name="offset" value="169" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="2" />
+                                      <option name="offset" value="169" />
+                                      <option name="possibleAnswer" value="1" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="-1" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="question_02.py" />
+                                <option name="text" value="ENCRYPTED_MESSAGE = 'IQ PQTVJ CV PQQP'&#10;DECRYPTED_MESSAGE = 'GO NORTH AT NOON'&#10;&#10;CIPHER_OPTIONS = ['null','caesar','atbash']&#10;&#10;cipher_used_in_this_example = CIPHER_OPTIONS[-1]  # replace with the index of the cipher used in this encryption&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                    <Task>
+                      <option name="index" value="3" />
+                      <option name="name" value="Question 3" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepicId" value="35214" />
+                      <option name="text" />
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="question_03.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="additionalHints">
+                                        <list />
+                                      </option>
+                                      <option name="hint" value="your options: 0, 1, 2&#10;" />
+                                      <option name="index" value="0" />
+                                      <option name="initialState">
+                                        <MyInitialState>
+                                          <option name="length" value="2" />
+                                          <option name="offset" value="187" />
+                                        </MyInitialState>
+                                      </option>
+                                      <option name="length" value="2" />
+                                      <option name="offset" value="187" />
+                                      <option name="possibleAnswer" value="2" />
+                                      <option name="selected" value="false" />
+                                      <option name="status" value="Unchecked" />
+                                      <option name="taskText" value="-1" />
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="-1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="question_03.py" />
+                                <option name="text" value="ENCRYPTED_MESSAGE = 'OVZIM GSV ERTVMVIV XRKSVI'&#10;DECRYPTED_MESSAGE = 'LEARN THE VIGENERE CIPHER'&#10;&#10;CIPHER_OPTIONS = ['null','caesar','atbash']&#10;&#10;cipher_used_in_this_example = CIPHER_OPTIONS[-1]  # replace with the index of the cipher used in this encryption&#10;" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </Task>
+                  </list>
+                </option>
+              </Lesson>
+            </list>
+          </option>
+          <option name="name" value="Introduction to Classic Ciphers" />
+          <option name="updateDate" />
+        </Course>
+      </option>
+      <option name="enableTestingFromSamples" value="true" />
+      <option name="toolWindowMode" value="TEXT" />
+      <option name="turnEditingMode" value="false" />
+      <option name="user">
+        <StepicUser>
+          <option name="email" value="" />
+          <option name="firstName" value="" />
+          <option name="id" value="0" />
+          <option name="lastName" value="" />
+        </StepicUser>
+      </option>
+      <option name="VERSION" value="3" />
+      <option name="myUserTests">
+        <map />
+      </option>
+      <option name="myInvisibleFiles">
+        <list />
+      </option>
+      <option name="myShouldUseJavaFx" value="true" />
+    </StudyTaskManager>
+  </component>
+</project>

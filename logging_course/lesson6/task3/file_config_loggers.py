@@ -9,7 +9,7 @@ keys=formatter1
 keys=handler1
 
 [loggers]
-keys=enter root logger instance name
+keys=root
 
 [formatter_formatter1]
 format=%(asctime)s %(levelname)s %(message)s
@@ -19,8 +19,8 @@ class=StreamHandler
 args=()
 formatter=formatter1
 
-[logger_enter name of root logger instance]
-handlers=enter name of handler instance
+[logger_root]
+handlers=handler1
 level=DEBUG
 """
 

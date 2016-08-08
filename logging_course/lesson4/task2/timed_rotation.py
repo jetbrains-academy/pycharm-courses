@@ -39,8 +39,8 @@ def get_monthly_payment(principal, years):
 if __name__ == '__main__':
     log_filename = '../../Sandbox/timed_rotation.log'
     file_handler = logging.handlers.TimedRotatingFileHandler(log_filename,
-                                                             when=type of interval,
-                                                             interval=frequency of rollover,
+                                                             when='S',
+                                                             interval=2,
                                                              backupCount=4)
 
     fmt = logging.Formatter('%(asctime)s %(levelname)s %(message)s')

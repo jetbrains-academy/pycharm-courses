@@ -3,21 +3,21 @@ import math
 import logging
 
 def get_current_rate(years):
-    print('Fetching current interest rate for %d years' % years)
+    logging.debug('Fetching current interest rate for %d years' % years)
     rate = 7.5   # Stub external service call
-    print('Service returned interest rate %f' % rate)
+    logging.debug('Service returned interest rate %f' % rate)
     return rate
 
 def get_monthly_payment(principal, years):
-    print('Calling mortgage calculator')
+    logging.debug('Calling mortgage calculator')
 
     mon_rate = get_current_rate(years)/1200
     payments = years * 12
-    print('Number of monthly payments %d' % payments)
+    logging.debug('Number of monthly payments %d' % payments)
     result = principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))
 
-    print('Calculated result is %f' % result)
-    print('Leaving mortgage calculator')
+    logging.debug('Calculated result is %f' % result)
+    logging.debug('Leaving mortgage calculator')
     return result
 
 if __name__ == '__main__':

@@ -18,10 +18,10 @@ print MESSAGE[4:-4]
 
 print '-- review ---'
 # fill in the index values so that only the 'World' part of MESSAGE gets printed
-print MESSAGE[replace with the start index:replace with the stop index]
+print MESSAGE[7:-1]
 
 # fill in the index values so that only the ',' part of MESSAGE gets printed
-print MESSAGE[replace with the start index:replace with the stop index]
+print MESSAGE[5:6]
 
 
 

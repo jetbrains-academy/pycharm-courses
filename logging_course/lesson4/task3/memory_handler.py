@@ -39,7 +39,7 @@ if __name__ == '__main__':
     fmt = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
     file_handler.setFormatter(fmt)
 
-    memory_handler = logging.handlers.MemoryHandler(capacity=2, target=use the FileHandler object)
+    memory_handler = logging.handlers.MemoryHandler(capacity=2, target=file_handler)
 
     root_logger = logging.getLogger()
     root_logger.addHandler(memory_handler)

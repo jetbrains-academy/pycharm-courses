@@ -14,7 +14,7 @@ def decrypt(message, key):
     decrypted_message = ''
 
     for word in words_in_message:
-        decrypted_message += word[replace with logic that computes the index of the plaintext letter]  # find the letter whose index is equal to the key
+        decrypted_message += word[key % 5]  # find the letter whose index is equal to the key
 
     return decrypted_message
 

@@ -1,24 +1,23 @@
-<html>
+
 Logging configuration can also be specified as a Python dictionary. This makes
 it very easy to store configuration in an external JSON or YAML file, since parsers
 for those formats can return a native Python dict.
-<br/>
-<br/>
+<br>
+<br>
 There are four important keys with dictConfig. The first three are the same
 as in fileConfig(): "handlers", "formatters", "loggers".  The fourth is
 a mandatory "version" key which at this time must be the integer value "1".
-<br/>
-<br/>
+<br>
+<br>
 In this task, you can see the structure of this dictionary in the "log_config" variable. The root logger is designated with an empty string '',
 under the "loggers" key. And under that key, you can see a "handlers" key which points to the name of an object
 defined under the "handlers" section. This is an array of handler keys, since we can have multiple handlers attached
 to a logger instance.
-<br/>
-<br/>
+<br>
+<br>
 1) Set the proper handler in the root logger
-<br/>
+<br>
 2) Pass the logging configuration to dictConfig()
-<br/>
-<br/>
+<br>
+<br>
 After you execute this task, you will only see the last WARNING message. We will explain this in the next task.
-</html>

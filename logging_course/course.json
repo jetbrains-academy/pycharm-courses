@@ -1,53 +1,57 @@
 {
   "lessons": [
     {
+      "id": 12148,
       "title": "Basics",
       "task_list": [
         {
           "name": "Replacing print",
+          "stepic_id": 34277,
           "task_files": {
             "replacing_print.py": {
+              "name": "replacing_print.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\ndef get_current_rate(years):\n    print(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 7.5   # Stub external service call\n    print(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    print(\u0027Calling mortgage calculator\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    print(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    print(\u0027Calculated result is %f\u0027 % result)\n    print(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    payment \u003d get_monthly_payment(100000, 30)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 5,
-                  "start": 4,
                   "hint": "Replace function print with logging.debug",
+                  "additional_hints": [],
                   "possible_answer": " __future__ i",
+                  "offset": 99,
                   "length": 5
                 },
                 {
-                  "line": 7,
-                  "start": 4,
                   "hint": "Replace function print with logging.debug",
+                  "additional_hints": [],
                   "possible_answer": " __future__ i",
+                  "offset": 210,
                   "length": 5
                 },
                 {
-                  "line": 11,
-                  "start": 4,
                   "hint": "Replace function print with logging.debug",
+                  "additional_hints": [],
                   "possible_answer": " __future__ i",
+                  "offset": 324,
                   "length": 5
                 },
                 {
-                  "line": 15,
-                  "start": 4,
                   "hint": "Replace function print with logging.debug",
+                  "additional_hints": [],
                   "possible_answer": " __future__ i",
+                  "offset": 436,
                   "length": 5
                 },
                 {
-                  "line": 18,
-                  "start": 4,
                   "hint": "Replace function print with logging.debug",
+                  "additional_hints": [],
                   "possible_answer": " __future__ i",
+                  "offset": 565,
                   "length": 5
                 },
                 {
-                  "line": 19,
-                  "start": 4,
                   "hint": "Replace function print with logging.debug",
+                  "additional_hints": [],
                   "possible_answer": " __future__ i",
+                  "offset": 611,
                   "length": 5
                 }
               ]
@@ -56,14 +60,17 @@
         },
         {
           "name": "Log output",
+          "stepic_id": 34278,
           "task_files": {
             "log_output.py": {
+              "name": "log_output.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\ndef get_current_rate(years):\n    logging.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 7.5   # Stub external service call\n    logging.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logging.debug(\u0027Calling mortgage calculator\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logging.debug(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logging.debug(\u0027Calculated result is %f\u0027 % result)\n    logging.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(set default logging level)\n    payment \u003d get_monthly_payment(100000, 30)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 23,
-                  "start": 24,
                   "hint": "Pass a keyword argument of \"level\" and value of \"logging.DEBUG\"",
+                  "additional_hints": [],
                   "possible_answer": "rint_function\nimpor",
+                  "offset": 766,
                   "length": 25
                 }
               ]
@@ -72,21 +79,24 @@
         },
         {
           "name": "Levels",
+          "stepic_id": 34279,
           "task_files": {
             "levels.py": {
+              "name": "levels.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\ndef get_current_rate(years):\n    logging.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 7.5   # Stub external service call\n    logging.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logging.debug(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        write_a_warning_message_to_logging\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logging.debug(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logging.debug(\u0027Calculated result is %f\u0027 % result)\n    logging.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n    payment \u003d get_monthly_payment(100000, 30)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 11,
-                  "start": 12,
                   "hint": "Log an info level message using the info() method.\n",
+                  "additional_hints": [],
                   "possible_answer": "e__ ",
+                  "offset": 348,
                   "length": 5
                 },
                 {
-                  "line": 14,
-                  "start": 8,
                   "hint": "Use the logging.warning method. Remember to pass a string argument.\n",
+                  "additional_hints": [],
                   "possible_answer": "uture__ import print_function\nimport math\nimp",
+                  "offset": 413,
                   "length": 34
                 }
               ]
@@ -95,56 +105,59 @@
         },
         {
           "name": "Loggers",
+          "stepic_id": 34280,
           "task_files": {
             "loggers.py": {
+              "name": "loggers.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logging.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 5.3   # Stub external service call\n    logging.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logging.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logging.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logging.debug(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logging.debug(\u0027Calculated result is %f\u0027 % result)\n    logging.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n    payment \u003d get_monthly_payment(100000, 30)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 7,
-                  "start": 4,
                   "hint": "Replace with a call using the logger instance.",
+                  "additional_hints": [],
                   "possible_answer": " __fut",
+                  "offset": 139,
                   "length": 7
                 },
                 {
-                  "line": 9,
-                  "start": 4,
                   "hint": "Replace with a call using the logger instance.",
+                  "additional_hints": [],
                   "possible_answer": " __fut",
+                  "offset": 258,
                   "length": 7
                 },
                 {
-                  "line": 13,
-                  "start": 4,
                   "hint": "Replace with a call using the logger instance.",
+                  "additional_hints": [],
                   "possible_answer": " __fut",
+                  "offset": 380,
                   "length": 7
                 },
                 {
-                  "line": 16,
-                  "start": 8,
                   "hint": "Replace with a call using the logger instance.",
+                  "additional_hints": [],
                   "possible_answer": "uture_",
+                  "offset": 452,
                   "length": 7
                 },
                 {
-                  "line": 20,
-                  "start": 4,
                   "hint": "Replace with a call using the logger instance.",
+                  "additional_hints": [],
                   "possible_answer": " __fut",
+                  "offset": 570,
                   "length": 7
                 },
                 {
-                  "line": 23,
-                  "start": 4,
                   "hint": "Replace with a call using the logger instance.",
+                  "additional_hints": [],
                   "possible_answer": " __fut",
+                  "offset": 707,
                   "length": 7
                 },
                 {
-                  "line": 24,
-                  "start": 4,
                   "hint": "Replace with a call using the logger instance.",
+                  "additional_hints": [],
                   "possible_answer": " __fut",
+                  "offset": 761,
                   "length": 7
                 }
               ]
@@ -153,14 +166,17 @@
         },
         {
           "name": "Multiple Loggers",
+          "stepic_id": 34281,
           "task_files": {
             "multiple_loggers.py": {
+              "name": "multiple_loggers.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    create_a_new_logger_instance\n\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027 % result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n    payment \u003d get_monthly_payment(100000, 30)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 7,
-                  "start": 4,
                   "hint": "Look at the module level \"logger\" instance as an example, but shadow the logger variable with a new Logger instance with the name \u0027mortgage.rate\u0027.\n",
+                  "additional_hints": [],
                   "possible_answer": " __future__ import print_function\nimport ma",
+                  "offset": 139,
                   "length": 28
                 }
               ]
@@ -169,56 +185,59 @@
         },
         {
           "name": "log method",
+          "stepic_id": 34282,
           "task_files": {
             "log_method.py": {
+              "name": "log_method.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\"Calling mortgage calculator\")\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\"Calculated result is %f\" % result)\n    logger.debug(\"Leaving mortgage calculator\")\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n    payment \u003d get_monthly_payment(100000, 30)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 7,
-                  "start": 4,
                   "hint": "logger.log(logging.DEBUG,\n",
+                  "additional_hints": [],
                   "possible_answer": " __future__ import print_",
+                  "offset": 139,
                   "length": 13
                 },
                 {
-                  "line": 9,
-                  "start": 4,
                   "hint": "logger.log(logging.DEBUG,\n",
+                  "additional_hints": [],
                   "possible_answer": " __future__ import print_",
+                  "offset": 257,
                   "length": 13
                 },
                 {
-                  "line": 13,
-                  "start": 4,
                   "hint": "logger.log(logging.INFO,\n",
+                  "additional_hints": [],
                   "possible_answer": " __future__ import print",
+                  "offset": 378,
                   "length": 12
                 },
                 {
-                  "line": 16,
-                  "start": 8,
                   "hint": "logger.log(logging.WARNING,\n",
+                  "additional_hints": [],
                   "possible_answer": "uture__ import print_functi",
+                  "offset": 449,
                   "length": 12
                 },
                 {
-                  "line": 20,
-                  "start": 4,
                   "hint": "logger.log(logging.DEBUG,\n",
+                  "additional_hints": [],
                   "possible_answer": " __future__ import print_",
+                  "offset": 566,
                   "length": 13
                 },
                 {
-                  "line": 23,
-                  "start": 4,
                   "hint": "logger.log(logging.DEBUG,\n",
+                  "additional_hints": [],
                   "possible_answer": " __future__ import print_",
+                  "offset": 702,
                   "length": 13
                 },
                 {
-                  "line": 24,
-                  "start": 4,
                   "hint": "logger.log(logging.DEBUG,\n",
+                  "additional_hints": [],
                   "possible_answer": " __future__ import print_",
+                  "offset": 755,
                   "length": 13
                 }
               ]
@@ -227,14 +246,17 @@
         },
         {
           "name": "Special log levels",
+          "stepic_id": 34283,
           "task_files": {
             "special_levels.py": {
+              "name": "special_levels.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027 % result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n    payment \u003d get_monthly_payment(100000, 30)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 28,
-                  "start": 30,
                   "hint": "Use logging.NOTSET which is the lowest possible severity level.\n",
+                  "additional_hints": [],
                   "possible_answer": "unction\nimport",
+                  "offset": 875,
                   "length": 13
                 }
               ]
@@ -243,21 +265,24 @@
         },
         {
           "name": "Selective logging",
+          "stepic_id": 34284,
           "task_files": {
             "selective_logging.py": {
+              "name": "selective_logging.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger \u003d logging.getLogger(\u0027mortgage.rate\u0027)\n\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027 % result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.WARNING)\n    rate_logger \u003d logging.getLogger(specify name of logger)\n    rate_logger.setLevel(specify this loggers severity level)\n    payment \u003d get_monthly_payment(100000, 30)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 31,
-                  "start": 36,
                   "hint": "The logger name is \"mortgage.rate\"\n",
+                  "additional_hints": [],
                   "possible_answer": "n\nimport math\ni",
+                  "offset": 977,
                   "length": 22
                 },
                 {
-                  "line": 32,
-                  "start": 25,
                   "hint": "a level of logging.DEBUG will show all messages DEBUG level or higher",
+                  "additional_hints": [],
                   "possible_answer": "int_function\n",
+                  "offset": 1026,
                   "length": 35
                 }
               ]
@@ -267,18 +292,22 @@
       ]
     },
     {
+      "id": 12149,
       "title": "Formatting",
       "task_list": [
         {
           "name": "Custom format string",
+          "stepic_id": 34285,
           "task_files": {
             "custom_format_string.py": {
+              "name": "custom_format_string.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logging.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 5.3   # Stub external service call\n    logging.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logging.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logging.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logging.debug(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logging.debug(\u0027Calculated result is %f\u0027 % result)\n    logging.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG,\n                        format\u003dinsert custom format string)\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 29,
-                  "start": 31,
                   "hint": "\u0027%(asctime)s %(levelname)s %(message)s\u0027",
+                  "additional_hints": [],
                   "possible_answer": "nction\nimport math\nimport logging\n\nlogg",
+                  "offset": 928,
                   "length": 27
                 }
               ]
@@ -287,14 +316,17 @@
         },
         {
           "name": "Custom datetime format",
+          "stepic_id": 34286,
           "task_files": {
             "custom_datetime.py": {
+              "name": "custom_datetime.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logging.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 5.3   # Stub external service call\n    logging.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logging.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logging.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logging.debug(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logging.debug(\u0027Calculated result is %f\u0027 % result)\n    logging.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG,\n                        format\u003d\u0027%(asctime)s %(levelname)s %(message)s\u0027,\n                        datefmt\u003d\u0027insert format string codes here\u0027)\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 30,
-                  "start": 33,
                   "hint": "Use the string \u0027%a %b %d %Y %I:%M:%S%p\u0027\n",
+                  "additional_hints": [],
                   "possible_answer": "tion\nimport math\nimpor",
+                  "offset": 1002,
                   "length": 31
                 }
               ]
@@ -303,14 +335,17 @@
         },
         {
           "name": "LogRecord attributes",
+          "stepic_id": 34287,
           "task_files": {
             "log_attributes.py": {
+              "name": "log_attributes.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logging.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 5.3   # Stub external service call\n    logging.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logging.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logging.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logging.debug(\u0027Number of monthly payments %d\u0027 % payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logging.debug(\u0027Calculated result is %f\u0027 % result)\n    logging.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG,\n                        format\u003d\u0027insert_format_string_here\u0027)\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 29,
-                  "start": 32,
                   "hint": "%(asctime)s %(levelname)s %(module)s %(funcName)s %(message)s\n",
+                  "additional_hints": [],
                   "possible_answer": "ction\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(",
+                  "offset": 929,
                   "length": 25
                 }
               ]
@@ -319,14 +354,17 @@
         },
         {
           "name": "Exceptions",
+          "stepic_id": 34288,
           "task_files": {
             "log_exception.py": {
+              "name": "log_exception.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027 % years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027 % rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n    result \u003d None\n    try:\n        if years \u003e 50:\n            logger.warn(\u0027Term greater than 50 years\u0027)\n\n        mon_rate \u003d get_current_rate(years)/1200\n        payments \u003d years * 12\n        logger.debug(\u0027Number of monthly payments %d\u0027 % payments)\n        result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n        logger.debug(\u0027Calculated result is %f\u0027 % result)\n    except:\n        pass\n\n    logging.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n    payment \u003d get_monthly_payment(100000, 0)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 26,
-                  "start": 8,
                   "hint": "Replace with call to logger.exception(). Don\u0027t forget to pass a message string.\n",
+                  "additional_hints": [],
                   "possible_answer": "uture__ import print_function\nimport ",
+                  "offset": 825,
                   "length": 4
                 }
               ]
@@ -335,14 +373,17 @@
         },
         {
           "name": "Logging objects",
+          "stepic_id": 34289,
           "task_files": {
             "log_objects.py": {
+              "name": "log_objects.py",
+              "text": "# This example shows logging objects\n#\n\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\nclass Mortgage(object):\n    def __init__(self, principal, rate, term):\n        self.principal \u003d principal\n        self.rate \u003d rate\n        self.term \u003d term\n\n    def __str__(self):\n        return \u0027Mortgage principal %f for %f years at %f rate\u0027 % (\n            self.principal, self.term, self.rate)\n\n    def __repr__(self):\n        return \u0027Mortgage(%f, %f, %f)\u0027 % (self.principal, self.rate, self.term)\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n\n    obj \u003d Mortgage(100000, 4.1, 15)\n    logger.debug(\u0027Created object: %s\u0027, obj)\n",
               "placeholders": [
                 {
-                  "line": 25,
-                  "start": 39,
                   "hint": "the repr() function is used to call the __repr__ method of your class. Pass the object instance to repr()",
+                  "additional_hints": [],
                   "possible_answer": "\nimport l",
+                  "offset": 647,
                   "length": 3
                 }
               ]
@@ -351,14 +392,17 @@
         },
         {
           "name": "Limiting output",
+          "stepic_id": 34290,
           "task_files": {
             "limit_output.py": {
+              "name": "limit_output.py",
+              "text": "import logging\n\ndef truncate(obj, nlen):\n    \"\"\" Convert \u0027obj\u0027 to string and truncate if greater than length\"\"\"\n    str_value \u003d str(obj)\n    if len(str_value) \u003e nlen:\n        return str_value[:nlen-3] + \u0027...\u0027\n    return str_value\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n\n    long_string \u003d \u0027A\u0027 * 2000\n    logging.debug(\u0027something happened with value\u003d%s\u0027, long_string)\n\n    # Truncate result (no ellipses)\n    logging.debug(\u0027something happened with value\u003d%.10s\u0027, long_string)\n\n    # Create a large list\n    big_list \u003d [1] * 2000\n\n    # Log the full list\n    logging.debug(\u0027something happened with the list\u003d%s\u0027, big_list)\n\n    # Truncate result (with ellipses)\n    logging.debug(\u0027something happened with the list\u003d%s\u0027, big_list)\n",
               "placeholders": [
                 {
-                  "line": 25,
-                  "start": 57,
                   "hint": "Call truncate(), for example: truncate(big_list, 30)",
+                  "additional_hints": [],
                   "possible_answer": "\u0027obj\u0027 to string and tr",
+                  "offset": 748,
                   "length": 8
                 }
               ]
@@ -367,14 +411,17 @@
         },
         {
           "name": "String formatting",
+          "stepic_id": 34291,
           "task_files": {
             "string_formatting.py": {
+              "name": "string_formatting.py",
+              "text": "from __future__ import print_function\nimport logging\n\nlogger \u003d logging.getLogger(__name__)\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.WARNING)\n\n    logging.debug(\u0027this message is not formatted; value\u003d%s\u0027, \u0027value\u0027)\n\n    logging.debug(\u0027this message is not formatted; value\u003d%s\u0027 % (\u0027value\u0027, ))\n\n\n",
               "placeholders": [
                 {
-                  "line": 10,
-                  "start": 59,
                   "hint": "See previous logging statement for the answer.\n",
+                  "additional_hints": [],
                   "possible_answer": "r \u003d loggi",
+                  "offset": 297,
                   "length": 14
                 }
               ]
@@ -384,18 +431,22 @@
       ]
     },
     {
+      "id": 12151,
       "title": "Basic Handlers",
       "task_list": [
         {
           "name": "Basic file handler",
+          "stepic_id": 34295,
           "task_files": {
             "basic_file_handler.py": {
+              "name": "basic_file_handler.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027, result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    log_filename \u003d \u0027../../Sandbox/basic_file.log\u0027\n    logging.basicConfig(level\u003dlogging.DEBUG,\n                        format\u003d\u0027%(asctime)s %(levelname)s %(message)s\u0027,\n                        setup_file_handler_here)\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 31,
-                  "start": 24,
                   "hint": "filename\u003dlog_filename\n",
+                  "additional_hints": [],
                   "possible_answer": "rint_function\nimport ",
+                  "offset": 1032,
                   "length": 23
                 }
               ]
@@ -404,14 +455,17 @@
         },
         {
           "name": "Basic truncate log file",
+          "stepic_id": 34296,
           "task_files": {
             "new_log_files.py": {
+              "name": "new_log_files.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027, result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG,\n                        format\u003d\u0027%(asctime)s %(levelname)s %(message)s\u0027,\n                        filename\u003d\u0027../../Sandbox/basic_file.log\u0027,\n                        filemode\u003d\u0027insert create new file mode\u0027)\n\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n\n",
               "placeholders": [
                 {
-                  "line": 31,
-                  "start": 34,
                   "hint": "This is similar to the open() function. \"w\" can be used to create a new file, overwriting any existing file.",
+                  "additional_hints": [],
                   "possible_answer": "i",
+                  "offset": 1057,
                   "length": 27
                 }
               ]
@@ -420,21 +474,24 @@
         },
         {
           "name": "Create file handler",
+          "stepic_id": 34297,
           "task_files": {
             "file_handler.py": {
+              "name": "file_handler.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027, result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    # logging.basicConfig(level\u003dlogging.DEBUG,\n    #                     format\u003d\u0027%(asctime)s %(levelname)s %(message)s\u0027,\n    #                     filename\u003d\u0027../../Sandbox/basic_file.log\u0027)\n\n    log_filename \u003d \u0027../../Sandbox/create_file_handler.log\u0027\n    file_handler \u003d create FileHandler object\n\n    root_logger \u003d logging.getLogger()\n    root_logger.add handler to logger(file_handler)\n    root_logger.setLevel(logging.DEBUG)\n\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 33,
-                  "start": 19,
                   "hint": "logging.FileHandler(log_filename)",
+                  "additional_hints": [],
                   "possible_answer": "ort print_function\nimport math\nim",
+                  "offset": 1108,
                   "length": 25
                 },
                 {
-                  "line": 36,
-                  "start": 16,
                   "hint": "addHandler() takes a handler and adds it to the list of handlers for a Logger.",
+                  "additional_hints": [],
                   "possible_answer": "import pri",
+                  "offset": 1189,
                   "length": 21
                 }
               ]
@@ -443,21 +500,24 @@
         },
         {
           "name": "Set formatter",
+          "stepic_id": 34298,
           "task_files": {
             "set_formatter.py": {
+              "name": "set_formatter.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027, result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    # logging.basicConfig(level\u003dlogging.DEBUG,\n    #                     format\u003d\u0027%(asctime)s %(levelname)s %(message)s\u0027,\n    #                     filename\u003d\u0027../../Sandbox/basic_file.log\u0027)\n\n    log_filename \u003d \u0027../../Sandbox/file_handler_with_formatter.log\u0027\n    file_handler \u003d logging.FileHandler(log_filename)\n\n    fmt \u003d logging.Formatter(\u0027enter same format string as used in basicConfig() example\u0027)\n    file_handler.set the formatter on the FileHandler object\n\n    root_logger \u003d logging.getLogger()\n    root_logger.addHandler(file_handler)\n    root_logger.setLevel(logging.DEBUG)\n\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 35,
-                  "start": 29,
                   "hint": "%(asctime)s %(levelname)s %(message)s",
+                  "additional_hints": [],
                   "possible_answer": "%(asctime)s %(levelname)s %(message)s",
+                  "offset": 1180,
                   "length": 57
                 },
                 {
-                  "line": 36,
-                  "start": 17,
                   "hint": "setFormatter(fmt) sets or replaces the existing formatter attached to the FileHandler object.",
+                  "additional_hints": [],
                   "possible_answer": "setFormatter(fmt)",
+                  "offset": 1257,
                   "length": 43
                 }
               ]
@@ -466,28 +526,31 @@
         },
         {
           "name": "Multiple handlers",
+          "stepic_id": 34299,
           "task_files": {
             "multiple_handlers.py": {
+              "name": "multiple_handlers.py",
+              "text": "from __future__ import print_function\nimport math\nimport sys\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027, result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    log_filename \u003d \u0027../../Sandbox/create_file_handler.log\u0027\n    file_handler \u003d logging.FileHandler(log_filename)\n\n    fmt \u003d logging.Formatter(\u0027%(asctime)s %(levelname)s %(message)s\u0027)\n    file_handler.setFormatter(fmt)\n\n    root_logger \u003d logging.getLogger()\n    root_logger.addHandler(file_handler)\n\n    stdout_handler \u003d specify the stream handler class(sys.stdout)\n    use the existing formatter with the stdout_handler\n    root_logger.addHandler(pass the handler object)\n\n    root_logger.setLevel(logging.DEBUG)\n\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 38,
-                  "start": 21,
                   "hint": "logging.StreamHandler",
+                  "additional_hints": [],
                   "possible_answer": "logging.StreamHandler",
+                  "offset": 1171,
                   "length": 32
                 },
                 {
-                  "line": 39,
-                  "start": 4,
                   "hint": "stdout_handler.setFormatter(fmt)",
+                  "additional_hints": [],
                   "possible_answer": "stdout_handler.setFormatter(fmt)",
+                  "offset": 1220,
                   "length": 50
                 },
                 {
-                  "line": 40,
-                  "start": 27,
                   "hint": "stdout_handler",
+                  "additional_hints": [],
                   "possible_answer": "stdout_handler",
+                  "offset": 1298,
                   "length": 23
                 }
               ]
@@ -496,14 +559,17 @@
         },
         {
           "name": "Separate handler log levels",
+          "stepic_id": 34300,
           "task_files": {
             "separate_levels.py": {
+              "name": "separate_levels.py",
+              "text": "from __future__ import print_function\nimport math\nimport sys\nimport logging\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logging.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logging.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logging.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logging.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logging.debug(\u0027Number of monthly payments %d\u0027, payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logging.debug(\u0027Calculated result is %f\u0027, result)\n    logging.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    log_filename \u003d \u0027../../Sandbox/separate_levels.log\u0027\n    file_handler \u003d logging.FileHandler(log_filename)\n\n    fmt \u003d logging.Formatter(\u0027%(asctime)s %(levelname)s %(message)s\u0027)\n    file_handler.setFormatter(fmt)\n\n    root_logger \u003d logging.getLogger()\n    root_logger.addHandler(file_handler)\n\n    stdout_handler \u003d logging.StreamHandler(sys.stdout)\n    stdout_handler.setFormatter(fmt)\n    stdout_handler.set handler level\n    root_logger.addHandler(stdout_handler)\n\n    root_logger.setLevel(logging.DEBUG)\n\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 40,
-                  "start": 19,
                   "hint": "setLevel(logging.WARNING)",
+                  "additional_hints": [],
                   "possible_answer": "setLevel(logging.WARNING)",
+                  "offset": 1264,
                   "length": 17
                 }
               ]
@@ -513,25 +579,29 @@
       ]
     },
     {
+      "id": 12155,
       "title": "Advanced Handlers",
       "task_list": [
         {
           "name": "Rotating files",
+          "stepic_id": 34313,
           "task_files": {
             "rotating_log_files.py": {
+              "name": "rotating_log_files.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\nimport specify the module that contains RotatingFileHandler\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027, result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    log_filename \u003d \u0027../../Sandbox/rotating.log\u0027\n    max_files\u003d2\n    max_file_size\u003d100\n    file_handler \u003d fully qualified name of rotating file handler(log_filename,\n                                                        mode\u003d\u0027a\u0027,\n                                                        maxBytes\u003dmax_file_size,\n                                                        backupCount\u003dmax_files)\n\n    fmt \u003d logging.Formatter(\u0027%(asctime)s %(levelname)s %(message)s\u0027)\n    file_handler.setFormatter(fmt)\n\n    root_logger \u003d logging.getLogger()\n    root_logger.addHandler(file_handler)\n    root_logger.setLevel(logging.DEBUG)\n\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 3,
-                  "start": 7,
                   "hint": "logging.handlers",
+                  "additional_hints": [],
                   "possible_answer": "logging.handlers",
+                  "offset": 72,
                   "length": 52
                 },
                 {
-                  "line": 32,
-                  "start": 19,
                   "hint": "logging.handlers.RotatingFileHandler",
+                  "additional_hints": [],
                   "possible_answer": "logging.handlers.RotatingFileHandler",
+                  "offset": 1006,
                   "length": 45
                 }
               ]
@@ -540,21 +610,24 @@
         },
         {
           "name": "Rotating files by time",
+          "stepic_id": 34314,
           "task_files": {
             "timed_rotation.py": {
+              "name": "timed_rotation.py",
+              "text": "from __future__ import print_function\nimport math\nimport time\nimport logging\nimport logging.handlers\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\n\nclass DelayFilterer(logging.Filter):\n    \"\"\" Logging filter which inserts a delay between each log record \"\"\"\n    def __init__(self, delay_secs\u003d1):\n        self.delay_secs \u003d delay_secs\n    def filter(self, record):\n        time.sleep(self.delay_secs)\n        return True\n\ndef get_current_rate(years):\n    logging.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logging.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logging.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logging.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logging.debug(\u0027Number of monthly payments %d\u0027, payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logging.debug(\u0027Calculated result is %f\u0027, result)\n    logging.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    log_filename \u003d \u0027../../Sandbox/timed_rotation.log\u0027\n    file_handler \u003d logging.handlers.TimedRotatingFileHandler(log_filename,\n                                                             when\u003dtype of interval,\n                                                             interval\u003dfrequency of rollover,\n                                                             backupCount\u003d4)\n\n    fmt \u003d logging.Formatter(\u0027%(asctime)s %(levelname)s %(message)s\u0027)\n    file_handler.setFormatter(fmt)\n\n    root_logger \u003d logging.getLogger()\n    root_logger.addHandler(file_handler)\n    root_logger.setLevel(logging.DEBUG)\n\n    # Custom filter to place a 1 second delay between each log message\n    root_logger.addFilter(DelayFilterer(delay_secs\u003d1))\n\n    payment \u003d get_monthly_payment(100000, 80)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 41,
-                  "start": 66,
                   "hint": "For seconds you should specify \u0027S\u0027",
+                  "additional_hints": [],
                   "possible_answer": "\u0027S\u0027",
+                  "offset": 1352,
                   "length": 16
                 },
                 {
-                  "line": 42,
-                  "start": 70,
                   "hint": "For this task, use 2",
+                  "additional_hints": [],
                   "possible_answer": "2",
+                  "offset": 1440,
                   "length": 21
                 }
               ]
@@ -563,14 +636,17 @@
         },
         {
           "name": "Memory handler",
+          "stepic_id": 34315,
           "task_files": {
             "memory_handler.py": {
+              "name": "memory_handler.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\nimport logging.handlers\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    result \u003d None\n    try:\n        mon_rate \u003d get_current_rate(years)/1200\n        payments \u003d years * 12\n        logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n        result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n        logger.debug(\u0027Calculated result is %f\u0027, result)\n    except:\n        logger.exception(\u0027caught exception\u0027)\n\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n\n    log_filename \u003d \u0027../../Sandbox/memory_handler.log\u0027\n    file_handler \u003d logging.FileHandler(log_filename, mode\u003d\u0027w\u0027)\n\n    fmt \u003d logging.Formatter(\u0027%(asctime)s %(levelname)s %(message)s\u0027)\n    file_handler.setFormatter(fmt)\n\n    memory_handler \u003d logging.handlers.MemoryHandler(capacity\u003d2, target\u003duse the FileHandler object)\n\n    root_logger \u003d logging.getLogger()\n    root_logger.addHandler(memory_handler)\n    root_logger.setLevel(logging.DEBUG)\n\n    payment \u003d get_monthly_payment(100000, 0)\n    print(\u0027Monthly payment is %s\u0027 % payment)\n\n    # Remove file handler target to prevent logging.shutdown() from explicitly\n    # flushing all handlers, causing any recent DEBUG output to be written\n    # to the FileHandler.\n    memory_handler.setTarget(None)\n",
               "placeholders": [
                 {
-                  "line": 41,
-                  "start": 71,
                   "hint": "The instance is in the \u0027file_handler\u0027 variable.",
+                  "additional_hints": [],
                   "possible_answer": "file_handler",
+                  "offset": 1265,
                   "length": 26
                 }
               ]
@@ -579,28 +655,31 @@
         },
         {
           "name": "HTTP handler",
+          "stepic_id": 34316,
           "task_files": {
             "http_handler.py": {
+              "name": "http_handler.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\nimport logging.handlers\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    result \u003d None\n    try:\n        mon_rate \u003d get_current_rate(years)/1200\n        payments \u003d years * 12\n        logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n        result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n        logger.debug(\u0027Calculated result is %f\u0027, result)\n    except:\n        logger.exception(\u0027caught exception\u0027)\n\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n\n    file_handler \u003d logging.FileHandler(\u0027memory_handler.log\u0027, mode\u003d\u0027w\u0027)\n\n    fmt \u003d logging.Formatter(\u0027%(asctime)s %(levelname)s %(message)s\u0027)\n    file_handler.setFormatter(fmt)\n\n    http_handler \u003d logging.handlers.name of http handler(host\u003d\u0027127.0.0.1enter host and port                                          url\u003d\u0027enter the url\u0027,\n                                                method\u003d\u0027GET\u0027)\n\n    root_logger \u003d logging.getLogger()\n    root_logger.addHandler(http_handler)\n    root_logger.setLevel(logging.DEBUG)\n\n    payment \u003d get_monthly_payment(100000, 30)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 40,
-                  "start": 36,
                   "hint": "HTTPHandler",
+                  "additional_hints": [],
                   "possible_answer": "HTTPHandler",
+                  "offset": 1184,
                   "length": 20
                 },
                 {
-                  "line": 40,
-                  "start": 63,
                   "hint": "127.0.0.1:8080",
+                  "additional_hints": [],
                   "possible_answer": "127.0.0.1:8080",
+                  "offset": 1220,
                   "length": 19
                 },
                 {
-                  "line": 41,
-                  "start": 53,
                   "hint": "Use \"/\" for this simple example. Typically you would specify a URL endpoint that can process your log data.",
+                  "additional_hints": [],
                   "possible_answer": "/",
+                  "offset": 1286,
                   "length": 13
                 }
               ]
@@ -609,14 +688,17 @@
         },
         {
           "name": "shutdown",
+          "stepic_id": 34317,
           "task_files": {
             "logging_shutdown.py": {
+              "name": "logging_shutdown.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\nimport logging.handlers\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    result \u003d None\n    try:\n        mon_rate \u003d get_current_rate(years)/1200\n        payments \u003d years * 12\n        logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n        result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n        logger.debug(\u0027Calculated result is %f\u0027, result)\n    except:\n        logger.exception(\u0027caught exception\u0027)\n\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n\n    log_filename \u003d \u0027../../Sandbox/memory_handler.log\u0027\n    file_handler \u003d logging.FileHandler(log_filename, mode\u003d\u0027w\u0027)\n\n    fmt \u003d logging.Formatter(\u0027%(asctime)s %(levelname)s %(message)s\u0027)\n    file_handler.setFormatter(fmt)\n\n    memory_handler \u003d logging.handlers.MemoryHandler(capacity\u003d2, target\u003dfile_handler)\n\n    root_logger \u003d logging.getLogger()\n    root_logger.addHandler(memory_handler)\n    root_logger.setLevel(logging.DEBUG)\n\n    payment \u003d get_monthly_payment(100000, 0)\n    print(\u0027Monthly payment is %s\u0027 % payment)\n\n    # Remove file handler target to prevent logging.shutdown() from explicitly\n    # flushing all handlers, causing any recent DEBUG output to be written\n    # to the FileHandler.\n    memory_handler.setTarget(None)\n\n    insert call to gracefully shutdown logging system",
               "placeholders": [
                 {
-                  "line": 55,
-                  "start": 4,
                   "hint": "logging.shutdown() can be used to gracefully shutdown the logging system.",
+                  "additional_hints": [],
                   "possible_answer": "logging.shutdown()",
+                  "offset": 1713,
                   "length": 49
                 }
               ]
@@ -625,21 +707,24 @@
         },
         {
           "name": "Removing handlers",
+          "stepic_id": 34318,
           "task_files": {
             "remove_handler.py": {
+              "name": "remove_handler.py",
+              "text": "import logging\n\ndef setup_loggers():\n    stream_handler \u003d logging.StreamHandler()\n    fmt \u003d logging.Formatter(\u0027%(asctime)s - %(levelname)s - %(message)s\u0027)\n    stream_handler.setFormatter(fmt)\n\n    root \u003d logging.getLogger()\n    root.addHandler(stream_handler)\n    #root.setLevel(logging.DEBUG)\n\n    b_log \u003d logging.getLogger(\u0027A.B\u0027)\n    b_log.addHandler(stream_handler)\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    setup_loggers()\n\n    c_log \u003d logging.getLogger(\u0027A.B.C\u0027)\n    c_log.warn(\u0027This message should be output once to console (but is output twice instead)\u0027)\n\n    b_log \u003d logging.getLogger(enter the logger name)\n\n    # Remove all handlers attached to logger\n    while len(b_log.handlers):\n        handler \u003d b_log.handlers[0]\n        insert code to remove handler from A.B logger\n\n    c_log.warn(\u0027This message should be output once to console\u0027)\n",
               "placeholders": [
                 {
-                  "line": 21,
-                  "start": 30,
                   "hint": "\u0027A.B\u0027",
+                  "additional_hints": [],
                   "possible_answer": "\u0027A.B\u0027",
+                  "offset": 583,
                   "length": 21
                 },
                 {
-                  "line": 26,
-                  "start": 8,
                   "hint": "b_log.removeHandler(handler)",
+                  "additional_hints": [],
                   "possible_answer": "b_log.removeHandler(handler)",
+                  "offset": 727,
                   "length": 45
                 }
               ]
@@ -649,32 +734,36 @@
       ]
     },
     {
+      "id": 12152,
       "title": "Filtering",
       "task_list": [
         {
           "name": "Filter object",
+          "stepic_id": 34301,
           "task_files": {
             "filter.py": {
+              "name": "filter.py",
+              "text": "import logging\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n\n    log_filter \u003d logging.Filter(\u0027A\u0027)\n\n    logger1 \u003d logging.getLogger(\u0027A\u0027)\n    logger1.add the filter object to this logger\n    logger1.debug(\u0027This is written to log output\u0027)\n\n    logger2 \u003d logging.getLogger(\u0027A.B\u0027)\n    logger2.add the filter object to this logger\n    logger2.debug(\u0027This is written to log output\u0027)\n\n    logger3 \u003d logging.getLogger(\u0027B\u0027)\n    logger3.add the filter object to this logger\n    logger3.debug(\u0027This is NOT written to log output, because only names start with \"B\" are allowed by filter\u0027)\n\n",
               "placeholders": [
                 {
-                  "line": 8,
-                  "start": 12,
                   "hint": "addFilter(log_filter)",
+                  "additional_hints": [],
                   "possible_answer": "addFilter(log_filter)",
+                  "offset": 176,
                   "length": 36
                 },
                 {
-                  "line": 12,
-                  "start": 12,
                   "hint": "addFilter(log_filter)",
+                  "additional_hints": [],
                   "possible_answer": "addFilter(log_filter)",
+                  "offset": 316,
                   "length": 36
                 },
                 {
-                  "line": 16,
-                  "start": 12,
                   "hint": "addFilter(log_filter)",
+                  "additional_hints": [],
                   "possible_answer": "addFilter(log_filter)",
+                  "offset": 454,
                   "length": 36
                 }
               ]
@@ -683,21 +772,24 @@
         },
         {
           "name": "Sanitize filter",
+          "stepic_id": 34302,
           "task_files": {
             "sanitize_filter.py": {
+              "name": "sanitize_filter.py",
+              "text": "import logging\nimport re\n\nclass SanitizeSSNFilter(logging.Filter):\n    def filter(self, record):\n        def replace_ssn(value):\n            return re.sub(\u0027\\d\\d\\d-\\d\\d-\\d\\d\\d\\d\u0027, \u0027XXX-XX-XXXX\u0027, value)\n\n        record.msg \u003d replace_ssn(record.msg)\n        if record.args:\n            newargs \u003d [replace_ssn(arg) if isinstance(arg, str)\n                       else arg for arg in record.args]\n            record.args \u003d tuple(newargs)\n\n        return insert the appropriate return value\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n\n    sanitize_filter \u003d SanitizeSSNFilter()\n    root \u003d logging.getLogger()\n    add the filter object to the root logger\n\n    root.debug(\u0027Nothing filtered here; user_id\u003d%s\u0027, \u0027100\u0027)\n    root.debug(\u0027Log message containing a SSN\u003d000-01-1000\u0027)\n    root.warn(\u0027Log message containing a SSN\u003d%s\u0027, \u0027000-01-1001\u0027)\n    root.debug(\u0027Log message containing a SSN\u003d%s\u0027 % \u0027000-01-1100\u0027)\n    root.info(\u0027Log event: user_id\u003d%s, SSN\u003d%s, status\u003d%d, result\u003d%s\u0027, \u0027100\u0027, \u0027000-01-1100\u0027, 2, True)\n",
               "placeholders": [
                 {
-                  "line": 14,
-                  "start": 15,
                   "hint": "The value should be non-zero, since we are only updating the data and excluding any log records.\n",
+                  "additional_hints": [],
                   "possible_answer": "i",
+                  "offset": 448,
                   "length": 35
                 },
                 {
-                  "line": 21,
-                  "start": 4,
                   "hint": "call the method \u0027addHandler\u0027 on the root logger instance and pass in the sanitize_filter object.",
+                  "additional_hints": [],
                   "possible_answer": "rt logging\nimport re\n\nclass San",
+                  "offset": 635,
                   "length": 40
                 }
               ]
@@ -706,14 +798,17 @@
         },
         {
           "name": "Logger propagate",
+          "stepic_id": 34303,
           "task_files": {
             "propagate1.py": {
+              "name": "propagate1.py",
+              "text": "import logging\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n\n    log_filter \u003d logging.Filter(\u0027A\u0027)\n\n    logger1 \u003d logging.getLogger(\u0027A\u0027)\n    logger1.debug(\u0027This is written to log output\u0027)\n\n    logger2 \u003d logging.getLogger(\u0027A.B\u0027)\n    logger2.debug(\u0027This is written to log output\u0027)\n\n    logger3 \u003d logging.getLogger(\u0027B\u0027)\n    logger3.propagate \u003d disable log propagation to parent handlers\n    logger3.debug(\u0027This is NOT written to log output, because only names start with \"B\" are allowed by filter\u0027)\n\n",
               "placeholders": [
                 {
-                  "line": 14,
-                  "start": 24,
                   "hint": "Setting a False value will disable propagation to parent handlers.",
+                  "additional_hints": [],
                   "possible_answer": "0",
+                  "offset": 368,
                   "length": 42
                 }
               ]
@@ -722,14 +817,17 @@
         },
         {
           "name": "NullHandler",
+          "stepic_id": 34304,
           "task_files": {
             "null_handler.py": {
+              "name": "null_handler.py",
+              "text": "import logging\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n\n    log_filter \u003d logging.Filter(\u0027A\u0027)\n\n    logger1 \u003d logging.getLogger(\u0027A\u0027)\n    logger1.debug(\u0027This is written to log output\u0027)\n\n    logger2 \u003d logging.getLogger(\u0027A.B\u0027)\n    logger2.debug(\u0027This is written to log output\u0027)\n\n    logger3 \u003d logging.getLogger(\u0027B\u0027)\n    add a null handler to logger3\n    logger3.propagate \u003d False\n    logger3.debug(\u0027This is NOT written to log output, because only names start with \"B\" are allowed by filter\u0027)\n",
               "placeholders": [
                 {
-                  "line": 14,
-                  "start": 4,
                   "hint": "logger3.addHandler(logging.NullHandler())",
+                  "additional_hints": [],
                   "possible_answer": "logger3.addHandler(logging.NullHandler())",
+                  "offset": 348,
                   "length": 29
                 }
               ]
@@ -738,21 +836,24 @@
         },
         {
           "name": "Filtering on handler",
+          "stepic_id": 34305,
           "task_files": {
             "filtering_handler.py": {
+              "name": "filtering_handler.py",
+              "text": "import logging\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n\n    log_filter \u003d logging.Filter(\u0027A\u0027)\n\n    root \u003d get the root logger\n    for handler in root.handlers:\n        add the filter to each handler\n\n    logger1 \u003d logging.getLogger(\u0027A\u0027)\n    logger1.debug(\u0027This is written to log output\u0027)\n\n    logger2 \u003d logging.getLogger(\u0027A.B\u0027)\n    logger2.debug(\u0027This is written to log output\u0027)\n\n    logger3 \u003d logging.getLogger(\u0027B\u0027)\n    logger3.debug(\u0027This is NOT written to log output, because only names start with \"B\" are allowed by filter\u0027)\n\n",
               "placeholders": [
                 {
-                  "line": 7,
-                  "start": 11,
                   "hint": "logging.getLogger()",
+                  "additional_hints": [],
                   "possible_answer": "logging.getLogger()",
+                  "offset": 138,
                   "length": 19
                 },
                 {
-                  "line": 9,
-                  "start": 8,
                   "hint": "handler.addFilter(log_filter)",
+                  "additional_hints": [],
                   "possible_answer": "handler.addFilter(log_filter)",
+                  "offset": 200,
                   "length": 30
                 }
               ]
@@ -762,25 +863,29 @@
       ]
     },
     {
+      "id": 12156,
       "title": "Configuration",
       "task_list": [
         {
           "name": "fileConfig formatters",
+          "stepic_id": 34319,
           "task_files": {
             "file_config_formatters.py": {
+              "name": "file_config_formatters.py",
+              "text": "import logging\nimport logging.config\n\nconfig \u003d \"\"\"\n[formatters]\nkeys\u003denter a name for a new formatter object\n\n[handlers]\nkeys\u003dhandler1\n\n[loggers]\nkeys\u003droot\n\n[formatter_add the formatter name here]\nformat\u003d%(asctime)s %(levelname)s %(message)s\n\n[handler_handler1]\nclass\u003dStreamHandler\nargs\u003d()\nformatter\u003dformatter1\n\n[logger_root]\nhandlers\u003dhandler1\nlevel\u003dDEBUG\n\"\"\"\n\nconfig_filename \u003d \u0027logging.ini\u0027\n\ndef write_config_file(filename, data):\n    with open(filename, \u0027w\u0027) as fp:\n        fp.write(data)\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    write_config_file(config_filename, config)\n\n    logging.config.fileConfig(config_filename)\n\n    logging.debug(\u0027this is a debug message\u0027)\n    logging.warning(\u0027this is a warning message\u0027)",
               "placeholders": [
                 {
-                  "line": 5,
-                  "start": 5,
                   "hint": "formatter1\n",
+                  "additional_hints": [],
                   "possible_answer": "formatter1",
+                  "offset": 69,
                   "length": 39
                 },
                 {
-                  "line": 13,
-                  "start": 11,
                   "hint": "formatter1\n",
+                  "additional_hints": [],
                   "possible_answer": "formatter1",
+                  "offset": 168,
                   "length": 27
                 }
               ]
@@ -789,21 +894,24 @@
         },
         {
           "name": "fileConfig handlers",
+          "stepic_id": 34320,
           "task_files": {
             "file_config_handlers.py": {
+              "name": "file_config_handlers.py",
+              "text": "import logging\nimport logging.config\n\nconfig \u003d \"\"\"\n[formatters]\nkeys\u003dformatter1\n\n[handlers]\nkeys\u003denter instance name for a handler object\n\n[loggers]\nkeys\u003droot\n\n[formatter_formatter1]\nformat\u003d%(asctime)s %(levelname)s %(message)s\n\n[handler_enter instance name for a handler object]\nclass\u003dStreamHandler\nargs\u003d()\nformatter\u003dformatter1\n\n[logger_root]\nhandlers\u003dhandler1\nlevel\u003dDEBUG\n\"\"\"\n\nconfig_filename \u003d \u0027logging.ini\u0027\n\ndef write_config_file(filename, data):\n    with open(filename, \u0027w\u0027) as fp:\n        fp.write(data)\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    write_config_file(config_filename, config)\n\n    logging.config.fileConfig(config_filename)\n\n    logging.debug(\u0027this is a debug message\u0027)\n    logging.warning(\u0027this is a warning message\u0027)",
               "placeholders": [
                 {
-                  "line": 8,
-                  "start": 5,
                   "hint": "handler1",
+                  "additional_hints": [],
                   "possible_answer": "handler1",
+                  "offset": 97,
                   "length": 40
                 },
                 {
-                  "line": 16,
-                  "start": 9,
                   "hint": "handler1",
+                  "additional_hints": [],
                   "possible_answer": "handler1",
+                  "offset": 238,
                   "length": 40
                 }
               ]
@@ -812,28 +920,31 @@
         },
         {
           "name": "fileConfig loggers",
+          "stepic_id": 34321,
           "task_files": {
             "file_config_loggers.py": {
+              "name": "file_config_loggers.py",
+              "text": "import logging\nimport logging.config\n\nconfig \u003d \"\"\"\n[formatters]\nkeys\u003dformatter1\n\n[handlers]\nkeys\u003dhandler1\n\n[loggers]\nkeys\u003denter root logger instance name\n\n[formatter_formatter1]\nformat\u003d%(asctime)s %(levelname)s %(message)s\n\n[handler_handler1]\nclass\u003dStreamHandler\nargs\u003d()\nformatter\u003dformatter1\n\n[logger_enter name of root logger instance]\nhandlers\u003denter name of handler instance\nlevel\u003dDEBUG\n\"\"\"\n\nconfig_filename \u003d \u0027logging.ini\u0027\n\ndef write_config_file(filename, data):\n    with open(filename, \u0027w\u0027) as fp:\n        fp.write(data)\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    write_config_file(config_filename, config)\n\n    logging.config.fileConfig(config_filename)\n\n    logging.debug(\u0027this is a debug message\u0027)\n    logging.warning(\u0027this is a warning message\u0027)",
               "placeholders": [
                 {
-                  "line": 11,
-                  "start": 5,
                   "hint": "root",
+                  "additional_hints": [],
                   "possible_answer": "root",
+                  "offset": 122,
                   "length": 31
                 },
                 {
-                  "line": 21,
-                  "start": 8,
                   "hint": "root",
+                  "additional_hints": [],
                   "possible_answer": "root",
+                  "offset": 301,
                   "length": 34
                 },
                 {
-                  "line": 22,
-                  "start": 9,
                   "hint": "handler1",
+                  "additional_hints": [],
                   "possible_answer": "handler1",
+                  "offset": 346,
                   "length": 30
                 }
               ]
@@ -842,28 +953,31 @@
         },
         {
           "name": "fileConfig multiple handlers",
+          "stepic_id": 34322,
           "task_files": {
             "file_config_multiple_handlers.py": {
+              "name": "file_config_multiple_handlers.py",
+              "text": "import logging\nimport logging.config\n\nconfig \u003d \"\"\"\n[loggers]\nkeys\u003droot\n\n[formatters]\nkeys\u003dformatter1\n\n[handlers]\nkeys\u003dhandler1, enter file handler instance name\n\n[formatter_formatter1]\nformat\u003d%(asctime)s %(levelname)s %(message)s\n\n[handler_handler1]\nclass\u003dStreamHandler\nargs\u003d()\nformatter\u003dformatter1\n\n[handler_enter file handler instance name]\nclass\u003dFileHandler\nargs\u003d(\"../../Sandbox/file_config_example.log\", )\nformatter\u003dformatter1\n\n[logger_root]\nhandlers\u003dhandler1, enter file handler instance name\nlevel\u003dDEBUG\n\"\"\"\n\nconfig_filename \u003d \u0027logging.ini\u0027\n\ndef write_config_file(filename, data):\n    with open(filename, \u0027w\u0027) as fp:\n        fp.write(data)\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    write_config_file(config_filename, config)\n\n    logging.config.fileConfig(config_filename)\n\n    logging.debug(\u0027this is a debug message\u0027)\n    logging.warning(\u0027this is a warning message\u0027)",
               "placeholders": [
                 {
-                  "line": 11,
-                  "start": 15,
                   "hint": "file",
+                  "additional_hints": [],
                   "possible_answer": "file",
+                  "offset": 128,
                   "length": 32
                 },
                 {
-                  "line": 21,
-                  "start": 9,
                   "hint": "",
+                  "additional_hints": [],
                   "possible_answer": "file",
+                  "offset": 309,
                   "length": 32
                 },
                 {
-                  "line": 27,
-                  "start": 19,
                   "hint": "file",
+                  "additional_hints": [],
                   "possible_answer": "file",
+                  "offset": 465,
                   "length": 32
                 }
               ]
@@ -872,21 +986,24 @@
         },
         {
           "name": "dictConfig",
+          "stepic_id": 34323,
           "task_files": {
             "dict_config.py": {
+              "name": "dict_config.py",
+              "text": "import logging\nimport logging.config\n\nlogger \u003d logging.getLogger(__name__)\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    log_config \u003d {\n        \u0027version\u0027: 1,\n        \u0027handlers\u0027: {\n            \u0027console\u0027: {\n                \u0027class\u0027: \u0027logging.StreamHandler\u0027,\n                \u0027formatter\u0027: \u0027formatter1\u0027,\n                \u0027stream\u0027: \u0027ext://sys.stdout\u0027\n            }\n\n        },\n        \u0027formatters\u0027: {\n            \u0027formatter1\u0027: {\n                \u0027format\u0027: \u0027%(asctime)s - %(levelname)s - %(message)s\u0027\n            }\n        },\n        \u0027loggers\u0027: {\n            \u0027\u0027: {\n                \u0027level\u0027: \u0027DEBUG\u0027,\n                \u0027handlers\u0027: [\u0027insert name of stream handler object key\u0027, ]\n            }\n        }\n    }\n\n    logging.config.dictConfig(pass the dict object containing log configuration)\n\n    logger.warn(\u0027This is a warning\u0027)\n    logger.debug(\u0027test\u0027)\n\n    logging.root.warn(\u0027This is a root logger warning\u0027)",
               "placeholders": [
                 {
-                  "line": 24,
-                  "start": 30,
                   "hint": "The \u0027handlers\u0027 section contains a key called \u0027console\u0027, that is the name of the stream handler.",
+                  "additional_hints": [],
                   "possible_answer": "console",
+                  "offset": 605,
                   "length": 40
                 },
                 {
-                  "line": 29,
-                  "start": 30,
                   "hint": "The variable named \"log_config\" contains our logging configuration.",
+                  "additional_hints": [],
                   "possible_answer": "log_config",
+                  "offset": 711,
                   "length": 49
                 }
               ]
@@ -895,21 +1012,24 @@
         },
         {
           "name": "dictConfig existing loggers",
+          "stepic_id": 34324,
           "task_files": {
             "dict_config_existing_loggers.py": {
+              "name": "dict_config_existing_loggers.py",
+              "text": "import logging\nimport logging.config\n\nlogger \u003d logging.getLogger(__name__)\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    log_config \u003d {\n        \u0027version\u0027: 1,\n        \u0027handlers\u0027: {\n            \u0027console\u0027: {\n                \u0027class\u0027: \u0027logging.StreamHandler\u0027,\n                \u0027formatter\u0027: \u0027formatter1\u0027,\n                \u0027stream\u0027: \u0027ext://sys.stdout\u0027\n            }\n\n        },\n        \u0027formatters\u0027: {\n            \u0027formatter1\u0027: {\n                \u0027format\u0027: \u0027%(asctime)s - %(levelname)s - %(message)s\u0027\n            }\n        },\n        \u0027loggers\u0027: {\n            \u0027\u0027: {\n                \u0027level\u0027: \u0027DEBUG\u0027,\n                \u0027handlers\u0027: [\u0027console\u0027, ]\n            }\n        },\n        \u0027insert name of optioninsert option valuelse\n    }\n\n    logging.config.dictConfig(log_config)\n\n    logger.warn(\u0027This is a warning\u0027)\n    logger.debug(\u0027test\u0027)\n\n    logging.root.warn(\u0027This is a root logger warning\u0027)",
               "placeholders": [
                 {
-                  "line": 27,
-                  "start": 9,
                   "hint": "The option \u0027disable_existing_loggers\u0027 can be used to override what happens to existing loggers. The default value is \"True\".",
+                  "additional_hints": [],
                   "possible_answer": "disable_existing_loggers",
+                  "offset": 651,
                   "length": 21
                 },
                 {
-                  "line": 27,
-                  "start": 33,
                   "hint": "Since we do not want to disable existing loggers, the value should be \"False\".",
+                  "additional_hints": [],
                   "possible_answer": "False",
+                  "offset": 672,
                   "length": 19
                 }
               ]
@@ -918,14 +1038,17 @@
         },
         {
           "name": "dictConfig root shortcut",
+          "stepic_id": 34325,
           "task_files": {
             "dict_config_root.py": {
+              "name": "dict_config_root.py",
+              "text": "import logging\nimport logging.config\n\nlogger \u003d logging.getLogger(__name__)\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    log_config \u003d {\n        \u0027version\u0027: 1,\n        \u0027disable_existing_loggers\u0027: False,\n        \u0027handlers\u0027: {\n            \u0027console\u0027: {\n                \u0027class\u0027: \u0027logging.StreamHandler\u0027,\n                \u0027formatter\u0027: \u0027formatter1\u0027,\n                \u0027stream\u0027: \u0027ext://sys.stdout\u0027\n            }\n\n        },\n        \u0027formatters\u0027: {\n            \u0027formatter1\u0027: {\n                \u0027format\u0027: \u0027%(asctime)s - %(levelname)s - %(message)s\u0027\n            }\n        },\n        \u0027enter name of root logger\u0027: {\n            \u0027level\u0027: \u0027DEBUG\u0027,\n            \u0027handlers\u0027: [\u0027console\u0027, ]\n        }\n    }\n\n    logging.config.dictConfig(log_config)\n\n    logger.warn(\u0027This is a warning\u0027)\n    logger.debug(\u0027test\u0027)\n",
               "placeholders": [
                 {
-                  "line": 22,
-                  "start": 9,
                   "hint": "\u0027root\u0027 identifies the root logger.",
+                  "additional_hints": [],
                   "possible_answer": "root",
+                  "offset": 554,
                   "length": 25
                 }
               ]
@@ -935,18 +1058,22 @@
       ]
     },
     {
+      "id": 12153,
       "title": "Customization",
       "task_list": [
         {
           "name": "JSON Formatter",
+          "stepic_id": 34306,
           "task_files": {
             "json_formatter.py": {
+              "name": "json_formatter.py",
+              "text": "import logging\nimport json\nimport datetime\nimport traceback\n\nclass JsonFormatter(logging.Formatter):\n    def format(self, record):\n        if record.exc_info:\n            exc \u003d traceback.format_exception(*record.exc_info)\n        else:\n            exc \u003d None\n\n        return json.dumps({\n            \u0027msg\u0027: record.msg % record.args,\n            \u0027timestamp\u0027: datetime.datetime.utcfromtimestamp(record.created).isoformat() + \u0027Z\u0027,\n            \u0027func\u0027: record.funcName,\n            \u0027level\u0027: record.levelname,\n            \u0027module\u0027: record.module,\n            \u0027process_id\u0027: record.process,\n            \u0027thread_id\u0027: record.thread,\n            \u0027exception\u0027: exc\n        })\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    handler \u003d logging.StreamHandler()\n\n    fmt \u003d JsonFormatter()\n    add the formatter to the handler\n\n    root_logger \u003d logging.getLogger()\n    root_logger.setLevel(logging.DEBUG)\n    root_logger.addHandler(handler)\n\n    try:\n        raise Exception(\u0027This is an exception\u0027)\n    except:\n        root_logger.exception(\u0027caught exception\u0027)\n\n    root_logger.warn(\u0027this is a test message\u0027)\n    root_logger.debug(\u0027this request_id\u003d%d name\u003d%s\u0027, 1, \u0027John\u0027)\n\n\n",
               "placeholders": [
                 {
-                  "line": 27,
-                  "start": 4,
                   "hint": "Call handler.setFormatter() passing the formatter object.",
+                  "additional_hints": [],
                   "possible_answer": "rt logging\nimport json\nim",
+                  "offset": 760,
                   "length": 32
                 }
               ]
@@ -955,14 +1082,17 @@
         },
         {
           "name": "Smart memory handler",
+          "stepic_id": 34307,
           "task_files": {
             "smart_memory_handler.py": {
+              "name": "smart_memory_handler.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\nimport logging.handlers\n\nlogger \u003d logging.getLogger(\u0027mortgage\u0027)\n\n\nclass SmartMemoryHandler(logging.handlers.MemoryHandler):\n    def shouldFlush(self, record):\n        if record.levelno \u003e\u003d self.flushLevel:\n            return True\n        elif len(self.buffer) \u003e\u003d self.capacity:\n            self.buffer \u003d self.buffer[1:]\n        return False\n\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    result \u003d None\n    try:\n        mon_rate \u003d get_current_rate(years)/1200\n        payments \u003d years * 12\n        logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n        result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n        logger.debug(\u0027Calculated result is %f\u0027, result)\n    except:\n        logger.exception(\u0027caught exception\u0027)\n\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n\n    log_filename \u003d \u0027../../Sandbox/smart_memory_handler.log\u0027\n    file_handler \u003d logging.FileHandler(log_filename, mode\u003d\u0027w\u0027)\n\n    fmt \u003d logging.Formatter(\u0027%(asctime)s %(levelname)s %(message)s\u0027)\n    file_handler.setFormatter(fmt)\n\n    # memory_handler \u003d logging.handlers.MemoryHandler(capacity\u003d2, target\u003dfile_handler)\n\n    memory_handler \u003d use our SmartMemoryHandler with same options here\n\n    root_logger \u003d logging.getLogger()\n    root_logger.addHandler(memory_handler)\n    root_logger.setLevel(logging.DEBUG)\n\n    # generate a bunch of debug messages to show they are not written out\n    for i in range(1, 100):\n        logging.debug(\u0027test %d\u0027, i)\n\n    payment \u003d get_monthly_payment(100000, 0)\n    print(\u0027Monthly payment is %s\u0027 % payment)\n\n    # Remove file handler target to prevent logging.shutdown() from explicitly\n    # flushing all handlers, causing any recent DEBUG output to be written\n    # to the FileHandler.\n    memory_handler.setTarget(None)\n\n",
               "placeholders": [
                 {
-                  "line": 53,
-                  "start": 21,
                   "hint": "SmartMemoryHandler(capacity\u003d2, target\u003dfile_handler)",
+                  "additional_hints": [],
                   "possible_answer": "t print_function\nimport math\nimport logging\nimport ",
+                  "offset": 1586,
                   "length": 49
                 }
               ]
@@ -971,14 +1101,17 @@
         },
         {
           "name": "Database Handler",
+          "stepic_id": 34308,
           "task_files": {
             "db_handler.py": {
+              "name": "db_handler.py",
+              "text": "from __future__ import print_function\nimport logging\nimport logging.config\nimport datetime\nimport sqlite3 as sqlite\n\n\nclass DatabaseHandler(logging.Handler):\n    \"\"\" Store log records in a sqlite database.\n    \"\"\"\n    def __init__(self, filename):\n        super(DatabaseHandler, self).__init__()\n        self.db \u003d sqlite.connect(filename)\n        try:\n            self.db.execute(\n                        \"CREATE TABLE logger(record_id INTEGER PRIMARY KEY, name TEXT,\" \\\n                        \"asctime TEXT, level TEXT, funcName TEXT, lineno INTEGER,\" \\\n                        \"module TEXT, message TEXT);\")\n            self.db.commit()\n\n        except sqlite.OperationalError as e:\n            logging.info(\u0027database filename\u003d%s already exists\u0027, filename)\n\n\n    def insert the method name used by a handler to output log records(self, record):\n        if self.db:\n            timestring \u003d datetime.datetime.utcfromtimestamp(record.created).isoformat() + \u0027Z\u0027\n            message \u003d record.msg % record.args\n\n            self.acquire()\n            try:\n                self.db.execute(\"INSERT INTO logger(name, asctime, level, funcName, lineno, module, message) \" \\\n                    \"VALUES(?, ?, ?, ?, ?, ?, ?);\",\n                    (record.name, timestring, record.levelname, record.funcName, record.lineno, record.module, message))\n                self.db.commit()\n            finally:\n                self.release()\n\n    def close(self):\n        self.db.close()\n        self.db \u003d None\n        super(DatabaseHandler, self).close()\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    db_filename \u003d \u0027../../Sandbox/log.db\u0027\n\n    log_config \u003d {\n        \u0027version\u0027: 1,\n        \u0027handlers\u0027: {\n            \u0027db\u0027: {\n                \u0027class\u0027: \u0027db_handler.DatabaseHandler\u0027,\n                \u0027filename\u0027: db_filename\n            }\n        },\n        \u0027root\u0027: {\n            \u0027handlers\u0027: [\u0027db\u0027],\n            \u0027level\u0027: \u0027DEBUG\u0027\n        }\n    }\n\n\n    logging.config.dictConfig(log_config)\n    logging.debug(\u0027Configured logging to database filename\u003d%s\u0027, db_filename)\n\n    logging.warn(\u0027root logger warning message\u0027)\n    logging.debug(\u0027Connecting to database to read warning counts\u0027)\n\n    db \u003d sqlite.connect(db_filename)\n    result \u003d db.execute(\u0027select count(*) from logger where level\u003d\"WARNING\"\u0027)\n    print(\u0027Number of WARNING log messages in database is %s\u0027 % result.fetchone()[0])\n\n    result \u003d db.execute(\u0027select count(*) from logger where level\u003d\"DEBUG\"\u0027)\n    print(\u0027Number of DEBUG log messages in database is %s\u0027 % result.fetchone()[0])\n",
               "placeholders": [
                 {
-                  "line": 24,
-                  "start": 8,
                   "hint": "emit",
+                  "additional_hints": [],
                   "possible_answer": "emit",
+                  "offset": 770,
                   "length": 62
                 }
               ]
@@ -987,21 +1120,24 @@
         },
         {
           "name": "Injecting data",
+          "stepic_id": 34309,
           "task_files": {
             "inject_filter.py": {
+              "name": "inject_filter.py",
+              "text": "import logging\nimport time\nimport random\nimport logging.config\nimport threading\n\nclass LogUserInjector(logging.Filter):\n    thread_local_data \u003d threading.local()\n\n    def enter the name of the method used to filter records(self, record):\n        record.user_id \u003d self.thread_local_data.user_id\n        return enter the return value to always allow records to be handled\n\n    @classmethod\n    def set_userid(cls, user_id):\n        cls.thread_local_data.user_id \u003d user_id\n\n\ndef simulate_user(user_id):\n    LogUserInjector.set_userid(user_id)\n\n    logging.debug(\u0027user logged_in\u0027)\n    time.sleep(random.random())\n    logging.debug(\u0027user performed some activity\u0027)\n    time.sleep(random.random())\n    logging.debug(\u0027user logged_out\u0027)\n    time.sleep(random.random())\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n\n    log_config \u003d {\n        \u0027version\u0027: 1,\n        \u0027formatters\u0027: {\n            \u0027with_uid\u0027: {\n                \u0027format\u0027: \u0027%(levelname)s - %(asctime)s - %(thread)s UID\u003d%(user_id)d - %(message)s\u0027\n            }\n        },\n        \u0027handlers\u0027: {\n            \u0027stderr\u0027: {\n                \u0027class\u0027: \u0027logging.StreamHandler\u0027,\n                \u0027formatter\u0027: \u0027with_uid\u0027,\n                \u0027filters\u0027: [\u0027uid\u0027]\n            }\n        },\n        \u0027filters\u0027: {\n            \u0027uid\u0027: {\n                \u0027()\u0027: LogUserInjector\n            }\n        },\n        \u0027root\u0027: {\n            \u0027handlers\u0027: [\u0027stderr\u0027],\n            \u0027level\u0027: \u0027DEBUG\u0027\n        }\n    }\n\n    logging.config.dictConfig(log_config)\n\n    threads \u003d []\n    for user_id in [1, 5, 2, 3]:\n        thread \u003d threading.Thread(target\u003dsimulate_user, args\u003d(user_id,))\n        thread.start()\n\n    for thread in threads:\n        thread.join()\n\n",
               "placeholders": [
                 {
-                  "line": 9,
-                  "start": 8,
                   "hint": "filter",
+                  "additional_hints": [],
                   "possible_answer": "filter",
+                  "offset": 171,
                   "length": 51
                 },
                 {
-                  "line": 11,
-                  "start": 15,
                   "hint": "A non-zero value (1 or True) can be used to allow filter records to be handled.\n",
+                  "additional_hints": [],
                   "possible_answer": "True",
+                  "offset": 309,
                   "length": 60
                 }
               ]
@@ -1011,18 +1147,22 @@
       ]
     },
     {
+      "id": 12158,
       "title": "Best Practices",
       "task_list": [
         {
           "name": "Logger naming",
+          "stepic_id": 34331,
           "task_files": {
             "logger_naming.py": {
+              "name": "logger_naming.py",
+              "text": "from __future__ import print_function\nimport math\nimport logging\n\nlogger \u003d logging.getLogger(specify the name of the current module)\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027, result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n    payment \u003d get_monthly_payment(100000, 30)\n    print(\u0027Monthly payment is %f\u0027 % payment)\n",
               "placeholders": [
                 {
-                  "line": 4,
-                  "start": 27,
                   "hint": "In Python, __name__ contains the current module name.",
+                  "additional_hints": [],
                   "possible_answer": "t_functi",
+                  "offset": 93,
                   "length": 38
                 }
               ]
@@ -1031,21 +1171,24 @@
         },
         {
           "name": "Private loggers",
+          "stepic_id": 34332,
           "task_files": {
             "private_logger.py": {
+              "name": "private_logger.py",
+              "text": "import logging\n\nlogger \u003d logging.getLogger(__name__)\n\nclass FirstClass():\n    def __init__(self):\n        self.log \u003d logging.getLogger(__name__ + \u0027.first_class\u0027)\n\n    def do_something(self):\n        self.log.debug(\u0027FirstClass do_something() called\u0027)\n\n\nclass SecondClass():\n    def __init__(self):\n        self.log \u003d logging.getLogger(__name__ + \u0027.second_class\u0027)\n\n    def do_something(self):\n        self.log.debug(\u0027SecondClass do_something() called\u0027)\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.WARNING)\n\n    logger.debug(\u0027module scope log output\u0027)\n\n    first \u003d FirstClass()\n    first.do_something()\n\n    second \u003d SecondClass()\n    second.do_something()\n\n    first_logger \u003d logging.getLogger(__name__ + \u0027first class logger specific name\u0027)\n    set the logging level to DEBUG\n    first.do_something()\n    second.do_something()\n\n\n",
               "placeholders": [
                 {
-                  "line": 30,
-                  "start": 49,
                   "hint": "the FirstClass logger name was created with __name__ + \u0027.first_class\u0027\n",
+                  "additional_hints": [],
                   "possible_answer": "__)\n\nclass F",
+                  "offset": 726,
                   "length": 32
                 },
                 {
-                  "line": 31,
-                  "start": 4,
                   "hint": "first_logger.setLevel(logging.DEBUG)",
+                  "additional_hints": [],
                   "possible_answer": "rt logging\n\nlogger \u003d logging.getLogg",
+                  "offset": 765,
                   "length": 30
                 }
               ]
@@ -1054,14 +1197,17 @@
         },
         {
           "name": "Conditional logging",
+          "stepic_id": 34333,
           "task_files": {
             "conditional_logging.py": {
+              "name": "conditional_logging.py",
+              "text": "import logging\nimport time\n\nlogger \u003d logging.getLogger(__name__)\n\ndef calculate_expensive_result(timeout):\n    time.sleep(timeout)\n    return 1\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.WARNING)\n\n    insert conditional code to test for this logging level\n        logger.debug(\u0027expensive_result\u003d%d\u0027, calculate_expensive_result(5))\n",
               "placeholders": [
                 {
-                  "line": 13,
-                  "start": 4,
                   "hint": "Add an \"if\" conditional call to isEnabledFor() on the logger object passing in the log level you are about to use.\n",
+                  "additional_hints": [],
                   "possible_answer": "rt logging\nimport time\n\nlogger \u003d loggi",
+                  "offset": 225,
                   "length": 54
                 }
               ]
@@ -1070,14 +1216,17 @@
         },
         {
           "name": "Logging in Libraries",
+          "stepic_id": 34334,
           "task_files": {
             "library_logging.py": {
+              "name": "library_logging.py",
+              "text": "# mortgage library\n#\nimport logging\n\nlogger \u003d logging.getLogger(__name__)\nlogger.addHandler(logging.FileHandler(\u0027library.log\u0027))\n\ndef get_current_rate(years):\n    logger.debug(\u0027Fetching current interest rate for %d years\u0027, years)\n    rate \u003d 5.3   # Stub external service call\n    logger.debug(\u0027Service returned interest rate %f\u0027, rate)\n    return rate\n\ndef get_monthly_payment(principal, years):\n    logger.info(\u0027Calling mortgage calculator\u0027)\n\n    if years \u003e 50:\n        logger.warn(\u0027Term greater than 50 years\u0027)\n\n    mon_rate \u003d get_current_rate(years)/1200\n    payments \u003d years * 12\n    logger.debug(\u0027Number of monthly payments %d\u0027, payments)\n    result \u003d principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))\n\n    logger.debug(\u0027Calculated result is %f\u0027, result)\n    logger.debug(\u0027Leaving mortgage calculator\u0027)\n    return result",
               "placeholders": [
                 {
-                  "line": 5,
-                  "start": 0,
                   "hint": "Replace the FileHandler with a NullHandler. NullHandler takes no constructor arguments.",
+                  "additional_hints": [],
                   "possible_answer": "# mortgage library\n#\nimport logging\n\nlog",
+                  "offset": 74,
                   "length": 53
                 }
               ]
@@ -1086,49 +1235,52 @@
         },
         {
           "name": "Using the right levels",
+          "stepic_id": 34335,
           "task_files": {
             "right_levels.py": {
+              "name": "right_levels.py",
+              "text": "import logging\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.DEBUG)\n\n    user_id \u003d 1001\n    ip \u003d \u002710.0.0.15\u0027\n    port \u003d 5555\n    account_id \u003d 3551\n    version \u003d \u00271.5.2\u0027\n\n    logging.log(logging.enter level name, \u0027Service restarted - version %s\u0027, version)\n\n    logging.log(logging.enter level name, \u0027Failed to connect to calculator service at ip\u003d%s:%d\u0027, ip, port)\n\n    logging.log(logging.enter level name, \u0027Created user account id\u003d%d\u0027, user_id)\n\n    logging.log(logging.enter level name, \u0027User entered invalid account id\u003d%d account_id\u003d%d\u0027, user_id, account_id)\n\n    logging.log(logging.enter level name, \u0027Could not connect to user database\u0027)\n\n    logging.log(logging.enter level name, \u0027DB Transaction created for updating user id\u003d%d\u0027, user_id)\n",
               "placeholders": [
                 {
-                  "line": 11,
-                  "start": 24,
                   "hint": "Could depend on the application, but first choice would be INFO. Followed by DEBUG if it happens often. Or even WARN if it\u0027s an exception but recoverable case.",
+                  "additional_hints": [],
                   "possible_answer": "e__ ",
+                  "offset": 214,
                   "length": 16
                 },
                 {
-                  "line": 13,
-                  "start": 24,
                   "hint": "If your application can still function without this, or if you can recover, I would mark this as ERROR. But if it\u0027s more serious CRITICAL or FATAL.",
+                  "additional_hints": [],
                   "possible_answer": "e__ \u003d",
+                  "offset": 300,
                   "length": 16
                 },
                 {
-                  "line": 15,
-                  "start": 24,
                   "hint": "Looks like general INFO, since you might want to know this for more than DEBUG purposes. But, DEBUG could be fine too.",
+                  "additional_hints": [],
                   "possible_answer": "e__ ",
+                  "offset": 408,
                   "length": 16
                 },
                 {
-                  "line": 17,
-                  "start": 24,
                   "hint": "Whenever the user enters invalid information, I consider this a WARN, since you might need to investigate why the user might have done this, perhaps due to a usability issue. ",
+                  "additional_hints": [],
                   "possible_answer": "e__ ",
+                  "offset": 490,
                   "length": 16
                 },
                 {
-                  "line": 19,
-                  "start": 24,
                   "hint": "In most application this is so serious you can not continue to function, so this would be CRITICAL or FATAL.",
+                  "additional_hints": [],
                   "possible_answer": "e__ \u003d\u003d \u0027",
+                  "offset": 606,
                   "length": 16
                 },
                 {
-                  "line": 21,
-                  "start": 24,
                   "hint": "This is a low-level operation, so I would consider it DEBUG.",
+                  "additional_hints": [],
                   "possible_answer": "e__ \u003d",
+                  "offset": 687,
                   "length": 16
                 }
               ]
@@ -1137,21 +1289,24 @@
         },
         {
           "name": "Using a decorator",
+          "stepic_id": 34336,
           "task_files": {
             "logging_decorator.py": {
+              "name": "logging_decorator.py",
+              "text": "import logging\nimport time\nimport functools\n\ndef logging_decorator(f):\n    @functools.wraps(f)\n    def wrapper(*args, **kwargs):\n        logging.debug(\u0027Entering %s\u0027, f.__name__)\n        start \u003d time.time()\n        f(*args, **kwargs)\n        end \u003d time.time()\n        logging.debug(\u0027Exiting %s in %-5.2f secs\u0027, f.__name__, end-start)\n\n    return wrapper\n\nadd our logging decorator do this function\ndef do_work(timeout):\n    # Doing something expensive\n    time.sleep(timeout)\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(configure the log level to ensure we see the decorator output)\n    do_work(5)\n\n",
               "placeholders": [
                 {
-                  "line": 15,
-                  "start": 0,
                   "hint": "A decorator can be added by specifying the @ character before the decorator function name.",
+                  "additional_hints": [],
                   "possible_answer": "import logging\nimp",
+                  "offset": 354,
                   "length": 42
                 },
                 {
-                  "line": 22,
-                  "start": 24,
                   "hint": "the decorator using the DEBUG level, so we must configure the root handler to include that level.",
+                  "additional_hints": [],
                   "possible_answer": "me\nimport functools",
+                  "offset": 528,
                   "length": 61
                 }
               ]
@@ -1160,14 +1315,17 @@
         },
         {
           "name": "Just enough context",
+          "stepic_id": 34337,
           "task_files": {
             "context.py": {
+              "name": "context.py",
+              "text": "import logging\n\ndef do_service_lookup(service_address):\n    try:\n        raise Exception(\u0027Connection refused.\u0027)\n\n    except:\n        logging.exception(enter a message with relevent context)\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    logging.basicConfig(level\u003dlogging.INFO)\n\n    do_service_lookup(\u002710.0.0.15\u0027)\n",
               "placeholders": [
                 {
-                  "line": 7,
-                  "start": 26,
                   "hint": "It would be useful to know from which service address the connection was refused from.",
+                  "additional_hints": [],
                   "possible_answer": "vice_lookup(ser",
+                  "offset": 151,
                   "length": 37
                 }
               ]
@@ -1177,7 +1335,10 @@
       ]
     }
   ],
-  "description": "This course provides an introduction to the standard Python logging module. \nIt includes basic and advanced examples that can help you debug your Python software. Best practices are demonstrated to help you get the most out of Python logging. \nThis course was tested using Python 2.7 and Python 3.4.\n",
+  "authors": [],
+  "description": "This course provides an introduction to the standard Python logging module. It includes basic and advanced examples that can help you debug your Python software. Best practices are demonstrated to help you get the most out of Python logging. This course was tested using Python 2.7 and Python 3.4.",
   "name": "Logging in Python",
-  "authors": [{"name": "John Zurawski"}]
+  "id": 162,
+  "isAdaptive": false,
+  "language": "Python"
 }

@@ -1,18 +1,17 @@
-<html>
+
 When you log a message to a Logger, any Handler object's added to that Logger are going to emit the output.
 Given that Loggers are in a hierarchy, some of your child loggers may not have any Handler's attached. This would
 be a pain if you had to configure a Handler for every Logger child object. For this reason, every LogRecord will
 be passed to the parent Logger. And that will be passed to the Handler object's attached to that parent, this continues
 all the way up to the Root logger.
-<br/>
-<br/>
+<br>
+<br>
 That's why adding a Handler at the Root level will output the log records.
-<br/>
-<br/>
+<br>
+<br>
 In some cases you may not want this behavior, so in this task, set the 'propagate' attribute on the "logger3"
 instance to False to prevent the log record from being passed to the parent logger handler.
-<br/>
-<br/>
+<br>
+<br>
 If you are running Python 2.7, then after you execute this code you will notice the message
 "No handlers could be found for logger "B"".  In the next task we can show how to eliminate this warning.
-</html>

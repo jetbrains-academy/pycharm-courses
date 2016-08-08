@@ -1,37 +1,35 @@
-<html>
+
 The standard library provides quite a few handlers. The following is a summary:
-<br/>
-<pre>
-StreamHandler, FileHandler, NullHandler, RotatingFileHandler, TimedRotatingFileHandler, WatchedFileHandler,
+<br>
+<pre>StreamHandler, FileHandler, NullHandler, RotatingFileHandler, TimedRotatingFileHandler, WatchedFileHandler,
 SocketHandler, DatagramHandler, SysLogHandler, SMTPHandler, NTEventLogHandler, HTTPHandler, BufferingHandler,
 and MemoryHandler.
 </pre>
-<br/>
+<br>
 In this last advanced handler task, we are going to demonstrate the HTTPHandler. This can be used to send
 log messages to a HTTP server.
-<br/>
-<br/>
+<br>
+<br>
 The Python standard library includes a built-in HTTP Server we are going to use in this task. If you are in
 Windows you need to open a command window that has Python in the path. If you are on a Unix-based system you need to open
 a local shell window.
-<br/>
-<br/>
-Enter the following in the new window:<br/>
+<br>
+<br>
+Enter the following in the new window:<br>
 python -m SimpleHTTPServer 8080
-<br/>
-<br/>
+<br>
+<br>
 This should see a message such as "Serving HTTP on 0.0.0.0 port 8080".
-<br/>
-<br/>
+<br>
+<br>
 If you are already running a service on this port, you may need to make changes in this task.
-<br/>
-<br/>
+<br>
+<br>
 Once you have done that, update the task to use the HTTPHandler and pass it the host value of "127.0.0.1:8080" and
 "url" value of "/".  The default HTTP method "GET" will be used.
-<br/>
-<br/>
+<br>
+<br>
 After you have run this code, you should see results from the SimpleHTTPServer window. You can then terminate the
 HTTP server with Control-C.  If you were unable to get the HTTP server working, you can continue to the next task after
 you have made the changes. Just ignore the console warnings about not being able to connect.  This would demonstrate
 a potential production issue for your system if the HTTP server was not available, so use this handler with caution.
-</html>

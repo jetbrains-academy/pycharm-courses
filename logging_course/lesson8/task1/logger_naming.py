@@ -2,7 +2,7 @@ from __future__ import print_function
 import math
 import logging
 
-logger = logging.getLogger(specify the name of the current module)
+logger = logging.getLogger(__name__)
 
 def get_current_rate(years):
     logger.debug('Fetching current interest rate for %d years', years)

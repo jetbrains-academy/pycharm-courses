@@ -29,7 +29,7 @@ def get_monthly_payment(principal, years):
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.WARNING)
-    rate_logger = logging.getLogger(specify name of logger)
-    rate_logger.setLevel(specify this loggers severity level)
+    rate_logger = logging.getLogger('mortgage.rate')
+    rate_logger.setLevel(logging.DEBUG)
     payment = get_monthly_payment(100000, 30)
     print('Monthly payment is %f' % payment)

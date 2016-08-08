@@ -7,9 +7,9 @@ import threading
 class LogUserInjector(logging.Filter):
     thread_local_data = threading.local()
 
-    def enter the name of the method used to filter records(self, record):
+    def filter(self, record):
         record.user_id = self.thread_local_data.user_id
-        return enter the return value to always allow records to be handled
+        return True
 
     @classmethod
     def set_userid(cls, user_id):

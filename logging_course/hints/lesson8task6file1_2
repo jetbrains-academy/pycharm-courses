@@ -1,1 +1,0 @@
-the decorator using the DEBUG level, so we must configure the root handler to include that level.

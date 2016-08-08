@@ -13,13 +13,13 @@ def logging_decorator(f):
 
     return wrapper
 
-add our logging decorator do this function
+@logging_decorator
 def do_work(timeout):
     # Doing something expensive
     time.sleep(timeout)
 
 
 if __name__ == '__main__':
-    logging.basicConfig(configure the log level to ensure we see the decorator output)
+    logging.basicConfig(level=logging.DEBUG)
     do_work(5)
 

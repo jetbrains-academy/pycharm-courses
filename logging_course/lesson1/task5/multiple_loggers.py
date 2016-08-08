@@ -5,7 +5,7 @@ import logging
 logger = logging.getLogger('mortgage')
 
 def get_current_rate(years):
-    create_a_new_logger_instance
+    logger = logging.getLogger('mortgage.rate')
 
     logger.debug('Fetching current interest rate for %d years' % years)
     rate = 5.3   # Stub external service call

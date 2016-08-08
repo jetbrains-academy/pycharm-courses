@@ -1,0 +1,14 @@
+Calling mortgage calculator
+Term greater than 50 years
+Fetching current interest rate for 80 years
+Service returned interest rate 5.300000
+Number of monthly payments 960
+Calculated result is 448.184492
+Leaving mortgage calculator
+2016-08-03 19:17:09,050 INFO Calling mortgage calculator
+2016-08-03 19:17:09,050 WARNING Term greater than 50 years
+2016-08-03 19:17:09,050 DEBUG Fetching current interest rate for 80 years
+2016-08-03 19:17:09,051 DEBUG Service returned interest rate 5.300000
+2016-08-03 19:17:09,051 DEBUG Number of monthly payments 960
+2016-08-03 19:17:09,051 DEBUG Calculated result is 448.184492
+2016-08-03 19:17:09,051 DEBUG Leaving mortgage calculator

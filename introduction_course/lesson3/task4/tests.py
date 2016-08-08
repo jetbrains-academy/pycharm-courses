@@ -3,7 +3,7 @@ from test_helper import run_common_tests, passed, failed, import_task_file, get_
 
 def test_value():
     file = import_task_file()
-    if file.exclamation == "!":
+    if hasattr(file, "exclamation") and file.exclamation == "!":
         passed()
     else:
         failed("Use -1 index to get the last character")

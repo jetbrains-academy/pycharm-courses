@@ -1,4 +1,0 @@
-replace each letter in the encrypted message with the letter 1 position to the left of that letter in the alphabet 
-(ie the letter immediately preceding it in the alphabet).
-
-As a starting point, 'XF' --> 'WE'
