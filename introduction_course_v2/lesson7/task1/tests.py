@@ -1,0 +1,31 @@
+from test_helper import run_common_tests, failed, get_answer_placeholders, passed
+
+
+def test_window():
+    window = get_answer_placeholders()[0]
+    if "fun" in window:
+        passed()
+    else:
+        failed("Name your function 'fun'")
+
+
+def test_window1():
+    window = get_answer_placeholders()[0]
+    if "def " in window:
+        passed()
+    else:
+        failed("Use 'def' keyword to define a function")
+
+
+def test_column():
+    window = get_answer_placeholders()[0]
+    if ":" in window:
+        passed()
+    else:
+        failed("Don't forget a colon at the end of the statement")
+
+if __name__ == '__main__':
+    run_common_tests()
+    test_window()
+    test_column()
+    test_window1()

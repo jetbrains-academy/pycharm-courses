@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CCProjectService">
+    <option name="course">
+      <Course>
+        <option name="description" value="Introduction course to Python" />
+        <option name="lessons">
+          <list>
+            <Lesson>
+              <option name="index" value="1" />
+              <option name="name" value="Introduction" />
+              <option name="taskList">
+                <list>
+                  <Task>
+                    <option name="index" value="1" />
+                    <option name="name" value="Our first program" />
+                    <option name="text" value="&#10;Traditionally the first program you write in any programming language is &quot;Hello World!&quot;.&#10;&lt;br&gt;&lt;br&gt;&#10;Introduce yourself to the World.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="hello_world.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Type your name here." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="14" />
+                                    <option name="possibleAnswer" value="Liana" />
+                                    <option name="start" value="32" />
+                                    <option name="taskText" value="type your name" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="hello_world.py" />
+                              <option name="text" value="print(&quot;Hello, world! My name is type your name&quot;)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="2" />
+                    <option name="name" value="Comments" />
+                    <option name="text" value="&#10;Comments in Python start with the hash character (#) and include the whole line.&#10;You can use Ctrl + / to comment or uncomment the whole line in PyCharm.&#10;&lt;br&gt;&lt;br&gt;&#10;Add a new comment to the file.&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="comments.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Type your new comment here." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="20" />
+                                    <option name="line" value="4" />
+                                    <option name="possibleAnswer" value="new comment&#10;" />
+                                    <option name="start" value="2" />
+                                    <option name="taskText" value="add new comment here" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="comments.py" />
+                              <option name="text" value="# This is the comment for the comments.py file&#10;print(&quot;Hello!&quot;)  # this comment is for the second line&#10;&#10;print(&quot;# this is not a comment&quot;)&#10;# add new comment here" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                </list>
+              </option>
+            </Lesson>
+            <Lesson>
+              <option name="index" value="2" />
+              <option name="name" value="Variables" />
+              <option name="taskList">
+                <list>
+                  <Task>
+                    <option name="index" value="1" />
+                    <option name="name" value="Variable definition" />
+                    <option name="text" value="&#10;Variables are used to store values so we can refer to them later. A variable is like a label, and you use the '=' symbol,&#10;known as the assignment operator, to assign a value to a variable. An assignment can be chained, e.g. a = b = 2&#10;&lt;br&gt;&lt;br&gt;&#10;Change the value stored in the variable &quot;greetings&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="variable_definition.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Type value here." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="13" />
+                                    <option name="line" value="6" />
+                                    <option name="possibleAnswer" value="5" />
+                                    <option name="start" value="12" />
+                                    <option name="taskText" value="another value" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="variable_definition.py" />
+                              <option name="text" value="a = b = 2  # This is called a &quot;chained assignment&quot;. It assigns the value 2 to variables &quot;a&quot; and &quot;b&quot;.&#10;print(&quot;a = &quot; + str(a))   # We'll explain the expression str(a) later in the course. For now it is used to convert the  variable &quot;a&quot; to a string.&#10;print(&quot;b = &quot; + str(b))&#10;&#10;greetings = &quot;greetings&quot;&#10;print(&quot;greetings = &quot; + str(greetings))&#10;greetings = another value&#10;print(&quot;greetings = &quot; + str(greetings))" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="2" />
+                    <option name="name" value="Undefined variable" />
+                    <option name="text" value="&#10;Variable names may only contain letters, digits, and/or the underscore character, and cannot start with a digit.&#10;&lt;br&gt;&lt;br&gt;&#10;Check what happens if you use a variable which is not defined yet. Try to print out an undefined name.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="undefined_variable.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Type the name of an undefined variable here. Note that variable names must start with a letter and may contain letters, '_' and/or numbers." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="14" />
+                                    <option name="line" value="1" />
+                                    <option name="possibleAnswer" value="other_variable" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="other variable" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="undefined_variable.py" />
+                              <option name="text" value="variable = 1&#10;print(other variable)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="3" />
+                    <option name="name" value="Variable types" />
+                    <option name="text" value="&#10;In Python, there are two main types of numbers: integers and floats.&#10;The most important difference between them is that a float is a number that has a decimal point, and an int is a number&#10;without a decimal point.&#10;&lt;br&gt;&lt;br&gt;&#10;Determine the type of the variable &quot;float_number&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="variable_type.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Look how we found the &quot;number&quot; type on line 2 and do the same to float_number" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="17" />
+                                    <option name="line" value="4" />
+                                    <option name="possibleAnswer" value="type(float_number)" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="float_number type" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="variable_type.py" />
+                              <option name="text" value="number = 9&#10;print(type(number))   # print type of variable &quot;number&quot;&#10;&#10;float_number = 9.0&#10;print(float_number type)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="4" />
+                    <option name="name" value="Type conversion" />
+                    <option name="text" value="&#10;There are several built-in functions that let you convert one data type to another.&#10;These functions return a new object representing the converted value.&#10;&quot;int(x)&quot; converts x to an integer. &quot;float(x)&quot; converts x to a floating-point number.&#10;&quot;str(x)&quot; converts object x to a string representation.&#10;&lt;br&gt;&lt;br&gt;&#10;Convert &quot;float_number&quot; to integer.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="type_cast.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use int() function" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="31" />
+                                    <option name="line" value="5" />
+                                    <option name="possibleAnswer" value="int(float_number)" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="Convert float_number to integer" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="type_cast.py" />
+                              <option name="text" value="number = 9&#10;print(type(number))   # print type of variable &quot;number&quot;&#10;&#10;float_number = 9.0&#10;print(float_number)&#10;print(Convert float_number to integer)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="5" />
+                    <option name="name" value="Arithmetic operators" />
+                    <option name="text" value="&#10;Just as with any other programming language, the addition (+), subtraction (-), multiplication (*), and division (/) operators can be used with numbers.&#10;In addition Python has the power (**) and modulo (%) operators.&#10;&lt;br&gt;&lt;br&gt;&#10;Divide the value stored in the variable &quot;number&quot; by 2, and then calculate the remainder.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="arithmetic_operators.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use / operator" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="22" />
+                                    <option name="line" value="2" />
+                                    <option name="possibleAnswer" value="number/2" />
+                                    <option name="start" value="9" />
+                                    <option name="taskText" value="divide 'number' by two" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use % operator" />
+                                    <option name="index" value="1" />
+                                    <option name="length" value="23" />
+                                    <option name="line" value="4" />
+                                    <option name="possibleAnswer" value="number%2" />
+                                    <option name="start" value="12" />
+                                    <option name="taskText" value="calculate the remainder" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="arithmetic_operators.py" />
+                              <option name="text" value="number = 9.0        # float number&#10;&#10;result = divide 'number' by two&#10;&#10;remainder = calculate the remainder&#10;&#10;print(&quot;result = &quot; + str(result))&#10;print(&quot;remainder = &quot; + str(remainder))" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="6" />
+                    <option name="name" value="Assignments" />
+                    <option name="text" value="&#10;Augmented assignment is a single statement combining a binary operation and an assignment statement such as +=, -=, etc.&#10;&lt;br&gt;&lt;br&gt;&#10;Use an augmented assignment to add 5 to &quot;number&quot; and update the variable.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="assignments.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use += operator" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="8" />
+                                    <option name="line" value="6" />
+                                    <option name="possibleAnswer" value="+=" />
+                                    <option name="start" value="7" />
+                                    <option name="taskText" value="operator" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="assignments.py" />
+                              <option name="text" value="number = 9.0&#10;print(&quot;number = &quot; + str(number))&#10;&#10;number -= 2&#10;print(&quot;number = &quot; + str(number))&#10;&#10;number operator 5&#10;&#10;print(&quot;number = &quot; + str(number))" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="7" />
+                    <option name="name" value="Boolean operators" />
+                    <option name="text" value="&#10;Boolean is a type of value that can only be True or False. The '==' (equality) operator checks whether the two variables being compared are equal.&#10;&lt;br&gt;&lt;br&gt;&#10;Check whether the variable &quot;two&quot; is equal to &quot;three&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="boolean_operators.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use == operator" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="8" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="==" />
+                                    <option name="start" value="15" />
+                                    <option name="taskText" value="operator" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="boolean_operators.py" />
+                              <option name="text" value="two = 2&#10;three = 3&#10;&#10;is_equal = two operator three&#10;&#10;print(is_equal)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="8" />
+                    <option name="name" value="Comparison operators" />
+                    <option name="text" value="&#10;Python has many types of comparison operators including &amp;gt;=, &amp;lt;=, &amp;gt;, &amp;lt;, etc. All comparison operations in Python have the same priority.&#10;Comparisons yield boolean values: either True or False. Comparisons can be chained arbitrarily.&#10;&lt;br&gt;&lt;br&gt;&#10;Check whether the value of the variable &quot;three&quot; is strictly greater than the value of the variable &quot;two&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="comparison_operators.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use &gt; operator." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="8" />
+                                    <option name="line" value="6" />
+                                    <option name="possibleAnswer" value="&gt;" />
+                                    <option name="start" value="19" />
+                                    <option name="taskText" value="operator" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="comparison_operators.py" />
+                              <option name="text" value="one = 1&#10;two = 2&#10;three = 3&#10;&#10;print(one &lt; two &lt; three)  # This chained comparison means that the (one &lt; two) and (two &lt; three) comparisons are performed at the same time.&#10;&#10;is_greater = three operator two&#10;print(is_greater)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                </list>
+              </option>
+            </Lesson>
+            <Lesson>
+              <option name="index" value="3" />
+              <option name="name" value="Strings" />
+              <option name="taskList">
+                <list>
+                  <Task>
+                    <option name="index" value="1" />
+                    <option name="name" value="Concatenation" />
+                    <option name="text" value="&#10;Combining two strings using the + symbol is called concatenation.&#10;&lt;br&gt;&lt;br&gt;&#10;Use the &quot;hello&quot; and &quot;world&quot; variables to get a &quot;Hello World&quot; string&#10;&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="concatenation.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use chained concatenation and one-space string &quot; &quot;." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="9" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="hello + ' ' + world" />
+                                    <option name="start" value="14" />
+                                    <option name="taskText" value="type here" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="concatenation.py" />
+                              <option name="text" value="hello = &quot;Hello&quot;&#10;world = 'World'&#10;&#10;hello_world = type here&#10;print(hello_world)      # Note: you should print &quot;Hello World&quot;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="2" />
+                    <option name="name" value="String multiplication" />
+                    <option name="text" value="&#10;Python supports a string-by-number multiplication (but not the other way around!).&#10;&lt;br&gt;&lt;br&gt;&#10;Use hello to get the &quot;hellohellohellohellohellohellohellohellohellohello&quot; string (&quot;hello&quot; repeated 10 times).&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="string_multiplication.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use multiplication." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="8" />
+                                    <option name="line" value="1" />
+                                    <option name="possibleAnswer" value="*" />
+                                    <option name="start" value="22" />
+                                    <option name="taskText" value="operator" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="string_multiplication.py" />
+                              <option name="text" value="hello = &quot;hello&quot;&#10;ten_of_hellos = hello operator 10&#10;print(ten_of_hellos)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="3" />
+                    <option name="name" value="String indexing" />
+                    <option name="text" value="&#10;You can access a character of a string if you know its position.&#10;For example, str[index] will yield the character at position ‘index’ in the string 'str'. Note that string index always starts at 0.&#10;&lt;br&gt;&lt;br&gt;&#10;Use index operator to get &quot;P&quot; from &quot;python&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="string_indexing.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Note that index starts with 0." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="9" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="python[0]" />
+                                    <option name="start" value="11" />
+                                    <option name="taskText" value="type here" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="string_indexing.py" />
+                              <option name="text" value="python = &quot;Python&quot;&#10;print(&quot;h &quot; + python[3])     # Note: string indexing starts with 0&#10;&#10;p_letter = type here&#10;print(p_letter)&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="4" />
+                    <option name="name" value="String negative indexing" />
+                    <option name="text" value="&#10;You can use negative numbers in the indexing operator to count characters ‘backwards’ from the end of the string.&#10;&lt;br&gt;&lt;br&gt;&#10;Use negative index to get the '!' sign from &quot;long_string&quot;&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="negative_indexing.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use negative index." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="9" />
+                                    <option name="line" value="1" />
+                                    <option name="possibleAnswer" value="long_string[-1]" />
+                                    <option name="start" value="14" />
+                                    <option name="taskText" value="type here" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="negative_indexing.py" />
+                              <option name="text" value="long_string = &quot;This is a very long string!&quot;&#10;exclamation = type here&#10;print(exclamation)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="5" />
+                    <option name="name" value="String slicing" />
+                    <option name="text" value="&#10;Slicing is used to get multiple characters (a substring) from a string.&#10;Its syntax is similar to that of indexing, but instead of just one index you use two indices (numbers) separated by a colon, e.g. str[ind1:ind2].&#10;&lt;br&gt;&lt;br&gt;&#10;Use slicing to get &quot;Python&quot; from the &quot;monty_python&quot; variable.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="slicing.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="You can leave one or both indices empty." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="9" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="monty_python[6:]" />
+                                    <option name="start" value="9" />
+                                    <option name="taskText" value="type here" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="slicing.py" />
+                              <option name="text" value="monty_python = &quot;Monty Python&quot;&#10;monty = monty_python[:5]      # one or both index could be dropped. monty_python[:5] is equal to monty_python[0:5]&#10;print(monty)&#10;python = type here&#10;print(python)&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="6" />
+                    <option name="name" value="In operator" />
+                    <option name="text" value="&#10;If you want to check whether a string contains a specific letter or a substring, you can use the &quot;in&quot; keyword.&#10;&lt;br&gt;&lt;br&gt;&#10;Check if there is &quot;ice&quot; in &quot;ice cream&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="in_operator.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use 'in' operator." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="9" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="'ice' in ice_cream" />
+                                    <option name="start" value="11" />
+                                    <option name="taskText" value="type here" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="in_operator.py" />
+                              <option name="text" value="ice_cream = &quot;ice cream&quot;&#10;print(&quot;cream&quot; in ice_cream)    # print boolean result directly&#10;&#10;contains = type here&#10;print(contains)&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="7" />
+                    <option name="name" value="String length" />
+                    <option name="text" value="&#10;The len() function is used to count how many characters a string contains.&#10;&lt;br&gt;&lt;br&gt;&#10;Get the first half of the string stored in the variable ‘phrase’. &lt;br&gt;&#10;Note: Remember about type conversion.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="len_function.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Remember about string slicing." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="9" />
+                                    <option name="line" value="5" />
+                                    <option name="possibleAnswer" value="phrase[:int(len(phrase)/2)]" />
+                                    <option name="start" value="13" />
+                                    <option name="taskText" value="type here" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="len_function.py" />
+                              <option name="text" value="phrase = &quot;&quot;&quot;&#10;It is a really long string&#10;triple-quoted strings are used&#10;to define multi-line strings&#10;&quot;&quot;&quot;&#10;first_half = type here&#10;print(first_half)&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="8" />
+                    <option name="name" value="Character escaping" />
+                    <option name="text" value="&#10;Backslash is used to escape single or double quotation marks, for example 'It\'s me' or &quot;She said \&quot;Hello\&quot;&quot;.&#10;The special symbol '\n' is used to add a line break to a string.&#10;&lt;br&gt;&lt;br&gt;&#10;Print out the following text using one string:&lt;br&gt;&#10;The name of this ice-cream is &quot;Sweeet'n'Tasty&quot;&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="character_escaping.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use backslash \ to escape quotes" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="4" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="The name of this ice-cream is &quot;Sweeet\'n\'Tasty&quot;" />
+                                    <option name="start" value="7" />
+                                    <option name="taskText" value="text" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="character_escaping.py" />
+                              <option name="text" value="dont_worry = &quot;Don't worry about apostrophes&quot;&#10;print(dont_worry)&#10;print(&quot;The name of this ice-cream is \&quot;Sweeet\&quot;&quot;)&#10;print('text')" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="9" />
+                    <option name="name" value="Basic string methods" />
+                    <option name="text" value="&#10;There are a lot of useful string methods. You can use the 'lower()' method to get rid of any capitalization in your strings.&#10;The 'upper()' method is used to make a string uppercase. To call any string method, type a dot after the string (or a variable containing the string)&#10;and the method name after it, e.g. &quot;John&quot;.upper(). In PyCharm, you can explore all available string methods by using Ctrl+Space after a dot.&#10;&lt;br&gt;&lt;br&gt;&#10;Print monty_python in upper case.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="string_methods.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Look at the lower() method usage." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="24" />
+                                    <option name="line" value="5" />
+                                    <option name="possibleAnswer" value="monty_python.upper()" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="upper cased monty_python" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="string_methods.py" />
+                              <option name="text" value="monty_python = &quot;Monty Python&quot;&#10;print(monty_python)&#10;&#10;print(monty_python.lower())    # print lower-cased version of the string&#10;&#10;print(upper cased monty_python)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="10" />
+                    <option name="name" value="String formatting" />
+                    <option name="text" value="&#10;The % operator after a string is used to combine a string with variables.&#10;The % operator will replace %s in a string with the string variable that comes after it.&#10;The %d special symbol is used as a placeholder for numeric or decimal values.&#10;&lt;br&gt;&lt;br&gt;&#10;Tell PyCharm how old you are.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="string_formatting.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use %d special symbol" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="14" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="%d" />
+                                    <option name="start" value="11" />
+                                    <option name="taskText" value="special symbol" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="How old are you?" />
+                                    <option name="index" value="1" />
+                                    <option name="length" value="5" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="17" />
+                                    <option name="start" value="27" />
+                                    <option name="taskText" value="years" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="string_formatting.py" />
+                              <option name="text" value="name = &quot;John&quot;&#10;print(&quot;Hello, PyCharm! My name is %s!&quot; % name)     # Note: %s is inside the string, % is after the string&#10;&#10;print(&quot;I'm special symbol years old&quot; % years)&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                </list>
+              </option>
+            </Lesson>
+            <Lesson>
+              <option name="index" value="4" />
+              <option name="name" value="Data structures" />
+              <option name="taskList">
+                <list>
+                  <Task>
+                    <option name="index" value="1" />
+                    <option name="name" value="Lists introduction" />
+                    <option name="text" value="&#10;A list is a data structure you can use to store a collection of different pieces of information under a single variable name.&#10;A list can be written as an array of comma-separated values (items) between square brackets, e.g. lst = [item1, item2].&#10;Lists might contain items of different types, but usually all the items in the list are of the same type.&#10;Like strings, lists can be indexed and sliced (see Lesson 3).&#10;&lt;br&gt;&lt;br&gt;&#10;Use list slicing to print [4, 9, 16].&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="lists.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use list slicing lst[index1:index2]" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="5" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="squares[1:4]" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="slice" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="lists.py" />
+                              <option name="text" value="squares = [1, 4, 9, 16, 25]   # create new list&#10;print(squares)&#10;&#10;print(slice)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="2" />
+                    <option name="name" value="Lists operations" />
+                    <option name="text" value="&#10;You can add new items at the end of the list, by using the append() method and concatenation.&#10;Unlike strings, lists are a mutable type, i.e. it is possible to change their content using lst[index] = new_item&#10;&lt;br&gt;&lt;br&gt;&#10;Replace 'dino' with &quot;dinosaur&quot; in the &quot;animals&quot; list.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="list_operations.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use indexing operation and assignment." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="30" />
+                                    <option name="line" value="9" />
+                                    <option name="possibleAnswer" value="animals[-1] = 'dinosaur'" />
+                                    <option name="taskText" value="replace 'dino' with 'dinosaur'" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="list_operations.py" />
+                              <option name="text" value="animals = ['elephant', 'lion', 'tiger', &quot;giraffe&quot;]  # create new list&#10;print(animals)&#10;&#10;animals += [&quot;monkey&quot;, 'dog']    # add two items to the list&#10;print(animals)&#10;&#10;animals.append(&quot;dino&quot;)   # add one more item to the list using append() method&#10;print(animals)&#10;&#10;replace 'dino' with 'dinosaur'&#10;print(animals)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="3" />
+                    <option name="name" value="List items" />
+                    <option name="text" value="&#10;Assignment to slices is also possible, and this can even change the size of a list or clear it entirely.&#10;&lt;br&gt;&lt;br&gt;&#10;Clear &quot;animals&quot; list.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="list_items.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use assignment to an empty list []." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="10" />
+                                    <option name="line" value="9" />
+                                    <option name="possibleAnswer" value="animals[:] = []" />
+                                    <option name="taskText" value="clear list" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="list_items.py" />
+                              <option name="text" value="animals = ['elephant', 'lion', 'tiger', &quot;giraffe&quot;, &quot;monkey&quot;, 'dog']   # create new list&#10;print(animals)&#10;&#10;animals[1:3] = ['cat']    # replace 2 items -- 'lion' and 'tiger' with one item -- 'cat'&#10;print(animals)&#10;&#10;animals[1:3] = []     # remove 2 items -- 'cat' and 'giraffe' from the list&#10;print(animals)&#10;&#10;clear list&#10;print(animals)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="4" />
+                    <option name="name" value="Tuples" />
+                    <option name="text" value="&#10;Tuples are almost identical to lists. The only significant difference between tuples and lists is that tuples cannot be changed:&#10;you cannot add, change, or delete elements from the tuple.&#10;Tuples are constructed by a comma operator enclosed in parentheses, for example (a, b, c).&#10;A single item tuple must have a trailing comma, such as (d,).&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;Print the length of the &quot;alphabet&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="tuples.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use len() function." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="15" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="len(alphabet)" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="alphabet length" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="tuples.py" />
+                              <option name="text" value="alphabet = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',&#10;            'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')&#10;&#10;print(alphabet length)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="5" />
+                    <option name="name" value="Dictionaries" />
+                    <option name="text" value="&#10;A dictionary is similar to a list, except that you access its values by looking up a key instead of an index.&#10;A key can be any string or a number. Dictionaries are enclosed in curly braces e.g. dct = {'key1' : &quot;value1&quot;, 'key2' : &quot;value2&quot;}.&#10;&lt;br&gt;&lt;br&gt;&#10;Print Jane's phone number from &quot;phone_book&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="dicts.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use dict indexing e.g. dct[key]" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="12" />
+                                    <option name="line" value="11" />
+                                    <option name="possibleAnswer" value="phone_book['Jane']" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="Jane's phone" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="dicts.py" />
+                              <option name="text" value="# create new dictionary.&#10;phone_book = {&quot;John&quot;: 123, &quot;Jane&quot;: 234, &quot;Jerard&quot;: 345}    # &quot;John&quot;, &quot;Jane&quot; and &quot;Jerard&quot; are keys and numbers are values&#10;print(phone_book)&#10;&#10;# Add new item to the dictionary&#10;phone_book[&quot;Jill&quot;] = 345&#10;print(phone_book)&#10;&#10;# Remove key-value pair from phone_book&#10;del phone_book['John']&#10;&#10;print(Jane's phone)&#10;&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="6" />
+                    <option name="name" value="Dictionary keys() and values()" />
+                    <option name="text" value="&#10;There are a lot of useful methods in dictionaries such as keys() and values(). You can explore the rest using&#10;Ctrl + Space after a dict_name followed by a dot.&#10;&lt;br&gt;&lt;br&gt;&#10;Print all values from &quot;phone_book&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="dict_key_value.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use values() method." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="17" />
+                                    <option name="line" value="9" />
+                                    <option name="possibleAnswer" value="phone_book.values()" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="phone_book values" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="dict_key_value.py" />
+                              <option name="text" value="phone_book = {&quot;John&quot;: 123, &quot;Jane&quot;: 234, &quot;Jerard&quot;: 345}  # create new dictionary&#10;print(phone_book)&#10;&#10;# Add new item to the dictionary&#10;phone_book[&quot;Jill&quot;] = 456&#10;print(phone_book)&#10;&#10;print(phone_book.keys())&#10;&#10;print(phone_book values)&#10;&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="7" />
+                    <option name="name" value="In keyword" />
+                    <option name="text" value="&#10;The &quot;in&quot; keyword is used to check if a list or a dictionary contains a specific item. You can apply  &quot;in&quot; to lists or dictionaries the same way as you did with strings.&#10;&lt;br&gt;&lt;br&gt;&#10;Check if grocery_dict keys contain &quot;fish&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="in_keyword.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use in keyword." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="30" />
+                                    <option name="line" value="6" />
+                                    <option name="possibleAnswer" value="'fish' in grocery_dict.keys()" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="is 'fish' in grocery_dict keys" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="in_keyword.py" />
+                              <option name="text" value="grocery_list = [&quot;fish&quot;, &quot;tomato&quot;, 'apples']   # create new list&#10;&#10;print(&quot;tomato&quot; in grocery_list)    # check that grocery_list contains &quot;tomato&quot; item&#10;&#10;grocery_dict = {&quot;fish&quot;: 1, &quot;tomato&quot;: 6, 'apples': 3}   # create new dictionary&#10;&#10;print(is 'fish' in grocery_dict keys)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                </list>
+              </option>
+            </Lesson>
+            <Lesson>
+              <option name="index" value="5" />
+              <option name="name" value="Condition expressions" />
+              <option name="taskList">
+                <list>
+                  <Task>
+                    <option name="index" value="1" />
+                    <option name="name" value="Boolean operators" />
+                    <option name="text" value="&#10;Boolean operators compare statements and return results in boolean values.&#10;The boolean operator &quot;and&quot; returns True when the expressions on both sides of &quot;and&quot; are True.&#10;The boolean operator &quot;or&quot; returns True when at least one expression on either side of &quot;or&quot; is True.&#10;The boolean operator &quot;not&quot; inverts the boolean expression it precedes.&#10;&lt;br&gt;&lt;br&gt;&#10;Check if &quot;name&quot; is equal to &quot;John&quot; and he is not 23 years old.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="boolean_operators.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use and keyword and != operator." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="24" />
+                                    <option name="line" value="5" />
+                                    <option name="possibleAnswer" value="name == 'John' and age != 23" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="John is not 23 years old" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="boolean_operators.py" />
+                              <option name="text" value="name = &quot;John&quot;&#10;age = 17&#10;&#10;print(name == &quot;John&quot; or age == 17)    # checks that either name equals to &quot;John&quot; OR age equals to 17&#10;&#10;print(John is not 23 years old)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="2" />
+                    <option name="name" value="Boolean operators order" />
+                    <option name="text" value="&#10;Boolean operators are not evaluated from left to right. There's an order of operations for boolean operators:&#10;&quot;not&quot; is evaluated first, &quot;and&quot; is evaluated next, &quot;or&quot; is evaluated last.&#10;&lt;br&gt;&lt;br&gt;&#10;Check if &quot;name&quot; is &quot;Ellis&quot; or it's not true that &quot;name&quot; equal &quot;John&quot; and he is 17 years old at the same time.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="boolean_order.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Combine 'and', 'or' and 'not' keywords." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="69" />
+                                    <option name="line" value="7" />
+                                    <option name="possibleAnswer" value="&quot;name&quot; is &quot;Ellis&quot; or not (&quot;name&quot; is &quot;John&quot; and age == 17)" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="&quot;name&quot; is &quot;Ellis&quot; or not (&quot;name&quot; equal &quot;John&quot; and he is 17 years old)" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="boolean_order.py" />
+                              <option name="text" value="name = &quot;John&quot;&#10;age = 17&#10;&#10;print(name == &quot;John&quot; or not age &gt; 17)&#10;&#10;print(name == &quot;John&quot; or not age &gt; 17)&#10;&#10;print(&quot;name&quot; is &quot;Ellis&quot; or not (&quot;name&quot; equal &quot;John&quot; and he is 17 years old))" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="3" />
+                    <option name="name" value="If statement" />
+                    <option name="text" value="&#10;The &quot;if&quot; keyword is used to form a conditional statement that executes some specified code after checking if its expression is True.&#10;Python uses indentation to define code blocks.&#10;&lt;br&gt;&lt;br&gt;&#10;Print &quot;empty&quot; if the &quot;tasks&quot; list is empty.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="if_statement.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use len function to check if tasks is empty." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="25" />
+                                    <option name="line" value="9" />
+                                    <option name="possibleAnswer" value="if len(tasks) == 0:" />
+                                    <option name="taskText" value="check if 'tasks' is empty" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="if_statement.py" />
+                              <option name="text" value="name = &quot;John&quot;&#10;age = 17&#10;&#10;if name == &quot;John&quot; or age == 17:   # check that name is &quot;John&quot; or age is 17. If so print next 2 lines.&#10;    print(&quot;name is John&quot;)&#10;    print(&quot;John is 17 years old&quot;)&#10;&#10;tasks = ['task1', 'task2']    # create new list&#10;&#10;check if 'tasks' is empty&#10;    print(&quot;empty&quot;)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="4" />
+                    <option name="name" value="Else, elif part in if statement" />
+                    <option name="text" value="&#10;The else statement complements the if statement. The &quot;elif&quot; keyword is short for &quot;else if&quot;.&#10;&lt;br&gt;&lt;br&gt;&#10;Print True if name is equal to &quot;John&quot; and False otherwise.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="else_elif.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use if keyword and == operator." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="29" />
+                                    <option name="line" value="13" />
+                                    <option name="possibleAnswer" value="if name == 'John':" />
+                                    <option name="taskText" value="check if name equal to &quot;John&quot;" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use else keyword." />
+                                    <option name="index" value="1" />
+                                    <option name="length" value="9" />
+                                    <option name="line" value="15" />
+                                    <option name="possibleAnswer" value="else:" />
+                                    <option name="taskText" value="otherwise" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="else_elif.py" />
+                              <option name="text" value="x = 28&#10;&#10;if x &lt; 0:&#10;    print('x &lt; 0')                      # executes only if x &lt; 0&#10;elif x == 0:&#10;    print('x is zero')                 # if it's not true that x &lt; 0, check if x == 0&#10;elif x == 1:&#10;    print('x == 1')                    # if it's not true that x &lt; 0 and x != 0, check if x == 1&#10;else:&#10;    print('non of the above is true')&#10;&#10;name = &quot;John&quot;&#10;&#10;check if name equal to &quot;John&quot;&#10;    print(True)&#10;otherwise&#10;    print(False)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                </list>
+              </option>
+            </Lesson>
+            <Lesson>
+              <option name="index" value="6" />
+              <option name="name" value="Loops" />
+              <option name="taskList">
+                <list>
+                  <Task>
+                    <option name="index" value="1" />
+                    <option name="name" value="For loop" />
+                    <option name="text" value="&#10;&quot;For&quot; loops are used to iterate over a given sequence. On each iteration, the variable defined in the &quot;for&quot; loop will&#10;be assigned to the next value in the list.&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;Print each prime number from the &quot;primes&quot; list using the &quot;for&quot; loop.&#10;A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="for_loop.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use for loop to iterate over 'primes'." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="34" />
+                                    <option name="line" value="6" />
+                                    <option name="possibleAnswer" value="for prime in primes:" />
+                                    <option name="taskText" value="iterate over primes using for loop" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="for_loop.py" />
+                              <option name="text" value="for i in range(5):    # for each number i in range 0-4. range(5) function returns list [0, 1, 2, 3, 4]&#10;    print(i)          # this line is executed 5 times. First time i equals 0, then 1, ...&#10;&#10;&#10;primes = [2, 3, 5, 7]   # create new list&#10;&#10;iterate over primes using for loop&#10;    print(prime)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="2" />
+                    <option name="name" value="For loop using string" />
+                    <option name="text" value="&#10;Strings are very similar to lists in Python. You can use string to iterate over it.&#10;&lt;br&gt;&lt;br&gt;&#10;Use a loop to count how many characters hello_world contains. Store this number in the &quot;length&quot; variable.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="for_string.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use for loop to iterate over 'hello_world' string." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="59" />
+                                    <option name="line" value="7" />
+                                    <option name="possibleAnswer" value="for ch in hello_world:" />
+                                    <option name="taskText" value="count how many characters are in the hello_world using loop" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="for_string.py" />
+                              <option name="text" value="hello_world = &quot;Hello, World!&quot;&#10;&#10;for ch in hello_world:    # print each character from hello_world&#10;    print(ch)&#10;&#10;length = 0      # initialize length variable&#10;&#10;count how many characters are in the hello_world using loop&#10;    length += 1     # add 1 to the length on each iteration&#10;&#10;print(len(hello_world) == length)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="3" />
+                    <option name="name" value="While loop" />
+                    <option name="text" value="&#10;A &quot;while&quot; loop is similar to an &quot;if&quot; statement: it executes some code if some condition is true.&#10;The key difference is that it will continue to execute indented code for as long as the condition is true.&#10;&lt;br&gt;&lt;br&gt;&#10;Print all squares from 0 to 99 (1, 4, ... , 81).&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="while_loop.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Check if 'number' is strictly less than 10 in condition." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="30" />
+                                    <option name="line" value="11" />
+                                    <option name="possibleAnswer" value="while number &lt; 10:" />
+                                    <option name="taskText" value="print all squares from 0 to 99" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="while_loop.py" />
+                              <option name="text" value="square = 1&#10;&#10;while square &lt;= 10:&#10;    print(square)    # This code is executed 10 times&#10;    square += 1      # This code is executed 10 times&#10;&#10;print(&quot;Finished&quot;)  # This code is executed once&#10;&#10;square = 0&#10;number = 1&#10;&#10;print all squares from 0 to 99&#10;    square = number ** 2&#10;    print(square)&#10;    number += 1" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="4" />
+                    <option name="name" value="Break keyword" />
+                    <option name="text" value="&#10;An infinite loop is a loop that never exits. If the loop condition happens to always be true, such a loop becomes infinite.&#10;The &quot;break&quot; keyword is used to exit the current loop.&#10;&lt;br&gt;&lt;br&gt;&#10;Exit the loop correctly using &quot;break&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="break_keyword.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use == to check if animal is equal to 'elephant'." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="33" />
+                                    <option name="line" value="13" />
+                                    <option name="possibleAnswer" value="animal == 'elephant'" />
+                                    <option name="start" value="7" />
+                                    <option name="taskText" value="exit loop if animal is 'elephant'" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="break_keyword.py" />
+                              <option name="text" value="count = 0&#10;&#10;while True:  # this condition cannot possibly be false&#10;    print(count)&#10;    count += 1&#10;    if count &gt;= 5:&#10;        break           # exit loop if count &gt;= 5&#10;&#10;&#10;zoo = [&quot;lion&quot;, 'tiger', 'elephant']&#10;while True:                         # this condition cannot possibly be false&#10;    animal = zoo.pop()       # extract one element from the list end&#10;    print(animal)&#10;    if exit loop if animal is 'elephant':&#10;        break           # exit loop&#10;&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="5" />
+                    <option name="name" value="Continue keyword" />
+                    <option name="text" value="&#10;The 'continue' keyword is used to skip the rest of the code inside the loop for the currently executed loop and return to the &quot;for&quot; or &quot;while&quot; statement.&#10;&lt;br&gt;&lt;br&gt;&#10;Print only odd the numbers 1, 3, 5, 7, 9.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="continue_keyword.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use % operator to check if x is even." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="18" />
+                                    <option name="line" value="6" />
+                                    <option name="possibleAnswer" value="x % 2 == 0" />
+                                    <option name="start" value="7" />
+                                    <option name="taskText" value="Check if x is even" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="continue_keyword.py" />
+                              <option name="text" value="for i in range(5):&#10;    if i == 3:&#10;        continue   # skip the rest of the code inside loop for current i value&#10;    print(i)&#10;&#10;for x in range(10):&#10;    if Check if x is even:&#10;        continue   # skip print(x) for this loop&#10;    print(x)&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                </list>
+              </option>
+            </Lesson>
+            <Lesson>
+              <option name="index" value="7" />
+              <option name="name" value="Functions" />
+              <option name="taskList">
+                <list>
+                  <Task>
+                    <option name="index" value="1" />
+                    <option name="name" value="Definition" />
+                    <option name="text" value="&#10;Functions are a convenient way to divide your code into useful blocks, make it more readable and help reuse it.&#10;Functions are defined using the keyword &quot;def&quot;, followed by the function's name.&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;Define a function to replace duplicate lines in the file.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="functions.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use 'def' keyword to define 'fun' function." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="58" />
+                                    <option name="line" value="11" />
+                                    <option name="possibleAnswer" value="def fun():" />
+                                    <option name="taskText" value="define a function named 'fun' to replace three lines above" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="functions.py" />
+                              <option name="text" value="def hello_world():  # function named my_function&#10;    print(&quot;Hello, World!&quot;)&#10;&#10;for i in range(5):&#10;    hello_world()   # call function defined above 5 times&#10;&#10;print('I want to be a function')&#10;print('I want to be a function')&#10;print('I want to be a function')&#10;&#10;&#10;define a function named 'fun' to replace three lines above&#10;    print('I want to be a function')&#10;&#10;for i in range(3):&#10;    fun()" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="2" />
+                    <option name="name" value="Parameters and call arguments" />
+                    <option name="text" value="&#10;Function parameters are defined inside the parentheses (), following the function name.&#10;A parameter acts as a variable name for the passed argument.&#10;&lt;br&gt;&lt;br&gt;&#10;Define a function that prints the square of the passed parameter.&#10;&lt;br&gt;&#10;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="param_args.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Put parameter 'x' inside parentheses in function definition." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="71" />
+                                    <option name="line" value="5" />
+                                    <option name="possibleAnswer" value="def square(x):" />
+                                    <option name="taskText" value="define a function named 'square' that prints square of passed parameter" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="param_args.py" />
+                              <option name="text" value="def foo(x):                 # x is a function parameter&#10;    print(&quot;x = &quot; + str(x))&#10;&#10;foo(5)   # pass 5 to foo(). Here 5 is an argument passed to function foo.&#10;&#10;define a function named 'square' that prints square of passed parameter&#10;    print(x ** 2)&#10;&#10;square(4)&#10;square(8)&#10;square(15)&#10;square(23)&#10;square(42)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="3" />
+                    <option name="name" value="Return value" />
+                    <option name="text" value="&#10;Functions may return a value to the caller, using the keyword 'return'. You can use the returned value to assign it to a variable or just print it out.&#10;&lt;br&gt;&lt;br&gt;&#10;In the Fibonacci sequence, the first two numbers are 1 and 1, and each subsequent number is the sum of the previous two.&#10;Write a function that returns a list of the numbers of the Fibonacci series.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="return_keyword.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Initialize 'b' with 1." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="21" />
+                                    <option name="line" value="11" />
+                                    <option name="possibleAnswer" value="1" />
+                                    <option name="start" value="8" />
+                                    <option name="taskText" value="initialize variable b" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Update 'b' with 'a + b'." />
+                                    <option name="index" value="1" />
+                                    <option name="length" value="17" />
+                                    <option name="line" value="15" />
+                                    <option name="possibleAnswer" value="b = a + b" />
+                                    <option name="start" value="8" />
+                                    <option name="taskText" value="update variable b" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Update 'a' with 'tmp_var'." />
+                                    <option name="index" value="2" />
+                                    <option name="length" value="17" />
+                                    <option name="line" value="16" />
+                                    <option name="possibleAnswer" value="a = tmp_var" />
+                                    <option name="start" value="8" />
+                                    <option name="taskText" value="update variable a" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="return_keyword.py" />
+                              <option name="text" value="def sum_two_numbers(a, b):&#10;    return a + b            # return result to the function caller&#10;&#10;c = sum_two_numbers(3, 12)  # assign result of function execution to variable 'c'&#10;&#10;&#10;def fib(n):&#10;    &quot;&quot;&quot;This is documentation string for function. It'll be available by fib.__doc__()&#10;    Return a list containing the Fibonacci series up to n.&quot;&quot;&quot;&#10;    result = []&#10;    a = 0&#10;    b = initialize variable b&#10;    while a &lt; n:&#10;        result.append(a)&#10;        tmp_var = b&#10;        update variable b&#10;        update variable a&#10;    return result&#10;&#10;print(fib(10))" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="4" />
+                    <option name="name" value="Default parameters" />
+                    <option name="text" value="&#10;Sometimes it's useful to specify a default value for one or more function parameters.&#10;This creates a function that can be called with fewer arguments than it is defined to allow.&#10;&lt;br&gt;&lt;br&gt;&#10;Add parameters for the &quot;hello&quot; function, and set a default value for the name parameter.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="default_parameter.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Set default value for parameter 'name'." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="55" />
+                                    <option name="line" value="7" />
+                                    <option name="possibleAnswer" value="subject, name='John'" />
+                                    <option name="start" value="10" />
+                                    <option name="taskText" value="add parameters for function, set default value for name" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="default_parameter.py" />
+                              <option name="text" value="def multiply_by(a, b=2):&#10;    return a * b&#10;&#10;print(multiply_by(3, 47))&#10;print(multiply_by(3))    # call function using default value for b parameter&#10;&#10;&#10;def hello(add parameters for function, set default value for name):&#10;    print(&quot;Hello %s! My name is %s&quot; % (subject, name))&#10;&#10;hello(&quot;PyCharm&quot;, &quot;Jane&quot;)    # call 'hello' function with &quot;PyCharm as a subject parameter and &quot;Jane&quot; as a name&#10;hello(&quot;PyCharm&quot;)            # call 'hello' function with &quot;PyCharm as a subject parameter and default value for the name" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                </list>
+              </option>
+            </Lesson>
+            <Lesson>
+              <option name="index" value="8" />
+              <option name="name" value="Classes and objects" />
+              <option name="taskList">
+                <list>
+                  <Task>
+                    <option name="index" value="1" />
+                    <option name="name" value="Definition" />
+                    <option name="text" value="&#10;An object combines variables and functions into a single entity.&#10;Objects get their variables and functions from classes.&#10;Classes are essentially templates for creating your objects.&#10;You can think of an object as a single data structure that contains data as well as functions.&#10;Functions of objects are called methods.&#10;&lt;br&gt;&lt;br&gt;&#10;Assign value to a variable inside &quot;MyClass&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="class_definition.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Assign any value to variable." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="28" />
+                                    <option name="line" value="1" />
+                                    <option name="possibleAnswer" value="4" />
+                                    <option name="start" value="15" />
+                                    <option name="taskText" value="assign any value to variable" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="class_definition.py" />
+                              <option name="text" value="class MyClass:&#10;    variable = assign any value to variable&#10;&#10;    def foo(self):   # we'll explain self parameter later in task 4&#10;        print(&quot;Hello from function foo&quot;)&#10;&#10;my_object = MyClass()  # variable &quot;my_object&quot; holds an object of the class &quot;MyClass&quot; that contains the variable and the &quot;foo&quot; function" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="2" />
+                    <option name="name" value="Variable access" />
+                    <option name="text" value="&#10;To access a variable inside an object, see example below. You can change the values of variables defined in a class for different instances (objects) of this class.&#10;&lt;br&gt;&lt;br&gt;&#10;Print the value of variable1 from my_object.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="access_variable.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Access 'variable1' using my_object.variable1" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="33" />
+                                    <option name="line" value="17" />
+                                    <option name="possibleAnswer" value="my_object.variable1" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="value of variable1 from my_object" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="access_variable.py" />
+                              <option name="text" value="class MyClass:&#10;    variable1 = 1&#10;    variable2 = 2&#10;&#10;    def foo(self):     # we'll explain self parameter later in task 4&#10;        print(&quot;Hello from function foo&quot;)&#10;&#10;my_object = MyClass()&#10;my_object1 = MyClass()&#10;&#10;my_object.variable2 = 3     # change value stored in variable2 in my_object&#10;&#10;print(my_object.variable2)&#10;print(my_object1.variable2)&#10;&#10;my_object.foo()   # call method foo() of object my_object&#10;&#10;print(value of variable1 from my_object)&#10;&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="3" />
+                    <option name="name" value="Variable access" />
+                    <option name="text" value="&#10;Create a new Car object car2. Set the color of car2 to &quot;red&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="access_variable.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Create new car using Car()" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="20" />
+                                    <option name="line" value="7" />
+                                    <option name="possibleAnswer" value="Car()" />
+                                    <option name="start" value="7" />
+                                    <option name="taskText" value="create object of Car" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Change color using car2.color = &quot;new color&quot;." />
+                                    <option name="index" value="1" />
+                                    <option name="length" value="14" />
+                                    <option name="line" value="10" />
+                                    <option name="possibleAnswer" value="car2.color = &quot;red&quot;" />
+                                    <option name="taskText" value="set car2 color" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="access_variable.py" />
+                              <option name="text" value="class Car:&#10;    color = &quot;&quot;&#10;    def description(self):&#10;        description_string = &quot;This is a %s car.&quot; % self.color    # we'll explain self parameter later in task 4&#10;        return description_string&#10;&#10;car1 = Car()&#10;car2 = create object of Car&#10;&#10;car1.color = &quot;blue&quot;&#10;set car2 color&#10;&#10;print(car1.description())&#10;print(car2.description())&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="4" />
+                    <option name="name" value="Self explanation" />
+                    <option name="text" value="&#10;It's time to explain the &quot;self&quot; parameter used in previous tasks.&#10;The &quot;self&quot; parameter is a Python convention.&#10;&quot;self&quot; is the first parameter passed to any class method.&#10;Python will use the &quot;self&quot; parameter to refer to the object being created.&#10;&lt;br&gt;&lt;br&gt;&#10;Implement the &quot;add&quot; method properly.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="self_parameter.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Add amount to the self.current variable." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="21" />
+                                    <option name="line" value="9" />
+                                    <option name="possibleAnswer" value="self.current += amount" />
+                                    <option name="start" value="8" />
+                                    <option name="taskText" value="add number to current" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="self_parameter.py" />
+                              <option name="text" value="class Complex:&#10;    def create(self, real_part, imag_part):&#10;        self.r = real_part&#10;        self.i = imag_part&#10;&#10;class Calculator:&#10;    current = 0&#10;&#10;    def add(self, amount):&#10;        add number to current&#10;&#10;    def get_current(self):&#10;        return self.current" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="5" />
+                    <option name="name" value="Special __init__ method" />
+                    <option name="text" value="&#10;__init__ function is used to initialize the objects it creates. init is short for &quot;initialize&quot;.&#10;__init__() always takes at least one argument, self, which refers to the object being created.&#10;__init__() function sets up each object the class creates.&#10;&lt;br&gt;&lt;br&gt;&#10;Add parameters to the Car class so we can create it with a specific color.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="init_method.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Add two parameters -- self and color." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="19" />
+                                    <option name="line" value="9" />
+                                    <option name="possibleAnswer" value="self, color" />
+                                    <option name="start" value="17" />
+                                    <option name="taskText" value="add parameters here" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="init_method.py" />
+                              <option name="text" value="class Square:&#10;&#10;    def __init__(self):    # special method __init__&#10;        self.sides = 4&#10;&#10;square = Square()&#10;print(square.sides)&#10;&#10;class Car:&#10;    def __init__(add parameters here):&#10;        self.color = color&#10;&#10;car = Car(&quot;blue&quot;)    # Note: you should not pass self parameter explicitly, only color parameter&#10;&#10;print(car.color)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                </list>
+              </option>
+            </Lesson>
+            <Lesson>
+              <option name="index" value="9" />
+              <option name="name" value="Modules and packages" />
+              <option name="taskList">
+                <list>
+                  <Task>
+                    <option name="index" value="1" />
+                    <option name="name" value="Import module" />
+                    <option name="text" value="&#10;Modules in Python are simply Python files with the .py extension containing Python definitions and statements.&#10;Modules can be handy when you want to use your function in a number of programs without copying its definition into each program.&#10;Modules are imported from other modules using the &quot;import&quot; keyword and the file name without an extension.&#10;The first time a module is loaded into a running Python script, it is initialized by executing the code in the module once.&#10;&lt;br&gt;&lt;br&gt;&#10;Import the module my_module and use the hello_world function.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="calculator.py">
+                          <value>
+                            <TaskFile>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="calculator.py" />
+                              <option name="text" value="&quot;&quot;&quot;&#10;This module contains Calculator class&#10;&quot;&quot;&quot;&#10;&#10;&#10;class Calculator:&#10;    def __init__(self):&#10;        self.current = 0&#10;&#10;    def add(self, amount):&#10;        self.current += amount&#10;&#10;    def get_current(self):&#10;        return self.current" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                        <entry key="imports.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use 'import' keyword and my_module reference." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="21" />
+                                    <option name="line" value="7" />
+                                    <option name="possibleAnswer" value="import my_module" />
+                                    <option name="taskText" value="here import my_module" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Access 'hello_world' function from module 'my_module' as my_module.hello_world()" />
+                                    <option name="index" value="1" />
+                                    <option name="length" value="40" />
+                                    <option name="line" value="9" />
+                                    <option name="possibleAnswer" value="my_module.hello_world('John')&#10;" />
+                                    <option name="taskText" value="call function hello_world from my_module" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="imports.py" />
+                              <option name="text" value="&#10;import calculator&#10;&#10;calc = calculator.Calculator()    # create new instance of Calculator class defined in calculator module&#10;calc.add(2)&#10;print(calc.get_current())&#10;&#10;here import my_module&#10;&#10;call function hello_world from my_module" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                        <entry key="my_module.py">
+                          <value>
+                            <TaskFile>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="my_module.py" />
+                              <option name="text" value="&quot;&quot;&quot; documentation string for module my_module&#10;This module contains hello_world function&#10;&quot;&quot;&quot;&#10;&#10;&#10;def hello_world(name):&#10;    print(&quot;Hello, World! My name is %s&quot; % name)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="2" />
+                    <option name="name" value="Builtin modules" />
+                    <option name="text" value="&#10;Python comes with a &lt;a href=&quot;https://docs.python.org/2/library/&quot;&gt;library of standard modules&lt;/a&gt;.&#10;Remember that you can use Ctrl + Space after a dot(.) to explore available methods of a module.&#10;&lt;br&gt;&lt;br&gt;&#10;Print the current date using an imported built-in module datetime.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="builtin_modules.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use datetime.datetime.today() function." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="12" />
+                                    <option name="line" value="2" />
+                                    <option name="possibleAnswer" value="datetime.datetime.today()" />
+                                    <option name="start" value="6" />
+                                    <option name="taskText" value="current date" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="builtin_modules.py" />
+                              <option name="text" value="import datetime&#10;&#10;print(current date)" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="3" />
+                    <option name="name" value="From import" />
+                    <option name="text" value="&#10;One form of the import statement imports names from a module directly into the importing module's symbol table.&#10;This way you can use the imported name directly without the module_name prefix.&#10;&lt;br&gt;&lt;br&gt;&#10;Import hello_world function from my_module. Check the difference with task1.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="calculator.py">
+                          <value>
+                            <TaskFile>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="calculator.py" />
+                              <option name="text" value="&quot;&quot;&quot;&#10;This module contains Calculator class&#10;&quot;&quot;&quot;&#10;&#10;&#10;class Calculator:&#10;    def __init__(self):&#10;        self.current = 0&#10;&#10;    def add(self, amount):&#10;        self.current += amount&#10;&#10;    def get_current(self):&#10;        return self.current" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                        <entry key="from_import.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use 'from my_module import hello_world'" />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="33" />
+                                    <option name="line" value="7" />
+                                    <option name="possibleAnswer" value="from my_module import hello_world" />
+                                    <option name="taskText" value="import hello_world from my_module" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="from_import.py" />
+                              <option name="text" value="&#10;from calculator import Calculator&#10;&#10;calc = Calculator()    # here we can use Calculator class directly without prefix calculator.&#10;calc.add(2)&#10;print(calc.get_current())&#10;&#10;import hello_world from my_module&#10;&#10;print(hello_world())    # Note: hello_world function used without prefix" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                        <entry key="my_module.py">
+                          <value>
+                            <TaskFile>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="my_module.py" />
+                              <option name="text" value="&quot;&quot;&quot; documentation string for module my_module&#10;This module contains hello_world function&#10;&quot;&quot;&quot;&#10;&#10;&#10;def hello_world():&#10;    return &quot;Hello, World!&quot;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                </list>
+              </option>
+            </Lesson>
+            <Lesson>
+              <option name="index" value="10" />
+              <option name="name" value="File input/output" />
+              <option name="taskList">
+                <list>
+                  <Task>
+                    <option name="index" value="1" />
+                    <option name="name" value="Read file" />
+                    <option name="text" value="&#10;Python has a number of built-in functions to read and write information from a file on your computer.&#10;The &quot;open&quot; function is used to open a file. The file can be opened in read mode (using &quot;r&quot; as the second argument) or in write mode (using &quot;w&quot; as the second argument). The &quot;open&quot; function returns the file object. You need to store it to close the file later.&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;Print the contents of &quot;input.txt&quot; to output. Print the first line of &quot;input1.txt&quot;. Then close the file.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="input.txt">
+                          <value>
+                            <TaskFile>
+                              <option name="name" value="input.txt" />
+                              <option name="text" value="I am a temporary file. Maybe someday, I'll become a real file." />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                        <entry key="input1.txt">
+                          <value>
+                            <TaskFile>
+                              <option name="name" value="input1.txt" />
+                              <option name="text" value="My first line&#10;My second line&#10;My third line" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                        <entry key="read_file.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use print function." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="15" />
+                                    <option name="line" value="5" />
+                                    <option name="possibleAnswer" value="print(line)" />
+                                    <option name="start" value="4" />
+                                    <option name="taskText" value="print each line" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use 'readline' method." />
+                                    <option name="index" value="1" />
+                                    <option name="length" value="27" />
+                                    <option name="line" value="11" />
+                                    <option name="possibleAnswer" value="print(f1.readline())" />
+                                    <option name="taskText" value="print only first line of f1" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use 'readline' method." />
+                                    <option name="index" value="2" />
+                                    <option name="length" value="27" />
+                                    <option name="line" value="13" />
+                                    <option name="possibleAnswer" value="f1.close()&#10;" />
+                                    <option name="taskText" value="do not forget to close file" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="read_file.py" />
+                              <option name="text" value="&#10;f = open(&quot;input.txt&quot;, &quot;r&quot;)   # here we open file &quot;input.txt&quot;. Second argument used to identify that we want to read file&#10;                             # Note: if you want to write to the file use &quot;w&quot; as second argument&#10;&#10;for line in f.readlines():   # read lines&#10;    print each line&#10;&#10;f.close()                   # It's important to close the file to free up any system resources.&#10;&#10;f1 = open(&quot;input1.txt&quot;, &quot;r&quot;)&#10;&#10;print only first line of f1&#10;&#10;do not forget to close file" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                  <Task>
+                    <option name="index" value="2" />
+                    <option name="name" value="Write to file" />
+                    <option name="text" value="&#10;If you open a file using &quot;w&quot; (write) as the second argument, a new empty file will be created. Note that if another file with the same name exists, it will be deleted.&#10;If you want to add some content to an existing file, you should use the &quot;a&quot; (append) modifier.&#10;&lt;br&gt;&lt;br&gt;&#10;Add elements from the &quot;zoo&quot; list to &quot;output.txt&quot;.&#10;&lt;br&gt;&#10;" />
+                    <option name="taskFiles">
+                      <map>
+                        <entry key="output.txt">
+                          <value>
+                            <TaskFile>
+                              <option name="name" value="output.txt" />
+                              <option name="text" value="This is output file.&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                        <entry key="write_to_file.py">
+                          <value>
+                            <TaskFile>
+                              <option name="answerPlaceholders">
+                                <list>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use 'a' modifier to append lines to the end of file." />
+                                    <option name="index" value="0" />
+                                    <option name="length" value="12" />
+                                    <option name="line" value="3" />
+                                    <option name="possibleAnswer" value="'a'" />
+                                    <option name="start" value="27" />
+                                    <option name="taskText" value="add modifier" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Use 'write' method." />
+                                    <option name="index" value="1" />
+                                    <option name="length" value="35" />
+                                    <option name="line" value="6" />
+                                    <option name="possibleAnswer" value="f.write(i)" />
+                                    <option name="start" value="8" />
+                                    <option name="taskText" value="add the whole zoo to the output.txt" />
+                                  </AnswerPlaceholder>
+                                  <AnswerPlaceholder>
+                                    <option name="hint" value="Call f.close method." />
+                                    <option name="index" value="2" />
+                                    <option name="length" value="14" />
+                                    <option name="line" value="8" />
+                                    <option name="possibleAnswer" value="f.close()" />
+                                    <option name="start" value="4" />
+                                    <option name="taskText" value="close the file" />
+                                  </AnswerPlaceholder>
+                                </list>
+                              </option>
+                              <option name="highlightErrors" value="true" />
+                              <option name="name" value="write_to_file.py" />
+                              <option name="text" value="zoo = ['lion', &quot;elephant&quot;, 'monkey']&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    f = open(&quot;output.txt&quot;, add modifier)&#10;&#10;    for i in zoo:&#10;        add the whole zoo to the output.txt&#10;&#10;    close the file&#10;" />
+                            </TaskFile>
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                  </Task>
+                </list>
+              </option>
+            </Lesson>
+          </list>
+        </option>
+        <option name="name" value="Introduction to Python" />
+      </Course>
+    </option>
+  </component>
+</project>

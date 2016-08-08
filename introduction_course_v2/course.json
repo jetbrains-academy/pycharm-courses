@@ -1,0 +1,1772 @@
+{
+  "lessons": [
+    {
+      "id": 13342,
+      "steps": [
+        39331,
+        39332
+      ],
+      "tags": [],
+      "is_public": true,
+      "title": "Introduction",
+      "task_list": [
+        {
+          "name": "Our first program",
+          "myIndex": 0,
+          "myStepicId": 39331,
+          "task_files": {
+            "hello_world.py": {
+              "placeholders": [
+                {
+                  "line": 0,
+                  "start": 32,
+                  "hint": "Type your name here.",
+                  "possible_answer": "Liana",
+                  "length": 14,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "hello_world.py",
+              "text": "print(\"Hello, world! My name is type your name\")",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nTraditionally the first program you write in any programming language is \"Hello World!\".\n\u003cbr\u003e\u003cbr\u003e\nIntroduce yourself to the World.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_ASCII():\n    windows \u003d get_answer_placeholders()\n    for window in windows:\n        all_ascii \u003d all(ord(c) \u003c 128 for c in window)\n        if not all_ascii:\n            failed(\"Please use only English characters this time.\")\n            return\n    passed()\n\ndef test_is_alpha():\n    window \u003d get_answer_placeholders()[0]\n    splitted \u003d window.split()\n    for s in splitted:\n        if not s.isalpha():\n            failed(\"Please use only English characters this time.\")\n            return\n\n    passed()\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    test_ASCII()\n    run_common_tests(\"You should enter your name\")\n    test_is_alpha()\n\n\n"
+          }
+        },
+        {
+          "name": "Comments",
+          "myIndex": 0,
+          "myStepicId": 39332,
+          "task_files": {
+            "comments.py": {
+              "placeholders": [
+                {
+                  "line": 4,
+                  "start": 2,
+                  "hint": "Type your new comment here.",
+                  "possible_answer": "new comment",
+                  "length": 20,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "comments.py",
+              "text": "# This is the comment for the comments.py file\nprint(\"Hello!\")  # this comment is for the second line\n\nprint(\"# this is not a comment\")\n# add new comment here",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nComments in Python start with the hash character (#) and include the whole line.\nYou can use Ctrl + / to comment or uncomment the whole line in PyCharm.\n\u003cbr\u003e\u003cbr\u003e\nAdd a new comment to the file.\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"You should type new comment\")\n"
+          }
+        }
+      ],
+      "myIndex": -1
+    },
+    {
+      "id": 13357,
+      "steps": [
+        39421,
+        39422,
+        39423,
+        39424,
+        39425,
+        39426,
+        39427,
+        39428
+      ],
+      "tags": [],
+      "is_public": true,
+      "title": "Variables",
+      "task_list": [
+        {
+          "name": "Variable definition",
+          "myIndex": 0,
+          "myStepicId": 39421,
+          "task_files": {
+            "variable_definition.py": {
+              "placeholders": [
+                {
+                  "line": 6,
+                  "start": 12,
+                  "hint": "Type value here.",
+                  "possible_answer": "5",
+                  "length": 13,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "variable_definition.py",
+              "text": "a \u003d b \u003d 2  # This is called a \"chained assignment\". It assigns the value 2 to variables \"a\" and \"b\".\nprint(\"a \u003d \" + str(a))   # We\u0027ll explain the expression str(a) later in the course. For now it is used to convert the  variable \"a\" to a string.\nprint(\"b \u003d \" + str(b))\n\ngreetings \u003d \"greetings\"\nprint(\"greetings \u003d \" + str(greetings))\ngreetings \u003d another value\nprint(\"greetings \u003d \" + str(greetings))",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nVariables are used to store values so we can refer to them later. A variable is like a label, and you use the \u0027\u003d\u0027 symbol,\nknown as the assignment operator, to assign a value to a variable. An assignment can be chained, e.g. a \u003d b \u003d 2\n\u003cbr\u003e\u003cbr\u003e\nChange the value stored in the variable \"greetings\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders\n\n\ndef test_task_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"another value\" \u003d\u003d window:\n      failed(\"You should redefine the variable \u0027greetings\u0027\")\n    else:\n      passed()\n\ndef test_value():\n    file \u003d import_task_file()\n\n    if file.greetings \u003d\u003d \"greetings\":\n        failed(\"You should assign a different value to the variable\")\n    else:\n        passed()\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    test_task_window()\n    run_common_tests(\"You should redefine the variable \u0027greetings\u0027\")\n    test_value()\n"
+          }
+        },
+        {
+          "name": "Undefined variable",
+          "myIndex": 0,
+          "myStepicId": 39422,
+          "task_files": {
+            "undefined_variable.py": {
+              "placeholders": [
+                {
+                  "line": 1,
+                  "start": 6,
+                  "hint": "Type the name of an undefined variable here. Note that variable names must start with a letter and may contain letters, \u0027_\u0027 and/or numbers.",
+                  "possible_answer": "other_variable",
+                  "length": 14,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "undefined_variable.py",
+              "text": "variable \u003d 1\nprint(other variable)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nVariable names may only contain letters, digits, and/or the underscore character, and cannot start with a digit.\n\u003cbr\u003e\u003cbr\u003e\nCheck what happens if you use a variable which is not defined yet. Try to print out an undefined name.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import test_is_not_empty, test_is_initial_text, test_answer_placeholders_text_deleted, passed, failed, import_task_file\n\n\ndef test_is_identifier():\n    try:\n        import_task_file()\n    except NameError:\n        passed()\n        return\n    except SyntaxError:\n        failed(\"Used invalid identifier\")\n        return\n    failed(\"Use undefined variable\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    error_text \u003d \"You should type undefined variable here\"\n\n    test_is_not_empty()\n    test_is_initial_text()\n    test_answer_placeholders_text_deleted(error_text)\n    test_is_identifier()\n"
+          }
+        },
+        {
+          "name": "Variable types",
+          "myIndex": 0,
+          "myStepicId": 39423,
+          "task_files": {
+            "variable_type.py": {
+              "placeholders": [
+                {
+                  "line": 4,
+                  "start": 6,
+                  "hint": "Look how we found the \"number\" type on line 2 and do the same to float_number",
+                  "possible_answer": "type(float_number)",
+                  "length": 17,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "variable_type.py",
+              "text": "number \u003d 9\nprint(type(number))   # print type of variable \"number\"\n\nfloat_number \u003d 9.0\nprint(float_number type)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nIn Python, there are two main types of numbers: integers and floats.\nThe most important difference between them is that a float is a number that has a decimal point, and an int is a number\nwithout a decimal point.\n\u003cbr\u003e\u003cbr\u003e\nDetermine the type of the variable \"float_number\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed\n\n\ndef test_type_used():\n    window \u003d get_answer_placeholders()[0]\n    if \"type\" in window and \"float_number\" in window:\n        passed()\n    else:\n        failed(\"Use the type() function\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_type_used()"
+          }
+        },
+        {
+          "name": "Type conversion",
+          "myIndex": 0,
+          "myStepicId": 39424,
+          "task_files": {
+            "type_cast.py": {
+              "placeholders": [
+                {
+                  "line": 5,
+                  "start": 6,
+                  "hint": "Use int() function",
+                  "possible_answer": "int(float_number)",
+                  "length": 31,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "type_cast.py",
+              "text": "number \u003d 9\nprint(type(number))   # print type of variable \"number\"\n\nfloat_number \u003d 9.0\nprint(float_number)\nprint(Convert float_number to integer)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nThere are several built-in functions that let you convert one data type to another.\nThese functions return a new object representing the converted value.\n\"int(x)\" converts x to an integer. \"float(x)\" converts x to a floating-point number.\n\"str(x)\" converts object x to a string representation.\n\u003cbr\u003e\u003cbr\u003e\nConvert \"float_number\" to integer.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"int\" in window and \"float_number\" in window:\n        passed()\n    else:\n        failed(\"Use the int() function\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()"
+          }
+        },
+        {
+          "name": "Arithmetic operators",
+          "myIndex": 0,
+          "myStepicId": 39425,
+          "task_files": {
+            "arithmetic_operators.py": {
+              "placeholders": [
+                {
+                  "line": 2,
+                  "start": 9,
+                  "hint": "Use / operator",
+                  "possible_answer": "number/2",
+                  "length": 22,
+                  "myIndex": -1
+                },
+                {
+                  "line": 4,
+                  "start": 12,
+                  "hint": "Use % operator",
+                  "possible_answer": "number%2",
+                  "length": 23,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "arithmetic_operators.py",
+              "text": "number \u003d 9.0        # float number\n\nresult \u003d divide \u0027number\u0027 by two\n\nremainder \u003d calculate the remainder\n\nprint(\"result \u003d \" + str(result))\nprint(\"remainder \u003d \" + str(remainder))",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nJust as with any other programming language, the addition (+), subtraction (-), multiplication (*), and division (/) operators can be used with numbers.\nIn addition Python has the power (**) and modulo (%) operators.\n\u003cbr\u003e\u003cbr\u003e\nDivide the value stored in the variable \"number\" by 2, and then calculate the remainder.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders\n\n\ndef test_division():\n    file \u003d import_task_file()\n    if file.result \u003d\u003d 4.5:\n        passed()\n    else:\n        failed(\"Wrong result\")\n\n\ndef test_remainder():\n    file \u003d import_task_file()\n    if file.remainder \u003d\u003d 1.0:\n        passed()\n    else:\n        failed(\"Wrong remainder\")\n\n\ndef test_windows():\n    windows \u003d get_answer_placeholders()\n    if not \"/\" in windows[0]:\n        failed(\"Use / operator\")\n        return\n    if not \"%\" in windows[1]:\n        failed(\"Use % operator\")\n        return\n    if \"number\" in windows[0] and \"number\" in windows[1]:\n        passed()\n    else:\n        failed(\"Use the value stored in the variable \\\"number\\\"\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"Use / and % operators\")\n    test_windows()\n    test_division()\n    test_remainder()"
+          }
+        },
+        {
+          "name": "Assignments",
+          "myIndex": 0,
+          "myStepicId": 39426,
+          "task_files": {
+            "assignments.py": {
+              "placeholders": [
+                {
+                  "line": 6,
+                  "start": 7,
+                  "hint": "Use +\u003d operator",
+                  "possible_answer": "+\u003d",
+                  "length": 8,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "assignments.py",
+              "text": "number \u003d 9.0\nprint(\"number \u003d \" + str(number))\n\nnumber -\u003d 2\nprint(\"number \u003d \" + str(number))\n\nnumber operator 5\n\nprint(\"number \u003d \" + str(number))",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nAugmented assignment is a single statement combining a binary operation and an assignment statement such as +\u003d, -\u003d, etc.\n\u003cbr\u003e\u003cbr\u003e\nUse an augmented assignment to add 5 to \"number\" and update the variable.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if file.number \u003d\u003d 12.0:\n        passed()\n    else:\n        failed(\"Use +\u003d operator\")\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"+\u003d\" in window:\n        passed()\n    else:\n        failed(\"Use +\u003d operator\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"You should modify the file\")\n    test_value()\n    test_window()"
+          }
+        },
+        {
+          "name": "Boolean operators",
+          "myIndex": 0,
+          "myStepicId": 39427,
+          "task_files": {
+            "boolean_operators.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 15,
+                  "hint": "Use \u003d\u003d operator",
+                  "possible_answer": "\u003d\u003d",
+                  "length": 8,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "boolean_operators.py",
+              "text": "two \u003d 2\nthree \u003d 3\n\nis_equal \u003d two operator three\n\nprint(is_equal)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nBoolean is a type of value that can only be True or False. The \u0027\u003d\u003d\u0027 (equality) operator checks whether the two variables being compared are equal.\n\u003cbr\u003e\u003cbr\u003e\nCheck whether the variable \"two\" is equal to \"three\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if not file.is_equal:\n        passed()\n    else:\n        failed(\"Use \u003d\u003d operator\")\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"\u003d\u003d\" in window:\n        passed()\n    else:\n        failed(\"Use \u003d\u003d operator\")\n\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"You should modify the file\")\n\n    test_value()\n    test_window()"
+          }
+        },
+        {
+          "name": "Comparison operators",
+          "myIndex": 0,
+          "myStepicId": 39428,
+          "task_files": {
+            "comparison_operators.py": {
+              "placeholders": [
+                {
+                  "line": 6,
+                  "start": 19,
+                  "hint": "Use \u003e operator.",
+                  "possible_answer": "\u003e",
+                  "length": 8,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "comparison_operators.py",
+              "text": "one \u003d 1\ntwo \u003d 2\nthree \u003d 3\n\nprint(one \u003c two \u003c three)  # This chained comparison means that the (one \u003c two) and (two \u003c three) comparisons are performed at the same time.\n\nis_greater \u003d three operator two\nprint(is_greater)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nPython has many types of comparison operators including \u0026gt;\u003d, \u0026lt;\u003d, \u0026gt;, \u0026lt;, etc. All comparison operations in Python have the same priority.\nComparisons yield boolean values: either True or False. Comparisons can be chained arbitrarily.\n\u003cbr\u003e\u003cbr\u003e\nCheck whether the value of the variable \"three\" is strictly greater than the value of the variable \"two\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if file.is_greater:\n        passed()\n    else:\n        failed(\"Use \u003e operator\")\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"\u003e\" in window and \"\u003e\u003d\" not in window:\n        passed()\n    else:\n        failed(\"Use \u003e operator\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"You should modify the file\")\n    test_value()\n    test_window()"
+          }
+        }
+      ],
+      "myIndex": -1
+    },
+    {
+      "id": 13358,
+      "steps": [
+        39432,
+        39433,
+        39434,
+        39435,
+        39436,
+        39437,
+        39438,
+        39439,
+        39440,
+        39441
+      ],
+      "tags": [],
+      "is_public": true,
+      "title": "Strings",
+      "task_list": [
+        {
+          "name": "Concatenation",
+          "myIndex": 0,
+          "myStepicId": 39432,
+          "task_files": {
+            "concatenation.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 14,
+                  "hint": "Use chained concatenation and one-space string \" \".",
+                  "possible_answer": "hello + \u0027 \u0027 + world",
+                  "length": 9,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "concatenation.py",
+              "text": "hello \u003d \"Hello\"\nworld \u003d \u0027World\u0027\n\nhello_world \u003d type here\nprint(hello_world)      # Note: you should print \"Hello World\"",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nCombining two strings using the + symbol is called concatenation.\n\u003cbr\u003e\u003cbr\u003e\nUse the \"hello\" and \"world\" variables to get a \"Hello World\" string\n\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if file.hello_world \u003d\u003d \"HelloWorld\":\n        failed(\"Use one-space string \u0027 \u0027 in concatenation.\")\n    else:\n        passed()\n\n\ndef test_value_2():\n    file \u003d import_task_file()\n    if file.hello_world \u003d\u003d \"Hello World\":\n        passed()\n    else:\n        failed(\"Use + operator\")\n\ndef test_concat_used():\n    window \u003d get_answer_placeholders()[0]\n    if \"hello\" in window and \"world\" in window and \"+\" in window:\n        passed()\n    else:\n        failed(\"Use previously defined variables and concatenation (+) to combine variables\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_value()\n    test_value_2()\n    test_concat_used()\n\n"
+          }
+        },
+        {
+          "name": "String multiplication",
+          "myIndex": 0,
+          "myStepicId": 39433,
+          "task_files": {
+            "string_multiplication.py": {
+              "placeholders": [
+                {
+                  "line": 1,
+                  "start": 22,
+                  "hint": "Use multiplication.",
+                  "possible_answer": "*",
+                  "length": 8,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "string_multiplication.py",
+              "text": "hello \u003d \"hello\"\nten_of_hellos \u003d hello operator 10\nprint(ten_of_hellos)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nPython supports a string-by-number multiplication (but not the other way around!).\n\u003cbr\u003e\u003cbr\u003e\nUse hello to get the \"hellohellohellohellohellohellohellohellohellohello\" string (\"hello\" repeated 10 times).\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if file.tenofhellos \u003d\u003d \"hellohellohellohellohellohellohellohellohellohello\":\n        passed()\n    failed(\"Use multiplication\")\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"*\" in window:\n        passed()\n    else:\n        failed(\"Use multiplication\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"You should modify the file\")\n\n    test_value()\n    test_window()"
+          }
+        },
+        {
+          "name": "String indexing",
+          "myIndex": 0,
+          "myStepicId": 39434,
+          "task_files": {
+            "string_indexing.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 11,
+                  "hint": "Note that index starts with 0.",
+                  "possible_answer": "python[0]",
+                  "length": 9,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "string_indexing.py",
+              "text": "python \u003d \"Python\"\nprint(\"h \" + python[3])     # Note: string indexing starts with 0\n\np_letter \u003d type here\nprint(p_letter)\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nYou can access a character of a string if you know its position.\nFor example, str[index] will yield the character at position ‘index’ in the string \u0027str\u0027. Note that string index always starts at 0.\n\u003cbr\u003e\u003cbr\u003e\nUse index operator to get \"P\" from \"python\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"[\" in window and \"0\" in window and \"]\" in window:\n        passed()\n    else:\n        failed(\"Use indexing\")\n\ndef test_value():\n    file \u003d import_task_file()\n    if file.p_letter \u003d\u003d \"P\":\n        passed()\n    else:\n        failed(\"String index starts at 0.\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n\n    test_value()\n    test_window()\n"
+          }
+        },
+        {
+          "name": "String negative indexing",
+          "myIndex": 0,
+          "myStepicId": 39435,
+          "task_files": {
+            "negative_indexing.py": {
+              "placeholders": [
+                {
+                  "line": 1,
+                  "start": 14,
+                  "hint": "Use negative index.",
+                  "possible_answer": "long_string[-1]",
+                  "length": 9,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "negative_indexing.py",
+              "text": "long_string \u003d \"This is a very long string!\"\nexclamation \u003d type here\nprint(exclamation)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nYou can use negative numbers in the indexing operator to count characters ‘backwards’ from the end of the string.\n\u003cbr\u003e\u003cbr\u003e\nUse negative index to get the \u0027!\u0027 sign from \"long_string\"\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if file.exclamation \u003d\u003d \"!\":\n        passed()\n    else:\n        failed(\"Use -1 index to get the last character\")\n\n\ndef test_negative_index():\n    window \u003d get_answer_placeholders()[0]\n    if \"-\" in window:\n        passed()\n    else:\n        failed(\"Use negative index\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n\n    test_negative_index()\n    test_value()\n\n"
+          }
+        },
+        {
+          "name": "String slicing",
+          "myIndex": 0,
+          "myStepicId": 39436,
+          "task_files": {
+            "slicing.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 9,
+                  "hint": "You can leave one or both indices empty.",
+                  "possible_answer": "monty_python[6:]",
+                  "length": 9,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "slicing.py",
+              "text": "monty_python \u003d \"Monty Python\"\nmonty \u003d monty_python[:5]      # one or both index could be dropped. monty_python[:5] is equal to monty_python[0:5]\nprint(monty)\npython \u003d type here\nprint(python)\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nSlicing is used to get multiple characters (a substring) from a string.\nIts syntax is similar to that of indexing, but instead of just one index you use two indices (numbers) separated by a colon, e.g. str[ind1:ind2].\n\u003cbr\u003e\u003cbr\u003e\nUse slicing to get \"Python\" from the \"monty_python\" variable.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if file.python \u003d\u003d \"Python\":\n        passed()\n    else:\n        failed(\"Check indices used in slicing\")\n\n\ndef test_monty_python():\n    window \u003d get_answer_placeholders()[0]\n    if \"monty_python\" in window:\n        passed()\n    else:\n        failed(\"Use slicing\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_value()\n    test_monty_python()"
+          }
+        },
+        {
+          "name": "In operator",
+          "myIndex": 0,
+          "myStepicId": 39437,
+          "task_files": {
+            "in_operator.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 11,
+                  "hint": "Use \u0027in\u0027 operator.",
+                  "possible_answer": "\u0027ice\u0027 in ice_cream",
+                  "length": 9,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "in_operator.py",
+              "text": "ice_cream \u003d \"ice cream\"\nprint(\"cream\" in ice_cream)    # print boolean result directly\n\ncontains \u003d type here\nprint(contains)\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nIf you want to check whether a string contains a specific letter or a substring, you can use the \"in\" keyword.\n\u003cbr\u003e\u003cbr\u003e\nCheck if there is \"ice\" in \"ice cream\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if file.contains:\n        passed()\n    else:\n        failed(\"Use \u0027in\u0027 operator for this check\")\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n\n    if \" in \" in window:\n        passed()\n    else:\n        failed(\"Use \u0027in\u0027 operator for this check\")\n\ndef test_ice_cream():\n    window \u003d get_answer_placeholders()[0]\n\n    if \"ice cream\" in window or \"ice_cream\":\n        passed()\n    else:\n        failed(\"Check if there is \u0027ice\u0027 in \u0027ice cream\u0027\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n\n    test_value()\n    test_window()\n    test_ice_cream()\n"
+          }
+        },
+        {
+          "name": "String length",
+          "myIndex": 0,
+          "myStepicId": 39438,
+          "task_files": {
+            "len_function.py": {
+              "placeholders": [
+                {
+                  "line": 5,
+                  "start": 13,
+                  "hint": "Remember about string slicing.",
+                  "possible_answer": "phrase[:int(len(phrase)/2)]",
+                  "length": 9,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "len_function.py",
+              "text": "phrase \u003d \"\"\"\nIt is a really long string\ntriple-quoted strings are used\nto define multi-line strings\n\"\"\"\nfirst_half \u003d type here\nprint(first_half)\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nThe len() function is used to count how many characters a string contains.\n\u003cbr\u003e\u003cbr\u003e\nGet the first half of the string stored in the variable ‘phrase’. \u003cbr\u003e\nNote: Remember about type conversion.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if file.first_half \u003d\u003d \u0027\u0027\u0027\\nIt is a really long string\\ntriple-quoted st\u0027\u0027\u0027:\n        passed()\n    else:\n        failed(\"Remember about string slicing.\")\n\ndef test_value_python3():\n    import sys\n    if sys.version[0] !\u003d \"3\":\n        passed()\n        return\n    try:\n        import_task_file()\n        passed()\n    except TypeError:\n        failed(\"Division operator returns float in Python 3. Use int() function to convert float to integer.\")\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"phrase\" in window and \"len\" in window:\n        passed()\n    else:\n        failed(\"Remember about string slicing.\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    test_value_python3()\n    run_common_tests()\n\n    test_value()\n    test_window()\n"
+          }
+        },
+        {
+          "name": "Character escaping",
+          "myIndex": 0,
+          "myStepicId": 39439,
+          "task_files": {
+            "character_escaping.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 7,
+                  "hint": "Use backslash \\ to escape quotes",
+                  "possible_answer": "The name of this ice-cream is \"Sweeet\\\u0027n\\\u0027Tasty\"",
+                  "length": 4,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "character_escaping.py",
+              "text": "dont_worry \u003d \"Don\u0027t worry about apostrophes\"\nprint(dont_worry)\nprint(\"The name of this ice-cream is \\\"Sweeet\\\"\")\nprint(\u0027text\u0027)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nBackslash is used to escape single or double quotation marks, for example \u0027It\\\u0027s me\u0027 or \"She said \\\"Hello\\\"\".\nThe special symbol \u0027\\n\u0027 is used to add a line break to a string.\n\u003cbr\u003e\u003cbr\u003e\nPrint out the following text using one string:\u003cbr\u003e\nThe name of this ice-cream is \"Sweeet\u0027n\u0027Tasty\"\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed\n\n\ndef test_value():\n    window \u003d get_answer_placeholders()[0]\n\n    first \u003d \"The name of this ice-cream is \\\\\\\"Sweeet\u0027n\u0027Tasty\\\\\\\"\"\n    second \u003d \u0027The name of this ice-cream is \"Sweeet\\\\\\\u0027n\\\\\\\u0027Tasty\"\u0027\n\n    if first in window or second in window:\n        passed()\n    else:\n        failed(\"Sorry, the wrong string is printed\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_value()\n"
+          }
+        },
+        {
+          "name": "Basic string methods",
+          "myIndex": 0,
+          "myStepicId": 39440,
+          "task_files": {
+            "string_methods.py": {
+              "placeholders": [
+                {
+                  "line": 5,
+                  "start": 6,
+                  "hint": "Look at the lower() method usage.",
+                  "possible_answer": "monty_python.upper()",
+                  "length": 24,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "string_methods.py",
+              "text": "monty_python \u003d \"Monty Python\"\nprint(monty_python)\n\nprint(monty_python.lower())    # print lower-cased version of the string\n\nprint(upper cased monty_python)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nThere are a lot of useful string methods. You can use the \u0027lower()\u0027 method to get rid of any capitalization in your strings.\nThe \u0027upper()\u0027 method is used to make a string uppercase. To call any string method, type a dot after the string (or a variable containing the string)\nand the method name after it, e.g. \"John\".upper(). In PyCharm, you can explore all available string methods by using Ctrl+Space after a dot.\n\u003cbr\u003e\u003cbr\u003e\nPrint monty_python in upper case.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_value():\n    window \u003d get_answer_placeholders()[0]\n\n    if \"monty_python.upper()\" in window:\n        passed()\n    else:\n        failed(\"Use upper() method\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_value()\n\n"
+          }
+        },
+        {
+          "name": "String formatting",
+          "myIndex": 0,
+          "myStepicId": 39441,
+          "task_files": {
+            "string_formatting.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 11,
+                  "hint": "Use %d special symbol",
+                  "possible_answer": "%d",
+                  "length": 14,
+                  "myIndex": -1
+                },
+                {
+                  "line": 3,
+                  "start": 39,
+                  "hint": "How old are you?",
+                  "possible_answer": "17",
+                  "length": 5,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "string_formatting.py",
+              "text": "name \u003d \"John\"\nprint(\"Hello, PyCharm! My name is %s!\" % name)     # Note: %s is inside the string, % is after the string\n\nprint(\"I\u0027m special symbol years old\" % years)\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nThe % operator after a string is used to combine a string with variables.\nThe % operator will replace %s in a string with the string variable that comes after it.\nThe %d special symbol is used as a placeholder for numeric or decimal values.\n\u003cbr\u003e\u003cbr\u003e\nTell PyCharm how old you are.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, get_answer_placeholders, import_task_file, get_file_output\n\n\ndef test_window1():\n    windows \u003d get_answer_placeholders()\n\n    if windows[1].isdigit():\n        passed()\n        return\n    else:\n        output \u003d get_file_output()\n        if len(output) \u003e 1:\n            import re\n\n            p \u003d re.compile(\"I\u0027m (\\d*) years old\")\n            if p.match(output[1]) is not None:\n                passed()\n                return\n    failed(\"Print digit\")\n\n\ndef test_window():\n    windows \u003d get_answer_placeholders()\n\n    if windows[0] \u003d\u003d \"%d\":\n        passed()\n    else:\n        failed(\"Use %d special symbol\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_window1()\n"
+          }
+        }
+      ],
+      "myIndex": -1
+    },
+    {
+      "id": 13348,
+      "steps": [
+        39382,
+        39383,
+        39384,
+        39385,
+        39386,
+        39387,
+        39388
+      ],
+      "tags": [],
+      "is_public": true,
+      "title": "Data structures",
+      "task_list": [
+        {
+          "name": "Lists introduction",
+          "myIndex": 0,
+          "myStepicId": 39382,
+          "task_files": {
+            "lists.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 6,
+                  "hint": "Use list slicing lst[index1:index2]",
+                  "possible_answer": "squares[1:4]",
+                  "length": 5,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "lists.py",
+              "text": "squares \u003d [1, 4, 9, 16, 25]   # create new list\nprint(squares)\n\nprint(slice)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nA list is a data structure you can use to store a collection of different pieces of information under a single variable name.\nA list can be written as an array of comma-separated values (items) between square brackets, e.g. lst \u003d [item1, item2].\nLists might contain items of different types, but usually all the items in the list are of the same type.\nLike strings, lists can be indexed and sliced (see Lesson 3).\n\u003cbr\u003e\u003cbr\u003e\nUse list slicing to print [4, 9, 16].\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed, get_file_output, test_file_importable\n\n\ndef test_value():\n    output \u003d get_file_output()[1]\n    if \"[4, 9, 16]\" in output:\n        passed()\n    else:\n        failed(\"Use list slicing lst[index1:index2]\")\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"squares\" in window and \"[\" in window and \"]\" in window and \":\" in window:\n        passed()\n    else:\n        failed(\"Use list slicing lst[index1:index2]\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    test_file_importable()\n    test_value()\n    test_window()\n    run_common_tests(\"Use list slicing lst[index1:index2]\")\n\n"
+          }
+        },
+        {
+          "name": "Lists operations",
+          "myIndex": 0,
+          "myStepicId": 39383,
+          "task_files": {
+            "list_operations.py": {
+              "placeholders": [
+                {
+                  "line": 9,
+                  "start": 0,
+                  "hint": "Use indexing operation and assignment.",
+                  "possible_answer": "animals[-1] \u003d \u0027dinosaur\u0027",
+                  "length": 30,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "list_operations.py",
+              "text": "animals \u003d [\u0027elephant\u0027, \u0027lion\u0027, \u0027tiger\u0027, \"giraffe\"]  # create new list\nprint(animals)\n\nanimals +\u003d [\"monkey\", \u0027dog\u0027]    # add two items to the list\nprint(animals)\n\nanimals.append(\"dino\")   # add one more item to the list using append() method\nprint(animals)\n\nreplace \u0027dino\u0027 with \u0027dinosaur\u0027\nprint(animals)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nYou can add new items at the end of the list, by using the append() method and concatenation.\nUnlike strings, lists are a mutable type, i.e. it is possible to change their content using lst[index] \u003d new_item\n\u003cbr\u003e\u003cbr\u003e\nReplace \u0027dino\u0027 with \"dinosaur\" in the \"animals\" list.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, import_task_file, passed, failed, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if \"dinosaur\" in file.animals and not \"dino\" in file.animals:\n        passed()\n    else:\n        failed(\"Replace \u0027dino\u0027 with \u0027dinosaur\u0027\")\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"animals\" in window and \"[\" in window:\n        passed()\n    else:\n        failed(\"Replace \u0027dino\u0027 with \u0027dinosaur\u0027\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"Use indexing and assignment\")\n    test_value()\n    test_window()\n"
+          }
+        },
+        {
+          "name": "List items",
+          "myIndex": 0,
+          "myStepicId": 39384,
+          "task_files": {
+            "list_items.py": {
+              "placeholders": [
+                {
+                  "line": 9,
+                  "start": 0,
+                  "hint": "Use assignment to an empty list [].",
+                  "possible_answer": "animals[:] \u003d []",
+                  "length": 10,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "list_items.py",
+              "text": "animals \u003d [\u0027elephant\u0027, \u0027lion\u0027, \u0027tiger\u0027, \"giraffe\", \"monkey\", \u0027dog\u0027]   # create new list\nprint(animals)\n\nanimals[1:3] \u003d [\u0027cat\u0027]    # replace 2 items -- \u0027lion\u0027 and \u0027tiger\u0027 with one item -- \u0027cat\u0027\nprint(animals)\n\nanimals[1:3] \u003d []     # remove 2 items -- \u0027cat\u0027 and \u0027giraffe\u0027 from the list\nprint(animals)\n\nclear list\nprint(animals)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nAssignment to slices is also possible, and this can even change the size of a list or clear it entirely.\n\u003cbr\u003e\u003cbr\u003e\nClear \"animals\" list.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if not file.animals:\n        passed()\n    else:\n        failed(\"Clear animals list\")\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"animals\" in window:\n        passed()\n    else:\n        failed(\"Clear animals list\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"Use assignment to empty list\")\n    test_window()\n    test_value()\n"
+          }
+        },
+        {
+          "name": "Tuples",
+          "myIndex": 0,
+          "myStepicId": 39385,
+          "task_files": {
+            "tuples.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 6,
+                  "hint": "Use len() function.",
+                  "possible_answer": "len(alphabet)",
+                  "length": 15,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "tuples.py",
+              "text": "alphabet \u003d (\u0027a\u0027, \u0027b\u0027, \u0027c\u0027, \u0027d\u0027, \u0027e\u0027, \u0027f\u0027, \u0027g\u0027, \u0027h\u0027, \u0027i\u0027, \u0027j\u0027, \u0027k\u0027, \u0027l\u0027, \u0027m\u0027, \u0027n\u0027, \u0027o\u0027,\n            \u0027p\u0027, \u0027q\u0027, \u0027r\u0027, \u0027s\u0027, \u0027t\u0027, \u0027u\u0027, \u0027v\u0027, \u0027w\u0027, \u0027x\u0027, \u0027y\u0027, \u0027z\u0027)\n\nprint(alphabet length)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nTuples are almost identical to lists. The only significant difference between tuples and lists is that tuples cannot be changed:\nyou cannot add, change, or delete elements from the tuple.\nTuples are constructed by a comma operator enclosed in parentheses, for example (a, b, c).\nA single item tuple must have a trailing comma, such as (d,).\n\n\u003cbr\u003e\u003cbr\u003e\nPrint the length of the \"alphabet\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"len(\" in window:\n        passed()\n    else:\n        failed(\"Use len() function\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"Use len() function\")\n    test_window()"
+          }
+        },
+        {
+          "name": "Dictionaries",
+          "myIndex": 0,
+          "myStepicId": 39386,
+          "task_files": {
+            "dicts.py": {
+              "placeholders": [
+                {
+                  "line": 11,
+                  "start": 6,
+                  "hint": "Use dict indexing e.g. dct[key]",
+                  "possible_answer": "phone_book[\u0027Jane\u0027]",
+                  "length": 12,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "dicts.py",
+              "text": "# create new dictionary.\nphone_book \u003d {\"John\": 123, \"Jane\": 234, \"Jerard\": 345}    # \"John\", \"Jane\" and \"Jerard\" are keys and numbers are values\nprint(phone_book)\n\n# Add new item to the dictionary\nphone_book[\"Jill\"] \u003d 345\nprint(phone_book)\n\n# Remove key-value pair from phone_book\ndel phone_book[\u0027John\u0027]\n\nprint(Jane\u0027s phone)\n\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nA dictionary is similar to a list, except that you access its values by looking up a key instead of an index.\nA key can be any string or a number. Dictionaries are enclosed in curly braces e.g. dct \u003d {\u0027key1\u0027 : \"value1\", \u0027key2\u0027 : \"value2\"}.\n\u003cbr\u003e\u003cbr\u003e\nPrint Jane\u0027s phone number from \"phone_book\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"phone_book\" in window and \"Jane\" in window:\n        passed()\n    else:\n        failed(\"Use indexing e.g. dct[key]\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"Use indexing e.g. dct[key]\")\n    test_window()\n"
+          }
+        },
+        {
+          "name": "Dictionary keys() and values()",
+          "myIndex": 0,
+          "myStepicId": 39387,
+          "task_files": {
+            "dict_key_value.py": {
+              "placeholders": [
+                {
+                  "line": 9,
+                  "start": 6,
+                  "hint": "Use values() method.",
+                  "possible_answer": "phone_book.values()",
+                  "length": 17,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "dict_key_value.py",
+              "text": "phone_book \u003d {\"John\": 123, \"Jane\": 234, \"Jerard\": 345}  # create new dictionary\nprint(phone_book)\n\n# Add new item to the dictionary\nphone_book[\"Jill\"] \u003d 456\nprint(phone_book)\n\nprint(phone_book.keys())\n\nprint(phone_book values)\n\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nThere are a lot of useful methods in dictionaries such as keys() and values(). You can explore the rest using\nCtrl + Space after a dict_name followed by a dot.\n\u003cbr\u003e\u003cbr\u003e\nPrint all values from \"phone_book\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"phone_book\" in window and \"values()\" in window:\n        passed()\n    else:\n        failed(\"Use values() method\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n"
+          }
+        },
+        {
+          "name": "In keyword",
+          "myIndex": 0,
+          "myStepicId": 39388,
+          "task_files": {
+            "in_keyword.py": {
+              "placeholders": [
+                {
+                  "line": 6,
+                  "start": 6,
+                  "hint": "Use in keyword.",
+                  "possible_answer": "\u0027fish\u0027 in grocery_dict.keys()",
+                  "length": 30,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "in_keyword.py",
+              "text": "grocery_list \u003d [\"fish\", \"tomato\", \u0027apples\u0027]   # create new list\n\nprint(\"tomato\" in grocery_list)    # check that grocery_list contains \"tomato\" item\n\ngrocery_dict \u003d {\"fish\": 1, \"tomato\": 6, \u0027apples\u0027: 3}   # create new dictionary\n\nprint(is \u0027fish\u0027 in grocery_dict keys)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nThe \"in\" keyword is used to check if a list or a dictionary contains a specific item. You can apply  \"in\" to lists or dictionaries the same way as you did with strings.\n\u003cbr\u003e\u003cbr\u003e\nCheck if grocery_dict keys contain \"fish\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"grocery_dict\" in window and \" in \" in window:\n        passed()\n    else:\n        failed(\"Use in keyword\")\n\ndef test_fish():\n    window \u003d get_answer_placeholders()[0]\n    if \"fish\" in window:\n        passed()\n    else:\n        failed(\"Check if grocery_dict keys contain fish\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"Use in keyword\")\n    test_window()\n    test_fish()"
+          }
+        }
+      ],
+      "myIndex": -1
+    },
+    {
+      "id": 13350,
+      "steps": [
+        39391,
+        39392,
+        39393,
+        39394
+      ],
+      "tags": [],
+      "is_public": true,
+      "title": "Condition expressions",
+      "task_list": [
+        {
+          "name": "Boolean operators",
+          "myIndex": 0,
+          "myStepicId": 39391,
+          "task_files": {
+            "boolean_operators.py": {
+              "placeholders": [
+                {
+                  "line": 5,
+                  "start": 6,
+                  "hint": "Use and keyword and !\u003d operator.",
+                  "possible_answer": "name \u003d\u003d \u0027John\u0027 and age !\u003d 23",
+                  "length": 24,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "boolean_operators.py",
+              "text": "name \u003d \"John\"\nage \u003d 17\n\nprint(name \u003d\u003d \"John\" or age \u003d\u003d 17)    # checks that either name equals to \"John\" OR age equals to 17\n\nprint(John is not 23 years old)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nBoolean operators compare statements and return results in boolean values.\nThe boolean operator \"and\" returns True when the expressions on both sides of \"and\" are True.\nThe boolean operator \"or\" returns True when at least one expression on either side of \"or\" is True.\nThe boolean operator \"not\" inverts the boolean expression it precedes.\n\u003cbr\u003e\u003cbr\u003e\nCheck if \"name\" is equal to \"John\" and he is not 23 years old.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"name\" in window and \"John\" in window and \"and\" in window and \"23\" in window:\n        passed()\n    else:\n        failed(\"Use \u0027and\u0027 keyword and !\u003d operator\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"Use \u0027and\u0027 keyword and !\u003d operator\")\n    test_window()"
+          }
+        },
+        {
+          "name": "Boolean operators order",
+          "myIndex": 0,
+          "myStepicId": 39392,
+          "task_files": {
+            "boolean_order.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 6,
+                  "hint": "Combine \u0027and\u0027, \u0027or\u0027 and \u0027not\u0027 keywords.",
+                  "possible_answer": "\"name\" is \"Ellis\" or not (\"name\" is \"John\" and age \u003d\u003d 17)",
+                  "length": 69,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "boolean_order.py",
+              "text": "name \u003d \"John\"\nage \u003d 17\n\nprint(name \u003d\u003d \"John\" or not age \u003e 17)\n\nprint(name \u003d\u003d \"John\" or not age \u003e 17)\n\nprint(\"name\" is \"Ellis\" or not (\"name\" equal \"John\" and he is 17 years old))",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nBoolean operators are not evaluated from left to right. There\u0027s an order of operations for boolean operators:\n\"not\" is evaluated first, \"and\" is evaluated next, \"or\" is evaluated last.\n\u003cbr\u003e\u003cbr\u003e\nCheck if \"name\" is \"Ellis\" or it\u0027s not true that \"name\" equal \"John\" and he is 17 years old at the same time.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \" and \" in window and \" or \" in window and \" not \" in window:\n        passed()\n    else:\n        failed(\"Use \u0027and\u0027, \u0027or\u0027 and \u0027not\u0027 keywords\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"Use \u0027and\u0027, \u0027or\u0027 and \u0027not\u0027 keywords\")\n    test_window()"
+          }
+        },
+        {
+          "name": "If statement",
+          "myIndex": 0,
+          "myStepicId": 39393,
+          "task_files": {
+            "if_statement.py": {
+              "placeholders": [
+                {
+                  "line": 9,
+                  "start": 0,
+                  "hint": "Use len function to check if tasks is empty.",
+                  "possible_answer": "if len(tasks) \u003d\u003d 0:",
+                  "length": 25,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "if_statement.py",
+              "text": "name \u003d \"John\"\nage \u003d 17\n\nif name \u003d\u003d \"John\" or age \u003d\u003d 17:   # check that name is \"John\" or age is 17. If so print next 2 lines.\n    print(\"name is John\")\n    print(\"John is 17 years old\")\n\ntasks \u003d [\u0027task1\u0027, \u0027task2\u0027]    # create new list\n\ncheck if \u0027tasks\u0027 is empty\n    print(\"empty\")",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nThe \"if\" keyword is used to form a conditional statement that executes some specified code after checking if its expression is True.\nPython uses indentation to define code blocks.\n\u003cbr\u003e\u003cbr\u003e\nPrint \"empty\" if the \"tasks\" list is empty.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \":\" in window:\n        passed()\n    else:\n        failed(\"Don\u0027t forget a column at the end\")\n\n\ndef test_len():\n    window \u003d get_answer_placeholders()[0]\n    if \"len\" in window:\n        passed()\n    elif \"not\" in window:\n        passed()\n    else:\n        failed(\"Use len function to check that tasks is empty\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_len()"
+          }
+        },
+        {
+          "name": "Else, elif part in if statement",
+          "myIndex": 0,
+          "myStepicId": 39394,
+          "task_files": {
+            "else_elif.py": {
+              "placeholders": [
+                {
+                  "line": 13,
+                  "start": 0,
+                  "hint": "Use if keyword and \u003d\u003d operator.",
+                  "possible_answer": "if name \u003d\u003d \u0027John\u0027:",
+                  "length": 29,
+                  "myIndex": -1
+                },
+                {
+                  "line": 15,
+                  "start": 0,
+                  "hint": "Use else keyword.",
+                  "possible_answer": "else:",
+                  "length": 9,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "else_elif.py",
+              "text": "x \u003d 28\n\nif x \u003c 0:\n    print(\u0027x \u003c 0\u0027)                      # executes only if x \u003c 0\nelif x \u003d\u003d 0:\n    print(\u0027x is zero\u0027)                 # if it\u0027s not true that x \u003c 0, check if x \u003d\u003d 0\nelif x \u003d\u003d 1:\n    print(\u0027x \u003d\u003d 1\u0027)                    # if it\u0027s not true that x \u003c 0 and x !\u003d 0, check if x \u003d\u003d 1\nelse:\n    print(\u0027non of the above is true\u0027)\n\nname \u003d \"John\"\n\ncheck if name equal to \"John\"\n    print(True)\notherwise\n    print(False)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nThe else statement complements the if statement. The \"elif\" keyword is short for \"else if\".\n\u003cbr\u003e\u003cbr\u003e\nPrint True if name is equal to \"John\" and False otherwise.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed\n\n\ndef test_window1():\n    window \u003d get_answer_placeholders()[0]\n    if \"John\" in window and \"if \" in window:\n        if \"\u003d\u003d\" in window or \"is\" in window:\n            passed()\n        else:\n            failed(\"Check equality\")\n    else:\n        failed(\"Use if keyword\")\n\n\ndef test_window2():\n    window \u003d get_answer_placeholders()[1]\n    if \"else\" in window:\n        passed()\n    else:\n        failed(\"Use else keyword\")\n\n\ndef test_columns():\n    windows \u003d get_answer_placeholders()\n    if \":\" in windows[0] and \":\" in windows[1]:\n        passed()\n    else:\n        failed(\"Don\u0027t forget a colon at the end\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests(\"Use if/else keywords\")\n    test_window1()\n    test_window2()\n    test_columns()\n"
+          }
+        }
+      ],
+      "myIndex": -1
+    },
+    {
+      "id": 13351,
+      "steps": [
+        39395,
+        39396,
+        39397,
+        39398,
+        39399
+      ],
+      "tags": [],
+      "is_public": true,
+      "title": "Loops",
+      "task_list": [
+        {
+          "name": "For loop",
+          "myIndex": 0,
+          "myStepicId": 39395,
+          "task_files": {
+            "for_loop.py": {
+              "placeholders": [
+                {
+                  "line": 6,
+                  "start": 0,
+                  "hint": "Use for loop to iterate over \u0027primes\u0027.",
+                  "possible_answer": "for prime in primes:",
+                  "length": 34,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "for_loop.py",
+              "text": "for i in range(5):    # for each number i in range 0-4. range(5) function returns list [0, 1, 2, 3, 4]\n    print(i)          # this line is executed 5 times. First time i equals 0, then 1, ...\n\n\nprimes \u003d [2, 3, 5, 7]   # create new list\n\niterate over primes using for loop\n    print(prime)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\n\"For\" loops are used to iterate over a given sequence. On each iteration, the variable defined in the \"for\" loop will\nbe assigned to the next value in the list.\n\n\u003cbr\u003e\u003cbr\u003e\nPrint each prime number from the \"primes\" list using the \"for\" loop.\nA prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"prime\" in window and \"for \" in window and \"primes\" in window and \" in \" in window:\n        passed()\n    else:\n        failed(\"Use for loop to iterate over \u0027primes\u0027\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()"
+          }
+        },
+        {
+          "name": "For loop using string",
+          "myIndex": 0,
+          "myStepicId": 39396,
+          "task_files": {
+            "for_string.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 0,
+                  "hint": "Use for loop to iterate over \u0027hello_world\u0027 string.",
+                  "possible_answer": "for ch in hello_world:",
+                  "length": 59,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "for_string.py",
+              "text": "hello_world \u003d \"Hello, World!\"\n\nfor ch in hello_world:    # print each character from hello_world\n    print(ch)\n\nlength \u003d 0      # initialize length variable\n\ncount how many characters are in the hello_world using loop\n    length +\u003d 1     # add 1 to the length on each iteration\n\nprint(len(hello_world) \u003d\u003d length)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nStrings are very similar to lists in Python. You can use string to iterate over it.\n\u003cbr\u003e\u003cbr\u003e\nUse a loop to count how many characters hello_world contains. Store this number in the \"length\" variable.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders, import_task_file\n\n\ndef test_value():\n    file \u003d import_task_file()\n    if file.length \u003d\u003d 13:\n        passed()\n    else:\n        failed(\"Count again\")\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"for \" in window:\n        passed()\n    else:\n        failed(\"Use a for loop to iterate over the hello_world string\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_value()"
+          }
+        },
+        {
+          "name": "While loop",
+          "myIndex": 0,
+          "myStepicId": 39397,
+          "task_files": {
+            "while_loop.py": {
+              "placeholders": [
+                {
+                  "line": 11,
+                  "start": 0,
+                  "hint": "Check if \u0027number\u0027 is strictly less than 10 in condition.",
+                  "possible_answer": "while number \u003c 10:",
+                  "length": 30,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "while_loop.py",
+              "text": "square \u003d 1\n\nwhile square \u003c\u003d 10:\n    print(square)    # This code is executed 10 times\n    square +\u003d 1      # This code is executed 10 times\n\nprint(\"Finished\")  # This code is executed once\n\nsquare \u003d 0\nnumber \u003d 1\n\nprint all squares from 0 to 99\n    square \u003d number ** 2\n    print(square)\n    number +\u003d 1",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nA \"while\" loop is similar to an \"if\" statement: it executes some code if some condition is true.\nThe key difference is that it will continue to execute indented code for as long as the condition is true.\n\u003cbr\u003e\u003cbr\u003e\nPrint all squares from 0 to 99 (1, 4, ... , 81).\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders, get_file_output\n\n\ndef test_column():\n    window \u003d get_answer_placeholders()[0]\n    if \":\" in window:\n        passed()\n    else:\n        failed(\"Don\u0027t forget a colon at the end\")\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"while \" in window:\n        passed()\n    else:\n        failed(\"Use a while loop to iterate\")\n\n\ndef test_window1():\n    window \u003d get_answer_placeholders()[0]\n    if \"number\" in window:\n        passed()\n    else:\n        failed(\"Use \u0027number\u0027 variable in the while condition\")\n\n\ndef test_window2():\n    window \u003d get_answer_placeholders()[0]\n    if \"10\" in window:\n        if \"\u003c\" in window or \"10 \u003e\" in window:\n            passed()\n    else:\n        failed(\"Check that \u0027number\u0027 is strictly less than 10 in the condition\")\n\n\ndef test_output():\n    output \u003d get_file_output()\n    if \"Finished\" not in output:\n        failed()\n    border \u003d output.index(\"Finished\")\n    user_squares \u003d output[border + 1:]\n    correct_answer \u003d list(map(str, [x * x for x in range(1, 10)]))\n    if correct_answer \u003d\u003d user_squares:\n        passed()\n    else:\n        failed(\"Sorry, this answer is wrong\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_window1()\n    test_window2()\n    test_column()\n    test_output()\n"
+          }
+        },
+        {
+          "name": "Break keyword",
+          "myIndex": 0,
+          "myStepicId": 39398,
+          "task_files": {
+            "break_keyword.py": {
+              "placeholders": [
+                {
+                  "line": 13,
+                  "start": 7,
+                  "hint": "Use \u003d\u003d to check if animal is equal to \u0027elephant\u0027.",
+                  "possible_answer": "animal \u003d\u003d \u0027elephant\u0027",
+                  "length": 33,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "break_keyword.py",
+              "text": "count \u003d 0\n\nwhile True:  # this condition cannot possibly be false\n    print(count)\n    count +\u003d 1\n    if count \u003e\u003d 5:\n        break           # exit loop if count \u003e\u003d 5\n\n\nzoo \u003d [\"lion\", \u0027tiger\u0027, \u0027elephant\u0027]\nwhile True:                         # this condition cannot possibly be false\n    animal \u003d zoo.pop()       # extract one element from the list end\n    print(animal)\n    if exit loop if animal is \u0027elephant\u0027:\n        break           # exit loop\n\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nAn infinite loop is a loop that never exits. If the loop condition happens to always be true, such a loop becomes infinite.\nThe \"break\" keyword is used to exit the current loop.\n\u003cbr\u003e\u003cbr\u003e\nExit the loop correctly using \"break\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"elephant\" in window and \"animal\" in window:\n        passed()\n    else:\n        failed(\"Use \u003d\u003d to check that animal is equal to \u0027elephant\u0027\")\n\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()"
+          }
+        },
+        {
+          "name": "Continue keyword",
+          "myIndex": 0,
+          "myStepicId": 39399,
+          "task_files": {
+            "continue_keyword.py": {
+              "placeholders": [
+                {
+                  "line": 6,
+                  "start": 7,
+                  "hint": "Use % operator to check if x is even.",
+                  "possible_answer": "x % 2 \u003d\u003d 0",
+                  "length": 18,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "continue_keyword.py",
+              "text": "for i in range(5):\n    if i \u003d\u003d 3:\n        continue   # skip the rest of the code inside loop for current i value\n    print(i)\n\nfor x in range(10):\n    if Check if x is even:\n        continue   # skip print(x) for this loop\n    print(x)\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nThe \u0027continue\u0027 keyword is used to skip the rest of the code inside the loop for the currently executed loop and return to the \"for\" or \"while\" statement.\n\u003cbr\u003e\u003cbr\u003e\nPrint only odd the numbers 1, 3, 5, 7, 9.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, passed, failed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"x\" in window and \"%\" in window:\n        passed()\n    else:\n        failed(\"Use % operator to check that x is even\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()"
+          }
+        }
+      ],
+      "myIndex": -1
+    },
+    {
+      "id": 13361,
+      "steps": [
+        39452,
+        39453,
+        39454,
+        39455
+      ],
+      "tags": [],
+      "is_public": true,
+      "title": "Functions",
+      "task_list": [
+        {
+          "name": "Definition",
+          "myIndex": 0,
+          "myStepicId": 39452,
+          "task_files": {
+            "functions.py": {
+              "placeholders": [
+                {
+                  "line": 11,
+                  "start": 0,
+                  "hint": "Use \u0027def\u0027 keyword to define \u0027fun\u0027 function.",
+                  "possible_answer": "def fun():",
+                  "length": 58,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "functions.py",
+              "text": "def hello_world():  # function named my_function\n    print(\"Hello, World!\")\n\nfor i in range(5):\n    hello_world()   # call function defined above 5 times\n\nprint(\u0027I want to be a function\u0027)\nprint(\u0027I want to be a function\u0027)\nprint(\u0027I want to be a function\u0027)\n\n\ndefine a function named \u0027fun\u0027 to replace three lines above\n    print(\u0027I want to be a function\u0027)\n\nfor i in range(3):\n    fun()",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nFunctions are a convenient way to divide your code into useful blocks, make it more readable and help reuse it.\nFunctions are defined using the keyword \"def\", followed by the function\u0027s name.\n\n\u003cbr\u003e\u003cbr\u003e\nDefine a function to replace duplicate lines in the file.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, get_answer_placeholders, passed\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"fun\" in window:\n        passed()\n    else:\n        failed(\"Name your function \u0027fun\u0027\")\n\n\ndef test_window1():\n    window \u003d get_answer_placeholders()[0]\n    if \"def \" in window:\n        passed()\n    else:\n        failed(\"Use \u0027def\u0027 keyword to define a function\")\n\n\ndef test_column():\n    window \u003d get_answer_placeholders()[0]\n    if \":\" in window:\n        passed()\n    else:\n        failed(\"Don\u0027t forget a colon at the end of the statement\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_column()\n    test_window1()"
+          }
+        },
+        {
+          "name": "Parameters and call arguments",
+          "myIndex": 0,
+          "myStepicId": 39453,
+          "task_files": {
+            "param_args.py": {
+              "placeholders": [
+                {
+                  "line": 5,
+                  "start": 0,
+                  "hint": "Put parameter \u0027x\u0027 inside parentheses in function definition.",
+                  "possible_answer": "def square(x):",
+                  "length": 71,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "param_args.py",
+              "text": "def foo(x):                 # x is a function parameter\n    print(\"x \u003d \" + str(x))\n\nfoo(5)   # pass 5 to foo(). Here 5 is an argument passed to function foo.\n\ndefine a function named \u0027square\u0027 that prints square of passed parameter\n    print(x ** 2)\n\nsquare(4)\nsquare(8)\nsquare(15)\nsquare(23)\nsquare(42)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nFunction parameters are defined inside the parentheses (), following the function name.\nA parameter acts as a variable name for the passed argument.\n\u003cbr\u003e\u003cbr\u003e\nDefine a function that prints the square of the passed parameter.\n\u003cbr\u003e\n\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, get_answer_placeholders, passed\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"square\" in window and \"def \" in window:\n        passed()\n    else:\n        failed(\"Name your function \u0027square\u0027\")\n\n\ndef test_column():\n    window \u003d get_answer_placeholders()[0]\n    if \":\" in window:\n        passed()\n    else:\n        failed(\"Don\u0027t forget a colon at the end of the statement\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_column()\n    test_window()"
+          }
+        },
+        {
+          "name": "Return value",
+          "myIndex": 0,
+          "myStepicId": 39454,
+          "task_files": {
+            "return_keyword.py": {
+              "placeholders": [
+                {
+                  "line": 11,
+                  "start": 8,
+                  "hint": "Initialize \u0027b\u0027 with 1.",
+                  "possible_answer": "1",
+                  "length": 21,
+                  "myIndex": -1
+                },
+                {
+                  "line": 15,
+                  "start": 8,
+                  "hint": "Update \u0027b\u0027 with \u0027a + b\u0027.",
+                  "possible_answer": "b \u003d a + b",
+                  "length": 17,
+                  "myIndex": -1
+                },
+                {
+                  "line": 16,
+                  "start": 8,
+                  "hint": "Update \u0027a\u0027 with \u0027tmp_var\u0027.",
+                  "possible_answer": "a \u003d tmp_var",
+                  "length": 17,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "return_keyword.py",
+              "text": "def sum_two_numbers(a, b):\n    return a + b            # return result to the function caller\n\nc \u003d sum_two_numbers(3, 12)  # assign result of function execution to variable \u0027c\u0027\n\n\ndef fib(n):\n    \"\"\"This is documentation string for function. It\u0027ll be available by fib.__doc__()\n    Return a list containing the Fibonacci series up to n.\"\"\"\n    result \u003d []\n    a \u003d 0\n    b \u003d initialize variable b\n    while a \u003c n:\n        result.append(a)\n        tmp_var \u003d b\n        update variable b\n        update variable a\n    return result\n\nprint(fib(10))",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nFunctions may return a value to the caller, using the keyword \u0027return\u0027. You can use the returned value to assign it to a variable or just print it out.\n\u003cbr\u003e\u003cbr\u003e\nIn the Fibonacci sequence, the first two numbers are 1 and 1, and each subsequent number is the sum of the previous two.\nWrite a function that returns a list of the numbers of the Fibonacci series.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed, import_task_file\n\ndef test_window1():\n    window \u003d get_answer_placeholders()[0]\n    if \"1\" in window:\n        passed()\n    else:\n        failed(\"Initialize b with 1\")\n\n\ndef test_window2():\n    window \u003d get_answer_placeholders()[1]\n    if \"b\" in window and \"a\" in window:\n        passed()\n    else:\n        failed(\"Update b with a + b\")\n\ndef test_window3():\n    window \u003d get_answer_placeholders()[2]\n    if \"tmp_var\" in window:\n        passed()\n    else:\n        failed(\"Update a with tmp_var\")\n\ndef test_function():\n    try:\n        my_file \u003d import_task_file()\n        if my_file.fib(10) \u003d\u003d [0, 1, 1, 2, 3, 5, 8]:\n            passed()\n        else:\n            failed(\"Check your function for n \u003d 10\")\n    except:\n        failed(\"The file contains syntax errors\")\n\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window1()\n    test_window2()\n    test_window3()\n    test_function()"
+          }
+        },
+        {
+          "name": "Default parameters",
+          "myIndex": 0,
+          "myStepicId": 39455,
+          "task_files": {
+            "default_parameter.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 10,
+                  "hint": "Set default value for parameter \u0027name\u0027.",
+                  "possible_answer": "subject, name\u003d\u0027John\u0027",
+                  "length": 55,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "default_parameter.py",
+              "text": "def multiply_by(a, b\u003d2):\n    return a * b\n\nprint(multiply_by(3, 47))\nprint(multiply_by(3))    # call function using default value for b parameter\n\n\ndef hello(add parameters for function, set default value for name):\n    print(\"Hello %s! My name is %s\" % (subject, name))\n\nhello(\"PyCharm\", \"Jane\")    # call \u0027hello\u0027 function with \"PyCharm as a subject parameter and \"Jane\" as a name\nhello(\"PyCharm\")            # call \u0027hello\u0027 function with \"PyCharm as a subject parameter and default value for the name",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nSometimes it\u0027s useful to specify a default value for one or more function parameters.\nThis creates a function that can be called with fewer arguments than it is defined to allow.\n\u003cbr\u003e\u003cbr\u003e\nAdd parameters for the \"hello\" function, and set a default value for the name parameter.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"\u003d\" in window:\n        passed()\n    else:\n        failed(\"Add a default value to the parameter\")\n\ndef test_window_names():\n    window \u003d get_answer_placeholders()[0]\n    if \"subject\" in window and \"name\" in window:\n        passed()\n    else:\n        failed(\"Add a default value to the parameter\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_window_names()"
+          }
+        }
+      ],
+      "myIndex": -1
+    },
+    {
+      "id": 13365,
+      "steps": [
+        39471,
+        39472,
+        39473,
+        39474,
+        39475
+      ],
+      "tags": [],
+      "is_public": true,
+      "title": "Classes and objects",
+      "task_list": [
+        {
+          "name": "Definition",
+          "myIndex": 0,
+          "myStepicId": 39471,
+          "task_files": {
+            "class_definition.py": {
+              "placeholders": [
+                {
+                  "line": 1,
+                  "start": 15,
+                  "hint": "Assign any value to variable.",
+                  "possible_answer": "4",
+                  "length": 28,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "class_definition.py",
+              "text": "class MyClass:\n    variable \u003d assign any value to variable\n\n    def foo(self):   # we\u0027ll explain self parameter later in task 4\n        print(\"Hello from function foo\")\n\nmy_object \u003d MyClass()  # variable \"my_object\" holds an object of the class \"MyClass\" that contains the variable and the \"foo\" function",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nAn object combines variables and functions into a single entity.\nObjects get their variables and functions from classes.\nClasses are essentially templates for creating your objects.\nYou can think of an object as a single data structure that contains data as well as functions.\nFunctions of objects are called methods.\n\u003cbr\u003e\u003cbr\u003e\nAssign value to a variable inside \"MyClass\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n"
+          }
+        },
+        {
+          "name": "Variable access",
+          "myIndex": 0,
+          "myStepicId": 39472,
+          "task_files": {
+            "access_variable.py": {
+              "placeholders": [
+                {
+                  "line": 17,
+                  "start": 6,
+                  "hint": "Access \u0027variable1\u0027 using my_object.variable1",
+                  "possible_answer": "my_object.variable1",
+                  "length": 33,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "access_variable.py",
+              "text": "class MyClass:\n    variable1 \u003d 1\n    variable2 \u003d 2\n\n    def foo(self):     # we\u0027ll explain self parameter later in task 4\n        print(\"Hello from function foo\")\n\nmy_object \u003d MyClass()\nmy_object1 \u003d MyClass()\n\nmy_object.variable2 \u003d 3     # change value stored in variable2 in my_object\n\nprint(my_object.variable2)\nprint(my_object1.variable2)\n\nmy_object.foo()   # call method foo() of object my_object\n\nprint(value of variable1 from my_object)\n\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nTo access a variable inside an object, see example below. You can change the values of variables defined in a class for different instances (objects) of this class.\n\u003cbr\u003e\u003cbr\u003e\nPrint the value of variable1 from my_object.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"my_object\" in window and \"variable1\" in window:\n        passed()\n    else:\n        failed(\"Access \u0027variable1\u0027 using my_object.variable1\")\n\ndef test_window1():\n    window \u003d get_answer_placeholders()[0]\n    if \"my_object \" in window or \"my_object.\" in window:\n        passed()\n    else:\n        failed(\"Access \u0027variable1\u0027 using my_object.variable1\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_window1()\n"
+          }
+        },
+        {
+          "name": "Variable access",
+          "myIndex": 0,
+          "myStepicId": 39473,
+          "task_files": {
+            "access_variable.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 7,
+                  "hint": "Create new car using Car()",
+                  "possible_answer": "Car()",
+                  "length": 20,
+                  "myIndex": -1
+                },
+                {
+                  "line": 10,
+                  "start": 0,
+                  "hint": "Change color using car2.color \u003d \"new color\".",
+                  "possible_answer": "car2.color \u003d \"red\"",
+                  "length": 14,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "access_variable.py",
+              "text": "class Car:\n    color \u003d \"\"\n    def description(self):\n        description_string \u003d \"This is a %s car.\" % self.color    # we\u0027ll explain self parameter later in task 4\n        return description_string\n\ncar1 \u003d Car()\ncar2 \u003d create object of Car\n\ncar1.color \u003d \"blue\"\nset car2 color\n\nprint(car1.description())\nprint(car2.description())\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nCreate a new Car object car2. Set the color of car2 to \"red\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed, get_file_output\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"Car\" in window and \"(\" in window and \")\" in window:\n        passed()\n    else:\n        failed(\"Create a new car using Car()\")\n\n\ndef test_window2():\n    window \u003d get_answer_placeholders()[1]\n    output \u003d get_file_output()\n    if len(output) \u003e 1 and output[1] \u003d\u003d \"This is a red car.\":\n        passed()\n    else:\n        failed(\"Change color using assignment to the car2.color\")\n\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_window2()\n"
+          }
+        },
+        {
+          "name": "Self explanation",
+          "myIndex": 0,
+          "myStepicId": 39474,
+          "task_files": {
+            "self_parameter.py": {
+              "placeholders": [
+                {
+                  "line": 9,
+                  "start": 8,
+                  "hint": "Add amount to the self.current variable.",
+                  "possible_answer": "self.current +\u003d amount",
+                  "length": 21,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "self_parameter.py",
+              "text": "class Complex:\n    def create(self, real_part, imag_part):\n        self.r \u003d real_part\n        self.i \u003d imag_part\n\nclass Calculator:\n    current \u003d 0\n\n    def add(self, amount):\n        add number to current\n\n    def get_current(self):\n        return self.current",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nIt\u0027s time to explain the \"self\" parameter used in previous tasks.\nThe \"self\" parameter is a Python convention.\n\"self\" is the first parameter passed to any class method.\nPython will use the \"self\" parameter to refer to the object being created.\n\u003cbr\u003e\u003cbr\u003e\nImplement the \"add\" method properly.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"self\" in window and \"amount\" in window:\n        passed()\n    else:\n        failed(\"Access the current variable of the class using self.current\")\n\ndef test_window2():\n    window \u003d get_answer_placeholders()[0]\n    if \"amount\" in window:\n        passed()\n    else:\n        failed(\"Add the value of \u0027amount\u0027 to self.current\")\n\ndef test_window3():\n    window \u003d get_answer_placeholders()[0]\n    if \"+\u003d\" in window or (\"+\" in window and \"\u003d\" in window):\n        passed()\n    else:\n        failed(\"Add amount value to self.current\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_window2()\n    test_window3()"
+          }
+        },
+        {
+          "name": "Special __init__ method",
+          "myIndex": 0,
+          "myStepicId": 39475,
+          "task_files": {
+            "init_method.py": {
+              "placeholders": [
+                {
+                  "line": 9,
+                  "start": 17,
+                  "hint": "Add two parameters -- self and color.",
+                  "possible_answer": "self, color",
+                  "length": 19,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "init_method.py",
+              "text": "class Square:\n\n    def __init__(self):    # special method __init__\n        self.sides \u003d 4\n\nsquare \u003d Square()\nprint(square.sides)\n\nclass Car:\n    def __init__(add parameters here):\n        self.color \u003d color\n\ncar \u003d Car(\"blue\")    # Note: you should not pass self parameter explicitly, only color parameter\n\nprint(car.color)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\n__init__ function is used to initialize the objects it creates. init is short for \"initialize\".\n__init__() always takes at least one argument, self, which refers to the object being created.\n__init__() function sets up each object the class creates.\n\u003cbr\u003e\u003cbr\u003e\nAdd parameters to the Car class so we can create it with a specific color.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"color\" in window:\n        passed()\n    else:\n        failed(\"Add a color parameter\")\n\n\ndef test_window1():\n    window \u003d get_answer_placeholders()[0]\n    if \"self\" in window:\n        passed()\n    else:\n        failed(\"Don\u0027t forget about the self parameter\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_window1()\n"
+          }
+        }
+      ],
+      "myIndex": -1
+    },
+    {
+      "id": 13355,
+      "steps": [
+        39412,
+        39413,
+        39414
+      ],
+      "tags": [],
+      "is_public": true,
+      "title": "Modules and packages",
+      "task_list": [
+        {
+          "name": "Import module",
+          "myIndex": 0,
+          "myStepicId": 39412,
+          "task_files": {
+            "imports.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 0,
+                  "hint": "Use \u0027import\u0027 keyword and my_module reference.",
+                  "possible_answer": "import my_module",
+                  "length": 21,
+                  "myIndex": -1
+                },
+                {
+                  "line": 9,
+                  "start": 0,
+                  "hint": "Access \u0027hello_world\u0027 function from module \u0027my_module\u0027 as my_module.hello_world()",
+                  "possible_answer": "my_module.hello_world(\u0027John\u0027)",
+                  "length": 40,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "imports.py",
+              "text": "\nimport calculator\n\ncalc \u003d calculator.Calculator()    # create new instance of Calculator class defined in calculator module\ncalc.add(2)\nprint(calc.get_current())\n\nhere import my_module\n\ncall function hello_world from my_module",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            },
+            "my_module.py": {
+              "placeholders": [],
+              "myIndex": -1,
+              "name": "my_module.py",
+              "text": "\"\"\" documentation string for module my_module\nThis module contains hello_world function\n\"\"\"\n\n\ndef hello_world(name):\n    print(\"Hello, World! My name is %s\" % name)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            },
+            "calculator.py": {
+              "placeholders": [],
+              "myIndex": -1,
+              "name": "calculator.py",
+              "text": "\"\"\"\nThis module contains Calculator class\n\"\"\"\n\n\nclass Calculator:\n    def __init__(self):\n        self.current \u003d 0\n\n    def add(self, amount):\n        self.current +\u003d amount\n\n    def get_current(self):\n        return self.current",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nModules in Python are simply Python files with the .py extension containing Python definitions and statements.\nModules can be handy when you want to use your function in a number of programs without copying its definition into each program.\nModules are imported from other modules using the \"import\" keyword and the file name without an extension.\nThe first time a module is loaded into a running Python script, it is initialized by executing the code in the module once.\n\u003cbr\u003e\u003cbr\u003e\nImport the module my_module and use the hello_world function.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"import \" in window:\n        passed()\n    else:\n        failed(\"Use \u0027import\u0027 keyword\")\n\n\ndef test_window1():\n    window \u003d get_answer_placeholders()[0]\n    if \"my_module\" in window:\n        passed()\n    else:\n        failed(\"Import module my_module\")\n\n\ndef test_window2():\n    window \u003d get_answer_placeholders()[0]\n    if \"my_module.py\" in window:\n        failed(\"Don\u0027t use the file extension here\")\n    else:\n        passed()\n\n\ndef test_window3():\n    window \u003d get_answer_placeholders()[1]\n    if \"my_module\" in window and \"hello_world(\" in window:\n        passed()\n    else:\n        failed(\"Call hello_world function using my_module.hello_world\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window1()\n    test_window()\n    test_window2()\n    test_window3()\n"
+          }
+        },
+        {
+          "name": "Builtin modules",
+          "myIndex": 0,
+          "myStepicId": 39413,
+          "task_files": {
+            "builtin_modules.py": {
+              "placeholders": [
+                {
+                  "line": 2,
+                  "start": 6,
+                  "hint": "Use datetime.datetime.today() function.",
+                  "possible_answer": "datetime.datetime.today()",
+                  "length": 12,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "builtin_modules.py",
+              "text": "import datetime\n\nprint(current date)",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nPython comes with a \u003ca href\u003d\"https://docs.python.org/2/library/\"\u003elibrary of standard modules\u003c/a\u003e.\nRemember that you can use Ctrl + Space after a dot(.) to explore available methods of a module.\n\u003cbr\u003e\u003cbr\u003e\nPrint the current date using an imported built-in module datetime.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders, get_file_output\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    output \u003d get_file_output()\n    if \"datetime\" not in window:\n        failed(\"Use datetime module\")\n    elif len(output) \u003e 0 and \"\u003c\" not in output[0]:\n        passed()\n    else:\n        failed(\"Print the current date\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n"
+          }
+        },
+        {
+          "name": "From import",
+          "myIndex": 0,
+          "myStepicId": 39414,
+          "task_files": {
+            "from_import.py": {
+              "placeholders": [
+                {
+                  "line": 7,
+                  "start": 0,
+                  "hint": "Use \u0027from my_module import hello_world\u0027",
+                  "possible_answer": "from my_module import hello_world",
+                  "length": 33,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "from_import.py",
+              "text": "\nfrom calculator import Calculator\n\ncalc \u003d Calculator()    # here we can use Calculator class directly without prefix calculator.\ncalc.add(2)\nprint(calc.get_current())\n\nimport hello_world from my_module\n\nprint(hello_world())    # Note: hello_world function used without prefix",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            },
+            "my_module.py": {
+              "placeholders": [],
+              "myIndex": -1,
+              "name": "my_module.py",
+              "text": "\"\"\" documentation string for module my_module\nThis module contains hello_world function\n\"\"\"\n\n\ndef hello_world():\n    return \"Hello, World!\"",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            },
+            "calculator.py": {
+              "placeholders": [],
+              "myIndex": -1,
+              "name": "calculator.py",
+              "text": "\"\"\"\nThis module contains Calculator class\n\"\"\"\n\n\nclass Calculator:\n    def __init__(self):\n        self.current \u003d 0\n\n    def add(self, amount):\n        self.current +\u003d amount\n\n    def get_current(self):\n        return self.current",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nOne form of the import statement imports names from a module directly into the importing module\u0027s symbol table.\nThis way you can use the imported name directly without the module_name prefix.\n\u003cbr\u003e\u003cbr\u003e\nImport hello_world function from my_module. Check the difference with task1.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"from \" in window:\n        passed()\n    else:\n        failed(\"Use hello_world imported from my_module\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n"
+          }
+        }
+      ],
+      "myIndex": -1
+    },
+    {
+      "id": 13356,
+      "steps": [
+        39415,
+        39416
+      ],
+      "tags": [],
+      "is_public": true,
+      "title": "File input/output",
+      "task_list": [
+        {
+          "name": "Read file",
+          "myIndex": 0,
+          "myStepicId": 39415,
+          "task_files": {
+            "read_file.py": {
+              "placeholders": [
+                {
+                  "line": 5,
+                  "start": 4,
+                  "hint": "Use print function.",
+                  "possible_answer": "print(line)",
+                  "length": 15,
+                  "myIndex": -1
+                },
+                {
+                  "line": 11,
+                  "start": 0,
+                  "hint": "Use \u0027readline\u0027 method.",
+                  "possible_answer": "print(f1.readline())",
+                  "length": 27,
+                  "myIndex": -1
+                },
+                {
+                  "line": 13,
+                  "start": 0,
+                  "hint": "Use \u0027readline\u0027 method.",
+                  "possible_answer": "f1.close()",
+                  "length": 27,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "read_file.py",
+              "text": "\nf \u003d open(\"input.txt\", \"r\")   # here we open file \"input.txt\". Second argument used to identify that we want to read file\n                             # Note: if you want to write to the file use \"w\" as second argument\n\nfor line in f.readlines():   # read lines\n    print each line\n\nf.close()                   # It\u0027s important to close the file to free up any system resources.\n\nf1 \u003d open(\"input1.txt\", \"r\")\n\nprint only first line of f1\n\ndo not forget to close file",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            },
+            "input1.txt": {
+              "placeholders": [],
+              "myIndex": -1,
+              "name": "input1.txt",
+              "text": "My first line\nMy second line\nMy third line",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            },
+            "input.txt": {
+              "placeholders": [],
+              "myIndex": -1,
+              "name": "input.txt",
+              "text": "I am a temporary file. Maybe someday, I\u0027ll become a real file.",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nPython has a number of built-in functions to read and write information from a file on your computer.\nThe \"open\" function is used to open a file. The file can be opened in read mode (using \"r\" as the second argument) or in write mode (using \"w\" as the second argument). The \"open\" function returns the file object. You need to store it to close the file later.\n\n\u003cbr\u003e\u003cbr\u003e\nPrint the contents of \"input.txt\" to output. Print the first line of \"input1.txt\". Then close the file.\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, failed, passed, get_answer_placeholders, get_file_output\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"print\" in window and \"line\" in window:\n        passed()\n    else:\n        failed(\"Use print function\")\n\n\ndef test_window2():\n    default_error \u003d \"Use \u0027readline\u0027 method\"\n    window \u003d get_answer_placeholders()[1]\n    output \u003d list(filter(lambda x: x !\u003d \"\", get_file_output()))\n    if len(output) \u003d\u003d 2 and output[1] \u003d\u003d \"My first line\":\n        passed()\n        return\n    if \"print\" not in window:\n        failed(\"Don\u0027t forget to print the line\")\n        return\n    failed(default_error)\n\n\ndef test_window3():\n    window \u003d get_answer_placeholders()[2]\n    if \"close(\" not in window:\n        failed(\"Call \u0027close\u0027 method\")\n        return\n    if \"f1\" not in window:\n        failed(\"Close file f1\")\n        return\n    passed()\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_window2()\n    test_window3()"
+          }
+        },
+        {
+          "name": "Write to file",
+          "myIndex": 0,
+          "myStepicId": 39416,
+          "task_files": {
+            "write_to_file.py": {
+              "placeholders": [
+                {
+                  "line": 3,
+                  "start": 27,
+                  "hint": "Use \u0027a\u0027 modifier to append lines to the end of file.",
+                  "possible_answer": "\u0027a\u0027",
+                  "length": 12,
+                  "myIndex": -1
+                },
+                {
+                  "line": 6,
+                  "start": 8,
+                  "hint": "Use \u0027write\u0027 method.",
+                  "possible_answer": "f.write(i)",
+                  "length": 35,
+                  "myIndex": -1
+                },
+                {
+                  "line": 8,
+                  "start": 4,
+                  "hint": "Call f.close method.",
+                  "possible_answer": "f.close()",
+                  "length": 14,
+                  "myIndex": -1
+                }
+              ],
+              "myIndex": -1,
+              "name": "write_to_file.py",
+              "text": "zoo \u003d [\u0027lion\u0027, \"elephant\", \u0027monkey\u0027]\n\nif __name__ \u003d\u003d \"__main__\":\n    f \u003d open(\"output.txt\", add modifier)\n\n    for i in zoo:\n        add the whole zoo to the output.txt\n\n    close the file\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            },
+            "output.txt": {
+              "placeholders": [],
+              "myIndex": -1,
+              "name": "output.txt",
+              "text": "This is output file.\n",
+              "myUserCreated": false,
+              "myTrackChanges": true,
+              "myHighlightErrors": false
+            }
+          },
+          "text": "\nIf you open a file using \"w\" (write) as the second argument, a new empty file will be created. Note that if another file with the same name exists, it will be deleted.\nIf you want to add some content to an existing file, you should use the \"a\" (append) modifier.\n\u003cbr\u003e\u003cbr\u003e\nAdd elements from the \"zoo\" list to \"output.txt\".\n\u003cbr\u003e\n",
+          "testsText": {
+            "tests.py": "from test_helper import run_common_tests, get_answer_placeholders, passed, failed\n\n\ndef test_window():\n    window \u003d get_answer_placeholders()[0]\n    if \"a\" in window:\n        passed()\n    else:\n        failed(\"Use \u0027a\u0027 modifier to append lines to the end of file\")\n\n\ndef test_window1():\n    window \u003d get_answer_placeholders()[1]\n    if \"write\" in window:\n        passed()\n    else:\n        failed(\"Use \u0027write\u0027 method\")\n\n\ndef test_window3():\n    window \u003d get_answer_placeholders()[2]\n    if \"f\" in window and \"close\" in window and \"(\" in window:\n        passed()\n    else:\n        failed(\"Call \u0027close\u0027 method\")\n\nif __name__ \u003d\u003d \u0027__main__\u0027:\n    run_common_tests()\n    test_window()\n    test_window1()\n    test_window3()"
+          }
+        }
+      ],
+      "myIndex": -1
+    }
+  ],
+  "description": "Introduction course to Python",
+  "name": "Introduction to Python",
+  "myCourseDirectory": "",
+  "authors": [],
+  "myUpToDate": true,
+  "language": "Python",
+  "courseType": "PyCharm"
+}
