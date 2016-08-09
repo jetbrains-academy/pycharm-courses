@@ -57,7 +57,7 @@
                                     <option name="index" value="0" />
                                     <option name="length" value="20" />
                                     <option name="line" value="4" />
-                                    <option name="possibleAnswer" value="new comment&#10;" />
+                                    <option name="possibleAnswer" value="new comment" />
                                     <option name="start" value="2" />
                                     <option name="taskText" value="add new comment here" />
                                   </AnswerPlaceholder>
