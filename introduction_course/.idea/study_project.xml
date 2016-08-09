@@ -889,7 +889,7 @@
                     <Task>
                       <option name="index" value="8" />
                       <option name="name" value="Character escaping" />
-                      <option name="status" value="Solved" />
+                      <option name="status" value="Unchecked" />
                       <option name="stepicId" value="98667" />
                       <option name="text" />
                       <option name="updateDate" />
@@ -911,7 +911,7 @@
                                       <option name="offset" value="105" />
                                       <option name="possibleAnswer" value="The name of this ice-cream is &quot;Sweet\'n\'Tasty&quot;" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Solved" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="taskText" value="text" />
                                       <option name="useLength" value="false" />
                                     </AnswerPlaceholder>
@@ -1452,7 +1452,7 @@
                     <Task>
                       <option name="index" value="2" />
                       <option name="name" value="Boolean operators order" />
-                      <option name="status" value="Solved" />
+                      <option name="status" value="Unchecked" />
                       <option name="stepicId" value="98686" />
                       <option name="text" />
                       <option name="updateDate" />
@@ -1479,7 +1479,7 @@
                                       <option name="offset" value="108" />
                                       <option name="possibleAnswer" value="name is &quot;Ellis&quot; or not (name is &quot;John&quot; and age == 17)" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Solved" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="taskText" value="&quot;name&quot; is &quot;Ellis&quot; or not (&quot;name&quot; equal &quot;John&quot; and he is 17 years old)" />
                                       <option name="useLength" value="false" />
                                     </AnswerPlaceholder>
@@ -1722,7 +1722,7 @@
                     <Task>
                       <option name="index" value="3" />
                       <option name="name" value="While loop" />
-                      <option name="status" value="Solved" />
+                      <option name="status" value="Unchecked" />
                       <option name="stepicId" value="98709" />
                       <option name="text" />
                       <option name="updateDate" />
@@ -1749,7 +1749,7 @@
                                       <option name="offset" value="213" />
                                       <option name="possibleAnswer" value="while square &lt; 81:" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Solved" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="taskText" value="print all squares from 0 to 99" />
                                       <option name="useLength" value="false" />
                                     </AnswerPlaceholder>
@@ -1972,7 +1972,7 @@
                     <Task>
                       <option name="index" value="3" />
                       <option name="name" value="Return value" />
-                      <option name="status" value="Solved" />
+                      <option name="status" value="Unchecked" />
                       <option name="stepicId" value="98714" />
                       <option name="text" />
                       <option name="updateDate" />
@@ -1999,7 +1999,7 @@
                                       <option name="offset" value="373" />
                                       <option name="possibleAnswer" value="1" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Solved" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="taskText" value="initialize variable b" />
                                       <option name="useLength" value="false" />
                                     </AnswerPlaceholder>
@@ -2019,7 +2019,7 @@
                                       <option name="offset" value="445" />
                                       <option name="possibleAnswer" value="b = a + b" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Solved" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="taskText" value="update variable b" />
                                       <option name="useLength" value="false" />
                                     </AnswerPlaceholder>
@@ -2039,7 +2039,7 @@
                                       <option name="offset" value="463" />
                                       <option name="possibleAnswer" value="a = tmp_var" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Solved" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="taskText" value="update variable a" />
                                       <option name="useLength" value="false" />
                                     </AnswerPlaceholder>
