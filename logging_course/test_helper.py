@@ -253,3 +253,13 @@ def run_common_tests(error_text="Please, reload file and try again"):
     test_answer_placeholders_text_deleted()
     test_file_importable()
 
+
+##############################################################################
+## CUSTOM HELPERS
+##############################################################################
+def check_answers(placeholders, answers):
+    for placeholder, answer in zip(placeholders, answers):
+        if placeholder not in answer:
+            failed()
+            return
+    passed()
