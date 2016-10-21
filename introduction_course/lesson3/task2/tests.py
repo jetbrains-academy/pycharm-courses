@@ -5,7 +5,8 @@ def test_value():
     file = import_task_file()
     if hasattr(file, "ten_of_hellos") and file.ten_of_hellos == "hellohellohellohellohellohellohellohellohellohello":
         passed()
-    failed("Use multiplication")
+    else:
+        failed("Use multiplication")
 
 def test_window():
     window = get_answer_placeholders()[0]
