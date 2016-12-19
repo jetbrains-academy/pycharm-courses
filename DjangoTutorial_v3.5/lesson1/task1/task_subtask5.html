@@ -1,0 +1,52 @@
+<html>
+<h3>Dynamic data in templates</h3>
+
+<h4>Django ORM and QuerySets</h4>
+A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+<h4>Example</h4>
+<pre><code>Post.objects.all()</code></pre>
+
+This code will give you the list of the posts we created earlier.
+
+<h4>Filter objects</h4>
+A big part of QuerySets is the ability to filter them.
+Let's say we want to find all posts that user ola authored.
+We will use filter instead of all in <code>Post.objects.all()</code>.
+In parentheses we state what condition(s) a blog post
+needs to meet to end up in our queryset.
+In our case, the condition is that author should be
+equal to me. The way to write it in Django is <code>author=me</code>.
+Now our piece of code looks like this:
+<pre><code> Post.objects.filter(author=me)</code></pre>
+
+<h4>Ordering objects</h4>
+
+QuerySets also allow you to order the list of objects.
+Let's try to order posts by <code>created_date</code> field:
+
+<pre><code>Post.objects.order_by('created_date')</code></pre>
+We can also reverse the ordering by adding - at the beginning:
+<pre><code>Post.objects.order_by('-created_date')</code></pre>
+
+In the <code>render</code> function we have one parameter
+<code>request</code> (everything we receive from the user
+via the Internet) and another giving the template file
+('blog/post_list.html'). <br/>The last parameter, <code>{}</code>,
+is a place in which we can add some things for the
+template to use.
+
+<h4>Chaining QuerySets</h4>
+You can also combine QuerySets by chaining them together:
+<pre><code> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+</code></pre>
+
+
+<h4>Task:</h4>
+Obtain all <code>Post</code> objects ordered by <code>published_date</code>
+and pass them to the template.
+<br><br>
+<br><br>
+<p style="color:#808080">For more information visit <a href="https://docs.djangoproject.com/en/1.10/intro/tutorial03/">django documentation</a>.
+
+<br>
+</html>

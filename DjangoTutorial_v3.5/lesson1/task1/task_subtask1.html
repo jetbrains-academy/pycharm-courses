@@ -1,0 +1,40 @@
+<html>
+<h3>Models</h3>
+
+A model is the single, definitive source of information about your data. It contains the essential fields and behaviors of the data you’re storing. Generally, each model maps to a single database table.
+<br><br>
+<h4>The basics:</h4>
+<ul>
+    <li>Each model is a Python class that subclasses <code>django.db.models.Model</code>.</li>
+    <li>Each attribute of the model represents a database field.</li>
+    <li>With all of this, Django gives you an automatically-generated database-access API; see <a href="https://docs.djangoproject.com/en/1.10/topics/db/queries/">Making queries</a>.</li>
+</ul>
+
+<h4>Quick example</h4>
+This example model defines a Person, which has a <code>first_name</code> and <code>last_name</code>:
+<pre><code>
+from django.db import models
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+first_name and last_name are fields of the model. Each field is specified as a class attribute, and each attribute maps to a database column.
+</code></pre>
+The above Person model would create a database table like this:
+<pre><code>
+CREATE TABLE myapp_person (
+    "id" serial NOT NULL PRIMARY KEY,
+    "first_name" varchar(30) NOT NULL,
+    "last_name" varchar(30) NOT NULL
+);
+</code></pre>
+
+<h4>Task:</h4>
+Make <code>Post</code> class a django model.
+Then define <code>title</code> as a <code>TextField</code> with maximum length equals to 200
+and <code>published_date</code> as a <code>DateTimeField</code>. Allow empty values for <code>published_date</code>
+and make Django store empty values as <code>NULL</code> in the database
+<br/><br/>
+<br/><br/>
+<p style="color:#808080">For more information visit <a href="https://docs.djangoproject.com/en/1.10/topics/db/models/">django documentation</a>.
+</html>

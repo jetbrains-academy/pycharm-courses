@@ -1,0 +1,31 @@
+<html>
+<h3>Django settings</h3>
+A Django settings file contains all the configuration of your Django installation. This document explains how settings work and which settings are available.
+
+<br><br>
+Because a settings file is a Python module, the following apply:
+<ul>
+    <li>It doesn’t allow for Python syntax errors.</li>
+
+    <li>It can assign settings dynamically using normal Python syntax. <br/>
+        For example:
+        <br/>
+    <code>MY_SETTING = [str(i) for i in range(30)]</code></li>
+    <li>It can import values from other settings files.</li>
+</ul>
+<h4>Available settings</h4>
+
+For a full list of available settings, see the <a href="https://docs.djangoproject.com/en/1.10/ref/settings/">settings reference</a>.
+<br/><br/>
+
+<h4>Task</h4>
+It would be nice to have the correct time on our website.
+Go to <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">
+    Wikipedia's list of time zones</a>  and copy your relevant time zone (TZ) (e.g. Europe/Berlin).
+<br>
+Modify the line that contains TIME_ZONE to choose your own timezone.
+<br/><br/>
+<br/><br/>
+
+<p style="color:#808080">For more information visit <a href="https://docs.djangoproject.com/en/1.10/topics/settings/">django documentation</a>.
+</html>

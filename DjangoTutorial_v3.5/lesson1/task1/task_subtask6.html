@@ -1,0 +1,40 @@
+<html>
+<h3>Django template language</h3>
+A Django template is simply a text document or a Python string marked-up using the Django template language. Some constructs are recognized and interpreted by the template engine. The main ones are variables and tags.
+<br/><br/>
+A template is rendered with a context. Rendering replaces variables with their values, which are looked up in the context, and executes tags. Everything else is output as is.
+
+<h4>Variables</h4>
+A variable outputs a value from the context, which is a
+dict-like object mapping keys to values.
+<br/><br/>
+Variables are surrounded by <code>{{</code> and }} like this:
+<br/><br/>
+<div style="background-color:#d3d3d3;">My first name is {{ first_name }}. My last name is {{ last_name }}.</div>
+<br/>
+With a context of <code>{'first_name': 'John', 'last_name': 'Doe'}</code>,
+this template renders to:<br/>
+<br/>
+<div style="background-color:#d3d3d3;">
+My first name is John. My last name is Doe.
+</div>
+<h4>Tags</h4>
+
+Tags provide arbitrary logic in the rendering process.
+
+<br/><br/>
+Tags are surrounded by {% and %} like this:
+<br/><br/>
+<div style="background-color:#d3d3d3;">
+{% if user.is_authenticated %}Hello, {{ user.username }}.{% endif %}
+</div>
+
+<h4>Task:</h4>
+Iterate over posts using {% for ... in ...%} {% endfor %}
+and print each post content.
+<br><br>
+<br><br>
+<p style="color:#808080">For more information visit <a href="https://docs.djangoproject.com/en/1.10/intro/tutorial03/">django documentation</a>.
+
+<br>
+</html>

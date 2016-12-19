@@ -1,0 +1,36 @@
+<html>
+<h3>URL dispatcher</h3>
+A URL is simply a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar.
+
+<br><br>
+
+A clean, elegant URL scheme is an important detail in a high-quality Web application. Django lets you design URLs however you want, with no framework limitations.
+<br><br>
+To design URLs for an app, you create a Python module informally called a URLconf (URL configuration). This module is pure Python code and is a simple mapping between URL patterns (simple regular expressions) to Python functions (your views).
+<br><br>
+This mapping can be as short or as long as needed. It can reference other mappings. And, because it’s pure Python code, it can be constructed dynamically.
+<br><br>
+
+<h4>Example:</h4>
+<pre><code>from django.conf.urls import url
+
+from . import views
+
+urlpatterns = [
+    url(r'^articles/2003/$', views.special_case_2003),
+    url(r'^articles/([0-9]{4})/$', views.year_archive),
+    url(r'^articles/([0-9]{4})/([0-9]{2})/$', views.month_archive),
+    url(r'^articles/([0-9]{4})/([0-9]{2})/([0-9]+)/$', views.article_detail),
+]</code></pre>
+<h4>Notes:</h4>
+<ul>
+    <li>To capture a value from the URL, just put parenthesis around it.</li>
+    <li>There’s no need to add a leading slash, because every URL has that. For example, it’s ^articles, not ^/articles.</li>
+    <li>The 'r' in front of each regular expression string is optional but recommended. It tells Python that a string is “raw” – that nothing in the string should be escaped. </li>
+</ul>
+<h4>Task:</h4>
+Map URL pattern for empty (and only empty) string to <code>view.post_list</code> using builtin django <code>url</code> function.
+<br><br>
+<br><br>
+<p style="color:#808080">For more information visit <a href="https://docs.djangoproject.com/en/1.10/topics/http/urls/">django documentation</a>.
+</html>

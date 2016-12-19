@@ -1,0 +1,34 @@
+<html>
+<h3>Writing views</h3>
+A view function, or view for short, is simply a Python function that takes a Web request and returns a Web response. This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image . . . or anything, really. The view itself contains whatever arbitrary logic is necessary to return that response. This code can live anywhere you want, as long as it’s on your Python path. There’s no other requirement–no “magic,” so to speak. For the sake of putting the code somewhere, the convention is to put views in a file called views.py, placed in your project or application directory.
+<br><br>
+<h4>Example</h4>
+Here’s a view that returns the current date and time, as an HTML document:
+<pre><code>from django.http import HttpResponse
+import datetime
+
+def current_datetime(request):
+    now = datetime.datetime.now()
+    html = "It is now %s." % now
+    return HttpResponse(html)</code></pre>
+
+Here we define a function called <code>current_datetime</code>.
+This is the view function. Each view function takes an <code>HttpRequest</code> object as its first parameter, which is typically named <code>request</code>.
+<br><br>
+Note that the name of the view function doesn’t matter; it doesn’t have to be named in a certain way in order for Django to recognize it.
+<br>
+We’re calling it <code>current_datetime</code> here,
+because that name clearly indicates what it does.
+<br><br>
+The view returns an <code>HttpResponse</code> object that contains
+the generated response. Each view function is responsible for returning an
+<code>HttpResponse</code> object.
+
+<h4>Task:</h4>
+Render 'blog/post_list.html' template.
+<br><br>
+<br><br>
+<p style="color:#808080">For more information visit <a href="https://docs.djangoproject.com/en/1.9/topics/http/views/">django documentation</a>.
+
+<br>
+</html>
