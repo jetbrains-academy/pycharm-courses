@@ -18,8 +18,9 @@ from django.db import models
 class Person(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-first_name and last_name are fields of the model. Each field is specified as a class attribute, and each attribute maps to a database column.
 </code></pre>
+<code>first_name</code> and <code>last_name</code> are fields of the model. Each field is specified as a class attribute, and each attribute maps to a database column.
+<br/><br/>
 The above Person model would create a database table like this:
 <pre><code>
 CREATE TABLE myapp_person (
